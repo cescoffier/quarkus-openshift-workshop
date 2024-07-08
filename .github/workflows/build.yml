@@ -63,23 +63,18 @@ jobs:
           distribution: temurin
           cache: maven
 
-      - name: Generate and Push documentation
-        working-directory: docs
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config --global user.name "CI"
-          git config --global user.email "clement@redhat.com"
-          pip install pipenv
-          pipenv install
-          pipenv run mike deploy --push --ignore-remote-status --update-aliases 1.0 latest
-          pipenv run mike set-default --ignore-remote-status --push latest
-
       - name: Generate documentation
         working-directory: docs
-        if: github.ref != 'refs/heads/main'
         run: |
           git config --global user.name "CI"
           git config --global user.email "clement@redhat.com"
           pip install pipenv
           pipenv install
           pipenv run mkdocs build --clean
+
+      - name: Publish documentation
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/site
