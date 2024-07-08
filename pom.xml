@@ -9,5 +9,6 @@
 
     <modules>
         <module>hero-service</module>
+        <module>villain-service</module>
     </modules>
 </project>

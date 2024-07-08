@@ -33,6 +33,7 @@ jobs:
       matrix:
         app:
           - hero-service
+          - villain-service
 
     name: "Build ${{ matrix.app }}"
     steps:

@@ -1,0 +1,15 @@
+package io.quarkus.worksho.villain;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface VillainRepository extends JpaRepository<Villain, Long> {
+
+    default Villain findRandom() {
+        var count = count();
+        var index = (int) (Math.random() * count);
+        return findAll().get(index);
+    }
+
+}
