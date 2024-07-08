@@ -24,5 +24,9 @@ The application that is developed in thie workshop is composed of four independe
 !!! note "Hero and Villain services"
     The `hero-service` and `villain-service` are very similar, but both use different _development model_. While both are Quarkus applications, the hero service uses the idiomatic Quarkus development model, while the villain service uses the Spring compatibility support from Quarkus.
 
+# The setup
+
+[//]: # (Add devspaces)
+
 
 
