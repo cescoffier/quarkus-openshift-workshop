@@ -1,4 +1,4 @@
-package io.quarkus.worksho.hero;
+package io.quarkus.workshop.hero;
 
 import io.quarkus.logging.Log;
 import io.smallrye.common.annotation.RunOnVirtualThread;

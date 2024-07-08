@@ -1,4 +1,4 @@
-package io.quarkus.worksho.villain;
+package io.quarkus.workshop.villain;
 
 import io.quarkus.logging.Log;
 import io.smallrye.common.annotation.RunOnVirtualThread;

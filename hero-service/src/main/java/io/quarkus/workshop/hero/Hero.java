@@ -1,7 +1,6 @@
-package io.quarkus.worksho.hero;
+package io.quarkus.workshop.hero;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import io.smallrye.mutiny.Uni;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.validation.constraints.Min;

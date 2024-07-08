@@ -1,4 +1,4 @@
-package io.quarkus.worksho.villain;
+package io.quarkus.workshop.villain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

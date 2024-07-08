@@ -1,4 +1,4 @@
-package io.quarkus.worksho.villain;
+package io.quarkus.workshop.hero;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.common.mapper.TypeRef;
@@ -28,49 +28,51 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @QuarkusTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class VillainControllerTest {
+class HeroResourceTest {
 
-    private static final String DEFAULT_NAME = "Super Chocolatine";
-    private static final String UPDATED_NAME = "Super Chocolatine (updated)";
-    private static final String DEFAULT_OTHER_NAME = "Super Chocolatine chocolate in";
-    private static final String UPDATED_OTHER_NAME = "Super Chocolatine chocolate in (updated)";
-    private static final String DEFAULT_PICTURE = "super_chocolatine.png";
-    private static final String UPDATED_PICTURE = "super_chocolatine_updated.png";
-    private static final String DEFAULT_POWERS = "does not eat pain au chocolat";
-    private static final String UPDATED_POWERS = "does not eat pain au chocolat (updated)";
+    private static final String JSON = "application/json;charset=UTF-8";
+
+    private static final String DEFAULT_NAME = "Super Baguette";
+    private static final String UPDATED_NAME = "Super Baguette (updated)";
+    private static final String DEFAULT_OTHER_NAME = "Super Baguette Tradition";
+    private static final String UPDATED_OTHER_NAME = "Super Baguette Tradition (updated)";
+    private static final String DEFAULT_PICTURE = "super_baguette.png";
+    private static final String UPDATED_PICTURE = "super_baguette_updated.png";
+    private static final String DEFAULT_POWERS = "eats baguette really quickly";
+    private static final String UPDATED_POWERS = "eats baguette really quickly (updated)";
     private static final int DEFAULT_LEVEL = 42;
     private static final int UPDATED_LEVEL = 43;
 
-    private static final int NB_VILLAINS = 570;
-    private static String villainId;
+    private static final int NB_HEROES = 941;
+    private static String heroId;
 
 
     @Test
     public void testHelloEndpoint() {
         given()
                 .when()
-                .get("/api/villains/hello")
+                .get("/api/heroes/hello")
                 .then()
                 .statusCode(200)
-                .body(is("Hello Villain Service"));
+                .body(is("Hello Hero Service"));
     }
 
     @Test
-    void shouldNotGetUnknownVillain() {
+    void shouldNotGetUnknownHero() {
         Long randomId = new Random().nextLong();
         given()
                 .pathParam("id", randomId)
                 .when()
-                .get("/api/villains/{id}")
+                .get("/api/heroes/{id}")
                 .then()
                 .statusCode(NOT_FOUND.getStatusCode());
     }
 
     @Test
-    void shouldGetRandomVillain() {
+    void shouldGetRandomHero() {
         given()
                 .when()
-                .get("/api/villains/random")
+                .get("/api/heroes/random")
                 .then()
                 .statusCode(OK.getStatusCode())
                 .contentType(APPLICATION_JSON);
@@ -78,19 +80,19 @@ class VillainControllerTest {
 
     @Test
     void shouldNotAddInvalidItem() {
-        Villain villain = new Villain();
-        villain.setName(null);
-        villain.setOtherName(DEFAULT_OTHER_NAME);
-        villain.setPicture(DEFAULT_PICTURE);
-        villain.setPowers(DEFAULT_POWERS);
-        villain.setLevel(1);
+        Hero hero = new Hero();
+        hero.name = null;
+        hero.otherName = DEFAULT_OTHER_NAME;
+        hero.picture = DEFAULT_PICTURE;
+        hero.powers = DEFAULT_POWERS;
+        hero.level = 0;
 
         given()
-                .body(villain)
+                .body(hero)
                 .header(CONTENT_TYPE, APPLICATION_JSON)
                 .header(ACCEPT, APPLICATION_JSON)
                 .when()
-                .post("/api/villains")
+                .post("/api/heroes")
                 .then()
                 .statusCode(BAD_REQUEST.getStatusCode());
     }
@@ -98,46 +100,46 @@ class VillainControllerTest {
     @Test
     @Order(1)
     void shouldGetInitialItems() {
-        List<Villain> villains = get("/api/villains").then()
+        List<Hero> heroes = get("/api/heroes").then()
                 .statusCode(OK.getStatusCode())
                 .contentType(APPLICATION_JSON)
                 .extract()
                 .body()
-                .as(getVillainTypeRef());
-        assertEquals(NB_VILLAINS, villains.size());
+                .as(getHeroTypeRef());
+        assertEquals(NB_HEROES, heroes.size());
     }
 
     @Test
     @Order(2)
     void shouldAddAnItem() {
-        Villain villain = new Villain();
-        villain.setName(DEFAULT_NAME);
-        villain.setOtherName(DEFAULT_OTHER_NAME);
-        villain.setPicture(DEFAULT_PICTURE);
-        villain.setPowers(DEFAULT_POWERS);
-        villain.setLevel(DEFAULT_LEVEL);
+        Hero hero = new Hero();
+        hero.name = DEFAULT_NAME;
+        hero.otherName = DEFAULT_OTHER_NAME;
+        hero.picture = DEFAULT_PICTURE;
+        hero.powers = DEFAULT_POWERS;
+        hero.level = DEFAULT_LEVEL;
 
         String location = given()
-                .body(villain)
+                .body(hero)
                 .header(CONTENT_TYPE, APPLICATION_JSON)
                 .header(ACCEPT, APPLICATION_JSON)
                 .when()
-                .post("/api/villains")
+                .post("/api/heroes")
                 .then()
                 .statusCode(CREATED.getStatusCode())
                 .extract()
                 .header("Location");
-        assertTrue(location.contains("/api/villains"));
+        assertTrue(location.contains("/api/heroes"));
 
         // Stores the id
         String[] segments = location.split("/");
-        villainId = segments[segments.length - 1];
-        assertNotNull(villainId);
+        heroId = segments[segments.length - 1];
+        assertNotNull(heroId);
 
         given()
-                .pathParam("id", villainId)
+                .pathParam("id", heroId)
                 .when()
-                .get("/api/villains/{id}")
+                .get("/api/heroes/{id}")
                 .then()
                 .statusCode(OK.getStatusCode())
                 .body("name", Is.is(DEFAULT_NAME))
@@ -146,31 +148,31 @@ class VillainControllerTest {
                 .body("picture", Is.is(DEFAULT_PICTURE))
                 .body("powers", Is.is(DEFAULT_POWERS));
 
-        List<Villain> villains = get("/api/villains").then()
+        List<Hero> heroes = get("/api/heroes").then()
                 .statusCode(OK.getStatusCode())
                 .extract()
                 .body()
-                .as(getVillainTypeRef());
-        assertEquals(NB_VILLAINS + 1, villains.size());
+                .as(getHeroTypeRef());
+        assertEquals(NB_HEROES + 1, heroes.size());
     }
 
     @Test
     @Order(3)
     void shouldUpdateAnItem() {
-        Villain villain = new Villain();
-        villain.setId(Long.valueOf(villainId));
-        villain.setName(UPDATED_NAME);
-        villain.setOtherName(UPDATED_OTHER_NAME);
-        villain.setPicture(UPDATED_PICTURE);
-        villain.setPowers(UPDATED_POWERS);
-        villain.setLevel(UPDATED_LEVEL);
+        Hero hero = new Hero();
+        hero.id = Long.valueOf(heroId);
+        hero.name = UPDATED_NAME;
+        hero.otherName = UPDATED_OTHER_NAME;
+        hero.picture = UPDATED_PICTURE;
+        hero.powers = UPDATED_POWERS;
+        hero.level = UPDATED_LEVEL;
 
         given()
-                .body(villain)
+                .body(hero)
                 .header(CONTENT_TYPE, APPLICATION_JSON)
                 .header(ACCEPT, APPLICATION_JSON)
                 .when()
-                .put("/api/villains")
+                .put("/api/heroes")
                 .then()
                 .statusCode(OK.getStatusCode())
                 .contentType(APPLICATION_JSON)
@@ -180,36 +182,36 @@ class VillainControllerTest {
                 .body("picture", Is.is(UPDATED_PICTURE))
                 .body("powers", Is.is(UPDATED_POWERS));
 
-        List<Villain> villains = get("/api/villains").then()
+        List<Hero> heroes = get("/api/heroes").then()
                 .statusCode(OK.getStatusCode())
                 .contentType(APPLICATION_JSON)
                 .extract()
                 .body()
-                .as(getVillainTypeRef());
-        assertEquals(NB_VILLAINS + 1, villains.size());
+                .as(getHeroTypeRef());
+        assertEquals(NB_HEROES + 1, heroes.size());
     }
 
     @Test
     @Order(4)
     void shouldRemoveAnItem() {
         given()
-                .pathParam("id", villainId)
+                .pathParam("id", heroId)
                 .when()
-                .delete("/api/villains/{id}")
+                .delete("/api/heroes/{id}")
                 .then()
                 .statusCode(NO_CONTENT.getStatusCode());
 
-        List<Villain> villains = get("/api/villains").then()
+        List<Hero> heroes = get("/api/heroes").then()
                 .statusCode(OK.getStatusCode())
                 .contentType(APPLICATION_JSON)
                 .extract()
                 .body()
-                .as(getVillainTypeRef());
-        assertEquals(NB_VILLAINS, villains.size());
+                .as(getHeroTypeRef());
+        assertEquals(NB_HEROES, heroes.size());
     }
 
-    private TypeRef<List<Villain>> getVillainTypeRef() {
-        return new TypeRef<List<Villain>>() {
+    private TypeRef<List<Hero>> getHeroTypeRef() {
+        return new TypeRef<List<Hero>>() {
             // Kept empty on purpose
         };
     }
