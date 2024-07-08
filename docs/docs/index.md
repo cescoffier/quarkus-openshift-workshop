@@ -8,9 +8,10 @@ This workshop illustrates how to build intelligent applications using:
 - [Red Hat Developer Hub](https://developers.redhat.com/rhdh/overview)
 - [Red Hat Trusted Application Pipelines](https://www.redhat.com/en/products/trusted-application-pipelines)
 
-This workshop covers bot the development of such applications and well as its deployment on OpenShift and integration with OpenShift AI/ML Services.
+This workshop covers both the development of such applications and well as its deployment on OpenShift and integration with OpenShift AI/ML Services.
 It proposes a _platform engineering_ approach to the development of intelligent applications.
 Thus, the code is developed in _CodeSpaces_ and the deployment is done using _Trusted Application Pipelines_.
+The different application components run in OpenShift.
 
 # The application
 
