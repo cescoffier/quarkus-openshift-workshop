@@ -50,3 +50,31 @@ jobs:
       - name: Maven Build for ${{ matrix.app }}
         working-directory: ${{ matrix.app }}
         run: ./mvnw -B clean verify -Dquarkus.http.host=0.0.0.0 -DskipITs=false
+
+  docs:
+    runs-on: ubuntu-latest
+    name: "Build Docs"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - uses: actions/setup-java@v4
+        name: Set up Java 21
+        with:
+          java-version: 21
+          distribution: temurin
+          cache: maven
+
+      - name: Generate and Push documentation
+        working-directory: docs
+        run: |
+          git config --global user.name "CI"
+          git config --global user.email "clement@redhat.com"
+          pip install pipenv
+          pipenv install
+          pipenv run mike deploy --push --update-aliases 1.0 latest --branch gh-pages
+          pipenv run mike set-default --push latest
