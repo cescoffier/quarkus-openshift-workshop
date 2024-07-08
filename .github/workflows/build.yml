@@ -71,7 +71,7 @@ jobs:
           git config --global user.email "clement@redhat.com"
           pip install pipenv
           pipenv install
-          pipenv run mike deploy --push  --force --update-aliases 1.0 latest
+          pipenv run mike deploy --push --update-aliases 1.0 latest
           pipenv run mike set-default --push latest
 
       - name: Generate documentation
