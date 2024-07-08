@@ -66,8 +66,6 @@ jobs:
       - name: Generate documentation
         working-directory: docs
         run: |
-          git config --global user.name "CI"
-          git config --global user.email "clement@redhat.com"
           pip install pipenv
           pipenv install
           pipenv run mkdocs build --clean
