@@ -71,6 +71,7 @@ jobs:
 
       - name: Generate and Push documentation
         working-directory: docs
+        if: github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "CI"
           git config --global user.email "clement@redhat.com"
@@ -78,3 +79,13 @@ jobs:
           pipenv install
           pipenv run mike deploy --push --update-aliases 1.0 latest --branch gh-pages
           pipenv run mike set-default --push latest
+
+      - name: Generate documentation
+        working-directory: docs
+        if: github.ref != 'refs/heads/main'
+        run: |
+          git config --global user.name "CI"
+          git config --global user.email "clement@redhat.com"
+          pip install pipenv
+          pipenv install
+          pipenv run mkdocs build --clean
