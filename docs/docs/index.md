@@ -15,7 +15,7 @@ The different application components run in OpenShift.
 
 # The application
 
-The application that is developed in thie workshop is composed of four independent microservices:
+The application that is developed in this workshop is composed of four independent microservices:
 
 - `frontend`: a web application that allows users to interact with the application
 - `hero-service`: a Quarkus microservice that provides information about heroes. It uses a PostGreSQL database to store the information.
