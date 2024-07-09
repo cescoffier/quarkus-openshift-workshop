@@ -38,31 +38,31 @@ nav:
           - Configuring logging: 'configuring-hero-microservice/logging.md'
           - Configuring Quarkus listening port: 'configuring-hero-microservice/listening-port.md'
           - Injecting configuration value: 'configuring-hero-microservice/injecting-configuration.md'
-#      - Open-API:
-#      - One microservice is not microservices:
-#          - Villain microservice:
-#              - Directory structure: 'villain-microservice/directory-structure.md'
-#              - Spring compatibility layer: 'villain-microservice/spring-compatibility-layer.md'
-#              - Running, testing and packaging: 'villain-microservice/running-testing-packaging.md'
-#          - Fight microservice:
-#              - Overview of LLM Integration in Quarkus: 'fight-microservice/overview-llm-integration.md'
-#              - Using Quarkus-LangChain4j Extension: 'fight-microservice/quarkus-langchain4j.md'
-#              - Code implementation:
-#                  - Adding the quarkus-langchain4j-xxxxx extension: 'fight-microservice/adding-extension.md'
-#                  - Defining LLM interactions with @RegisterAiService: 'fight-microservice/llm-interactions.md'
-#                  - Observability: 'fight-microservice/observability.md'
-#                  - Running, testing and packaging: 'fight-microservice/running-testing-packaging.md'
-#              - Tools and Document Loader: 'fight-microservice/tools-document-loader.md'
-#              - Document stores:
-#                  - Ingestion process and RAG process: 'fight-microservice/ingestion-rag-process.md'
-#      - User Interface:
-#          - The Web Application: 'user-interface/web-application.md'
-#      - Containers & Cloud:
-#          - Build and deploy (in a single step): 'containers-cloud/build-deploy.md'
-#          - Deploying the others microservices: 'containers-cloud/deploying-others.md'
-#      - Red Hat Trusted Application Pipelines:
-#      - Conclusion:
-#          - References: 'conclusion/references.md'
+      - Open API: 'open-api.md'
+      - One microservice is not microservices:
+          - Villain microservice:
+             - Directory structure: 'villain-microservice/directory-structure.md'
+             - Spring compatibility layer: 'villain-microservice/spring-compatibility-layer.md'
+             - Running, testing and packaging: 'villain-microservice/running-testing-packaging.md'
+          - Fight microservice:
+              - Overview of LLM Integration in Quarkus: 'fight-microservice/overview-llm-integration.md'
+              - Using Quarkus-LangChain4j Extension: 'fight-microservice/quarkus-langchain4j.md'
+              - Code implementation:
+                  - Adding the quarkus-langchain4j-xxxxx extension: 'fight-microservice/adding-extension.md'
+                  - Defining LLM interactions with @RegisterAiService: 'fight-microservice/llm-interactions.md'
+                  - Observability: 'fight-microservice/observability.md'
+                  - Running, testing and packaging: 'fight-microservice/running-testing-packaging.md'
+              - Tools and Document Loader: 'fight-microservice/tools-document-loader.md'
+              - Document stores:
+                  - Ingestion process and RAG process: 'fight-microservice/ingestion-rag-process.md'
+      - User Interface:
+          - The Web Application: 'user-interface/web-application.md'
+      - Containers & Cloud:
+          - Build and deploy (in a single step): 'containers-cloud/build-deploy.md'
+          - Deploying the others microservices: 'containers-cloud/deploying-others.md'
+      - Red Hat Trusted Application Pipelines: 'trusted-application-pipelines.md'
+      - Conclusion:
+          - References: 'conclusion/references.md'
 
 theme:
   name: material
