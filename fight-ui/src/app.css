@@ -30,3 +30,12 @@
   background-color: #CBFCE1;
 }
 
+.error-box {
+  border-radius: 20px;
+  background-color: #D93526;
+  padding: 1em;
+}
+
+.error-box h5, .error-box p {
+  color: white;
+}

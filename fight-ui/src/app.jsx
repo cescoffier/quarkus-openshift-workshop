@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'preact/hooks'
-// import preactLogo from './assets/preact.svg'
-// import viteLogo from '/vite.svg'
 import './app.css'
 
 import backLogo from './assets/quarkus_icon_black.svg';
@@ -79,10 +77,12 @@ export function App() {
             return update;
           });
         } else {
-          console.error(`Fetch to ${backend} failed with status code ${response.status}`);
+          throw new Error(`Fetch to ${backend} failed with status code ${response.status}`);
         }
       })
-      .catch(err => console.error(`Fetch to ${backend} failed: ${err}`));
+      .catch(err => {
+        throw new Error(`${data.role} API failure: ${err.message}`);
+      });
   };
 
   const reloadFighters = () => {
@@ -90,9 +90,16 @@ export function App() {
     return Promise.all([
       reloadFighter("http://localhost:8080/api/heroes/random", heroData, setHeroData),
       reloadFighter("http://localhost:8081/api/villains/random", villainData, setVillainData)
-    ]).finally(() => {
-      setAppState(initState())
-    });
+    ])
+      .then(() => {
+        setAppState(initState());
+      })
+      .catch(err => {
+        setAppState({
+          "state": 'init',
+          "error": err.message
+        });
+      });
   };
 
   const fight = () => {
@@ -124,10 +131,16 @@ export function App() {
             setAppState(resultState(result));
           });
         } else {
-          console.error(`Fight fetch failed with status code ${response.status}`);
+          throw new Error(`Fight API failed with status code ${response.status}`);
         }
       })
-      .catch(err => console.error(`Fight fetch failed: ${err}`));
+      .catch(err => {
+        console.log(err);
+        setAppState({
+          "state": 'init',
+          "error": `Fight API error: ${err.message}`
+        });
+      });
   };
 
   useEffect(() => {
@@ -205,12 +218,30 @@ function ActionBox(props) {
           <header>
             <h1 class="centered">&mdash; VS &mdash;</h1>
           </header>
+          <ErrorBox appState={props.appState} />
           <ActionButtons appState={props.appState} fightAction={props.fightAction} reloadAction={props.reloadAction} />
           <footer>
             <NarrationArea appState={props.appState} heroData={props.heroData} villainData={props.villainData} />
           </footer>
         </article>
       </div>
+    </>
+  )
+}
+
+function ErrorBox(props) {
+  if (!props.appState.hasOwnProperty('error')) {
+    return null;
+  }
+  return (
+    <>
+      <div class="error-box">
+        <h5>Error</h5>
+        <p>
+          <small>{props.appState.error}</small>
+        </p>
+      </div>
+      <hr />
     </>
   )
 }
