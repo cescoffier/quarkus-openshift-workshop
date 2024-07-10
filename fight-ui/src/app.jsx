@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'preact/hooks'
+import '@picocss/pico/css/pico.red.min.css';
 import './app.css'
 
 import backLogo from './assets/quarkus_icon_black.svg';
