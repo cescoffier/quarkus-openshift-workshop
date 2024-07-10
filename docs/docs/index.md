@@ -28,6 +28,5 @@ Being a workshop about microservices, you will be developing several microservic
 
 # The architecture
 
-[//]: # (Add an architectural drawing to index.md. The drawings we have so far are not aligned with the new architecture we are proposing.)
-
+![the architecture](images/architecture.png)
 
