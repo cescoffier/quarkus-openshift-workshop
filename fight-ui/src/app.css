@@ -5,3 +5,28 @@
 .centered {
   text-align: center;
 }
+
+.winner-box {
+  border: solid 5px #21E299;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #999;
+  transition: 0.75s ease-in-out;
+}
+
+.winner-box h1 {
+  color: #21E299;
+  transition: 0.75s ease-in-out;
+}
+
+.looser-box img {
+  filter: grayscale(1);
+}
+
+.looser-mark {  
+  background-color: #F8DCD6;
+}
+
+.winner-mark {
+  background-color: #CBFCE1;
+}
+

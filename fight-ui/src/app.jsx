@@ -20,11 +20,43 @@ function createFighterData(role) {
   }
 }
 
+function initState() {
+  return {
+    "state": "init",
+  };
+}
+
+function loadingState() {
+  return {
+    "state": "loading",
+  };
+}
+
+function fightingState() {
+  return {
+    "state": "fighting",
+  };
+}
+
+function resultState(result) {
+  return {
+    "state": "result",
+    "result": result
+  };
+}
+
+function fixWinner(hero, winner) {
+  if (winner != 'Hero' && winner != 'Villain') {
+    return (winner == hero) ? 'Hero' : 'Villain';
+  }
+  return winner;
+}
+
 export function App() {
 
   const [heroData, setHeroData] = useState(createFighterData("Hero"));
   const [villainData, setVillainData] = useState(createFighterData("Villain"));
-  const [actionEnabled, setActionEnabled] = useState(true);
+  const [appState, setAppState] = useState(loadingState());
 
   const reloadFighter = (backend, data, updater) => {
 
@@ -46,19 +78,56 @@ export function App() {
             updater(update);
             return update;
           });
+        } else {
+          console.error(`Fetch to ${backend} failed with status code ${response.status}`);
         }
       })
       .catch(err => console.error(`Fetch to ${backend} failed: ${err}`));
   };
 
   const reloadFighters = () => {
-    setActionEnabled(false);
+    setAppState(loadingState());
     return Promise.all([
       reloadFighter("http://localhost:8080/api/heroes/random", heroData, setHeroData),
       reloadFighter("http://localhost:8081/api/villains/random", villainData, setVillainData)
     ]).finally(() => {
-      setActionEnabled(true);
+      setAppState(initState())
     });
+  };
+
+  const fight = () => {
+    setAppState(fightingState());
+    const fightPayload = {
+      "hero": {
+        "name": heroData.info.name,
+        "level": heroData.info.level,
+        "powers": heroData.info.powers.split(", ")
+      },
+      "villain": {
+        "name": villainData.info.name,
+        "level": villainData.info.level,
+        "powers": villainData.info.powers.split(", ")
+      }
+    }
+    fetch("http://localhost:8082/api/fights", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(fightPayload)
+    })
+      .then(response => {
+        if (response.ok) {
+          response.json().then(result => {
+            result.winner = fixWinner(heroData.info.name, result.winner);
+            setAppState(resultState(result));
+          });
+        } else {
+          console.error(`Fight fetch failed with status code ${response.status}`);
+        }
+      })
+      .catch(err => console.error(`Fight fetch failed: ${err}`));
   };
 
   useEffect(() => {
@@ -69,9 +138,9 @@ export function App() {
     <>
       <main class="container-fluid">
         <div class="grid">
-          <Fighter data={heroData} />
-          <ActionBox reloadAction={() => reloadFighters()} actionEnabled={actionEnabled} />
-          <Fighter data={villainData} />
+          <Fighter data={heroData} appState={appState} />
+          <ActionBox fightAction={() => fight()} reloadAction={() => reloadFighters()} appState={appState} heroData={heroData} villainData={villainData} />
+          <Fighter data={villainData} appState={appState} />
         </div>
       </main>
     </>
@@ -80,12 +149,21 @@ export function App() {
 
 function Fighter(props) {
 
+  let resultClass = "";
+  if (props.appState.state == 'result') {
+    if (props.appState.result.winner == props.data.role) {
+      resultClass = "winner-box";
+    } else {
+      resultClass = "looser-box";
+    }
+  }
+
   return (
     <>
-      <div>
+      <div class={resultClass}>
         <article>
           <header>
-            <FighterHeader data={props.data} />
+            <FighterHeader data={props.data} appState={props.appState} />
           </header>
           <p>
             <img class="fighter-pic" src={props.data.info.picture} />
@@ -103,7 +181,7 @@ function Fighter(props) {
 }
 
 function FighterHeader(props) {
-  if (props.data.ready) {
+  if (props.appState.state != 'fighting' && props.appState.state != 'loading') {
     return (
       <>
         <h1>{props.data.role}</h1>
@@ -127,7 +205,10 @@ function ActionBox(props) {
           <header>
             <h1 class="centered">&mdash; VS &mdash;</h1>
           </header>
-          <ActionButtons reloadAction={props.reloadAction} actionEnabled={props.actionEnabled} />
+          <ActionButtons appState={props.appState} fightAction={props.fightAction} reloadAction={props.reloadAction} />
+          <footer>
+            <NarrationArea appState={props.appState} heroData={props.heroData} villainData={props.villainData} />
+          </footer>
         </article>
       </div>
     </>
@@ -136,12 +217,21 @@ function ActionBox(props) {
 
 function ActionButtons(props) {
 
-  if (props.actionEnabled) {
+  if (props.appState.state == 'init') {
     return (
       <>
         <div class="grid">
-          <button>Fight!</button>
+          <button onClick={props.fightAction}>Fight!</button>
           <button class="secondary" onClick={props.reloadAction}>Reload</button>
+        </div>
+      </>
+    )
+  } else if (props.appState.state == 'fighting' || props.appState.state == 'loading') {
+    return (
+      <>
+        <div class="grid">
+          <button disabled>Fight!</button>
+          <button disabled class="secondary">Reload</button>
         </div>
       </>
     )
@@ -150,9 +240,50 @@ function ActionButtons(props) {
       <>
         <div class="grid">
           <button disabled>Fight!</button>
-          <button disabled class="secondary" onClick={props.reloadAction}>Reload</button>
+          <button class="secondary" onClick={props.reloadAction}>Reload</button>
         </div>
       </>
     )
   }
+}
+
+function NarrationArea(props) {
+  if (props.appState.state == 'fighting') {
+    return (
+      <>
+        <progress />
+      </>
+    )
+  } else if (props.appState.state != 'result') {
+    return null;
+  } else {
+    const hero = extractShorterName(props.heroData.info.name);
+    const villain = extractShorterName(props.villainData.info.name);
+    const winner = props.appState.result.winner;
+    const fancy = {
+      __html: props.appState.result.narration
+        .replaceAll(nameRegexp(hero), `<mark class="${winner == 'Hero' ? 'winner-mark' : 'looser-mark'}">${hero}</mark>`)
+        .replaceAll(nameRegexp(villain), `<mark class="${winner == 'Villain' ? 'winner-mark' : 'looser-mark'}">${villain}</mark>`)
+    };
+    return (
+      <>
+        <h3>Story of the fight</h3>
+        <p>
+          <cite>
+            "<span dangerouslySetInnerHTML={fancy} />"
+          </cite>
+        </p>
+      </>
+    )
+  }
+}
+
+function nameRegexp(name) {
+  const firstName = name.split(' ')[0];
+  return new RegExp(`(${name}|${firstName})`, 'gi');
+}
+
+function extractShorterName(name) {
+  const parens = /\(.+\)/gi;
+  return name.replaceAll(parens, '').trim();
 }
