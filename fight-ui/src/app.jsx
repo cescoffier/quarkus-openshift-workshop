@@ -44,6 +44,13 @@ function resultState(result) {
   };
 }
 
+function errorState(message) {
+  return {
+    "state": 'init',
+    "error": message
+  }
+}
+
 function fixWinner(hero, winner) {
   if (winner != 'Hero' && winner != 'Villain') {
     return (winner == hero) ? 'Hero' : 'Villain';
@@ -96,10 +103,7 @@ export function App() {
         setAppState(initState());
       })
       .catch(err => {
-        setAppState({
-          "state": 'init',
-          "error": err.message
-        });
+        setAppState(errorState(err.message));
       });
   };
 
@@ -136,11 +140,7 @@ export function App() {
         }
       })
       .catch(err => {
-        console.log(err);
-        setAppState({
-          "state": 'init',
-          "error": `Fight API error: ${err.message}`
-        });
+        setAppState(errorState(`Fight API error: ${err.message}`));
       });
   };
 
