@@ -1,5 +1,16 @@
 .fighter-pic {
+  padding: 2px;
   max-width: 240px;
+  border: solid 2px #333;
+  box-shadow: 5px 5px 15px #999;  
+}
+
+.hero-pic {
+  transform: rotate(-2deg);
+}
+
+.villain-pic {
+  transform: rotate(2deg);
 }
 
 .centered {

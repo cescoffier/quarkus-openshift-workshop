@@ -170,6 +170,8 @@ function Fighter(props) {
       resultClass = "looser-box";
     }
   }
+  resultClass = resultClass + ((props.data.role == 'Hero') ? 'hero-card' : 'villain-card');
+  const imageClass = (props.data.role == 'Hero') ? 'fighter fighter-pic hero-pic' : 'fighter fighter-pic villain-pic';
 
   return (
     <>
@@ -179,7 +181,7 @@ function Fighter(props) {
             <FighterHeader data={props.data} appState={props.appState} />
           </header>
           <p>
-            <img class="fighter-pic" src={props.data.info.picture} />
+            <img class={imageClass} src={props.data.info.picture} />
           </p>
           <hgroup>
             <h3>{props.data.info.name} (Level {props.data.info.level})</h3>
