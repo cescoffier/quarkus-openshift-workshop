@@ -45,6 +45,11 @@ jobs:
         working-directory: ${{ matrix.app }}
         run: ./mvnw -B clean verify -Dquarkus.http.host=0.0.0.0 -DskipITs=false
 
+      - name: Build container for ${{ matrix.app }}
+        working-directory: ${{ matrix.app }}
+        run: |
+          podman build -f src/main/docker/Dockerfile.jvm -t ghcr.io/cescoffier/quarkus-openshift-workshop-${{ matrix.app }} .
+
   docs:
     runs-on: ubuntu-latest
     name: "Build Docs"
