@@ -4,6 +4,8 @@ import './app.css'
 
 import backLogo from './assets/quarkus_icon_black.svg';
 
+import configuration from './config.js';
+
 function createFighterData(role) {
   return {
     "role": role,
@@ -96,8 +98,8 @@ export function App() {
   const reloadFighters = () => {
     setAppState(loadingState());
     return Promise.all([
-      reloadFighter("http://localhost:8080/api/heroes/random", heroData, setHeroData),
-      reloadFighter("http://localhost:8081/api/villains/random", villainData, setVillainData)
+      reloadFighter(configuration.endpoints.heroes, heroData, setHeroData),
+      reloadFighter(configuration.endpoints.villains, villainData, setVillainData)
     ])
       .then(() => {
         setAppState(initState());
@@ -121,7 +123,7 @@ export function App() {
         "powers": villainData.info.powers.split(", ")
       }
     }
-    fetch("http://localhost:8082/api/fights", {
+    fetch(configuration.endpoints.fight, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
