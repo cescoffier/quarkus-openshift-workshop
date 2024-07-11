@@ -5,55 +5,55 @@ docs_dir: docs
 
 nav:
   - Welcome:
-      - Presenting the Workshop: 'index.md'
-      - Software requirements:
-          - DevSpaces: 'requirements/dev-spaces.md'
-          - OpenShift Cluster: 'requirements/openshift-cluster.md'
-      - Preparing for the Workshop:
-          - Code scaffolding: 'preparation/code-scaffolding.md'
-          - Databases: 'preparation/databases.md'
-          - Warming up: 'preparation/warming-up.md'
-          - Ready?: 'preparation/ready.md'
-  - Creating a REST/HTTP microservice:
-      - Hero Microservice:
-          - Bootstrapping the Hero REST endpoint: 'hero-microservice/bootstrapping.md'
-          - Directory structure: 'hero-microservice/directory-structure.md'
-          - The JAX-RS Resource: 'hero-microservice/jax-rs-resource.md'
-          - Running the application: 'hero-microservice/running-application.md'
-          - Testing: 'hero-microservice/testing.md'
-          - Packaging and running the application: 'hero-microservice/packaging-running.md'
-          - Troubleshooting: 'hero-microservice/troubleshooting.md'
-      - Transactions and ORM:
-          - Directory structure: 'transactions-orm/directory-structure.md'
-          - Installing DB dependencies: 'transactions-orm/installing-db-dependencies.md'
-          - Hero Entity: 'transactions-orm/hero-entity.md'
-          - HeroService Transactional: 'transactions-orm/heroservice-transactional.md'
-          - Adding logic to the HeroResource endpoint: 'transactions-orm/adding-logic.md'
-          - Adding data: 'transactions-orm/adding-data.md'
-          - CRUD tests in HeroResourceTest: 'transactions-orm/crud-tests.md'
-      - From Git to OpenShift:
-          - Build and deploy (in a single step): 'containers-cloud/build-deploy.md'
-          - Deploying the others microservices: 'containers-cloud/deploying-others.md'
-          - Red Hat Trusted Application Pipelines: 'trusted-application-pipelines.md'
-          - Security issue: 'guava-cve-issue.md'
-      - Open API: 'open-api.md'
-      - One microservice is not microservices:
-          - Villain microservice:
-             - Directory structure: 'villain-microservice/directory-structure.md'
-             - Spring compatibility layer: 'villain-microservice/spring-compatibility-layer.md'
-             - Running, testing and packaging: 'villain-microservice/running-testing-packaging.md'
-      - Intelligent Fight microservice:
-          - Overview of LLM Integration in Quarkus: 'fight-microservice/overview-llm-integration.md'
-          - Using Quarkus-LangChain4j Extension: 'fight-microservice/quarkus-langchain4j.md'
-          - Code implementation:
-              - Adding the quarkus-langchain4j-xxxxx extension: 'fight-microservice/adding-extension.md'
-              - Defining LLM interactions with @RegisterAiService: 'fight-microservice/llm-interactions.md'
-              - Running, testing and packaging: 'fight-microservice/running-testing-packaging.md'
-          - Custom metrics: 'fight-microservice/custom-metrics.md'
-      - User Interface:
-          - The Web Application: 'user-interface/web-application.md'
-      - Conclusion:
-          - References: 'conclusion/references.md'
+    - Presenting the Workshop: 'overview.md'
+    - Software requirements:
+        - DevSpaces: 'requirements/dev-spaces.md'
+        - OpenShift Cluster: 'requirements/openshift-cluster.md'
+    - Preparing for the Workshop:
+        - Code scaffolding: 'preparation/code-scaffolding.md'
+        - Databases: 'preparation/databases.md'
+        - Warming up: 'preparation/warming-up.md'
+        - Ready?: 'preparation/ready.md'
+  - Creating a REST/HTTP microservices:
+    - Hero Microservice:
+      - Bootstrapping the Hero REST endpoint: 'hero-microservice/bootstrapping.md'
+      - Directory structure: 'hero-microservice/directory-structure.md'
+      - The JAX-RS Resource: 'hero-microservice/jax-rs-resource.md'
+      - Running the application: 'hero-microservice/running-application.md'
+      - Testing: 'hero-microservice/testing.md'
+      - Packaging and running the application: 'hero-microservice/packaging-running.md'
+      - Troubleshooting: 'hero-microservice/troubleshooting.md'
+    - Transactions and ORM:
+      - Directory structure: 'transactions-orm/directory-structure.md'
+      - Installing DB dependencies: 'transactions-orm/installing-db-dependencies.md'
+      - Hero Entity: 'transactions-orm/hero-entity.md'
+      - HeroService Transactional: 'transactions-orm/heroservice-transactional.md'
+      - Adding logic to the HeroResource endpoint: 'transactions-orm/adding-logic.md'
+      - Adding data: 'transactions-orm/adding-data.md'
+      - CRUD tests in HeroResourceTest: 'transactions-orm/crud-tests.md'
+    - From Git to OpenShift:
+      - Build and deploy (in a single step): 'containers-cloud/build-deploy.md'
+      - Deploying the others microservices: 'containers-cloud/deploying-others.md'
+    - Red Hat Trusted Application Pipelines:
+      - Security issue: 'trusted-apps/guava-cve-issue.md'
+    - Open API: 'open-api.md'
+  - One microservice is not microservices:
+    - Villain microservice:
+      - Directory structure: 'villain-microservice/directory-structure.md'
+      - Spring compatibility layer: 'villain-microservice/spring-compatibility-layer.md'
+      - Running, testing and packaging: 'villain-microservice/running-testing-packaging.md'
+    - Intelligent Fight microservice:
+      - Overview of LLM Integration in Quarkus: 'fight-microservice/overview-llm-integration.md'
+      - Using Quarkus-LangChain4j Extension: 'fight-microservice/quarkus-langchain4j.md'
+      - Code implementation:
+        - Adding the quarkus-langchain4j-xxxxx extension: 'fight-microservice/adding-extension.md'
+        - Defining LLM interactions with @RegisterAiService: 'fight-microservice/llm-interactions.md'
+        - Running, testing and packaging: 'fight-microservice/running-testing-packaging.md'
+      - Custom metrics: 'fight-microservice/custom-metrics.md'
+  - User Interface:
+    - The Web Application: 'user-interface/web-application.md'
+  - Conclusion:
+    - References: 'conclusion-references.md'
 
 theme:
   name: material
