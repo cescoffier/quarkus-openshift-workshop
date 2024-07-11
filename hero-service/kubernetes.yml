@@ -76,7 +76,7 @@ spec:
                 secretKeyRef:
                   name: hero-database-config
                   key: POSTGRESQL_DATABASE
-          image: quarkus-workshop/hero-service:1.0.0-SNAPSHOT
+          image: ghcr.io/cescoffier/quarkus-openshift-workshop-hero-service:main
           imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3

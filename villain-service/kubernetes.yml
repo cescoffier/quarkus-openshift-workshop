@@ -61,8 +61,23 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
-          image: quarkus-workshop/villain-service:1.0.0-SNAPSHOT
-          imagePullPolicy: IfNotPresent
+            - name: POSTGRESQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: villain-database-config
+                  key: POSTGRESQL_USERNAME
+            - name: POSTGRESQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: villain-database-config
+                  key: POSTGRESQL_PASSWORD
+            - name: POSTGRESQL_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: villain-database-config
+                  key: POSTGRESQL_DATABASE
+          image: ghcr.io/cescoffier/quarkus-openshift-workshop-villain-service:main
+          imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3
             httpGet:
