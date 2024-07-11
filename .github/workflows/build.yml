@@ -36,6 +36,7 @@ jobs:
           - hero-service
           - villain-service
           - fight-service
+          - fight-ui
 
     name: "Build ${{ matrix.app }}"
     steps:
