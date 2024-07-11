@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hero-database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: hero-database
+  template:
+    metadata:
+      labels:
+        name: hero-database
+    spec:
+      containers:
+        - envFrom:
+            - secretRef:
+                name: hero-database-config
+          image: bitnami/postgresql:14
+          name: hero-database
+          ports:
+            - containerPort: 5432
+          resources:
+            limits:
+              memory: 128Mi
+            requests:
+              memory: 32Mi
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    app: hero-database
+  name: hero-database-config
+data:
+  POSTGRESQL_DATABASE: c3VwZXItaGVybwo=
+  POSTGRESQL_USERNAME: c3VwZXItaGVybwo=
+  POSTGRESQL_PASSWORD: c3VwZXItaGVybwo=
+type: Opaque
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: hero-database
+  name: hero-database
+spec:
+  ports:
+    - port: 5432
+      protocol: TCP
+      targetPort: 5432
+  selector:
+    name: hero-database
+  type: ClusterIP

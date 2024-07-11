@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: villain-database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: villain-database
+  template:
+    metadata:
+      labels:
+        name: villain-database
+    spec:
+      containers:
+        - envFrom:
+            - secretRef:
+                name: villain-database-config
+          image: bitnami/postgresql:14
+          name: villain-database
+          ports:
+            - containerPort: 5432
+          resources:
+            limits:
+              memory: 128Mi
+            requests:
+              memory: 32Mi
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    app: villain-database
+  name: villain-database-config
+data:
+  POSTGRESQL_DATABASE: c3VwZXItdmlsbGFpbgo=
+  POSTGRESQL_USERNAME: c3VwZXItdmlsbGFpbgo=
+  POSTGRESQL_PASSWORD: c3VwZXItdmlsbGFpbgo=
+type: Opaque
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: villain-database
+  name: villain-database
+spec:
+  ports:
+    - port: 5432
+      protocol: TCP
+      targetPort: 5432
+  selector:
+    name: villain-database
+  type: ClusterIP
