@@ -33,9 +33,9 @@ metadata:
     app: hero-database
   name: hero-database-config
 data:
-  POSTGRESQL_DATABASE: c3VwZXItaGVybwo=
-  POSTGRESQL_USERNAME: c3VwZXItaGVybwo=
-  POSTGRESQL_PASSWORD: c3VwZXItaGVybwo=
+  POSTGRESQL_DATABASE: aGVybw==
+  POSTGRESQL_USERNAME: aGVybw==
+  POSTGRESQL_PASSWORD: aGVybw==
 type: Opaque
 ---
 apiVersion: v1
