@@ -20,7 +20,7 @@
 .winner-box {
   border: solid 5px #21E299;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px #999;
+  box-shadow: 2px 2px 15px #999;
   transition: 0.75s ease-in-out;
 }
 
@@ -30,8 +30,13 @@
 }
 
 .looser-box img {
-  filter: grayscale(1);
+  filter: grayscale(1) brightness(0.5);
 }
+
+.winner-box img {
+  filter: brightness(1.2);
+}
+
 
 .looser-mark {  
   background-color: #F8DCD6;

@@ -161,33 +161,33 @@ export function App() {
   )
 }
 
-function Fighter(props) {
+function Fighter({ appState, data }) {
 
   let resultClass = "";
-  if (props.appState.state == 'result') {
-    if (props.appState.result.winner == props.data.role) {
+  if (appState.state == 'result') {
+    if (appState.result.winner == data.role) {
       resultClass = "winner-box";
     } else {
       resultClass = "looser-box";
     }
   }
-  resultClass = resultClass + ((props.data.role == 'Hero') ? 'hero-card' : 'villain-card');
-  const imageClass = (props.data.role == 'Hero') ? 'fighter fighter-pic hero-pic' : 'fighter fighter-pic villain-pic';
+  resultClass = resultClass + ' ' + ((data.role == 'Hero') ? 'hero-card' : 'villain-card');
+  const imageClass = (data.role == 'Hero') ? 'fighter fighter-pic hero-pic' : 'fighter fighter-pic villain-pic';
 
   return (
     <>
       <div class={resultClass}>
         <article>
           <header>
-            <FighterHeader data={props.data} appState={props.appState} />
+            <FighterHeader data={data} appState={appState} />
           </header>
           <p>
-            <img class={imageClass} src={props.data.info.picture} />
+            <img class={imageClass} src={data.info.picture} />
           </p>
           <hgroup>
-            <h3>{props.data.info.name} (Level {props.data.info.level})</h3>
+            <h3>{data.info.name} (Level {data.info.level})</h3>
             <p>
-              <strong>Powers</strong> &mdash; <small><em>{props.data.info.powers}</em></small>
+              <strong>Powers</strong> &mdash; <small><em>{data.info.powers}</em></small>
             </p>
           </hgroup>
         </article>
@@ -196,23 +196,23 @@ function Fighter(props) {
   )
 }
 
-function FighterHeader(props) {
-  if (props.appState.state != 'fighting' && props.appState.state != 'loading') {
+function FighterHeader({ appState, data }) {
+  if (appState.state != 'fighting' && appState.state != 'loading') {
     return (
       <>
-        <h1>{props.data.role}</h1>
+        <h1>{data.role}</h1>
       </>
     )
   } else {
     return (
       <>
-        <h1>{props.data.role} <span aria-busy="true"></span></h1>
+        <h1>{data.role} <span aria-busy="true"></span></h1>
       </>
     )
   }
 }
 
-function ActionBox(props) {
+function ActionBox({ appState, fightAction, reloadAction, heroData, villainData }) {
 
   return (
     <>
@@ -221,10 +221,10 @@ function ActionBox(props) {
           <header>
             <h1 class="centered">&mdash; VS &mdash;</h1>
           </header>
-          <ErrorBox appState={props.appState} />
-          <ActionButtons appState={props.appState} fightAction={props.fightAction} reloadAction={props.reloadAction} />
+          <ErrorBox appState={appState} />
+          <ActionButtons appState={appState} fightAction={fightAction} reloadAction={reloadAction} />
           <footer>
-            <NarrationArea appState={props.appState} heroData={props.heroData} villainData={props.villainData} />
+            <NarrationArea appState={appState} heroData={heroData} villainData={villainData} />
           </footer>
         </article>
       </div>
@@ -232,8 +232,8 @@ function ActionBox(props) {
   )
 }
 
-function ErrorBox(props) {
-  if (!props.appState.hasOwnProperty('error')) {
+function ErrorBox({ appState }) {
+  if (!appState.hasOwnProperty('error')) {
     return null;
   }
   return (
@@ -241,7 +241,7 @@ function ErrorBox(props) {
       <div class="error-box">
         <h5>Error</h5>
         <p>
-          <small>{props.appState.error}</small>
+          <small>{appState.error}</small>
         </p>
       </div>
       <hr />
@@ -249,18 +249,18 @@ function ErrorBox(props) {
   )
 }
 
-function ActionButtons(props) {
+function ActionButtons({ appState, reloadAction, fightAction }) {
 
-  if (props.appState.state == 'init') {
+  if (appState.state == 'init') {
     return (
       <>
         <div class="grid">
-          <button onClick={props.fightAction}>Fight!</button>
-          <button class="secondary" onClick={props.reloadAction}>Reload</button>
+          <button onClick={fightAction}>Fight!</button>
+          <button class="secondary" onClick={reloadAction}>Reload</button>
         </div>
       </>
     )
-  } else if (props.appState.state == 'fighting' || props.appState.state == 'loading') {
+  } else if (appState.state == 'fighting' || appState.state == 'loading') {
     return (
       <>
         <div class="grid">
@@ -274,28 +274,28 @@ function ActionButtons(props) {
       <>
         <div class="grid">
           <button disabled>Fight!</button>
-          <button class="secondary" onClick={props.reloadAction}>Reload</button>
+          <button class="secondary" onClick={reloadAction}>Reload</button>
         </div>
       </>
     )
   }
 }
 
-function NarrationArea(props) {
-  if (props.appState.state == 'fighting') {
+function NarrationArea({ appState, heroData, villainData }) {
+  if (appState.state == 'fighting') {
     return (
       <>
         <progress />
       </>
     )
-  } else if (props.appState.state != 'result') {
+  } else if (appState.state != 'result') {
     return null;
   } else {
-    const hero = extractShorterName(props.heroData.info.name);
-    const villain = extractShorterName(props.villainData.info.name);
-    const winner = props.appState.result.winner;
+    const hero = extractShorterName(heroData.info.name);
+    const villain = extractShorterName(villainData.info.name);
+    const winner = appState.result.winner;
     const fancy = {
-      __html: props.appState.result.narration
+      __html: appState.result.narration
         .replaceAll(nameRegexp(hero), `<mark class="${winner == 'Hero' ? 'winner-mark' : 'looser-mark'}">${hero}</mark>`)
         .replaceAll(nameRegexp(villain), `<mark class="${winner == 'Villain' ? 'winner-mark' : 'looser-mark'}">${villain}</mark>`)
     };
