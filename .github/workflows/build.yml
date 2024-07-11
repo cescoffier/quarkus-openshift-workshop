@@ -71,16 +71,17 @@ jobs:
         with:
           context: ${{ matrix.app }}
           file: ${{ matrix.app }}/src/main/docker/Dockerfile.jvm
-          push: true
+          push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      - name: Generate artifact attestation
+      - name: Generate artifact attestation for ${{ matrix.app }}
         uses: actions/attest-build-provenance@v1
         with:
           subject-name: ghcr.io/cescoffier/quarkus-openshift-workshop-${{ matrix.app }}
           subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
+          push-to-registry: ${{ github.event_name != 'pull_request' }}
+
 
   docs:
     runs-on: ubuntu-latest
