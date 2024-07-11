@@ -11,5 +11,6 @@
         <module>hero-service</module>
         <module>villain-service</module>
         <module>fight-service</module>
+        <module>fight-ui</module>
     </modules>
 </project>
