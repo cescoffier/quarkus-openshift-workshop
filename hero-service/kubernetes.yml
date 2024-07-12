@@ -32,10 +32,12 @@ metadata:
     prometheus.io/path: /q/metrics
     prometheus.io/port: "8080"
     prometheus.io/scheme: http
+    app.openshift.io/connects-to: hero-database
   labels:
     app.kubernetes.io/name: hero-service
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
     app.kubernetes.io/managed-by: quarkus
+    app.openshift.io/runtime: quarkus
   name: hero-service
 spec:
   replicas: 1
