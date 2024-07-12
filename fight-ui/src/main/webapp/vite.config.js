@@ -7,4 +7,9 @@ export default defineConfig({
   build: {
     target: 'esnext'
   },
+  server: {
+    proxy: {
+      '^/gateway/.*': 'http://localhost:8080'
+    }
+  }
 })
