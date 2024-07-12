@@ -16,6 +16,15 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
+  - package-ecosystem: maven
+    directory: "/fight-ui"
+    schedule:
+      interval: daily
+  - package-ecosystem: npm
+    directory: "/fight-ui/src/main/webapp"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
