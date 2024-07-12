@@ -8,13 +8,13 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 @Path("/config/endpoints")
 public class ConfigResource {
 
-    @ConfigProperty(name = "endpoints.heroes", defaultValue = "http://localhost:8080/api/heroes/random")
+    @ConfigProperty(name = "endpoints.heroes")
     String heroesEndpoint;
 
-    @ConfigProperty(name = "endpoints.villains", defaultValue = "http://localhost:8081/api/villains/random")
+    @ConfigProperty(name = "endpoints.villains")
     String villainsEndpoint;
 
-    @ConfigProperty(name = "endpoints.fight", defaultValue = "http://localhost:8082/api/fights")
+    @ConfigProperty(name = "endpoints.fight")
     String fightEndpoint;
 
     @GET
