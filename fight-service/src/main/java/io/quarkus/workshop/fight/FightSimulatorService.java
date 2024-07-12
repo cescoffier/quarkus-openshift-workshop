@@ -14,7 +14,10 @@ import io.quarkiverse.langchain4j.RegisterAiService;
 public interface FightSimulatorService {
 
 
-    @UserMessage("Simulate the fight between the hero ({hero}) and the villain ({villain} and return the winner and a short narration of the fight.")
+    @UserMessage("""
+            Simulate the fight between the hero ({hero}) and the villain ({villain}) and return the name of the winner and a short narration of the fight.
+            In the narration, make sure you use the full name of the hero and the villain.
+            """)
     FightResult fight(Hero hero, Villain villain);
 
 }
