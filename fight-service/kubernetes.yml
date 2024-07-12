@@ -35,6 +35,7 @@ metadata:
     app.kubernetes.io/name: fight-service
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
     app.kubernetes.io/managed-by: quarkus
+    app.openshift.io/runtime: quarkus
   name: fight-service
 spec:
   replicas: 1
