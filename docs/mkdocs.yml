@@ -15,14 +15,14 @@ nav:
         - Warming up: 'preparation/warming-up.md'
         - Ready?: 'preparation/ready.md'
   - Creating a REST/HTTP microservices:
-    - Hero Microservice:
-      - Bootstrapping the Hero REST endpoint: 'hero-microservice/bootstrapping.md'
-      - Directory structure: 'hero-microservice/directory-structure.md'
-      - The JAX-RS Resource: 'hero-microservice/jax-rs-resource.md'
-      - Running the application: 'hero-microservice/running-application.md'
-      - Testing: 'hero-microservice/testing.md'
-      - Packaging and running the application: 'hero-microservice/packaging-running.md'
-      - Troubleshooting: 'hero-microservice/troubleshooting.md'
+    - Hero Microservice: 'hero-microservice.md'
+#      - Bootstrapping the Hero REST endpoint: 'hero-microservice/bootstrapping.md'
+#      - Directory structure: 'hero-microservice/bootstrapping.md#directory-structure'
+#      - The JAX-RS Resource: 'hero-microservice/jax-rs-resource.md'
+#      - Running the application: 'hero-microservice/running-application.md'
+#      - Testing: 'hero-microservice/testing.md'
+#      - Packaging and running the application: 'hero-microservice/packaging-running.md'
+#      - Troubleshooting: 'hero-microservice/troubleshooting.md'
     - Transactions and ORM:
       - Directory structure: 'transactions-orm/directory-structure.md'
       - Installing DB dependencies: 'transactions-orm/installing-db-dependencies.md'
@@ -98,7 +98,7 @@ extra_javascript:
 
 markdown_extensions:
   - toc:
-      permalink: '#'
+      permalink: 
   - admonition
   - smarty
   - attr_list
@@ -127,14 +127,14 @@ markdown_extensions:
 
 plugins:
   - search
-#  - build_plantuml:
-#      render: "server"
-#      server: "https://www.plantuml.com/plantuml"
-#      output_format: "svg"
-#      diagram_root: "docs"
-#      output_folder: "target"
-#      input_folder: "diagrams"
-#      input_extensions: "puml"
+  - build_plantuml:
+      render: "server"
+      server: "https://www.plantuml.com/plantuml"
+      output_format: "svg"
+      diagram_root: "docs"
+      output_folder: "target"
+      input_folder: "diagrams"
+      input_extensions: "puml"
 #      theme_enabled: true
 #      theme_folder: "include/themes"
 #      theme_light: "light.puml"
