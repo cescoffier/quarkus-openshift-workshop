@@ -1,2681 +1,1001 @@
 ALTER SEQUENCE villain_seq RESTART WITH 50;
-
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Buuccolo', 'Majin Buu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15355.jpg',
-        'Accelerated Healing, Adaptation, Agility, Flight, Immortality, Intelligence, Invulnerability, Reflexes, Self-Sustenance, Size Changing, Spatial Awareness, Stamina, Stealth, Super Breath, Super Speed, Super Strength, Teleportation',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Vader', 'Anakin Skywalker',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10444.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Cloaking, Danger Sense, Durability, Electrokinesis, Energy Blasts, Enhanced Hearing, Enhanced Senses, Force Fields, Hypnokinesis, Illusions, Intelligence, Jump, Light Control, Marksmanship, Precognition, Psionic Powers, Reflexes, Stealth, Super Speed, Telekinesis, Telepathy, The Force, Weapons Master',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Rival (CW)', 'Edward Clariss',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13846.jpg',
-        'Accelerated Healing, Agility, Bullet Time, Durability, Electrokinesis, Endurance, Enhanced Senses, Intangibility, Marksmanship, Phasing, Reflexes, Speed Force, Stamina, Super Speed, Super Strength',
-        10);
--- end::adocSQL[]
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'William Stryker (FOX)', 'William Stryker, Jr.',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13957.jpg',
-        'Intelligence, Intuitive aptitude, Marksmanship, Weapon-based Powers', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Annihilus', 'Annihilus',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1307.jpg',
-        'Agility, Durability, Flight, Reflexes, Stamina, Super Speed, Super Strength', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Angel Salvadore (FOX)', 'Angel Salvadore',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14367.jpg',
-        'Animal Attributes, Animal Oriented Powers, Energy Blasts, Flight, Regeneration, Toxin and Disease Control', 3);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Laufey (MCU)', 'Laufey',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13974.jpg',
-        'Cold Resistance, Cryokinesis, Durability, Invulnerability, Longevity, Super Strength', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Tobias Whale (CW)', 'Tobias Whale',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15894.jpg',
-        'Durability, Endurance, Longevity, Marksmanship, Stamina, Super Strength', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Towa', 'Towa',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14841.jpg',
-        'Agility, Biokinesis, Durability, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Intelligence, Magic, Mind Control, Portal Creation, Possession, Power Augmentation, Power Nullifier, Power Sense, Reflexes, Resurrection, Self-Sustenance, Size Changing, Stamina, Summoning, Super Speed, Super Strength, Teleportation, Time Travel, Umbrakinesis',
-        35);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hela (MCU)', 'Hela Odinsdottir',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12595.jpg',
-        'Accelerated Healing, Darkforce Manipulation, Durability, Elasticity, Longevity, Matter Manipulation, Portal Creation, Reflexes, Regeneration, Super Speed, Super Strength, Telekinesis',
-        17);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Queen Azshara', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14261.jpg',
-        'Accelerated Healing, Astral Projection, Astral Travel, Darkforce Manipulation, Element Control, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Fire Control, Flight, Force Fields, Hair Manipulation, Heat Generation, Immortality, Invisibility, Magic, Matter Manipulation, Mind Blast, Phasing, Possession, Psionic Powers, Telepathy, Teleportation',
-        39);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Proto-Goblin', 'Nels Van Adder',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1402.jpg',
-        'Agility, Durability, Natural Weapons, Super Strength', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ego (MCU)', 'Ego',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13892.jpg',
-        'Durability, Element Control, Energy Manipulation, Flight, Immortality, Intelligence, Invulnerability, Light Control, Matter Manipulation, Molecular Manipulation, Self-Sustenance, Shapeshifting, Super Strength',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Starscream', 'Starscream',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10598.jpg',
-        'Agility, Biokinesis, Durability, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Intelligence, Invulnerability, Jump, Longevity, Marksmanship, Natural Armor, Natural Weapons, Physical Anomaly, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Janemba', 'Janemba',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11523.jpg',
-        'Absorption, Agility, Duplication, Elasticity, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Immortality, Invulnerability, Magic, Matter Manipulation, Molecular Manipulation, Portal Creation, Possession, Power Absorption, Power Augmentation, Power Nullifier, Power Sense, Reality Warping, Reflexes, Regeneration, Self-Sustenance, Stamina, Super Speed, Super Strength, Telekinesis, Teleportation, Weapon-based Powers, Weapons Master',
-        50);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Green Goblin II', 'Harold Osborn',
-        'https://www.superherodb.com/pictures2/portraits/10/050/25.jpg',
-        'Accelerated Healing, Durability, Insanity, Intelligence, Reflexes, Stamina, Super Speed, Super Strength', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Elle Bishop', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1021.jpg',
-        'Electrokinesis', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Eraser', 'Leonard Fiasco',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11674.jpg',
-        'Agility, Camouflage, Cloaking, Dexterity, Durability, Hypnokinesis, Intelligence, Intuitive aptitude, Molecular Dissipation, Power Suit, Stealth, Weapon-based Powers, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Archimonde', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15708.jpg',
-        'Absorption, Darkforce Manipulation, Dimensional Travel, Fire Control, Immortality, Magic, Magic Resistance, Portal Creation, Regeneration, Shapeshifting, Size Changing, Summoning, Super Speed, Super Strength, Telekinesis, Teleportation, Time Manipulation, Vitakinesis',
-        46);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Tobias Church (CW)', 'Tobias Church',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15938.jpg',
-        'Durability, Intelligence, Marksmanship, Peak Human Condition, Stamina, Weapon-based Powers', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Prometheus (CW)', 'Adrian Chase',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15420.jpg',
-        'Agility, Dexterity, Durability, Endurance, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Plagueis', 'Hego Damask',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10697.jpg',
-        'Agility, Clairvoyance, Cloaking, Darkforce Manipulation, Durability, Electrokinesis, Energy Absorption, Energy Manipulation, Enhanced Senses, Force Fields, Illusions, Mind Control, Power Nullifier, Power Sense, Precognition, Reflexes, Resurrection, Sonic Scream, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, The Force, Vitakinesis',
-        36);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darkseid (Soulfire)', 'Uxas',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14608.jpg',
-        'Absorption, Agility, Astral Projection, Astral Trap, Astral Travel, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Duplication, Durability, Element Control, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Gravity Control, Heat Generation, Heat Resistance, Immortality, Insanity, Intelligence, Invulnerability, Levitation, Marksmanship, Matter Manipulation, Mind Blast, Mind Control, Omega Effect, Omnilingualism, Possession, Precognition, Psionic Powers, Reality Warping, Regeneration, Self-Sustenance, Size Changing, Super Breath, Super Speed, Super Strength, Telekinesis, Telepathy',
-        72);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ubu', 'Ubu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10362.jpg',
-        'Agility, Intelligence, Super Strength', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Joe Wilson (CW)', 'Joe Wilson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16410.jpg',
-        'Agility, Durability, Endurance, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Commander Raggmunk', 'Raggmunk',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16438.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Cold Resistance, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Heat Resistance, Insanity, Longevity, Marksmanship, Natural Weapons, Peak Human Condition, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Stealth, Summoning, Super Strength, Telepathy, Vision - Night, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Erik Killmonger', 'NJadaka',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14058.jpg',
-        'Accelerated Healing, Agility, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Smell, Peak Human Condition, Reflexes, Stamina, Stealth, Vision - Night, Vision - Telescopic, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Croc', 'Waylon Jones',
-        'https://www.superherodb.com/pictures2/portraits/10/050/723.jpg',
-        'Accelerated Healing, Agility, Durability, Enhanced Hearing, Enhanced Senses, Enhanced Smell, Natural Armor, Natural Weapons, Reflexes, Stamina, Sub-Mariner, Super Speed, Super Strength',
-        4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Savitar (CW)', 'Barry Allen',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13779.jpg',
-        'Absorption, Agility, Cold Resistance, Dimensional Travel, Electrokinesis, Element Control, Enhanced Senses, Intangibility, Invisibility, Portal Creation, Possession, Regeneration, Telepathy, Time Travel, Wind Control',
-        18);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Pyro (FOX)', 'St. John Allerdyce',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14268.jpg',
-        'Element Control, Fire Control, Fire Resistance, Heat Resistance', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Freddy Krueger', 'Freddy Krueger',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11028.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Dimensional Awareness, Durability, Elasticity, Illusions, Immortality, Intelligence, Invisibility, Invulnerability, Longevity, Magic, Phasing, Possession, Psionic Powers, Reality Warping, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Stealth, Summoning, Super Strength, Telekinesis, Wallcrawling',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Tanker Bug', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14089.jpg',
-        'Durability, Enhanced Senses, Fire Resistance, Heat Generation, Invulnerability, Natural Armor, Natural Weapons, Substance Secretion, Super Speed, Super Strength',
-        3);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shocker', 'Herman Schultz',
-        'https://www.superherodb.com/pictures2/portraits/10/050/19.jpg',
-        'Energy Blasts, Marksmanship, Power Suit, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dex-Starr', 'Dexter',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12298.jpg',
-        'Agility, Animal Attributes, Animal Oriented Powers, Camouflage, Cloaking, Cold Resistance, Durability, Energy Absorption, Energy Blasts, Energy Constructs, Enhanced Senses, Fire Control, Fire Resistance, Force Fields, Heat Resistance, Intelligence, Lantern Power Ring, Reflexes, Regeneration, Self-Sustenance, Stamina, Super Speed, Super Strength, Telepathy Resistance',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Superman (Injustice)', 'Kal-El',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14313.jpg',
-        'Agility, Energy Absorption, Energy Resistance, Enhanced Senses, Flight, Invulnerability, Mind Control Resistance, Radiation Absorption, Reflexes, Self-Sustenance, Stamina, Super Breath, Super Speed, Super Strength, Vision - Heat',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Empty Hand', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14456.jpg',
-        'Astral Projection, Darkforce Manipulation, Dimensional Awareness, Duplication, Immortality, Nigh-Omnipresent, Nigh-Omniscient, Reality Warping, Spatial Awareness, Teleportation, Time Manipulation, Time Travel',
-        69);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Arkade', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16531.jpg',
-        'Absorption, Agility, Camouflage, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Heat Resistance, Insanity, Intelligence, Longevity, Marksmanship, Peak Human Condition, Power Suit, Reflexes, Stamina, Stealth, Summoning, Vision - Night, Weapon-based Powers, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mystique', 'Raven Darkholme',
-        'https://www.superherodb.com/pictures2/portraits/10/050/817.jpg',
-        'Accelerated Healing, Agility, Intelligence, Longevity, Marksmanship, Molecular Manipulation, Shapeshifting, Stamina, Stealth, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cell', 'Cell',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1215.jpg',
-        'Absorption, Adaptation, Agility, Biokinesis, Duplication, Durability, Elasticity, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Illusions, Immortality, Light Control, Longevity, Power Sense, Radiation Immunity, Reflexes, Regeneration, Self-Sustenance, Size Changing, Stamina, Summoning, Super Speed, Super Strength, Telekinesis, Teleportation',
-        28);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Egg Fu', 'Chang Tzu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11157.jpg',
-        'Cold Resistance, Duplication, Explosion Manipulation, Jump, Natural Weapons, Power Suit, Resurrection, Super Strength, Technopath/Cyberpath, Toxin and Disease Resistance, Weapon-based Powers',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Grant Ward (MCU)', 'Grant Ward',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15437.jpg',
-        'Intelligence, Weapon-based Powers, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'King Shark', 'Nanaue',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10512.jpg',
-        'Animal Attributes, Animal Oriented Powers, Cold Resistance, Durability, Enhanced Sight, Enhanced Smell, Invulnerability, Longevity, Natural Armor, Natural Weapons, Radar Sense, Regeneration, Stamina, Stealth, Sub-Mariner, Super Speed, Super Strength, Underwater breathing',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Wonder Woman (Injustice)', 'Diana Prince',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14315.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Durability, Endurance, Energy Blasts, Energy Resistance, Enhanced Senses, Flight, Heat Resistance, Intelligence, Invulnerability, Longevity, Magic, Marksmanship, Omnilingualism, Reflexes, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Zarathos', 'Zarathos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12100.jpg',
-        'Darkforce Manipulation, Durability, Energy Manipulation, Illusions, Immortality, Magic, Matter Manipulation, Mind Control, Portal Creation, Possession, Power Nullifier, Reality Warping, Regeneration, Resurrection, Size Changing, Summoning, Super Speed, Super Strength, Telepathy, Teleportation, Time Travel, Weather Control',
-        81);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cable (FOX)', 'Nathan Summers',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13087.jpg',
-        'Durability, Element Control, Enhanced Sight, Force Fields, Invulnerability, Marksmanship, Super Strength, Technopath/Cyberpath, Telekinesis, Time Travel, Weapon-based Powers, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lord Voldemort', 'Tom Riddle',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10883.jpg',
-        'Accelerated Healing, Animal Control, Darkforce Manipulation, Energy Blasts, Energy Constructs, Fire Control, Flight, Force Fields, Intelligence, Invulnerability, Levitation, Magic, Plant Control, Possession, Reality Warping, Resurrection, Shapeshifting, Stealth, Telepathy, Teleportation, Toxin and Disease Control, Weather Control',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Commander Blunck', 'Blunck',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16515.jpg',
-        'Accelerated Healing, Agility, Camouflage, Cold Resistance, Dexterity, Durability, Endurance, Heat Resistance, Insanity, Invulnerability, Natural Armor, Peak Human Condition, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Stealth, Summoning, Super Strength, Toxin and Disease Resistance, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lashina', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15005.jpg',
-        'Agility, Dexterity, Durability, Endurance, Immortality, Intelligence, Invulnerability, Jump, Longevity, Marksmanship, Reflexes, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'A.I.M. Agent', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16263.jpg',
-        'Marksmanship, Stealth, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Steel Serpent', 'Davos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15554.jpg',
-        'Accelerated Healing, Dimensional Travel, Durability, Empathy, Energy Absorption, Energy Manipulation, Energy Resistance, Enhanced Senses, Power Augmentation, Reflexes, Toxin and Disease Resistance',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doubloon', 'Pete Doubloon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16429.jpg',
-        'Agility, Banish, Camouflage, Cold Resistance, Dexterity, Dimensional Travel, Durability, Element Control, Endurance, Enhanced Memory, Enhanced Senses, Enhanced Smell, Heat Resistance, Insanity, Intelligence, Invulnerability, Jump, Longevity, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Summoning, Super Strength, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Siryn', 'Theresa Rourke Cassidy',
-        'https://www.superherodb.com/pictures2/portraits/10/050/833.jpg',
-        'Enhanced Hearing, Flight, Sonar, Sonic Scream', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jerome Valeska', 'Jerome Valeska',
-        'https://www.superherodb.com/pictures2/portraits/10/050/44792.jpg',
-        'Agility, Durability, Endurance, Enhanced Memory, Insanity, Intelligence, Intuitive aptitude, Marksmanship, Resurrection, Stamina, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Morlun', 'Morlun',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1171.jpg',
-        'Agility, Durability, Immortality, Reflexes, Stamina, Super Speed, Super Strength', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Brainiac', 'Vril Dox',
-        'https://www.superherodb.com/pictures2/portraits/10/050/648.jpg',
-        'Durability, Flight, Force Fields, Intelligence, Longevity, Omnilingualism, Self-Sustenance, Super Speed, Super Strength, Telekinesis, Telepathy',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Venom', 'Eddie Brock',
-        'https://www.superherodb.com/pictures2/portraits/10/050/22.jpg',
-        'Accelerated Healing, Danger Sense, Durability, Jump, Natural Weapons, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength, Symbiote Costume, Wallcrawling, Weapon-based Powers, Web Creation',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doomsday (New 52)', 'Doomsday',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16327.jpg',
-        'Accelerated Healing, Adaptation, Changing Armor, Cold Resistance, Durability, Energy Resistance, Fire Resistance, Heat Resistance, Immortality, Invulnerability, Jump, Mind Control Resistance, Natural Armor, Natural Weapons, Physical Anomaly, Power Absorption, Power Sense, Radiation Immunity, Reflexes, Regeneration, Resurrection, Self-Sustenance, Size Changing, Stamina, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing',
-        28);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'King Thanos', 'Thanos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12561.jpg',
-        'Accelerated Healing, Cold Resistance, Danger Sense, Dexterity, Dimensional Travel, Durability, Endurance, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Fire Resistance, Flight, Heat Resistance, Immortality, Insanity, Intelligence, Invulnerability, Jump, Longevity, Magic, Matter Absorption, Matter Manipulation, Mind Control, Power Cosmic, Radiation Immunity, Reflexes, Self-Sustenance, Spatial Awareness, Stamina, Super Speed, Super Strength, Telepathy, Teleportation, Toxin and Disease Resistance, Underwater breathing, Vision - Microscopic, Vision - Telescopic',
-        78);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kraven II', 'Alyosha Kravinoff',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1034.jpg',
-        'Accelerated Healing, Agility, Animal Oriented Powers, Enhanced Senses, Stamina, Super Speed, Super Strength',
-        4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Heat Wave', 'Mick Rory',
-        'https://www.superherodb.com/pictures2/portraits/10/050/705.jpg', 'Weapon-based Powers', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Two-Face', 'Harvey Dent',
-        'https://www.superherodb.com/pictures2/portraits/10/050/802.jpg',
-        'Energy', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Golden Glider', 'Lisa Snart',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10486.jpg',
-        'Agility, Astral Projection, Astral Travel, Elemental Transmogrification, Energy Constructs, Flight, Hair Manipulation, Hypnokinesis, Intangibility, Intelligence, Intuitive aptitude, Marksmanship, Natural Weapons, Peak Human Condition, Phasing, Reflexes, Super Speed, Teleportation, Weapon-based Powers, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Moth', 'Drury Walker',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14434.jpg',
-        'Agility, Animal Attributes, Animal Oriented Powers, Bullet Time, Camouflage, Durability, Endurance, Enhanced Senses, Enhanced Sight, Flight, Gliding, Intelligence, Intuitive aptitude, Marksmanship, Natural Weapons, Power Suit, Sonar, Stealth, Super Speed, Vision - Infrared, Vision - Telescopic, Wallcrawling, Weapon-based Powers, Web Creation, Wind Control',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cestis', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15651.jpg',
-        'Dimensional Travel, Flight, Immortality, Mind Control, Mind Control Resistance, Power Nullifier, Reality Warping, Regeneration, Size Changing, Super Speed, Super Strength, Teleportation',
-        37);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Plantman', 'Samuel Smithers',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10487.jpg',
-        'Durability, Invulnerability, Plant Control, Stealth, Super Strength', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Talia Al Ghul (CW)', 'Talia Al Ghul',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15936.jpg',
-        'Agility, Dexterity, Endurance, Intelligence, Longevity, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nosferatu Zodd', 'Nosferatu Zodd',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11514.jpg',
-        'Agility, Dexterity, Durability, Endurance, Enhanced Senses, Flight, Immortality, Intelligence, Jump, Longevity, Marksmanship, Reflexes, Regeneration, Stamina, Stealth, Super Breath, Super Speed, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'KGBeast', 'Anatoli Knyazev',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11023.jpg',
-        'Agility, Intelligence, Invulnerability, Marksmanship, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mister Sinister', 'Nathaniel Essex',
-        'https://www.superherodb.com/pictures2/portraits/10/050/856.jpg',
-        'Accelerated Healing, Animal Attributes, Animal Oriented Powers, Duplication, Durability, Energy Blasts, Flight, Force Fields, Intelligence, Longevity, Mind Blast, Mind Control, Molecular Manipulation, Power Nullifier, Reflexes, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bane (new 52)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16508.jpg',
-        'Accelerated Healing, Agility, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Intelligence, Longevity, Peak Human Condition, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Baron Strucker', 'Baron Wolfgang Von Strucker',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11418.jpg',
-        'Accelerated Healing, Camouflage, Durability, Electrokinesis, Energy Blasts, Longevity, Marksmanship, Peak Human Condition, Regeneration, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Alex Mercer', 'Alexander J. Mercer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10398.jpg',
-        'Accelerated Healing, Adaptation, Agility, Danger Sense, Elasticity, Energy Absorption, Energy Blasts, Enhanced Hearing, Enhanced Senses, Gliding, Immortality, Invulnerability, Jump, Longevity, Marksmanship, Matter Absorption, Natural Armor, Natural Weapons, Shapeshifting, Stamina, Stealth, Substance Secretion, Super Speed, Super Strength, Vision - Thermal, Wallcrawling, Weapons Master',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kid Buu', 'Majin Buu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14772.jpg',
-        'Absorption, Agility, Biokinesis, Cold Resistance, Dimensional Travel, Duplication, Elasticity, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Force Fields, Illusions, Immortality, Invulnerability, Magic, Mind Control Resistance, Molecular Manipulation, Power Absorption, Power Augmentation, Power Sense, Radar Sense, Radiation Immunity, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Super Breath, Super Speed, Super Strength, Telekinesis, Telepathy Resistance, Teleportation, Toxin and Disease Resistance, Vitakinesis, Weather Control',
-        44);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Batroc The Leaper (MCU)', 'Georges Batroc',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13067.jpg',
-        'Agility, Durability, Marksmanship, Reflexes, Stamina, Stealth', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Crazy Quilt', 'Paul Dekker',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13613.jpg',
-        'Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Enhanced Sight, Illusions, Insanity, Intelligence, Intuitive aptitude, Light Control, Mind Blast, Mind Control, Power Suit, Telepathy, Weapon-based Powers',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deathwing', 'Neltharion',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14508.jpg',
-        'Darkforce Manipulation, Energy Manipulation, Enhanced Senses, Fire Control, Flight, Heat Generation, Immortality, Invisibility, Invulnerability, Light Control, Magic, Mind Control, Reality Warping, Regeneration, Shapeshifting, Size Changing, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Vitakinesis',
-        52);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Amazo', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1390.jpg',
-        'Agility, Camouflage, Cryokinesis, Duplication, Durability, Energy Blasts, Energy Constructs, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Smell, Fire Control, Flight, Force Fields, Intelligence, Invisibility, Invulnerability, Jump, Lantern Power Ring, Longevity, Magnetism, Marksmanship, Phasing, Power Absorption, Power Augmentation, Reflexes, Shapeshifting, Size Changing, Stamina, Super Breath, Super Speed, Super Strength, Telepathy, Teleportation, Time Travel, Underwater breathing, Vision - Heat, Vision - Microscopic, Vision - Night, Vision - Telescopic, Vision - Thermal, Vision - X-Ray, Water Control, Weapon-based Powers',
-        35);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Abra Kadabra', 'Abhararakadhararbarakh',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10912.jpg',
-        'Animation, Astral Projection, Dimensional Travel, Hypnokinesis, Illusions, Immortality, Intelligence, Longevity, Magic, Marksmanship, Matter Manipulation, Possession, Precognition, Probability Manipulation, Stamina, Stealth, Time Manipulation, Time Travel',
-        29);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Plastique', 'Bette Sans Souci',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1176.jpg', 'Energy Blasts', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Gorilla Grodd', 'Grodd',
-        'https://www.superherodb.com/pictures2/portraits/10/050/694.jpg',
-        'Agility, Animal Attributes, Animal Control, Durability, Energy Blasts, Enhanced Hearing, Intelligence, Mind Control, Molecular Manipulation, Natural Weapons, Super Strength, Telekinesis, Telepathy',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shuma Gorath', 'Shuma Gorath',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11660.jpg',
-        'Absorption, Dimensional Travel, Durability, Elasticity, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Illusions, Immortality, Intelligence, Invulnerability, Longevity, Magic, Nigh-Omniscient, Phasing, Portal Creation, Reality Warping, Shapeshifting, Size Changing, Spatial Awareness, Stamina, Super Speed, Super Strength, Telepathy, Teleportation, Vitakinesis',
-        50);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Midgard Serpent', 'Jormungand',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11341.jpg',
-        'Agility, Bullet Time, Camouflage, Cold Resistance, Energy Blasts, Energy Resistance, Enhanced Senses, Fire Resistance, Heat Resistance, Illusions, Immortality, Invisibility, Invulnerability, Magic, Power Sense, Precognition, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance',
-        26);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darkseid (True Form)', 'Uxas',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12757.jpg',
-        'Energy Manipulation, Flight, Illusions, Immortality, Intelligence, Matter Manipulation, Mind Control, Molecular Manipulation, Omega Effect, Reality Warping, Regeneration, Resurrection, Size Changing, Super Speed, Super Strength, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        87);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Frost (CW)', 'Caitlin Snow',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14001.jpg',
-        'Cold Resistance, Cryokinesis, Energy Absorption, Natural Weapons, Reflexes', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Abeloth', 'Abeloth',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12232.jpg',
-        'Absorption, Agility, Astral Projection, Clairvoyance, Darkforce Manipulation, Dimensional Awareness, Duplication, Durability, Electrokinesis, Empathy, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Illusions, Immortality, Insanity, Intangibility, Matter Manipulation, Mind Control, Possession, Power Augmentation, Power Sense, Precognition, Reality Warping, Reflexes, Regeneration, Shapeshifting, Spatial Awareness, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, The Force, Time Travel, Vitakinesis, Weather Control',
-        91);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Krona', 'Krona',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11576.jpg',
-        'Durability, Energy Blasts, Energy Manipulation, Immortality, Intelligence, Invulnerability, Mind Control, Mind Control Resistance, Possession, Precognition, Stamina, Super Strength, Telekinesis, Telepathy, Telepathy Resistance',
-        23);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jinx', '/',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10226.jpg',
-        'Electrokinesis, Element Control, Flight, Force Fields, Jump, Telekinesis, Terrakinesis, Time Manipulation',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nadakhan', 'Nadakhan The Djinn',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16173.jpg',
-        'Ability Shift, Absorption, Accelerated Healing, Agility, Animation, Anti-Gravity, Astral Trap, Audio Control, Banish, Bullet Time, Clairvoyance, Cold Resistance, Cryokinesis, Darkforce Manipulation, Dimensional Travel, Durability, Element Control, Empathy, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Control, Fire Resistance, Flight, Force Fields, Gravity Control, Heat Resistance, Illusions, Intangibility, Intelligence, Invisibility, Invulnerability, Jump, Levitation, Longevity, Magic, Marksmanship, Mind Control, Mind Control Resistance, Peak Human Condition, Portal Creation, Power Absorption, Power Nullifier, Precognition, Probability Manipulation, Reality Warping, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Summoning, Super Speed, Super Strength, Technopath/Cyberpath, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Terrakinesis, Time Manipulation, Time Travel, Timeframe Control, Toxin and Disease Control, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master, Wishing',
-        160);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Yog-Sothoth', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14575.jpg',
-        'Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Element Control, Energy Constructs, Energy Manipulation, Immortality, Matter Manipulation, Molecular Manipulation, Nigh-Omnipotent, Omnipresent, Omniscient, Reality Warping, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Super Speed, Super Strength',
-        114);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Senator Armstrong', 'Steven Armstrong',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11519.jpg',
-        'Absorption, Agility, Dexterity, Durability, Endurance, Energy Absorption, Energy Manipulation, Enhanced Senses, Explosion Manipulation, Fire Control, Intelligence, Invulnerability, Jump, Magnetism, Marksmanship, Natural Armor, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ras Al Ghul', 'Ras Al Ghul',
-        'https://www.superherodb.com/pictures2/portraits/10/050/761.jpg',
-        'Agility, Durability, Intelligence, Longevity, Stamina, Super Speed, Super Strength, Weapon-based Powers', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Thanos (Cosmic Cube)', 'Thanos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13502.jpg',
-        'Astral Projection, Astral Travel, Dimensional Travel, Duplication, Durability, Elasticity, Element Control, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Immortality, Magic, Matter Manipulation, Power Nullifier, Probability Manipulation, Psionic Powers, Reality Warping, Regeneration, Summoning, Super Speed, Teleportation, Time Manipulation, Vitakinesis, Weather Control, Wishing',
-        57);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nekron', 'Nekron',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10713.jpg',
-        'Darkforce Manipulation, Death Touch, Energy Blasts, Energy Manipulation, Fire Control, Immortality, Invisibility, Invulnerability, Lantern Power Ring, Longevity, Magic, Power Absorption, Power Nullifier, Reality Warping, Resurrection, Size Changing, Stamina, Sub-Mariner, Super Strength, Telepathy, Umbrakinesis, Vision - Night',
-        80);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Trapster', 'Peter Petruski',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1538.jpg',
-        'Anti-Gravity, Camouflage, Fire Resistance, Flight, Marksmanship, Molecular Dissipation, Molecular Immobilization, Power Suit, Super Speed, Wallcrawling, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mad Hatter', 'Jervis Tetch',
-        'https://www.superherodb.com/pictures2/portraits/10/050/730.jpg', 'Animation, Intelligence, Mind Control', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Maximus (MCU)', 'Maximus Boltagon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16510.jpg', 'Intelligence, Intuitive aptitude', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Venom III', 'MacDonald Gargan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1042.jpg',
-        'Accelerated Healing, Agility, Animal Oriented Powers, Camouflage, Danger Sense, Durability, Natural Weapons, Reflexes, Stamina, Super Speed, Super Strength, Symbiote Costume, Wallcrawling',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Fallen One II', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1051.jpg',
-        'Accelerated Healing, Darkforce Manipulation, Durability, Energy Absorption, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Gravity Control, Illusions, Invulnerability, Phasing, Self-Sustenance, Size Changing, Super Speed, Super Strength, Telepathy, Time Travel',
-        27);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Blackwing', 'Joseph Manfredi',
-        'https://www.superherodb.com/pictures2/portraits/10/050/249.jpg', 'Flight, Telepathy', 3);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Arkham Knight', 'Jason Todd',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12123.jpg',
-        'Agility, Enhanced Senses, Marksmanship, Peak Human Condition, Reflexes, Stamina, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nobu (MCU)', 'Nobu Yoshioka',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16403.jpg',
-        'Agility, Dexterity, Durability, Endurance, Longevity, Marksmanship, Peak Human Condition, Reflexes, Resurrection, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Buuhan', 'Majin Buu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15356.jpg',
-        'Absorption, Agility, Biokinesis, Dimensional Travel, Duplication, Elasticity, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Illusions, Immortality, Intelligence, Intuitive aptitude, Invulnerability, Latent Abilities, Magic, Matter Manipulation, Mind Control Resistance, Portal Creation, Power Absorption, Power Sense, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Super Speed, Super Strength, Telekinesis, Teleportation, Toxin and Disease Resistance, Weather Control',
-        49);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Callisto', 'Callisto',
-        'https://www.superherodb.com/pictures2/portraits/10/050/271.jpg',
-        'Accelerated Healing, Agility, Enhanced Senses, Reflexes, Super Strength, Vision - Night, Wallcrawling', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Zom', 'Zom',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12081.jpg',
-        'Durability, Elasticity, Endurance, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Immortality, Invulnerability, Magic, Possession, Precognition, Psionic Powers, Reality Warping, Reflexes, Shapeshifting, Spatial Awareness, Stamina, Stealth, Super Speed, Super Strength, Teleportation',
-        27);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Proxima Midnight (MCU)', 'Proxima Midnight',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16757.jpg',
-        'Accelerated Healing, Agility, Dexterity, Durability, Energy Blasts, Jump, Marksmanship, Reflexes, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Satan', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1083.jpg',
-        'Accelerated Healing, Agility, Danger Sense, Darkforce Manipulation, Death Manipulation, Durability, Endurance, Energy Manipulation, Enhanced Senses, Fire Control, Flight, Illusions, Immortality, Intelligence, Invulnerability, Jump, Life Manipulation, Matter Manipulation, Mind Control, Nigh-Omnipotent, Nigh-Omnipresent, Nigh-Omniscient, Reality Warping, Reflexes, Regeneration, Resurrection, Self-Sustenance, Soul Manipulation, Stamina, Stealth, Super Breath, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Weather Control',
-        198);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Juggernaut (FOX)', 'Cain Marko',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13062.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Dexterity, Durability, Endurance, Energy Resistance, Fire Resistance, Heat Resistance, Immortality, Longevity, Mind Control Resistance, Power Augmentation, Radiation Immunity, Regeneration, Self-Sustenance, Stamina, Super Speed, Super Strength, Telepathy Resistance',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Klaw (MCU)', 'Ulysses Klaue',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13419.jpg',
-        'Energy Manipulation, Marksmanship, Weapons Master', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Viper', 'Ophelia Sarkissian',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10400.jpg',
-        'Agility, Animal Attributes, Animal Oriented Powers, Camouflage, Durability, Endurance, Intelligence, Intuitive aptitude, Marksmanship, Omnilingualism, Peak Human Condition, Photographic Reflexes, Probability Manipulation, Stamina, Stealth, Teleportation, Toxin and Disease Control, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Knull', 'Knull The God Of Symbiotes',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14705.jpg',
-        'Accelerated Healing, Agility, Astral Travel, Banish, Camouflage, Changing Armor, Clairvoyance, Cloaking, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Duplication, Element Control, Energy Absorption, Energy Blasts, Energy Constructs, Energy Manipulation, Fire Control, Flight, Force Fields, Gravity Control, Grim Reaping, Heat Resistance, Illusions, Immortality, Intelligence, Invulnerability, Longevity, Magnetism, Matter Manipulation, Natural Armor, Omnilingualism, Phasing, Portal Creation, Power Augmentation, Power Nullifier, Precognition, Psionic Powers, Radiation Absorption, Radiation Immunity, Reality Warping, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Telekinesis, Telepathy Resistance, Teleportation, Time Travel, Toxin and Disease Resistance, Umbrakinesis, Vitakinesis, Wallcrawling, Weapon-based Powers, Weapons Master, Web Creation',
-        91);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'General Kozu', 'Kozu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16125.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Darkforce Manipulation, Dimensional Travel, Durability, Endurance, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Immortality, Invulnerability, Jump, Mind Control, Mind Control Resistance, Natural Armor, Omnilingualism, Peak Human Condition, Reflexes, Regeneration, Resurrection, Seismic Power, Self-Sustenance, Stamina, Stealth, Summoning, Super Strength, Telepathy, Telepathy Resistance, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        33);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Captain Boomerang (DCEU)', 'Digger Harkness',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15413.jpg',
-        'Agility, Durability, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Imperfect Cell', 'Cell',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14873.jpg',
-        'Absorption, Adaptation, Agility, Biokinesis, Duplication, Durability, Elasticity, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Energy Resistance',
-        18);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'T-X', 'Cyberdyne Systems Series X Terminator',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10412.jpg',
-        'Accelerated Healing, Agility, Camouflage, Cold Resistance, Durability, Energy Beams, Energy Blasts, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Intelligence, Invulnerability, Longevity, Marksmanship, Natural Weapons, Reflexes, Regeneration, Shapeshifting, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath, Vision - Infrared, Vision - Microscopic, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Penguin', 'Oswald Cobblepot',
-        'https://www.superherodb.com/pictures2/portraits/10/050/753.jpg',
-        'Agility, Cold Resistance, Insanity, Intelligence, Stealth, Weapons Master', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Superman Prime', 'Clark Kent',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13079.jpg',
-        'Absorption, Accelerated Healing, Agility, Biokinesis, Bullet Time, Changing Armor, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Empathy, Endurance, Energy Absorption, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Fire Resistance, Flight, Gliding, Heat Generation, Heat Resistance, Hypnokinesis, Insanity, Intelligence, Invulnerability, Jump, Longevity, Magic Resistance, Mind Control Resistance, Phasing, Power Absorption, Power Augmentation, Power Sense, Power Suit, Radiation Immunity, Reflexes, Seismic Power, Self-Sustenance, Stamina, Stealth, Super Speed, Super Strength, Telepathy Resistance, Timeframe Control, Toxin and Disease Resistance, Vision - Heat, Vision - Microscopic, Vision - Thermal, Vision - X-Ray, Weapons Master',
-        40);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ares (DCEU)', 'Ares',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12597.jpg',
-        'Accelerated Healing, Agility, Durability, Electrokinesis, Element Control, Empathy, Energy Manipulation, Fire Control, Fire Resistance, Flight, Illusions, Immortality, Invisibility, Matter Manipulation, Mind Control, Power Augmentation, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Terrakinesis, Toxin and Disease Resistance, Weather Control',
-        27);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Chthon', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11322.jpg',
-        'Adaptation, Astral Projection, Astral Travel, Darkforce Manipulation, Death Touch, Dimensional Awareness, Dimensional Travel, Energy Blasts, Energy Manipulation, Grim Reaping, Heat Generation, Hypnokinesis, Illusions, Immortality, Intangibility, Intelligence, Invisibility, Invulnerability, Magic, Matter Manipulation, Molecular Combustion, Possession, Reality Warping, Self-Sustenance, Size Changing, Super Speed, Super Strength, Teleportation, Time Manipulation, Time Travel',
-        88);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Anti-Monitor II', 'Mobius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12764.jpg',
-        'Cold Resistance, Darkforce Manipulation, Durability, Energy Absorption, Energy Blasts, Energy Manipulation, Entropy Projection, Flight, Gravity Control, Immortality, Insanity, Intelligence, Invulnerability, Matter Manipulation, Molecular Dissipation, Natural Armor, Natural Weapons, Portal Creation, Power Absorption, Power Augmentation, Power Nullifier, Power Sense, Precognition, Radiation Control, Radiation Immunity, Reality Warping, Shapeshifting, Summoning, Super Speed, Super Strength, Telepathy, Teleportation, Time Manipulation',
-        67);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Grail', 'Grail',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10657.jpg',
-        'Agility, Dexterity, Dimensional Travel, Durability, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Immortality, Resurrection, Stamina, Summoning, Super Speed, Super Strength, Telekinesis, Teleportation, Vitakinesis, Weapons Master',
-        25);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Golden Jaguar', 'NJadaka',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11769.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Durability, Energy Absorption, Energy Armor, Enhanced Senses, Intelligence, Jump, Marksmanship, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cyborg Superman', 'Henry Henshaw',
-        'https://www.superherodb.com/pictures2/portraits/10/050/667.jpg',
-        'Durability, Energy Absorption, Energy Constructs, Energy Manipulation, Enhanced Hearing, Flight, Immortality, Invulnerability, Molecular Manipulation, Qwardian Power Ring, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Vision - Heat, Vision - Microscopic, Vision - Night, Vision - Telescopic, Vision - X-Ray',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mephisto', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1322.jpg',
-        'Accelerated Healing, Astral Projection, Dimensional Awareness, Dimensional Travel, Durability, Energy Blasts, Illusions, Immortality, Longevity, Magic, Molecular Manipulation, Self-Sustenance, Shapeshifting, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deadshot', 'Floyd Lawton',
-        'https://www.superherodb.com/pictures2/portraits/10/050/670.jpg',
-        'Marksmanship, Stamina, Stealth, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'T-850', 'Cyberdyne Systems Series 850 Terminator',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10410.jpg',
-        'Accelerated Healing, Cold Resistance, Durability, Enhanced Hearing, Enhanced Memory, Heat Resistance, Invulnerability, Longevity, Stamina, Stealth, Super Strength, Technopath/Cyberpath, Vision - Infrared, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Captain Boomerang', 'George Harkness',
-        'https://www.superherodb.com/pictures2/portraits/10/050/652.jpg',
-        'Agility, Marksmanship, Reflexes, Stamina, Stealth, Weapons Master', 2);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Croc (DCEU)', 'Waylon Jones',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13849.jpg',
-        'Agility, Cold Resistance, Durability, Enhanced Hearing, Enhanced Senses, Enhanced Sight, Enhanced Smell, Fire Resistance, Heat Resistance, Invulnerability, Sub-Mariner, Super Strength, Toxin and Disease Resistance, Underwater breathing',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Spider-Carnage', 'Benjamin Reilly',
-        'https://www.superherodb.com/pictures2/portraits/10/050/957.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Oriented Powers, Danger Sense, Durability, Symbiote Costume',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Crossbones', 'Brock Rumlow',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10008.jpg',
-        'Agility, Dexterity, Durability, Marksmanship, Reflexes, Stamina, Super Speed, Super Strength', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Morgan Le Fay', 'Morgan Le Fay',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12489.jpg',
-        'Agility, Astral Projection, Astral Travel, Electrical Transport, Electrokinesis, Energy Beams, Energy Constructs, Energy Manipulation, Flight, Force Fields, Illusions, Immortality, Intelligence, Invulnerability, Longevity, Magic, Reality Warping, Shapeshifting, Telekinesis, Telepathy, Teleportation, Vitakinesis, Weather Control',
-        30);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Professor Zoom', 'Eobard Thawne',
-        'https://www.superherodb.com/pictures2/portraits/10/050/766.jpg',
-        'Phasing, Reflexes, Stamina, Super Speed, Time Travel', 11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Electro', 'Maxwell Dillon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/7.jpg',
-        'Electrical Transport, Electrokinesis, Super Speed', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Android 21', 'Android 21',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14643.jpg',
-        'Absorption, Adaptation, Agility, Cold Resistance, Durability, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Longevity, Mind Control Resistance, Molecular Manipulation, Power Absorption, Power Augmentation, Power Sense, Radar Sense, Radiation Immunity, Reflexes, Self-Sustenance, Shapeshifting, Stamina, Super Speed, Super Strength, Telepathy Resistance, Weather Control',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Barbatos', 'Barbatos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12551.jpg',
-        'Absorption, Agility, Audio Control, Biokinesis, Darkforce Manipulation, Electrokinesis, Empathy, Energy Manipulation, Flight, Illusions, Immortality, Invulnerability, Matter Manipulation, Mind Control, Reality Warping, Reflexes, Size Changing, Stamina, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Umbrakinesis',
-        49);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ravager', 'Grant Wilson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1474.jpg',
-        'Accelerated Healing, Agility, Durability, Enhanced Hearing, Enhanced Senses, Enhanced Sight, Enhanced Smell, Intelligence, Longevity, Marksmanship, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Blizzard II', 'Donald Gill',
-        'https://www.superherodb.com/pictures2/portraits/10/050/619.jpg', 'Cryokinesis', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'KelThuzad', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14751.jpg',
-        'Biokinesis, Darkforce Manipulation, Death Touch, Element Control, Energy Manipulation, Immortality, Invulnerability, Magic, Mind Control, Portal Creation, Power Nullifier, Regeneration, Resurrection, Size Changing, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Vitakinesis',
-        60);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kang', 'Nathaniel Richards',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1053.jpg',
-        'Anti-Gravity, Durability, Electrokinesis, Energy Absorption, Energy Blasts, Energy Manipulation, Flight, Force Fields, Intelligence, Levitation, Longevity, Magnetism, Power Nullifier, Radiation Immunity, Summoning, Super Speed, Super Strength, Time Manipulation, Time Travel, Weapon-based Powers, Weapons Master',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Pinhead', 'Elliott Spencer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11129.jpg',
-        'Adaptation, Animation, Dimensional Awareness, Dimensional Travel, Duplication, Durability, Fire Control, Illusions, Immortality, Invulnerability, Magic, Matter Absorption, Possession, Psionic Powers, Reality Warping, Resurrection, Super Strength, Telekinesis, Teleportation, Weapons Master',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Multi-Oblivion', 'Oblivion',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13656.jpg',
-        'Agility, Darkforce Manipulation, Death Touch, Duplication, Energy Manipulation, Flight, Grim Reaping, Immortality, Invulnerability, Matter Manipulation, Mind Control, Nigh-Omnipotent, Nigh-Omniscient, Omnipresent, Reality Warping, Reflexes, Regeneration, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation',
-        169);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cicada (CW)', 'Orlin Dwyer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15628.jpg',
-        'Durability, Electrokinesis, Element Control, Flight, Force Fields, Super Strength, Weapon-based Powers', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'General Zod', 'Dru-Zod',
-        'https://www.superherodb.com/pictures2/portraits/10/050/837.jpg',
-        'Accelerated Healing, Durability, Energy Absorption, Enhanced Hearing, Enhanced Senses, Flight, Hypnokinesis, Intelligence, Invulnerability, Jump, Longevity, Stamina, Super Breath, Super Speed, Super Strength, Vision - Heat, Vision - Microscopic, Vision - Telescopic, Vision - X-Ray',
-        18);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darkseid (Anti-Life Equation)', 'Uxas',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14447.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Force Fields, Immortality, Intelligence, Invulnerability, Levitation, Marksmanship, Mind Control, Molecular Manipulation, Nigh-Omniscient, Omega Effect, Psionic Powers, Reality Warping, Reflexes, Resurrection, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Toxin and Disease Resistance',
-        96);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Prince Nuada', 'Prince Nuada',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11880.jpg',
-        'Accelerated Healing, Agility, Dexterity, Durability, Endurance, Enhanced Senses, Immortality, Intelligence, Jump, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Super Speed, Telepathy, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        17);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Chaos King', 'Amatsu-Mikaboshi',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11113.jpg',
-        'Accelerated Healing, Adaptation, Agility, Animation, Darkforce Manipulation, Death Touch, Dimensional Awareness, Dimensional Travel, Duplication, Elasticity, Energy Beams, Energy Blasts, Enhanced Senses, Flight, Grim Reaping, Illusions, Immortality, Intelligence, Invisibility, Invulnerability, Magic, Matter Manipulation, Mind Control, Power Absorption, Probability Manipulation, Psionic Powers, Reality Warping, Reflexes, Shapeshifting, Size Changing, Spatial Awareness, Stamina, Super Speed, Super Strength, Telepathy, Teleportation, Time Manipulation, Vitakinesis',
-        96);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doctor Doom (FOX)', 'Victor Doom',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13960.jpg',
-        'Accelerated Healing, Danger Sense, Durability, Electrokinesis, Endurance, Energy Absorption, Energy Beams, Heat Resistance, Intelligence, Magnetism, Natural Armor, Super Strength',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Pyro', 'St. John Allerdyce',
-        'https://www.superherodb.com/pictures2/portraits/10/050/853.jpg', 'Fire Control', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nyarlathotep', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14577.jpg',
-        'Astral Projection, Changing Armor, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Element Control, Elemental Transmogrification, Energy Beams, Energy Blasts, Energy Manipulation, Entropy Projection, Force Fields, Grim Reaping, Illusions, Immortality, Insanity, Intelligence, Invulnerability, Matter Manipulation, Mind Blast, Mind Control, Molecular Manipulation, Omnilingualism, Phasing, Possession, Radiation Immunity, Reality Warping, Regeneration, Resurrection, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Super Speed, Super Strength, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        140);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Imperiex', 'Imperiex',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10826.jpg',
-        'Accelerated Healing, Agility, Danger Sense, Density Control, Durability, Electrokinesis, Energy Absorption, Energy Armor, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Force Fields, Immortality, Intelligence, Invulnerability, Levitation, Radar Sense, Reality Warping, Size Changing, Stamina, Stealth, Super Strength, Teleportation, Time Travel',
-        32);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darkseid (New 52)', 'Uxas',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13847.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Force Fields, Immortality, Intelligence, Invulnerability, Marksmanship, Mind Control, Molecular Manipulation, Omega Effect, Psionic Powers, Reality Warping, Resurrection, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Toxin and Disease Resistance',
-        61);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ajax', 'Francis',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10422.jpg',
-        'Agility, Heat Generation, Power Suit, Super Speed, Super Strength', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Enchantress (DCEU)', 'June Moone',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13885.jpg',
-        'Durability, Element Control, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Hypnokinesis, Intangibility, Invulnerability, Magic, Resurrection, Super Strength, Telekinesis, Teleportation, Wallcrawling, Weather Control',
-        18);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Blob', 'Frederick J. Dukes',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1119.jpg',
-        'Durability, Gravity Control, Super Strength', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Dwarf', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12289.jpg',
-        'Density Control, Durability, Super Speed, Super Strength', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sylar', 'Gabriel Gray',
-        'https://www.superherodb.com/pictures2/portraits/10/050/953.jpg',
-        'Accelerated Healing, Audio Control, Electrokinesis, Empathy, Flight, Illusions, Intuitive aptitude, Molecular Manipulation, Regeneration, Shapeshifting, Sonic Scream, Telekinesis',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kaelthas Sunstrider', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14739.jpg',
-        'Astral Projection, Energy Manipulation, Force Fields, Immortality, Insanity, Intangibility, Intelligence, Invisibility, Magic, Magic Resistance, Matter Absorption, Matter Manipulation, Melting, Mind Blast, Precognition, Probability Manipulation, Reality Warping, Telekinesis, Telepathy',
-        29);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mandarin', 'Khan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1175.jpg',
-        'Cryokinesis, Electrokinesis, Energy Beams, Energy Blasts, Intelligence, Levitation, Mind Control, Molecular Manipulation, Self-Sustenance, Weapon-based Powers, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dormammu (MCOC)', 'Dormammu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16099.jpg',
-        'Agility, Astral Projection, Astral Trap, Astral Travel, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Energy Resistance, Fire Control, Flight, Force Fields, Gravity Control, Illusions, Immortality, Intelligence, Invulnerability, Levitation, Longevity, Magic, Magic Resistance, Matter Manipulation, Natural Armor, Omnilingualism, Power Absorption, Precognition, Radiation Immunity, Reality Warping, Regeneration, Shapeshifting, Size Changing, Stealth, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Time Travel, Toxin and Disease Resistance',
-        89);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cheetah', 'Priscilla Rich',
-        'https://www.superherodb.com/pictures2/portraits/10/050/661.jpg',
-        'Agility, Animal Oriented Powers, Reflexes, Stamina, Stealth', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Daken', 'Akihiro',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10011.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Durability, Empathy, Enhanced Memory, Enhanced Senses, Heat Resistance, Longevity, Peak Human Condition, Reflexes, Regeneration, Stamina, Super Speed, Telepathy, Telepathy Resistance, Toxin and Disease Resistance',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'I-Rex', 'Indominus Rex',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11521.jpg',
-        'Biokinesis, Camouflage, Durability, Enhanced Senses, Stamina, Super Speed, Super Strength, Vision - Thermal',
-        1);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Atomic Skull', 'Joseph Martin',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11004.jpg',
-        'Agility, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Flight, Heat Generation, Invulnerability, Power Suit, Radiation Absorption, Radiation Control, Stamina, Stealth, Super Speed, Super Strength',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Baron Zemo (MCU)', 'Helmut J. Zemo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13898.jpg',
-        'Agility, Intelligence, Peak Human Condition, Weapon-based Powers, Weapons Master', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Steppenwolf', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10653.jpg',
-        'Accelerated Healing, Agility, Enhanced Senses, Immortality, Intelligence, Invulnerability, Longevity, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapons Master',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Abomination', 'Emil Blonsky',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1.jpg',
-        'Accelerated Healing, Animation, Intelligence, Invulnerability, Jump, Stamina, Super Breath, Super Speed, Super Strength',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Atrocitus', 'Atros',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10003.jpg',
-        'Accelerated Healing, Clairvoyance, Dimensional Awareness, Dimensional Travel, Durability, Energy Absorption, Energy Blasts, Energy Constructs, Energy Manipulation, Energy Resistance, Flight, Force Fields, Intelligence, Invulnerability, Lantern Power Ring, Levitation, Marksmanship, Matter Manipulation, Phasing, Radiation Immunity, Super Speed, Super Strength, Telepathy Resistance, Weapon-based Powers',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Norman Bates', 'Norman Bates',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11135.jpg', 'Agility, Intelligence, Stamina, Stealth',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lex Luthor', 'Lex Luthor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/727.jpg',
-        'Durability, Energy Beams, Energy Blasts, Energy Constructs, Flight, Force Fields, Intelligence, Power Suit, Super Strength, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Rhino', 'Aleksei Mikhailovich Sytsevich',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15.jpg',
-        'Cold Resistance, Durability, Heat Resistance, Natural Armor, Power Suit, Stamina, Super Speed, Super Strength',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Galvatron', 'Galvatron',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10607.jpg',
-        'Agility, Biokinesis, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Insanity, Intelligence, Intuitive aptitude, Invulnerability, Longevity, Marksmanship, Matter Manipulation, Natural Armor, Natural Weapons, Physical Anomaly, Reflexes, Shapeshifting, Size Changing, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Destroyer', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1294.jpg',
-        'Energy Blasts, Levitation, Molecular Manipulation, Size Changing, Super Strength', 11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Joker (LEGO)', 'Joker',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14607.jpg',
-        'Accelerated Healing, Cold Resistance, Durability, Enhanced Memory, Enhanced Senses, Intelligence, Reflexes, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hela', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10835.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Death Touch, Durability, Enhanced Hearing, Enhanced Sight, Illusions, Invulnerability, Longevity, Magic, Omnilingualism, Stamina, Super Speed, Super Strength, Teleportation',
-        16);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jack OLantern', 'Maguire Beck',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10652.jpg',
-        'Changing Armor, Cold Resistance, Durability, Energy Blasts, Enhanced Memory, Enhanced Senses, Fire Resistance, Flight, Illusions, Insanity, Jump, Marksmanship, Natural Armor, Peak Human Condition, Reflexes, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cheshire', 'Jade Nguyen',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10082.jpg',
-        'Agility, Intelligence, Marksmanship, Reflexes, Stamina, Stealth, Toxin and Disease Control, Wallcrawling, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Leatherface', 'Jed Sawyer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11122.jpg',
-        'Reflexes', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deadshot (New 52)', 'Floyd Lawton',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16367.jpg',
-        'Agility, Enhanced Senses, Intelligence, Marksmanship, Peak Human Condition, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lex Luthor (Injustice)', 'Alexander Luthor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16426.jpg',
-        'Durability, Energy Beams, Flight, Intelligence, Invisibility, Marksmanship, Power Suit, Summoning, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sportsmaster', 'Lawrence Crock',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10056.jpg',
-        'Adaptation, Agility, Reflexes, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hugo Strange', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10919.jpg',
-        'Agility, Hypnokinesis, Insanity, Intelligence, Peak Human Condition, Reflexes, Stamina, Stealth', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killian (MCU)', 'Aldrich Killian',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13899.jpg',
-        'Accelerated Healing, Agility, Durability, Endurance, Energy Blasts, Fire Resistance, Heat Generation, Heat Resistance, Intelligence, Reflexes, Regeneration, Stamina, Super Strength',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Power Ring', 'Harold Jordan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11603.jpg',
-        'Element Control, Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Force Fields, Magic, Weapon-based Powers',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kalibak', 'Kalibak',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10658.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Energy Blasts, Energy Resistance, Heat Resistance, Immortality, Invulnerability, Omega Effect, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'White Rabbit', 'Dr. Lorina Dodson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10505.jpg',
-        'Agility, Animal Oriented Powers, Flight, Intelligence, Power Suit, Summoning, Weapon-based Powers, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ubbo-Sathla', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15635.jpg',
-        'Astral Projection, Astral Trap, Astral Travel, Banish, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Force Fields, Immortality, Intelligence, Invisibility, Invulnerability, Matter Manipulation, Molecular Manipulation, Nigh-Omnipotent, Nigh-Omnipresent, Nigh-Omniscient, Reality Warping, Regeneration, Shapeshifting, Size Changing, Super Speed, Super Strength, Time Manipulation',
-        153);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Thinker (CW)', 'Clifford DeVoe',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14780.jpg',
-        'Animation, Anti-Gravity, Audio Control, Density Control, Dimensional Travel, Enhanced Memory, Gravity Control, Intelligence, Intuitive aptitude, Mind Blast, Portal Creation, Power Augmentation, Probability Manipulation, Psionic Powers, Size Changing, Technopath/Cyberpath, Telepathy, Toxin and Disease Control',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Knockout', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15010.jpg',
-        'Accelerated Healing, Agility, Dimensional Awareness, Dimensional Travel, Durability, Immortality, Invulnerability, Regeneration, Super Strength, Weapons Master',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Manta', 'David',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10546.jpg',
-        'Agility, Camouflage, Cold Resistance, Durability, Energy Blasts, Jump, Marksmanship, Peak Human Condition, Power Suit, Stamina, Stealth, Sub-Mariner, Super Speed, Super Strength, Underwater breathing, Vision - Infrared, Vision - Telescopic, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Pythor', 'Pythor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15908.jpg',
-        'Accelerated Healing, Adaptation, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Camouflage, Cloaking, Cold Resistance, Durability, Endurance, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Insanity, Intelligence, Invisibility, Invulnerability, Jump, Longevity, Marksmanship, Natural Armor, Natural Weapons, Peak Human Condition, Reflexes, Regeneration, Resurrection, Self-Sustenance, Size Changing, Stamina, Stealth, Summoning, Super Speed, Super Strength, Toxin and Disease Resistance, Vision - Infrared, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapons Master',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Metallo', 'John Corben',
-        'https://www.superherodb.com/pictures2/portraits/10/050/737.jpg',
-        'Durability, Energy Beams, Radiation Control, Regeneration, Shapeshifting, Size Changing, Stamina, Super Strength, Technopath/Cyberpath',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Great Evil Beast', 'The Great Darkness',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11025.jpg',
-        'Absorption, Accelerated Healing, Agility, Astral Travel, Clairvoyance, Cryokinesis, Darkforce Manipulation, Death Touch, Density Control, Dimensional Awareness, Dimensional Travel, Durability, Electrokinesis, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Enhanced Hearing, Fire Control, Fire Resistance, Flight, Force Fields, Heat Generation, Immortality, Insanity, Intangibility, Intelligence, Latent Abilities, Levitation, Magic, Matter Absorption, Matter Manipulation, Plant Control, Precognition, Reality Warping, Resurrection, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Substance Secretion, Super Speed, Super Strength, Telekinesis, Telepathy, Terrakinesis, Thirstokinesis, Time Manipulation, Time Travel, Umbrakinesis, Vision - Night, Weather Control',
-        120);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Giratina', 'Giratina',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13492.jpg',
-        'Animal Attributes, Animal Oriented Powers, Clairvoyance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Duplication, Electrokinesis, Element Control, Empathy, Energy Beams, Energy Blasts, Enhanced Senses, Fire Control, Fire Resistance, Flight, Heat Resistance, Illusions, Immortality, Intangibility, Invulnerability, Matter Manipulation, Mind Control Resistance, Molecular Manipulation, Nigh-Omnipresent, Portal Creation, Power Augmentation, Power Nullifier, Power Sense, Reality Warping, Self-Sustenance, Shapeshifting, Spatial Awareness, Stamina, Super Speed, Super Strength, Telepathy, Telepathy Resistance, Teleportation, Terrakinesis, Time Manipulation, Toxin and Disease Resistance, Umbrakinesis, Wind Control',
-        93);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Manta (DCEU)', 'David Kane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15579.jpg',
-        'Electrokinesis, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Peak Human Condition, Power Suit, Super Strength, Underwater breathing, Vision - Heat, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nebula', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10632.jpg',
-        'Durability, Marksmanship, Super Strength', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Yogg Saron', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14263.jpg',
-        'Absorption, Astral Projection, Astral Travel, Banish, Biokinesis, Darkforce Manipulation, Dimensional Awareness, Empathy, Energy Manipulation, Force Fields, Immortality, Insanity, Light Control, Magic, Mind Blast, Mind Control, Portal Creation, Precognition, Reality Warping, Regeneration, Shapeshifting, Summoning, Super Speed, Super Strength, Telepathy, Teleportation',
-        57);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Azrael (Gotham)', 'Theo Galavan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16587.jpg',
-        'Accelerated Healing, Agility, Durability, Endurance, Intelligence, Intuitive aptitude, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Vanisher', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1105.jpg',
-        'Teleportation', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Mamba', 'Tanya Sealy',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1106.jpg',
-        'Darkforce Manipulation, Hypnokinesis, Illusions', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darkseid', 'Uxas',
-        'https://www.superherodb.com/pictures2/portraits/10/050/668.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Force Fields, Immortality, Intelligence, Invulnerability, Levitation, Marksmanship, Mind Control, Molecular Manipulation, Omega Effect, Psionic Powers, Reflexes, Resurrection, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Toxin and Disease Resistance',
-        51);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dormammu (MCU)', 'Dormammu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12736.jpg',
-        'Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Immortality, Invulnerability, Magic, Matter Manipulation, Mind Control, Molecular Manipulation, Portal Creation, Power Augmentation, Reality Warping, Stamina, Super Speed, Super Strength, Telekinesis, Time Manipulation',
-        32);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Vibe (CW)', 'Cisco Ramon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13794.jpg',
-        'Agility, Dimensional Travel, Intelligence, Seismic Power, Teleportation, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Solomon Grundy', 'Cyrus Gold',
-        'https://www.superherodb.com/pictures2/portraits/10/050/782.jpg',
-        'Cold Resistance, Durability, Energy Absorption, Fire Resistance, Invulnerability, Resurrection, Self-Sustenance, Stamina, Super Strength, Toxin and Disease Resistance',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Molten Man', 'Mark Raxton',
-        'https://www.superherodb.com/pictures2/portraits/10/050/411.jpg',
-        'Durability, Heat Generation, Heat Resistance, Super Strength', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'T-800', 'Cyberdyne Systems Series 800 Terminator Model 101',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10409.jpg',
-        'Cold Resistance, Durability, Enhanced Hearing, Enhanced Memory, Heat Resistance, Invulnerability, Longevity, Stamina, Stealth, Super Strength, Technopath/Cyberpath, Vision - Infrared, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Toad (FOX)', 'Mortimer Toynbee',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14269.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Oriented Powers, Durability, Jump, Reflexes, Stamina, Substance Secretion, Super Strength, Toxin and Disease Control, Wallcrawling',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Absorbing Man', 'Carl Creel',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1448.jpg',
-        'Cold Resistance, Durability, Elemental Transmogrification, Energy Absorption, Fire Resistance, Heat Resistance, Invulnerability, Matter Absorption, Molecular Manipulation, Natural Armor, Regeneration, Size Changing, Super Strength',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Match', 'Kent Connor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1459.jpg',
-        'Accelerated Healing, Durability, Energy Absorption, Energy Blasts, Enhanced Hearing, Flight, Invulnerability, Jump, Super Breath, Super Speed, Super Strength, Telekinesis, Vision - Heat, Vision - Telescopic, Vision - X-Ray',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Android 17 (Super 17)', 'Lapis',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13415.jpg',
-        'Afterimage Creation, Agility, Chi Manipulation, Cold Resistance, Dimensional Travel, Durability, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Enhanced Senses, Flight, Force Fields, Longevity, Portal Creation, Radiation Immunity, Reflexes, Self-Sustenance, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Weather Control',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deacon Blackfire', 'Deacon Joseph Blackfire',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11210.jpg',
-        'Accelerated Healing, Intelligence, Longevity, Magic, Mind Control, Non-Corporeal, Peak Human Condition, Possession, Toxin and Disease Resistance',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Infinites', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14540.jpg',
-        'Darkforce Manipulation, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Immortality, Nigh-Omnipresent, Nigh-Omniscient, Reality Warping, Super Speed, Super Strength, Telekinesis, Teleportation, Time Manipulation, Time Travel',
-        71);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Malekith (MCU)', 'Malekith',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15125.jpg',
-        'Absorption, Accelerated Healing, Agility, Cold Resistance, Darkforce Manipulation, Durability, Energy Beams, Energy Blasts, Energy Manipulation, Energy Resistance, Heat Resistance, Invulnerability, Longevity, Matter Manipulation, Regeneration, Size Changing, Super Strength, Telekinesis, Teleportation, Weapons Master',
-        26);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Harley Quinn (Arkham)', 'Harleen Quinzel',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15704.jpg',
-        'Agility, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Insanity, Intelligence, Latent Abilities, Marksmanship, Peak Human Condition, Plant Control, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Wesker', 'Albert Wesker',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14330.jpg',
-        'Absorption, Accelerated Healing, Agility, Biokinesis, Dexterity, Durability, Endurance, Enhanced Senses, Heat Resistance, Intelligence, Jump, Longevity, Marksmanship, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hydro-Man', 'Morris Bench',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1451.jpg',
-        'Invulnerability, Natural Weapons, Psionic Powers, Shapeshifting, Size Changing, Underwater breathing, Water Control',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Atom Smasher (CW)', 'Al Rothstein',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14014.jpg',
-        'Agility, Durability, Heat Resistance, Invulnerability, Jump, Radiation Absorption, Size Changing, Stamina, Super Speed, Super Strength',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hellfire (MCU)', 'JT James',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16068.jpg',
-        'Fire Control, Heat Generation, Marksmanship, Molecular Combustion, Weapon-based Powers', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Weather Wizard (CW)', 'Mark Mardon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15954.jpg',
-        'Electrokinesis, Energy Blasts, Energy Constructs, Flight, Water Control, Weather Control, Wind Control', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Thanos (Infinity Gauntlet)', 'Thanos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12559.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Banish, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Element Control, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Heat Resistance, Illusions, Immortality, Intelligence, Invulnerability, Longevity, Magic, Matter Manipulation, Mind Control, Molecular Dissipation, Molecular Manipulation, Omnilingualism, Phasing, Portal Creation, Power Augmentation, Power Nullifier, Power Sense, Psionic Powers, Radiation Immunity, Reality Warping, Reflexes, Resurrection, Self-Sustenance, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Time Manipulation, Time Travel, Timeframe Control, Toxin and Disease Resistance, Vision - Heat, Vitakinesis, Weapon-based Powers',
-        157);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Pralaya', 'Pralaya',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13391.jpg',
-        'Darkforce Manipulation, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Immortality, Matter Manipulation, Mind Control, Molecular Combustion, Reality Warping, Regeneration, Shapeshifting, Size Changing, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        75);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Joker (Arkham)', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16094.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Durability, Insanity, Intelligence, Jump, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Vulture', 'Adrian Toomes',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1031.jpg',
-        'Agility, Animal Oriented Powers, Flight, Gravity Control, Levitation, Marksmanship, Super Speed, Super Strength',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mirror Master', 'Evan McCulloch',
-        'https://www.superherodb.com/pictures2/portraits/10/050/741.jpg',
-        'Agility, Duplication, Energy Absorption, Energy Blasts, Flight, Hypnokinesis, Illusions, Intangibility, Intelligence, Intuitive aptitude, Peak Human Condition, Teleportation, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Big Barda', 'Barda Free',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1169.jpg',
-        'Agility, Durability, Flight, Immortality, Invulnerability, Longevity, Reflexes, Stamina, Super Strength, Toxin and Disease Resistance',
-        16);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Brain Bug', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14088.jpg',
-        'Intelligence, Mind Control, Telepathy', 11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kraven the Hunter', 'Sergei Kravinoff',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1033.jpg',
-        'Agility, Longevity, Reflexes, Stamina, Super Speed, Super Strength', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cartman', 'Eric Cartman',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12156.jpg',
-        'Accelerated Healing, Durability, Gliding, Insanity, Jump, Magic, Mind Control, Stealth, Time Travel', 2);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Evil Nya', 'Nya',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16222.jpg',
-        'Absorption, Agility, Audio Control, Darkforce Manipulation, Dimensional Travel, Durability, Element Control, Endurance, Insanity, Peak Human Condition, Reflexes, Telekinesis, Vaporising Beams',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Emperor Joker', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12490.jpg',
-        'Duplication, Elasticity, Energy Manipulation, Immortality, Intangibility, Invulnerability, Magic, Matter Manipulation, Mind Control, Power Nullifier, Reality Warping, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation',
-        50);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Molecule Man', 'Owen Reece',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10895.jpg',
-        'Animation, Anti-Gravity, Cryokinesis, Death Touch, Dimensional Awareness, Electrokinesis, Energy Absorption, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Force Fields, Gravity Control, Heat Generation, Invisibility, Longevity, Matter Absorption, Molecular Combustion, Molecular Dissipation, Molecular Immobilization, Molecular Manipulation, Psionic Powers, Radiation Absorption, Radiation Control, Radiation Immunity, Reality Warping, Telekinesis, Teleportation, Terrakinesis',
-        27);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Graviton (MCU)', 'Glenn Talbot',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15435.jpg',
-        'Absorption, Accelerated Healing, Agility, Durability, Endurance, Energy Absorption, Energy Armor, Flight, Force Fields, Gravity Control, Intelligence, Jump, Levitation, Marksmanship, Mind Control Resistance, Power Augmentation, Reflexes, Seismic Power, Stamina, Stealth, Super Speed, Super Strength, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mysterio', 'Quentin Beck',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1039.jpg',
-        'Animation, Hypnokinesis, Illusions, Intelligence, Jump, Magic, Peak Human Condition, Power Suit, Sonar, Stamina, Weapon-based Powers, Weapons Master, Web Creation',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Death Seed Sentry', 'Robert Reynolds',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11266.jpg',
-        'Accelerated Healing, Dexterity, Durability, Energy Absorption, Energy Blasts, Enhanced Senses, Flight, Force Fields, Immortality, Light Control, Matter Manipulation, Molecular Manipulation, Psionic Powers, Regeneration, Resurrection, Self-Sustenance, Super Speed, Super Strength, Telepathy, Teleportation, Vitakinesis, Weather Control',
-        33);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kilgrave (MCU)', 'Kevin Thompson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15430.jpg', 'Hypnokinesis, Mind Control', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Madame Hydra', 'Ophelia Sarkissian',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10101.jpg',
-        'Agility, Animal Attributes, Animal Oriented Powers, Dimensional Travel, Endurance, Intelligence, Intuitive aptitude, Longevity, Marksmanship, Natural Weapons, Peak Human Condition, Stamina, Teleportation, Toxin and Disease Control, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Buutenks', 'Majin Buu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15354.jpg',
-        'Banish, Cold Resistance, Durability, Energy Absorption, Energy Armor, Energy Blasts, Fire Resistance, Flight, Heat Generation, Heat Resistance, Intelligence, Invulnerability, Latent Abilities, Levitation, Longevity, Magic, Marksmanship, Matter Manipulation, Mind Control Resistance, Natural Armor, Power Absorption, Psionic Powers, Regeneration, Self-Sustenance, Stealth, Super Speed, Super Strength, Telekinesis, Vision - Microscopic, Vision - Night',
-        24);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killmonger (MCU)', 'Erik Stevens',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16698.jpg',
-        'Agility, Dexterity, Durability, Endurance, Energy Absorption, Intelligence, Jump, Marksmanship, Power Suit, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Artemis (CW)', 'Evelyn Sharp',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15569.jpg',
-        'Agility, Intelligence, Marksmanship, Stamina, Stealth, Weapon-based Powers, Weapons Master', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Predator', 'Yautja',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10448.jpg',
-        'Accelerated Healing, Camouflage, Cloaking, Cold Resistance, Durability, Intelligence, Jump, Longevity, Marksmanship, Natural Weapons, Power Suit, Radar Sense, Reflexes, Stamina, Stealth, Super Strength, Toxin and Disease Resistance, Vision - Infrared, Vision - Night, Vision - Thermal, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Tinkerer', 'Phineas Mason',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1036.jpg', 'Intelligence', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Commander Machia', 'Machia',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16439.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Cold Resistance, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Heat Resistance, Insanity, Intelligence, Longevity, Marksmanship, Natural Weapons, Peak Human Condition, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Stealth, Summoning, Super Strength, Telepathy, Vision - Night, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Captain Marvel (Venomized)', 'Carol Danvers',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14673.jpg',
-        'Absorption, Accelerated Healing, Agility, Cold Resistance, Danger Sense, Dexterity, Durability, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Enhanced Memory, Enhanced Senses, Flight, Heat Resistance, Intelligence, Invulnerability, Levitation, Longevity, Marksmanship, Omnilingualism, Precognition, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Symbiote Costume, Toxin and Disease Resistance, Weapon-based Powers',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Junkpile', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10002.jpg',
-        'Durability, Invulnerability, Magnetism, Regeneration, Stamina, Super Strength, Telekinesis', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doppelganger', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1320.jpg',
-        'Accelerated Healing, Agility, Natural Weapons, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength, Wallcrawling',
-        4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Zombie Sentry', 'Robert Reynolds',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16292.jpg',
-        'Absorption, Agility, Cold Resistance, Dimensional Awareness, Dimensional Travel, Durability, Energy Absorption, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Senses, Fire Resistance, Flight, Force Fields, Grim Reaping, Hair Manipulation, Heat Resistance, Illusions, Immortality, Insanity, Intelligence, Invulnerability, Longevity, Magic Resistance, Matter Manipulation, Molecular Combustion, Possession, Power Sense, Radiation Immunity, Reflexes, Regeneration, Resurrection, Self-Sustenance, Stamina, Stealth, Super Speed, Super Strength, Telepathy Resistance, Vision - Heat, Vision - Microscopic, Vision - Thermal',
-        40);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bullseye (MCU)', 'Benjamin Poindexter',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15428.jpg',
-        'Agility, Marksmanship, Peak Human Condition, Reflexes, Weapon-based Powers, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mystique (FOX)', 'Raven Darkhölme',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13964.jpg',
-        'Accelerated Healing, Agility, Element Control, Longevity, Marksmanship, Regeneration, Shapeshifting, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Scar', 'Taka',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12432.jpg',
-        'Agility, Animal Attributes, Animal Oriented Powers, Durability, Enhanced Senses, Intelligence, Natural Armor, Natural Weapons, Stamina, Stealth, Super Speed, Super Strength',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ocean Master (DCEU)', 'Orm Marius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15630.jpg',
-        'Adaptation, Cold Resistance, Durability, Enhanced Senses, Enhanced Sight, Heat Resistance, Invulnerability, Sub-Mariner, Super Speed, Super Strength, Toxin and Disease Resistance, Underwater breathing',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Thanos', 'Thanos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1305.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Durability, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Heat Resistance, Immortality, Intelligence, Invulnerability, Longevity, Magic, Matter Absorption, Molecular Manipulation, Omnilingualism, Radiation Immunity, Reality Warping, Reflexes, Stamina, Super Speed, Super Strength, Telepathy, Telepathy Resistance, Teleportation, Time Manipulation, Toxin and Disease Resistance, Vision - Heat',
-        51);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jigsaw (MCU)', 'Billy Russo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13686.jpg',
-        'Agility, Durability, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deathstroke (Godkiller)', 'Slade Joseph Wilson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13987.jpg',
-        'Absorption, Accelerated Healing, Adaptation, Agility, Danger Sense, Durability, Electrokinesis, Element Control, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Hearing, Enhanced Senses, Enhanced Smell, Immortality, Intelligence, Longevity, Magic, Marksmanship, Reflexes, Resurrection, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        28);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Beyonder (Post-Retcon)', 'Beyonder',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14042.jpg',
-        'Astral Projection, Banish, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Force Fields, Immortality, Invulnerability, Matter Manipulation, Reality Warping, Regeneration, Shapeshifting, Size Changing, Spatial Awareness, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Vitakinesis, Wishing',
-        52);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lady Deathstrike', 'Yuriko Oyama',
-        'https://www.superherodb.com/pictures2/portraits/10/050/810.jpg',
-        'Accelerated Healing, Agility, Durability, Intelligence, Natural Weapons, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Night King', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14654.jpg',
-        'Animation, Cold Resistance, Cryokinesis, Death Touch, Durability, Fire Resistance, Intelligence, Longevity, Magic, Marksmanship, Mind Control Resistance, Peak Human Condition, Reflexes, Seismic Power, Stamina, Stealth, Summoning, Super Strength, Telepathy, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing, Weapons Master, Weather Control',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Surtur', 'Surtur',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10908.jpg',
-        'Agility, Animal Attributes, Astral Projection, Dimensional Travel, Energy Absorption, Energy Blasts, Energy Manipulation, Enhanced Hearing, Enhanced Sight, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Immortality, Intangibility, Intelligence, Invulnerability, Levitation, Longevity, Magic, Molecular Manipulation, Natural Weapons, Psionic Powers, Shapeshifting, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Teleportation, Vision - Heat, Weapons Master',
-        35);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Omega', 'The Omega',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10257.jpg',
-        'Absorption, Accelerated Healing, Agility, Clairvoyance, Cloaking, Cold Resistance, Danger Sense, Darkforce Manipulation, Dexterity, Durability, Element Control, Endurance, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Hearing, Enhanced Senses, Enhanced Sight, Fire Resistance, Heat Resistance, Immortality, Insanity, Intelligence, Invulnerability, Longevity, Mind Control Resistance, Nigh-Omnipotent, Peak Human Condition, Portal Creation, Reflexes, Regeneration, Resurrection, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Summoning, Super Strength, Telepathy, Telepathy Resistance, Teleportation, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        108);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Michael Myers', 'Michael Myers',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11119.jpg',
-        'Accelerated Healing, Durability, Endurance, Immortality, Insanity, Super Strength, Weapon-based Powers', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Unicron', 'Unicron',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11391.jpg',
-        'Adaptation, Agility, Anti-Gravity, Biokinesis, Changing Armor, Clairvoyance, Cold Resistance, Darkforce Manipulation, Death Touch, Dimensional Awareness, Dimensional Travel, Duplication, Empathy, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Flight, Force Fields, Gravity Control, Grim Reaping, Heat Resistance, Immortality, Intelligence, Invulnerability, Mind Control, Mind Control Resistance, Molecular Manipulation, Omnilingualism, Portal Creation, Power Augmentation, Power Nullifier, Probability Manipulation, Projection, Psionic Powers, Radiation Immunity, Reality Warping, Reflexes, Regeneration, Resurrection, Seismic Power, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Stamina, Super Speed, Super Strength, Telepathy, Telepathy Resistance, Time Manipulation, Toxin and Disease Resistance, Umbrakinesis',
-        146);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cull Obsidian (MCU)', 'Cull Obsidian',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16759.jpg',
-        'Accelerated Healing, Agility, Durability, Jump, Marksmanship, Reflexes, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Goblin Queen', 'Madelyne Jennifer Pryor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1054.jpg', 'Summoning, Telekinesis, Telepathy', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Grand Admiral Thrawn', 'Mitthrawnuruodo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11561.jpg',
-        'Agility, Enhanced Hearing, Enhanced Sight, Intelligence, Intuitive aptitude, Marksmanship, Peak Human Condition, Reflexes',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dementor', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15098.jpg',
-        'Accelerated Healing, Cryokinesis, Darkforce Manipulation, Flight, Immortality, Invulnerability, Magic, Power Absorption, Telepathy, Teleportation, Weather Control',
-        23);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Elder God Demonbane', 'Demonbane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14574.jpg',
-        'Accelerated Healing, Animal Attributes, Anti-Gravity, Apotheosis, Astral Projection, Camouflage, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Energy Blasts, Energy Manipulation, Enhanced Memory, Entropy Projection, Flight, Gravity Control, Hypnokinesis, Immortality, Intelligence, Invulnerability, Longevity, Matter Manipulation, Molecular Dissipation, Molecular Immobilization, Molecular Manipulation, Nigh-Omnipotent, Nigh-Omnipresent, Power Augmentation, Precognition, Probability Manipulation, Psionic Powers, Reality Warping, Reflexes, Regeneration, Resurrection, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Wishing',
-        176);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sargeras', 'The Dark Titan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14033.jpg',
-        'Darkforce Manipulation, Durability, Energy Blasts, Energy Constructs, Energy Manipulation, Fire Control, Flight, Immortality, Intelligence, Magic, Marksmanship, Matter Manipulation, Mind Control, Molecular Combustion, Molecular Manipulation, Possession, Precognition, Reality Warping, Spatial Awareness, Super Speed, Super Strength, Telepathy, Teleportation, Weapon-based Powers',
-        51);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Croc (Arkham)', 'Waylon Jones',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16517.jpg',
-        'Accelerated Healing, Animal Attributes, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Intelligence, Jump, Longevity, Natural Armor, Natural Weapons, Regeneration, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance',
-        4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Infinite Zamasu', 'Zamasu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14537.jpg',
-        'Adaptation, Dimensional Awareness, Dimensional Travel, Duplication, Electrokinesis, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Illusions, Immortality, Intangibility, Invulnerability, Latent Abilities, Light Control, Magic, Nigh-Omnipresent, Portal Creation, Power Augmentation, Power Sense, Precognition, Reality Warping, Regeneration, Self-Sustenance, Size Changing, Spatial Awareness, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Weapon-based Powers, Weather Control',
-        56);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Silver Banshee (CW)', 'Siobhan Smythe',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16002.jpg',
-        'Audio Control, Flight, Magic, Sonic Scream, Super Strength', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Air-Walker', 'Gabriel Lan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1358.jpg',
-        'Flight, Molecular Manipulation, Power Cosmic, Self-Sustenance, Super Speed, Super Strength', 15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jigsaw', 'John Kramer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11136.jpg', 'Intelligence', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Corvus Glaive', 'Corvus Glaive',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11873.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Darkforce Manipulation, Durability, Enhanced Hearing, Enhanced Memory, Heat Resistance, Immortality, Intelligence, Longevity, Natural Armor, Peak Human Condition, Super Speed, Super Strength, Telepathy Resistance, Weapon-based Powers, Weapons Master',
-        23);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Oblivion', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10416.jpg',
-        'Astral Projection, Darkforce Manipulation, Death Touch, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Gravity Control, Grim Reaping, Immortality, Intangibility, Nigh-Omniscient, Omnipresent, Precognition, Psionic Powers, Reality Warping, Resurrection, Telekinesis, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        123);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Blitzwing', 'Blitzwing',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16262.jpg',
-        'Agility, Biokinesis, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Insanity, Jump, Longevity, Physical Anomaly, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Electro (SONY)', 'Max Dillon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13835.jpg',
-        'Accelerated Healing, Electrical Transport, Electrokinesis, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Flight, Intelligence, Self-Sustenance, Stamina, Super Speed',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'IT', 'Pennywise the Dancing Clown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10951.jpg',
-        'Agility, Animal Control, Animal Oriented Powers, Cloaking, Density Control, Dimensional Awareness, Duplication, Durability, Elasticity, Empathy, Entropy Projection, Hypnokinesis, Illusions, Insanity, Intelligence, Invisibility, Jump, Matter Manipulation, Mind Control, Mind Control Resistance, Omnilingualism, Plant Control, Regeneration, Shapeshifting, Size Changing, Spatial Awareness, Stealth, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Wallcrawling',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Prometheus', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10989.jpg',
-        'Agility, Camouflage, Enhanced Memory, Hypnokinesis, Intelligence, Intuitive aptitude, Marksmanship, Molecular Dissipation, Molecular Immobilization, Omnilingualism, Peak Human Condition, Photographic Reflexes, Power Suit, Reflexes, Shapeshifting, Stealth, Teleportation, Weapon-based Powers, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Riot (SONY)', 'Carlton Drake',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15398.jpg',
-        'Biokinesis, Durability, Invulnerability, Natural Weapons, Possession, Regeneration, Shapeshifting, Super Speed, Super Strength, Symbiote Costume, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doctor Octopus (SONY)', 'Otto Octavius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13832.jpg',
-        'Agility, Durability, Intelligence, Power Suit, Reflexes, Stamina, Super Strength, Technopath/Cyberpath', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Onyxia', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14732.jpg',
-        'Accelerated Healing, Durability, Elasticity, Energy Blasts, Energy Manipulation, Fire Control, Fire Resistance, Flight, Immortality, Insanity, Matter Manipulation, Reflexes, Regeneration, Shapeshifting, Super Speed, Super Strength, Telepathy',
-        25);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kylo Ren', 'Ben Solo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10559.jpg',
-        'Accelerated Healing, Agility, Danger Sense, Durability, Energy Blasts, Enhanced Senses, Force Fields, Hypnokinesis, Illusions, Intelligence, Jump, Light Control, Marksmanship, Precognition, Psionic Powers, Reflexes, Stealth, Super Speed, Super Strength, Telekinesis, Telepathy, The Force, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shin Akuma', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11057.jpg',
-        'Agility, Berserk Mode, Chi Manipulation, Dexterity, Durability, Electrokinesis, Element Control, Endurance, Enhanced Senses, Flight, Immortality, Insanity, Intangibility, Intelligence, Jump, Longevity, Reflexes, Stamina, Statistics Amplification, Super Speed, Super Strength, Teleportation',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sabretooth', 'Victor Creed',
-        'https://www.superherodb.com/pictures2/portraits/10/050/17.jpg',
-        'Accelerated Healing, Agility, Animal Oriented Powers, Cold Resistance, Durability, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Longevity, Marksmanship, Natural Weapons, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Alien', 'Xenomorph',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10449.jpg',
-        'Agility, Cold Resistance, Durability, Enhanced Senses, Heat Resistance, Jump, Natural Armor, Natural Weapons, Stealth, Substance Secretion, Super Speed, Super Strength, Vision - Thermal, Wallcrawling',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Red Death', 'Bruce Wayne',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12557.jpg',
-        'Accelerated Healing, Agility, Durability, Energy Absorption, Energy Blasts, Energy Constructs, Enhanced Senses, Flight, Force Fields, Gliding, Intelligence, Longevity, Marksmanship, Peak Human Condition, Phasing, Reflexes, Self-Sustenance, Speed Force, Stamina, Stealth, Super Speed, Technopath/Cyberpath, Time Travel, Toxin and Disease Control, Weapon-based Powers, Weapons Master',
-        23);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doctor Doomsday', 'Victor Von Doom',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11634.jpg',
-        'Adaptation, Agility, Apotheosis, Audio Control, Cryokinesis, Electrokinesis, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Hearing, Fire Control, Flight, Force Fields, Gravity Control, Immortality, Intelligence, Intuitive aptitude, Invisibility, Invulnerability, Magic, Magnetism, Matter Manipulation, Mind Control, Mind Control Resistance, Molecular Manipulation, Portal Creation, Power Absorption, Power Nullifier, Reflexes, Regeneration, Resurrection, Self-Sustenance, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Telekinesis, Telepathy, Teleportation, Vitakinesis, Weather Control',
-        89);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Reverse Flash (CW)', 'Eobard Thawne',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12716.jpg',
-        'Accelerated Healing, Agility, Bullet Time, Dexterity, Dimensional Travel, Duplication, Durability, Electrokinesis, Heat Generation, Immortality, Intelligence, Intuitive aptitude, Phasing, Radiation Immunity, Reflexes, Speed Force, Stamina, Super Speed, Super Strength, Time Manipulation, Time Travel',
-        31);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sentinel Prime', 'Sentinel Prime',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13591.jpg',
-        'Agility, Durability, Endurance, Energy Blasts, Intelligence, Longevity, Marksmanship, Stamina, Stealth, Super Strength, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Calendar Man', 'Julian Day',
-        'https://www.superherodb.com/pictures2/portraits/10/050/651.jpg',
-        'Accelerated Healing, Agility, Durability, Intelligence, Intuitive aptitude, Marksmanship, Peak Human Condition, Resurrection, Stamina, Weapon-based Powers, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lex Luthor (DCEU)', 'Alexander Joseph Luthor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12706.jpg',
-        'Intelligence, Intuitive aptitude, Marksmanship', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sebastian Shaw (FOX)', 'Sebastian Hiram Shaw',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14369.jpg',
-        'Durability, Energy Absorption, Energy Manipulation, Intelligence, Invulnerability, Longevity, Self-Sustenance, Super Strength',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Eclipso', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/684.jpg',
-        'Darkforce Manipulation, Energy Manipulation, Flight, Immortality, Invulnerability, Magic, Possession, Size Changing, Super Speed, Super Strength',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jason Voorhees', 'Jason Voorhees',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11127.jpg',
-        'Accelerated Healing, Darkforce Manipulation, Durability, Immortality, Intelligence, Invulnerability, Longevity, Regeneration, Resurrection, Stamina, Stealth, Sub-Mariner, Super Speed, Super Strength, Teleportation, Weapons Master',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'SCP-096', 'Shy-Guy',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12574.jpg',
-        'Agility, Cold Resistance, Durability, Enhanced Senses, Immortality, Latent Abilities, Radar Sense, Reflexes, Regeneration, Stamina, Super Speed, Super Strength',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Reaper', 'Gabriel Reyes',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12541.jpg',
-        'Accelerated Healing, Agility, Durability, Intangibility, Marksmanship, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Teleportation, Vitakinesis, Weapon-based Powers, Weapons Master, Wind Control',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Parasite', 'Rudolph C. Jones',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1447.jpg',
-        'Adaptation, Agility, Energy Absorption, Matter Absorption, Power Absorption, Shapeshifting, Size Changing, Stamina, Super Strength',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Infernal Hulk', 'Bruce Banner',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13833.jpg',
-        'Accelerated Healing, Adaptation, Agility, Cold Resistance, Durability, Endurance, Energy Resistance, Enhanced Senses, Fire Resistance, Heat Resistance, Immortality, Insanity, Intelligence, Invulnerability, Jump, Longevity, Marksmanship, Mind Control Resistance, Radiation Absorption, Radiation Control, Radiation Immunity, Reflexes, Regeneration, Self-Sustenance, Stamina, Stealth, Super Breath, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing',
-        25);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Godzilla Earth', 'Gojira',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14003.jpg',
-        'Absorption, Agility, Danger Sense, Durability, Electrokinesis, Element Control, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Magnetism, Radiation Absorption, Radiation Control, Regeneration',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Giganta', 'Doris Zuel',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1376.jpg',
-        'Durability, Intelligence, Size Changing, Super Strength', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kaecilius (MCU)', 'Kaecilius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16353.jpg',
-        'Agility, Astral Projection, Astral Travel, Darkforce Manipulation, Dimensional Travel, Durability, Endurance, Energy Beams, Energy Constructs, Illusions, Magic, Marksmanship, Peak Human Condition, Portal Creation, Reflexes, Stamina, Stealth, Teleportation, Weapons Master',
-        16);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Red Skull (MCU)', 'Johann Shmidt',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12613.jpg',
-        'Agility, Durability, Intelligence, Invulnerability, Marksmanship, Regeneration, Stamina, Super Speed, Super Strength, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doctor Octopus', 'Otto Octavius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/622.jpg',
-        'Agility, Intelligence, Marksmanship, Power Suit, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Wallcrawling, Weapon-based Powers',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Omega Red', 'Arkady Gregorivich',
-        'https://www.superherodb.com/pictures2/portraits/10/050/208.jpg',
-        'Accelerated Healing, Durability, Endurance, Energy Absorption, Grim Reaping, Peak Human Condition, Reflexes, Stamina, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance, Weapon-based Powers',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Steel Serpent (MCU)', 'Davos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16402.jpg',
-        'Agility, Endurance, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapons Master', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Whiplash (MCU)', 'Ivan Vanko',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13895.jpg',
-        'Electrokinesis, Element Control, Intelligence, Weapons Master', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bushmaster (MCU)', 'John Mclver',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15431.jpg',
-        'Accelerated Healing, Agility, Durability, Endurance, Intelligence, Reflexes, Stamina, Super Speed, Super Strength',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Weapon XI', 'Weapon XI',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1318.jpg',
-        'Accelerated Healing, Agility, Energy Blasts, Super Speed, Super Strength, Teleportation, Weapon-based Powers',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Taskmaster', 'Tony Masters',
-        'https://www.superherodb.com/pictures2/portraits/10/050/21.jpg',
-        'Agility, Marksmanship, Photographic Reflexes, Power Suit, Reflexes, Stamina, Stealth, Super Speed, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Poison Ivy', 'Pamela Isley',
-        'https://www.superherodb.com/pictures2/portraits/10/050/757.jpg',
-        'Accelerated Healing, Agility, Death Touch, Durability, Enhanced Senses, Hypnokinesis, Intelligence, Marksmanship, Plant Control, Stamina, Stealth, Substance Secretion, Super Strength, The Green, Toxin and Disease Control, Toxin and Disease Resistance',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Felix Faust', 'Dekan Drache',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10983.jpg',
-        'Accelerated Healing, Enhanced Sight, Illusions, Immortality, Intelligence, Invisibility, Longevity, Magic, Possession, Reality Warping, Resurrection, Telepathy, Teleportation',
-        28);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Frieza', 'Frieza',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1214.jpg',
-        'Accelerated Healing, Agility, Biokinesis, Duplication, Durability, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Illusions, Portal Creation, Power Sense, Reflexes, Self-Sustenance, Stamina, Super Speed, Super Strength, Telekinesis',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'CThun', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14262.jpg',
-        'Agility, Astral Projection, Astral Travel, Banish, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Energy Beams, Energy Manipulation, Force Fields, Immortality, Intangibility, Intelligence, Invulnerability, Magic, Mind Blast, Mind Control, Portal Creation, Stealth, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation',
-        41);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Blob (FOX)', 'Fred Dukes',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14357.jpg',
-        'Durability, Invulnerability, Super Strength', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Blackheart', 'Blackheart',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11206.jpg',
-        'Cold Resistance, Darkforce Manipulation, Dimensional Travel, Durability, Energy Blasts, Energy Manipulation, Force Fields, Heat Resistance, Immortality, Invulnerability, Levitation, Mind Control, Phasing, Regeneration, Size Changing, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Toxin and Disease Resistance',
-        38);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mister Knife', 'Json',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10633.jpg', 'Intelligence, Weapons Master', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bowser', 'King Bowser Koopa',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11334.jpg',
-        'Accelerated Healing, Animal Control, Anti-Gravity, Bullet Time, Death Touch, Dimensional Awareness, Dimensional Travel, Duplication, Electrokinesis, Element Control, Empathy, Energy Manipulation, Fire Control, Flight, Force Fields, Gravity Control, Invulnerability, Latent Abilities, Magic, Mind Control, Portal Creation, Power Nullifier, Radiation Control, Radiation Immunity, Reality Warping, Resurrection, Self-Sustenance, Size Changing, Summoning, Teleportation, Terrakinesis, Time Manipulation, Timeframe Control, Toxin and Disease Control, Wallcrawling, Weapons Master, Weather Control',
-        37);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Faora', 'Faora Hu-Ul',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1502.jpg',
-        'Accelerated Healing, Durability, Energy Absorption, Enhanced Hearing, Enhanced Senses, Flight, Hypnokinesis, Intelligence, Invulnerability, Jump, Longevity, Stamina, Super Breath, Super Speed, Super Strength, Vision - Heat, Vision - Microscopic, Vision - Telescopic, Vision - X-Ray',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Adam (Pre-Crisis)', 'Teth-Adam',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16710.jpg',
-        'Accelerated Healing, Clairvoyance, Durability, Electrokinesis, Element Control, Endurance, Energy Resistance, Enhanced Memory, Flight, Intelligence, Invulnerability, Magic, Magic Resistance, Marksmanship, Probability Manipulation, Reflexes, Self-Sustenance, Stamina, Super Speed, Super Strength, Teleportation',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ebony Maw', 'Ebony Maw',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11957.jpg',
-        'Accelerated Healing, Adaptation, Agility, Animal Control, Durability, Empathy, Force Fields, Hypnokinesis, Insanity, Intelligence, Mind Control, Omnilingualism, Stealth, Telekinesis, Teleportation',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Arnim Zola (MCU)', 'Arnim Zola',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13068.jpg', 'Intelligence, Intuitive aptitude', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Thanoseid', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10654.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Dimensional Awareness, Dimensional Travel, Durability, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Immortality, Intelligence, Invulnerability, Longevity, Magic, Matter Manipulation, Molecular Manipulation, Omega Effect, Omnilingualism, Psionic Powers, Radiation Immunity, Reality Warping, Reflexes, Size Changing, Stamina, Super Speed, Super Strength, Teleportation, Time Manipulation, Toxin and Disease Resistance',
-        66);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Frenzy', 'Joanna Cargill',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1108.jpg',
-        'Cold Resistance, Heat Resistance, Invulnerability, Stamina, Super Strength', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Onslaught', 'Onslaught',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13.jpg',
-        'Astral Projection, Astral Travel, Camouflage, Dimensional Awareness, Flight, Force Fields, Illusions, Intangibility, Intelligence, Invulnerability, Magnetism, Mind Blast, Mind Control, Power Absorption, Psionic Powers, Reality Warping, Size Changing, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Vision - X-Ray',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Nihilus', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10700.jpg',
-        'Absorption, Agility, Animal Control, Animation, Astral Projection, Clairvoyance, Darkforce Manipulation, Death Touch, Electrokinesis, Empathy, Energy Absorption, Energy Blasts, Energy Manipulation, Enhanced Senses, Force Fields, Grim Reaping, Illusions, Immortality, Invulnerability, Latent Abilities, Levitation, Matter Manipulation, Mind Control, Mind Control Resistance, Molecular Manipulation, Possession, Power Augmentation, Power Nullifier, Power Sense, Precognition, Reflexes, Regeneration, Resurrection, Self-Sustenance, Sonic Scream, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, The Force, Vitakinesis',
-        96);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Enchantress', 'Amora',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11193.jpg',
-        'Agility, Animation, Astral Projection, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Illusions, Immortality, Intelligence, Invulnerability, Levitation, Magic, Psionic Powers, Shapeshifting, Stamina, Super Speed, Super Strength, Telepathy, Teleportation, Vitakinesis',
-        33);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ultimator', 'Ultimator',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13392.jpg',
-        'Astral Projection, Astral Travel, Dimensional Awareness, Dimensional Travel, Duplication, Durability, Elasticity, Endurance, Energy Blasts, Energy Constructs, Energy Manipulation, Force Fields, Immortality, Intangibility, Invulnerability, Matter Manipulation, Melting, Mind Blast, Molecular Dissipation, Molecular Manipulation, Phasing, Power Nullifier, Precognition, Psionic Powers, Reality Warping, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation',
-        63);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Moses Magnum', 'Moses Magnum',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1020.jpg', 'Seismic Power', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kraglin (MCU)', 'Kraglin Obfonteri',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14011.jpg',
-        'Intelligence, Marksmanship, Weapon-based Powers, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shao Kahn', 'Shao Kahn',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10960.jpg',
-        'Accelerated Healing, Agility, Animation, Astral Travel, Cold Resistance, Darkforce Manipulation, Dexterity, Dimensional Travel, Durability, Endurance, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Control, Heat Resistance, Immortality, Intuitive aptitude, Invulnerability, Jump, Longevity, Magic, Magic Resistance, Mind Control Resistance, Natural Weapons, Portal Creation, Possession, Power Augmentation, Power Sense, Radiation Immunity, Reflexes, Regeneration, Spatial Awareness, Stamina, Stealth, Summoning, Super Speed, Super Strength, Telepathy Resistance, Teleportation, Toxin and Disease Resistance, Weapons Master',
-        53);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Captain Boomerang (CW)', 'Digger Harkness',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16418.jpg',
-        'Agility, Durability, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Composite Superman', 'Joseph Meach',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11842.jpg',
-        'Agility, Duplication, Elasticity, Electrokinesis, Energy Absorption, Fire Control, Flight, Gravity Control, Intangibility, Intelligence, Invisibility, Invulnerability, Magnetism, Matter Manipulation, Mind Control, Radiation Absorption, Reflexes, Regeneration, Shapeshifting, Size Changing, Stamina, Super Breath, Super Speed, Super Strength, Telekinesis, Telepathy, Time Travel, Vision - Heat, Vision - Microscopic, Vision - Telescopic, Vision - X-Ray',
-        39);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Silver Samurai', 'Kenuichio Harada',
-        'https://www.superherodb.com/pictures2/portraits/10/050/126.jpg',
-        'Agility, Peak Human Condition, Power Suit, Reflexes, Stealth, Super Strength, Teleportation, Weapon-based Powers, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hecate', 'Hecate',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15718.jpg',
-        'Accelerated Healing, Agility, Banish, Camouflage, Clairvoyance, Cold Resistance, Cryokinesis, Darkforce Manipulation, Dexterity, Dimensional Awareness, Dimensional Travel, Duplication, Durability, Elemental Transmogrification, Energy Absorption, Energy Blasts, Energy Manipulation, Entropy Projection, Flight, Force Fields, Gliding, Gravity Control, Hair Manipulation, Heat Resistance, Illusions, Immortality, Insanity, Intangibility, Intelligence, Invisibility, Invulnerability, Magic, Magic Resistance, Matter Manipulation, Mind Blast, Molecular Manipulation, Omnilingualism, Portal Creation, Power Absorption, Power Augmentation, Power Sense, Precognition, Probability Manipulation, Psionic Powers, Reality Warping, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Spatial Awareness, Stamina, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Time Manipulation, Time Travel, Timeframe Control, Toxin and Disease Resistance, Vaporising Beams, Vitakinesis, Weapons Master, Wishing',
-        164);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sabretooth (FOX)', 'Victor Creed',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13266.jpg',
-        'Accelerated Healing, Agility, Enhanced Senses, Longevity, Reflexes, Regeneration, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance, Wallcrawling',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Korvac', 'Michael Korvac',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10285.jpg',
-        'Clairvoyance, Element Control, Energy Beams, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Immortality, Matter Manipulation, Mind Control, Molecular Manipulation, Portal Creation, Possession, Power Absorption, Psionic Powers, Reality Warping, Regeneration, Shapeshifting, Size Changing, Teleportation, Time Manipulation, Time Travel, Weather Control',
-        70);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Superwoman', 'Lois Lane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11594.jpg',
-        'Agility, Durability, Flight, Immortality, Reflexes, Stamina, Super Speed, Super Strength, Vision - Heat', 15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Joker (DCEU)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12707.jpg',
-        'Durability, Insanity, Intelligence, Marksmanship, Peak Human Condition, Toxin and Disease Resistance', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bane (Injustice)', 'Dorrance',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16345.jpg',
-        'Durability, Intelligence, Super Speed, Super Strength, Toxin and Disease Resistance', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ebony Maw (MCU)', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13090.jpg',
-        'Element Control, Flight, Force Fields, Gravity Control, Intelligence, Levitation, Longevity, Magic, Marksmanship, Super Speed, Telekinesis, Teleportation',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Purple Man', 'Zebediah Killgrave',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10451.jpg',
-        'Accelerated Healing, Hypnokinesis, Mind Control, Substance Secretion, Telepathy', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Owlman', 'Thomas Wayne Jr.',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11001.jpg',
-        'Agility, Durability, Gliding, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lady Bullseye', 'Maki Matsumotu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1170.jpg',
-        'Agility, Intelligence, Marksmanship, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Thanos (Infinity Gauntlet MCU)', 'Thanos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14396.jpg',
-        'Absorption, Accelerated Healing, Agility, Biokinesis, Density Control, Durability, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Fire Control, Flight, Force Fields, Gravity Control, Illusions, Intangibility, Intelligence, Invisibility, Levitation, Longevity, Matter Manipulation, Molecular Combustion, Portal Creation, Power Nullifier, Reality Warping, Reflexes, Seismic Power, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Weapons Master',
-        41);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dark Monitor', 'Mandrakk',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12266.jpg',
-        'Darkforce Manipulation, Death Touch, Dimensional Awareness, Energy Absorption, Energy Blasts, Energy Manipulation, Flight, Immortality, Intelligence, Invulnerability, Nigh-Omniscient, Possession, Reality Warping, Size Changing, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        80);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Rick Flag', 'Richard Rogers Flag',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1352.jpg', 'Weapon-based Powers', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dormammu', 'Dormammu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1359.jpg',
-        'Absorption, Astral Projection, Astral Travel, Banish, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Element Control, Energy Absorption, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Illusions, Immortality, Intelligence, Invulnerability, Magic, Matter Manipulation, Power Absorption, Reality Warping, Regeneration, Resurrection, Shapeshifting, Size Changing, Stamina, Summoning, Super Speed, Super Strength, Telepathy, Telepathy Resistance, Teleportation, Time Travel',
-        102);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Count Dooku', 'Dooku',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10457.jpg',
-        'Agility, Clairvoyance, Darkforce Manipulation, Durability, Electrokinesis, Energy Absorption, Energy Manipulation, Enhanced Senses, Force Fields, Illusions, Invisibility, Mind Control, Precognition, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Telekinesis, Telepathy, The Force, Vitakinesis, Weapons Master',
-        26);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'White Canary', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10542.jpg',
-        'Agility, Reflexes, Stamina, Stealth, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Gorilla Grodd (CW)', 'Grodd',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15415.jpg',
-        'Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Durability, Endurance, Enhanced Senses, Intelligence, Jump, Mind Control, Mind Control Resistance, Omnilingualism, Reflexes, Stamina, Super Strength, Telepathy, Telepathy Resistance',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bane (Dark Knight)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13841.jpg',
-        'Accelerated Healing, Agility, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Intelligence, Longevity, Reflexes, Stamina, Super Strength, Toxin and Disease Resistance, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Harley Quinn', 'Harley Quinn',
-        'https://www.superherodb.com/pictures2/portraits/10/050/701.jpg',
-        'Accelerated Healing, Agility, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Super Strength, Toxin and Disease Resistance',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Major Force', 'Clifford Zmeck',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11011.jpg',
-        'Accelerated Healing, Agility, Darkforce Manipulation, Energy Resistance, Enhanced Hearing, Enhanced Senses, Flight, Force Fields, Heat Generation, Heat Resistance, Immortality, Invulnerability, Matter Manipulation, Natural Armor, Phasing, Radiation Absorption, Radiation Control, Technopath/Cyberpath',
-        26);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Vegeta', 'Vegeta',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1206.jpg',
-        'Accelerated Healing, Adaptation, Agility, Energy Blasts, Enhanced Hearing, Fire Control, Flight, Force Fields, Heat Generation, Immortality, Intelligence, Invulnerability, Jump, Levitation, Light Control, Longevity, Marksmanship, Radar Sense, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Brainiac (Injustice)', 'Vril Dox',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15647.jpg',
-        'Accelerated Healing, Camouflage, Changing Armor, Clairvoyance, Cloaking, Cold Resistance, Durability, Energy Resistance, Enhanced Memory, Enhanced Senses, Force Fields, Heat Resistance, Illusions, Intelligence, Longevity, Omnilingualism, Peak Human Condition, Photographic Reflexes, Possession, Power Absorption, Power Sense, Precognition, Radiation Control, Reflexes, Self-Sustenance, Stealth, Super Speed, Super Strength, Telekinesis, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing, Vaporising Beams, Vision - Infrared, Vision - Night, Vision - Telescopic, Weapon-based Powers, Weapons Master',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Beetle', 'Abner Jenkins',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1122.jpg',
-        'Element Control, Fire Control, Flight, Intelligence, Power Suit, Weapon-based Powers, Weapons Master', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bullseye', 'Lester',
-        'https://www.superherodb.com/pictures2/portraits/10/050/624.jpg',
-        'Durability, Marksmanship, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Frost II', 'Louise Lincoln',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10088.jpg',
-        'Absorption, Cryokinesis, Element Control, Energy Absorption, Heat Generation', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ultra-Humanite', 'Gerard Shugel',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10984.jpg',
-        'Marksmanship, Mind Control, Super Strength, Toxin and Disease Resistance', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Greedo', 'Greedo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10468.jpg',
-        'Weapons Master', 3);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Grid', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11605.jpg',
-        'Agility, Dexterity, Durability, Endurance, Enhanced Senses, Flight, Natural Armor, Natural Weapons, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Silver Samurai (FOX)', 'Ichirō Yashida',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14037.jpg',
-        'Accelerated Healing, Durability, Intelligence, Invulnerability, Power Absorption, Power Suit, Reflexes, Stamina, Super Strength, Weapon-based Powers, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Warp', 'Emil LaSalle',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1353.jpg', 'Flight, Teleportation', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ultron (MCU)', 'Ultron',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12509.jpg',
-        'Agility, Anti-Gravity, Changing Armor, Durability, Energy Beams, Energy Blasts, Enhanced Memory, Enhanced Senses, Flight, Gravity Control, Heat Generation, Intelligence, Intuitive aptitude, Magnetism, Natural Armor, Reflexes, Self-Sustenance, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Vision - Night, Vision - Thermal, Vision - X-Ray, Weapon-based Powers',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Joker (Dark Knight)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13840.jpg',
-        'Durability, Insanity, Intelligence, Marksmanship, Peak Human Condition, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Maestro Hulk', 'Bruce Banner',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12749.jpg',
-        'Accelerated Healing, Adaptation, Agility, Bullet Time, Cold Resistance, Dexterity, Durability, Endurance, Energy Resistance, Fire Resistance, Heat Resistance, Immortality, Intelligence, Invulnerability, Jump, Latent Abilities, Mind Control Resistance, Power Suit, Radiation Absorption, Radiation Control, Radiation Immunity, Reflexes, Regeneration, Seismic Power, Shapeshifting, Size Changing, Sonic Scream, Spatial Awareness, Stamina, Super Breath, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Control, Toxin and Disease Resistance, Underwater breathing, Weapons Master',
-        35);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ras Al Ghul (CW)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15421.jpg',
-        'Agility, Dexterity, Durability, Intelligence, Longevity, Magic, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Witch King', 'Witch-King of Angmar',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10857.jpg',
-        'Absorption, Energy Blasts, Fire Control, Immortality, Invisibility, Invulnerability, Longevity, Magic, Sonic Scream, Stamina, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Supergiant', 'Supergiant',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11958.jpg',
-        'Accelerated Healing, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Durability, Energy Absorption, Energy Resistance, Enhanced Senses, Fire Resistance, Flight, Force Fields, Intelligence, Levitation, Marksmanship, Mind Control, Mind Control Resistance, Omnilingualism, Separation, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Weapons Master',
-        18);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Parademon', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10806.jpg',
-        'Fire Resistance, Flight, Gliding, Heat Generation, Natural Weapons, Power Suit, Shapeshifting, Super Breath, Super Strength',
-        2);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shockwave (G1)', 'Shockwave',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16817.jpg',
-        'Durability, Endurance, Energy Beams, Energy Blasts, Intelligence, Longevity, Physical Anomaly, Stamina, Super Speed, Super Strength, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mister Zsasz', 'Victor Zsasz',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1486.jpg', 'Agility, Reflexes, Stealth, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'YellowJacket (MCU)', 'Darren Cross',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13896.jpg',
-        'Density Control, Durability, Energy Beams, Energy Blasts, Flight, Intelligence, Marksmanship, Power Suit, Size Changing, Stamina, Super Strength, Weapon-based Powers',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Scarecrow (Dark Knight)', 'Jonathan Crane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13877.jpg',
-        'Insanity, Intelligence, Psionic Powers, Weapon-based Powers', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sindragosa', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14731.jpg',
-        'Darkforce Manipulation, Death Touch, Dexterity, Dimensional Awareness, Duplication, Durability, Element Control, Elemental Transmogrification, Energy Manipulation, Fire Control, Immortality, Magic, Marksmanship, Shapeshifting, Stamina, Stealth, Super Speed, Super Strength, Weapon-based Powers',
-        34);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Gilotina', 'Gilotina',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12359.jpg',
-        'Accelerated Healing, Adaptation, Agility, Immortality, Intelligence, Invulnerability, Levitation, Marksmanship, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Weapons Master',
-        17);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Collector', 'Taneleer Tivan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10402.jpg',
-        'Energy Blasts, Energy Manipulation, Immortality, Invulnerability, Matter Manipulation, Mind Control, Precognition, Regeneration, Super Strength',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Red Mist', 'Chris Genovese',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1337.jpg', 'Agility, Stamina', 3);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Lich King', 'Arthas Menethil',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12303.jpg',
-        'Astral Projection, Clairvoyance, Darkforce Manipulation, Energy Blasts, Energy Manipulation, Immortality, Magic, Mind Control, Power Nullifier, Resurrection, Super Speed, Super Strength, Telepathy, Teleportation, Weapon-based Powers',
-        42);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Talia Al Ghul', 'Talia Al Ghul',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1480.jpg',
-        'Agility, Durability, Intelligence, Longevity, Marksmanship, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hush', 'Thomas Elliot',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11315.jpg',
-        'Agility, Intelligence, Marksmanship, Peak Human Condition, Stamina, Weapon-based Powers, Weapons Master', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dark Phoenix (Venomized)', 'Jean Grey',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14690.jpg',
-        'Accelerated Healing, Agility, Astral Projection, Astral Travel, Camouflage, Cloaking, Durability, Empathy, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Fire Control, Fire Resistance, Flight, Force Fields, Illusions, Immortality, Intelligence, Invulnerability, Levitation, Matter Manipulation, Memory Manipulation, Mind Blast, Mind Control, Molecular Manipulation, Phoenix Force, Possession, Power Augmentation, Power Nullifier, Psionic Powers, Reality Warping, Reflexes, Resurrection, Stamina, Super Speed, Super Strength, Symbiote Costume, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Time Manipulation, Weather Control',
-        128);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deadshot (Injustice)', 'Floyd Lawton',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16424.jpg',
-        'Agility, Danger Sense, Intelligence, Marksmanship, Stamina, Stealth, Weapon-based Powers, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Majin Android 21', 'Android 21',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14644.jpg',
-        'Absorption, Adaptation, Agility, Biokinesis, Elasticity, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Immortality, Invulnerability, Longevity, Molecular Manipulation, Portal Creation, Power Absorption, Power Augmentation, Power Nullifier, Power Sense, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Super Speed, Super Strength, Telekinesis, Teleportation',
-        41);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shoggoth', 'Shoggoth',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15641.jpg',
-        'Accelerated Healing, Adaptation, Biokinesis, Changing Armor, Durability, Illumination, Invulnerability, Longevity, Natural Armor, Natural Weapons, Possession, Power Augmentation, Power Suit, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Substance Secretion, Symbiote Costume, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing, Vision - Thermal, Vitakinesis, Wallcrawling',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'General Zod (DCEU)', 'Dru-Zod',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12609.jpg',
-        'Enhanced Senses, Flight, Invulnerability, Longevity, Radiation Absorption, Reflexes, Stamina, Super Speed, Super Strength, Vision - Heat, Vision - Telescopic, Vision - X-Ray',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ronan The Accuser', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10636.jpg',
-        'Energy Absorption, Energy Blasts, Energy Manipulation, Force Fields, Gravity Control, Intelligence, Invulnerability, Longevity, Matter Manipulation, Mind Control, Power Suit, Stamina, Stealth, Super Speed, Super Strength, Teleportation, Time Manipulation, Vision - Heat, Vitakinesis, Weapons Master',
-        23);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Saruman', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10855.jpg',
-        'Element Control, Elemental Transmogrification, Empathy, Energy Manipulation, Flight, Force Fields, Heat Generation, Immortality, Intangibility, Invulnerability, Light Control, Mind Control, Precognition, Regeneration, Shapeshifting, Size Changing, Super Speed, Super Strength, Telekinesis, Telepathy, Weapons Master, Weather Control, Wind Control',
-        31);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Widow II', 'Yelena Belova',
-        'https://www.superherodb.com/pictures2/portraits/10/050/618.jpg',
-        'Intelligence, Marksmanship, Stealth, Weapons Master', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mirror Master (CW)', 'Sam Scudder',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16500.jpg',
-        'Dimensional Travel, Durability, Portal Creation, Teleportation', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Iron Monger', 'Obadiah Stane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/886.jpg',
-        'Durability, Energy Beams, Flight, Intelligence, Super Strength', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kingpin', 'Wilson Grant Fisk',
-        'https://www.superherodb.com/pictures2/portraits/10/050/623.jpg',
-        'Energy Absorption, Energy Armor, Energy Beams, Energy Blasts', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ultron (Final Form)', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14832.jpg',
-        'Agility, Cold Resistance, Dexterity, Durability, Endurance, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Resistance, Enhanced Senses, Enhanced Sight, Fire Resistance, Flight, Force Fields, Immortality, Intelligence, Intuitive aptitude, Invulnerability, Matter Absorption, Mind Control, Mind Control Resistance, Natural Armor, Radiation Absorption, Radiation Control, Radiation Immunity, Reflexes, Self-Sustenance, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing, Vaporising Beams, Vision - Microscopic, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapons Master',
-        31);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Samukai', 'Samukai',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16171.jpg',
-        'Adaptation, Agility, Cryokinesis, Dimensional Travel, Durability, Electrokinesis, Element Control, Enhanced Memory, Enhanced Senses, Fire Control, Fire Resistance, Immortality, Insanity, Intelligence, Invulnerability, Longevity, Marksmanship, Natural Armor, Natural Weapons, Peak Human Condition, Portal Creation, Reflexes, Regeneration, Resurrection, Self-Sustenance, Stamina, Stealth, Summoning, Super Strength, Terrakinesis, Toxin and Disease Resistance, Wallcrawling, Weapon-based Powers, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deathstroke (Arkham)', 'Slade Wilson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16123.jpg',
-        'Durability, Endurance, Intelligence, Super Strength, Weapon-based Powers, Weapons Master', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Soundwave', 'Soundwave',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10596.jpg',
-        'Agility, Biokinesis, Durability, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Intelligence, Invulnerability, Jump, Longevity, Marksmanship, Natural Armor, Natural Weapons, Physical Anomaly, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Demogoblin', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1515.jpg',
-        'Agility, Magic, Natural Weapons, Reflexes, Stamina, Super Speed, Super Strength, Telepathy', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Helya', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14652.jpg',
-        'Agility, Astral Projection, Astral Travel, Darkforce Manipulation, Death Touch, Energy Manipulation, Force Fields, Grim Reaping, Immortality, Intangibility, Invisibility, Invulnerability, Matter Manipulation, Reality Warping, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Super Speed, Super Strength, Telekinesis, Telepathy',
-        53);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Faora (DCEU)', 'Faora-Ul',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15086.jpg',
-        'Accelerated Healing, Agility, Durability, Energy Absorption, Enhanced Hearing, Enhanced Senses, Flight, Longevity, Reflexes, Stamina, Super Breath, Super Speed, Super Strength, Vision - Heat, Vision - Telescopic, Vision - X-Ray',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Goblin Force', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14451.jpg',
-        'Agility, Creation, Death Manipulation, Durability, Empathy, Endurance, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Flight, Immortality, Intelligence, Invulnerability, Life Manipulation, Magic, Matter Manipulation, Mind Blast, Mind Control, Molecular Combustion, Molecular Dissipation, Molecular Immobilization, Molecular Manipulation, Nigh-Omnipotent, Possession, Power Bestowal, Psionic Powers, Reality Warping, Reflexes, Regeneration, Resurrection, Size Changing, Spatial Awareness, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Time Travel, Weather Control',
-        167);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cheetah II', 'Deborah Domaine',
-        'https://www.superherodb.com/pictures2/portraits/10/050/925.jpg',
-        'Agility, Animal Oriented Powers, Reflexes, Stamina, Super Speed, Super Strength', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Jango Fett', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10458.jpg',
-        'Element Control, Fire Control, Flight, Peak Human Condition, Weapons Master', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Parasite (CW)', 'Rudy Jones',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15965.jpg',
-        'Absorption, Durability, Energy Absorption, Intelligence, Invulnerability, Jump, Matter Absorption, Power Absorption, Size Changing, Stamina, Super Strength',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mongul The Elder', 'Mongul',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10073.jpg',
-        'Accelerated Healing, Agility, Durability, Energy Blasts, Energy Manipulation, Intelligence, Invulnerability, Levitation, Longevity, Marksmanship, Reflexes, Self-Sustenance, Stamina, Stealth, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Vision - Heat, Weapon-based Powers, Weapons Master',
-        16);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mad Jim Jaspers', 'Jim Jaspers',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11019.jpg',
-        'Accelerated Healing, Animation, Biokinesis, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Energy Blasts, Energy Constructs, Energy Manipulation, Insanity, Intangibility, Intelligence, Invulnerability, Longevity, Matter Manipulation, Melting, Molecular Manipulation, Reality Warping, Resurrection, Shapeshifting, Size Changing, Super Speed, Super Strength, Teleportation, Time Manipulation, Vitakinesis',
-        54);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Anti-Spawn', 'The Redeemer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1071.jpg',
-        'Agility, Astral Projection, Durability, Element Control, Energy Blasts, Energy Manipulation, Fire Control, Invulnerability, Magic, Mind Control, Possession, Reflexes, Stamina, Super Speed, Super Strength, Teleportation',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ultraman', 'Kal-Il',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11000.jpg',
-        'Agility, Enhanced Hearing, Flight, Invulnerability, Reflexes, Stamina, Super Breath, Super Speed, Super Strength, Vision - Heat, Vision - X-Ray',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Beetle', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10054.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Flight, Symbiote Costume', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Zoom (CW)', 'Hunter Zolomon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12620.jpg',
-        'Accelerated Healing, Agility, Dimensional Travel, Duplication, Durability, Electrokinesis, Enhanced Senses, Illusions, Intangibility, Reflexes, Speed Force, Stamina, Super Speed, Time Travel, Toxin and Disease Resistance, Wind Control',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shades (MCU)', 'Herman Enrique Salazar Alvarez',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16354.jpg',
-        'Durability, Endurance, Intelligence, Intuitive aptitude, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'T-1000', 'Cyberdyne Systems Series 1000 Terminator',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10411.jpg',
-        'Accelerated Healing, Agility, Camouflage, Cold Resistance, Durability, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Intelligence, Invulnerability, Longevity, Marksmanship, Melting, Natural Weapons, Reflexes, Regeneration, Shapeshifting, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath, Vision - Infrared, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Broly', 'Broly',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1242.jpg',
-        'Accelerated Healing, Adaptation, Agility, Cold Resistance, Energy Armor, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Invulnerability, Latent Abilities, Power Sense, Reflexes, Self-Sustenance, Stamina, Super Speed, Super Strength',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Devastator', 'Bruce Wayne',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12555.jpg',
-        'Accelerated Healing, Adaptation, Agility, Cold Resistance, Energy Absorption, Energy Resistance, Flight, Heat Resistance, Intelligence, Invulnerability, Jump, Marksmanship, Natural Armor, Natural Weapons, Power Absorption, Reflexes, Regeneration, Self-Sustenance, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Control, Weapon-based Powers, Weapons Master',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Sidious', 'Sheev Palpatine',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10462.jpg',
-        'Absorption, Agility, Clairvoyance, Cloaking, Darkforce Manipulation, Durability, Electrokinesis, Element Control, Energy Absorption, Energy Manipulation, Enhanced Senses, Fire Control, Force Fields, Illusions, Immortality, Invisibility, Magic, Matter Manipulation, Mind Control, Possession, Power Nullifier, Power Sense, Precognition, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath, Telekinesis, Telepathy, Teleportation, The Force, Toxin and Disease Resistance, Vitakinesis',
-        70);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dilara', 'Dilara',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16526.jpg',
-        'Agility, Darkforce Manipulation, Durability, Endurance, Insanity, Intelligence, Marksmanship, Peak Human Condition, Stamina, Stealth, Summoning, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Maul', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10464.jpg',
-        'Agility, Danger Sense, Darkforce Manipulation, Durability, Electrokinesis, Illusions, Marksmanship, Stamina, Stealth, Super Strength, Telekinesis, Telepathy, The Force, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Caedus', 'Jacen Solo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11572.jpg',
-        'Absorption, Accelerated Healing, Agility, Astral Projection, Camouflage, Clairvoyance, Cloaking, Darkforce Manipulation, Dexterity, Durability, Electrokinesis, Endurance, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Force Fields, Hypnokinesis, Illusions, Intuitive aptitude, Jump, Light Control, Matter Manipulation, Mind Control, Mind Control Resistance, Molecular Manipulation, Peak Human Condition, Power Augmentation, Power Sense, Precognition, Psionic Powers, Reflexes, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, The Force, Time Travel, Toxin and Disease Resistance, Weapons Master',
-        66);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Corvus Glaive (MCU)', 'Corvus Glaive',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16758.jpg',
-        'Accelerated Healing, Agility, Durability, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Baron Mordo (MCU)', 'Karl Mordo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15123.jpg',
-        'Absorption, Astral Projection, Dimensional Travel, Force Fields, Magic, Portal Creation, Power Absorption, Teleportation',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Joker', 'Jack Napier',
-        'https://www.superherodb.com/pictures2/portraits/10/050/719.jpg',
-        'Durability, Insanity, Intelligence, Marksmanship, Stamina, Stealth, Toxin and Disease Resistance, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Red Skull', 'Johann Shmidt',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1392.jpg', 'Enhanced Memory', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Evil Deadpool', 'Wade Wilson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10090.jpg',
-        'Accelerated Healing, Agility, Dimensional Awareness, Immortality, Longevity, Marksmanship, Mind Control Resistance, Reflexes, Regeneration, Stamina, Stealth, Telepathy Resistance, Teleportation, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Trickster (CW)', 'James Jesse',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15953.jpg',
-        'Insanity, Intelligence, Intuitive aptitude, Weapon-based Powers', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Smiling Knight', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15100.jpg',
-        'Dexterity, Endurance, Insanity, Stamina, Weapons Master', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lizard', 'Curtis Connors',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Oriented Powers, Durability, Enhanced Senses, Jump, Natural Armor, Natural Weapons, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Telepathy, Wallcrawling',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'MODOK', 'George Tarleton',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10438.jpg',
-        'Agility, Empathy, Energy Blasts, Flight, Force Fields, Heat Generation, Illusions, Intelligence, Levitation, Longevity, Psionic Powers, Technopath/Cyberpath, Telekinesis, Telepathy, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Exodus', 'Bennet du Paris',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1517.jpg',
-        'Accelerated Healing, Astral Projection, Energy Blasts, Flight, Illusions, Mind Blast, Psionic Powers, Regeneration, Resurrection, Telekinesis, Telepathy, Teleportation',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'David Cain', 'David Cain',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11226.jpg',
-        'Agility, Intelligence, Weapon-based Powers, Weapons Master', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Acronix', 'Acronix',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16291.jpg',
-        'Agility, Bullet Time, Clairvoyance, Durability, Element Control, Endurance, Enhanced Memory, Flight, Force Fields, Insanity, Intelligence, Longevity, Marksmanship, Peak Human Condition, Portal Creation, Precognition, Reflexes, Stamina, Stealth, Summoning, Super Speed, Teleportation, Time Manipulation, Time Travel, Timeframe Control, Weapon-based Powers, Weapons Master',
-        24);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Riddler', 'Edward Nigma',
-        'https://www.superherodb.com/pictures2/portraits/10/050/768.jpg', 'Intelligence', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Klaw', 'Ulysses Klaw',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1539.jpg',
-        'Audio Control, Durability, Energy Blasts, Invulnerability, Self-Sustenance, Super Strength, Telepathy Resistance',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Leader', 'Samuel Sterns',
-        'https://www.superherodb.com/pictures2/portraits/10/050/885.jpg', 'Intelligence, Telekinesis, Telepathy', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Copperhead', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10910.jpg',
-        'Agility, Natural Weapons, Wallcrawling, Weapon-based Powers, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Moonstone', 'Karla Sofen',
-        'https://www.superherodb.com/pictures2/portraits/10/050/100.jpg',
-        'Durability, Energy Blasts, Flight, Intangibility, Light Control, Molecular Manipulation, Super Speed, Super Strength',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Alucard', 'Dracula',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10915.jpg',
-        'Absorption, Darkforce Manipulation, Element Control, Endurance, Fire Control, Gravity Control, Immortality, Intangibility, Mind Control, Omnipresent, Reflexes, Regeneration, Shapeshifting, Super Speed, Super Strength, Telekinesis, Telepathy, Weather Control',
-        33);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Bane', 'Dessel',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10692.jpg',
-        'Agility, Darkforce Manipulation, Electrokinesis, Energy Absorption, Force Fields, Heat Generation, Illusions, Immortality, Latent Abilities, Matter Manipulation, Mind Control, Mind Control Resistance, Possession, Precognition, Reflexes, Regeneration, Super Speed, Super Strength, Telekinesis, Telepathy, The Force, Toxin and Disease Resistance, Weather Control',
-        46);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Evilhawk', 'Dargin Bokk',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1516.jpg',
-        'Accelerated Healing, Durability, Energy Blasts, Flight, Force Fields, Power Suit, Super Strength, Vision - Infrared, Vision - Telescopic, Weapon-based Powers',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Choprai', 'Chope',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16542.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Camouflage, Cloaking, Dexterity, Durability, Endurance, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Insanity, Invulnerability, Jump, Longevity, Marksmanship, Natural Armor, Natural Weapons, Peak Human Condition, Photographic Reflexes, Reflexes, Self-Sustenance, Stamina, Stealth, Summoning, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Vision - Night, Wallcrawling, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Shocker (MCU)', 'Herman Schultz',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12708.jpg',
-        'Agility, Electrokinesis, Element Control, Energy Blasts, Super Strength, Weapons Master', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Granny Goodness', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1344.jpg',
-        'Accelerated Healing, Agility, Dimensional Awareness, Dimensional Travel, Durability, Energy Blasts, Energy Manipulation, Force Fields, Immortality, Intelligence, Invulnerability, Longevity, Omnilingualism, Peak Human Condition, Power Sense, Precognition, Reflexes, Self-Sustenance, Stamina, Stealth, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Underwater breathing, Weapon-based Powers',
-        22);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Graviton', 'Franklin Hall',
-        'https://www.superherodb.com/pictures2/portraits/10/050/201.jpg',
-        'Energy Constructs, Energy Manipulation, Flight, Force Fields, Gravity Control, Intelligence, Light Control, Super Speed, Super Strength',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Phantom Lantern', 'Frank Laminski',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16711.jpg',
-        'Accelerated Healing, Agility, Audio Control, Changing Armor, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Energy Resistance, Flight, Force Fields, Heat Resistance, Intelligence, Invulnerability, Lantern Power Ring, Levitation, Longevity, Matter Manipulation, Peak Human Condition, Power Sense, Reflexes, Self-Sustenance, Spatial Awareness, Stamina, Stealth, Super Speed, Super Strength, Telepathy Resistance, Vision - Infrared, Vitakinesis, Weapon-based Powers, Weapons Master',
-        35);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Magneto', 'Erik Magnus Lensherr',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12.jpg',
-        'Durability, Energy Beams, Enhanced Senses, Flight, Force Fields, Intelligence, Magnetism, Stamina, Super Strength, Telepathy Resistance',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The First Lantern', 'Volthoom',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12331.jpg',
-        'Agility, Astral Projection, Durability, Empathy, Endurance, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Energy Resistance, Fear Manipulation, Flight, Force Fields, Illusions, Immortality, Intangibility, Intelligence, Intuitive aptitude, Invulnerability, Lantern Power Ring, Light Control, Phasing, Precognition, Projection, Psionic Powers, Qwardian Power Ring, Reality Warping, Reflexes, Regeneration, Self-Sustenance, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Telepathy, Teleportation, Time Manipulation, Time Travel, Weapon-based Powers, Weapons Master',
-        103);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Crossbones (MCU)', 'Brock Rumlow',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13066.jpg',
-        'Agility, Durability, Marksmanship, Reflexes, Stamina, Super Speed, Super Strength, Weapons Master', 3);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Abomination (MCU)', 'Emil Blonsky',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12512.jpg',
-        'Agility, Durability, Jump, Marksmanship, Reflexes, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Juggernaut (8th Day)', 'Cain Marko',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14012.jpg',
-        'Energy Absorption, Energy Beams, Energy Manipulation, Energy Resistance, Force Fields, Immortality, Levitation, Matter Manipulation, Mind Control, Portal Creation, Regeneration, Self-Sustenance, Size Changing, Super Speed, Super Strength, Telepathy, Teleportation',
-        29);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Chope', 'Chope',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16540.jpg',
-        'Agility, Dexterity, Insanity, Marksmanship, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master',
-        2);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Firefly', 'Theodore Carson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11263.jpg',
-        'Agility, Audio Control, Element Control, Flight, Light Control, Weapon-based Powers', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Changeling', 'Kevin Sidney',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1107.jpg', 'Shapeshifting, Telekinesis, Telepathy', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Arclight', 'Philippa Sontag',
-        'https://www.superherodb.com/pictures2/portraits/10/050/832.jpg',
-        'Durability, Seismic Power, Stamina, Super Strength', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sebastian Shaw', 'Sebastian Hiram Shaw',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1482.jpg',
-        'Agility, Durability, Energy Absorption, Energy Manipulation, Super Strength', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Maxima', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1168.jpg',
-        'Durability, Flight, Force Fields, Mind Blast, Mind Control, Psionic Powers, Stamina, Super Speed, Super Strength, Telekinesis',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Boba Fett', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10467.jpg',
-        'Agility, Enhanced Hearing, Enhanced Sight, Flight, Intelligence, Marksmanship, Power Suit, Radar Sense, Stamina, Stealth, Weapons Master',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Count Vertigo', 'Count Werner Vertigo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10083.jpg',
-        'Energy Manipulation, Enhanced Senses, Flight, Intelligence, Intuitive aptitude, Magnetism, Marksmanship, Mind Blast, Mind Control, Peak Human Condition, Projection, Radiation Control, Reflexes, Telekinesis, Toxin and Disease Control, Wallcrawling, Weapon-based Powers, Weapons Master',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Poison Ivy (Arkham)', 'Pamela Isley',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16122.jpg',
-        'Agility, Empathy, Mind Control, Peak Human Condition, Plant Control, Reflexes, Summoning, Telepathy, Toxin and Disease Control, Toxin and Disease Resistance',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Baron Zemo', 'Helmut Zemo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10406.jpg',
-        'Agility, Endurance, Gravity Control, Intelligence, Light Control, Longevity, Mind Control, Mind Control Resistance, Molecular Dissipation, Phasing, Reflexes, Stamina, Technopath/Cyberpath, Telepathy Resistance, Vaporising Beams, Weapon-based Powers, Weapons Master',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Clock King', 'William Tockman',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10396.jpg',
-        'Intelligence', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Batroc', 'Georges Batroc',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10005.jpg', 'Agility, Reflexes', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cheetah III', 'Barbara Minerva',
-        'https://www.superherodb.com/pictures2/portraits/10/050/926.jpg',
-        'Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Durability, Enhanced Hearing, Enhanced Senses, Enhanced Sight, Enhanced Smell, Intelligence, Jump, Reflexes, Shapeshifting, Stamina, Stealth, Super Speed, Super Strength, Vision - Night',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Hard-To-Destroy Reptile', 'Atanti-ql-Paneu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11884.jpg',
-        'Adaptation, Animal Attributes, Animal Oriented Powers, Biokinesis, Camouflage, Changing Armor, Cold Resistance, Density Control, Dimensional Travel, Duplication, Energy Resistance, Enhanced Senses, Fire Resistance, Flight, Heat Resistance, Immortality, Intelligence, Invulnerability, Latent Abilities, Magic Resistance, Mind Control, Mind Control Resistance, Natural Armor, Natural Weapons, Nigh-Omnipotent, Physical Anomaly, Power Absorption, Radiation Immunity, Reality Warping, Regeneration, Resurrection, Shapeshifting, Size Changing, Stamina, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Control, Toxin and Disease Resistance',
-        89);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Scarebeast', 'Jonathan Crane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11875.jpg',
-        'Agility, Durability, Empathy, Illusions, Reflexes, Stamina, Super Speed, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mysterio (MCU)', 'Quentin Beck',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15699.jpg', 'Intelligence', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Zzzax', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10389.jpg',
-        'Absorption, Agility, Electrokinesis, Element Control, Energy Absorption, Flight, Super Speed, Super Strength',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'T-3000', 'John Connor',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14814.jpg',
-        'Adaptation, Agility, Bullet Time, Camouflage, Cold Resistance, Density Control, Durability, Enhanced Memory, Enhanced Senses, Enhanced Touch, Fire Resistance, Gravity Control, Heat Resistance, Intelligence, Invulnerability, Jump, Longevity, Magnetism, Marksmanship, Natural Armor, Natural Weapons, Phasing, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath, Teleportation, Vision - Microscopic, Vision - Night, Vision - Telescopic, Vision - Thermal, Weapon-based Powers, Weapons Master',
-        16);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Megamind', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1367.jpg',
-        'Agility, Anti-Gravity, Cloaking, Cryokinesis, Endurance, Energy Armor, Energy Beams, Enhanced Memory, Explosion Manipulation, Hacking, Information Analysis, Intelligence, Intuitive aptitude, Invisibility, Marksmanship, Memory Manipulation, Molecular Dissipation, Molecular Immobilization, Molecular Manipulation, Peak Human Condition, Photographic Reflexes, Physical Anomaly, Power Bestowal, Power Suit, Psionic Powers, Reflexes, Shapeshifting, Sleep Manipulation, Super Strength, Technopath/Cyberpath, Weapon Creation, Weapon-based Powers, Weapons Master',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Incubus (DCEU)', 'Incubus',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15960.jpg',
-        'Accelerated Healing, Durability, Elasticity, Hypnokinesis, Invulnerability, Longevity, Magic, Matter Absorption, Possession, Power Augmentation, Regeneration, Stamina, Super Strength, Telekinesis',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Steppenwolf (DCEU)', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12579.jpg',
-        'Element Control, Immortality, Intelligence, Longevity, Matter Manipulation, Portal Creation, Super Speed, Super Strength, Weapons Master',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deathstroke (CW)', 'Slade Wilson',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13778.jpg',
-        'Accelerated Healing, Agility, Durability, Peak Human Condition, Reflexes, Stamina, Super Speed, Super Strength, Weapons Master',
-        5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Adam (Yellow Lantern)', 'Teth-Adam',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15051.jpg',
-        'Accelerated Healing, Agility, Clairvoyance, Durability, Endurance, Energy Blasts, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Fire Resistance, Flight, Force Fields, Heat Resistance, Immortality, Intelligence, Invulnerability, Longevity, Magic, Matter Manipulation, Omnilingualism, Radiation Control, Reflexes, Self-Sustenance, Stamina, Super Breath, Telekinesis, Teleportation, Toxin and Disease Resistance',
-        34);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mammoth', 'Baran Flinders',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10065.jpg',
-        'Fire Resistance, Jump, Super Strength, Toxin and Disease Resistance', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Deathspawn', 'Deathspawn',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10659.jpg',
-        'Absorption, Agility, Astral Projection, Biokinesis, Changing Armor, Cold Resistance, Dimensional Awareness, Dimensional Travel, Durability, Energy Blasts, Entropy Projection, Flight, Grim Reaping, Heat Resistance, Immortality, Insanity, Invulnerability, Mind Control Resistance, Molecular Immobilization, Power Nullifier, Precognition, Radiation Immunity, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Stamina, Stealth, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Control, Toxin and Disease Resistance',
-        33);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Orochimaru', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13177.jpg',
-        'Accelerated Healing, Adaptation, Agility, Animal Control, Duplication, Elasticity, Fire Control, Intelligence, Marksmanship, Peak Human Condition, Possession, Reflexes, Regeneration, Resurrection, Stamina, Stealth, Summoning, Super Speed, Super Strength, Toxin and Disease Control, Wallcrawling, Weapon-based Powers, Weapons Master, Weather Control, Wind Control',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Upgrade', 'Grey Trace',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15584.jpg',
-        'Accelerated Healing, Adaptation, Agility, Cold Resistance, Danger Sense, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Heat Resistance, Insanity, Intelligence, Jump, Marksmanship, Peak Human Condition, Reflexes, Self-Sustenance, Spatial Awareness, Stamina, Stealth, Super Speed, Super Strength, Weapon-based Powers, Weapons Master',
-        12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Circe', 'Circe',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10917.jpg',
-        'Astral Projection, Darkforce Manipulation, Force Fields, Illusions, Immortality, Magic, Matter Manipulation, Mind Control, Reality Warping, Shapeshifting, Super Speed, Super Strength, Teleportation',
-        40);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bloodaxe', 'Jackie Lukus',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1509.jpg',
-        'Agility, Cryokinesis, Durability, Energy Blasts, Fire Control, Invulnerability, Magnetism, Reflexes, Stamina, Super Speed, Super Strength, Teleportation, Weapon-based Powers',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Damien Darhk (CW)', 'Damien Darhk',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15940.jpg',
-        'Accelerated Healing, Agility, Darkforce Manipulation, Death Touch, Durability, Electrokinesis, Endurance, Energy Absorption, Intelligence, Intuitive aptitude, Levitation, Longevity, Magic, Marksmanship, Peak Human Condition, Reflexes, Stamina, Stealth, Super Strength, Telekinesis, Teleportation, Time Travel, Weapons Master',
-        29);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Dark Phoenix (FOX)', 'Jean Grey',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13890.jpg',
-        'Biokinesis, Element Control, Energy Absorption, Energy Manipulation, Flight, Force Fields, Hypnokinesis, Illusions, Levitation, Matter Manipulation, Mind Control, Molecular Manipulation, Possession, Precognition, Projection, Psionic Powers, Telekinesis, Telepathy',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Anti-Monitor', 'Mobius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1292.jpg',
-        'Accelerated Healing, Darkforce Manipulation, Dimensional Awareness, Durability, Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Flight, Immortality, Intelligence, Invulnerability, Matter Absorption, Molecular Manipulation, Power Augmentation, Power Suit, Reality Warping, Size Changing, Super Strength, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        70);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Nyssa Raatko', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10339.jpg',
-        'Agility, Longevity, Weapon-based Powers, Weapons Master', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Fury', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15649.jpg',
-        'Adaptation, Agility, Cold Resistance, Density Control, Dimensional Travel, Durability, Elasticity, Electrical Transport, Electrokinesis, Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Enhanced Senses, Force Fields, Heat Generation, Heat Resistance, Immortality, Insanity, Invulnerability, Longevity, Matter Absorption, Matter Manipulation, Mind Blast, Mind Control Resistance, Molecular Manipulation, Power Nullifier, Precognition, Radar Sense, Radiation Control, Radiation Immunity, Reality Warping, Reflexes, Regeneration, Stamina, Super Speed, Super Strength, Telepathy, Telepathy Resistance, Teleportation, Vitakinesis',
-        60);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Malgus', 'Veradun',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10701.jpg',
-        'Agility, Clairvoyance, Darkforce Manipulation, Durability, Electrokinesis, Energy Blasts, Force Fields, Mind Blast, Mind Control, Power Sense, Precognition, Reflexes, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Telekinesis, Telepathy, The Force',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hannibal Lecter', 'Hannibal Lecter',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11137.jpg', 'Intelligence', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Silver Banshee', 'Siobhan McDougal',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10911.jpg',
-        'Accelerated Healing, Agility, Death Touch, Endurance, Flight, Intelligence, Magic, Marksmanship, Omnilingualism, Sonic Scream, Stamina, Super Speed, Super Strength, Teleportation',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Trigon', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10703.jpg',
-        'Accelerated Healing, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Energy Absorption, Energy Blasts, Energy Manipulation, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Hypnokinesis, Illusions, Immortality, Intelligence, Invulnerability, Magic, Matter Absorption, Mind Control, Precognition, Reality Warping, Reflexes, Regeneration, Shapeshifting, Stamina, Super Breath, Super Strength, Telekinesis, Telepathy, Teleportation',
-        67);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mordru', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15648.jpg',
-        'Astral Travel, Darkforce Manipulation, Dimensional Awareness, Fire Control, Flight, Heat Generation, Illusions, Immortality, Magic, Matter Manipulation, Possession, Regeneration, Spatial Awareness, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation, Time Travel',
-        61);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Batman Who Laughs', 'Bruce Wayne',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12552.jpg',
-        'Agility, Insanity, Intelligence, Mind Control, Reality Warping, Reflexes, Stamina, Super Speed, Super Strength, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The One Below All', 'The Devil',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16100.jpg',
-        'Accelerated Healing, Agility, Camouflage, Causality Manipulation, Durability, Endurance, Immortality, Intangibility, Invisibility, Invulnerability, Nigh-Omnipotent, Nigh-Omnipresent, Nigh-Omniscient, Non-Corporeal, Non-Physical Interaction, Possession, Power Nullifier, Precognition, Radiation Absorption, Reality Warping, Resurrection, Self-Sustenance, Sleep Manipulation, Soul Manipulation, Stamina, Stealth, Super Speed, Super Strength, Teleportation, Time Manipulation',
-        127);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Man-Thing (Venomized)', 'Theodore Sallis',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14693.jpg',
-        'Accelerated Healing, Adaptation, Death Touch, Durability, Empathy, Endurance, Heat Generation, Immortality, Invulnerability, Longevity, Marksmanship, Matter Absorption, Natural Weapons, Plant Control, Reality Warping, Regeneration, Resurrection, Self-Sustenance, Size Changing, Stamina, Stealth, Sub-Mariner, Substance Secretion, Super Strength, Symbiote Costume, Telepathy, Teleportation, Toxin and Disease Control, Toxin and Disease Resistance, Underwater breathing',
-        42);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Lizard (SONY)', 'Curtis Connors',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13834.jpg',
-        'Agility, Dexterity, Endurance, Jump, Reflexes, Super Speed, Super Strength, Wallcrawling', 11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mister Mxyzptlk', 'Mr. Mxyzptlk',
-        'https://www.superherodb.com/pictures2/portraits/10/050/744.jpg',
-        'Accelerated Healing, Agility, Animation, Astral Projection, Cryokinesis, Density Control, Dimensional Awareness, Dimensional Travel, Duplication, Elasticity, Energy Blasts, Energy Constructs, Fire Control, Flight, Force Fields, Gravity Control, Immortality, Intelligence, Invulnerability, Levitation, Longevity, Magic, Molecular Manipulation, Phasing, Reality Warping, Shapeshifting, Telekinesis, Teleportation, Time Manipulation, Time Travel, Weather Control',
-        54);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Marquis Of Death', 'Clyde Wyncham',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11800.jpg',
-        'Dimensional Awareness, Energy Manipulation, Flight, Illusions, Immortality, Invulnerability, Matter Manipulation, Mind Control, Probability Manipulation, Psionic Powers, Reality Warping, Shapeshifting, Spatial Awareness, Stamina, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Manipulation',
-        39);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mister Freeze', 'Victor Fries',
-        'https://www.superherodb.com/pictures2/portraits/10/050/742.jpg',
-        'Cold Resistance, Cryokinesis, Durability, Intelligence, Longevity, Marksmanship, Power Suit, Super Strength',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Gizmo', 'Mikron OJeneus',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10225.jpg',
-        'Flight, Illumination, Intelligence, Jump, Stealth, Vision - X-Ray, Wallcrawling, Weapon-based Powers, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Superboy-Prime', 'Kal-El',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1535.jpg',
-        'Accelerated Healing, Durability, Energy Absorption, Enhanced Hearing, Enhanced Senses, Enhanced Smell, Flight, Hypnokinesis, Intelligence, Invulnerability, Jump, Longevity, Magic Resistance, Power Suit, Stamina, Super Breath, Super Speed, Super Strength, Vision - Heat, Vision - Infrared, Vision - Microscopic, Vision - Telescopic, Vision - X-Ray',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Shadow the Hedgehog', 'Shadow the Hedgehog',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10537.jpg',
-        'Absorption, Accelerated Healing, Agility, Anti-Gravity, Biokinesis, Bullet Time, Cryokinesis, Darkforce Manipulation, Dimensional Travel, Duplication, Electrokinesis, Element Control, Energy Manipulation, Fire Control, Flight, Force Fields, Gravity Control, Illusions, Immortality, Intangibility, Invisibility, Invulnerability, Levitation, Magnetism, Matter Manipulation, Mind Control Resistance, Resurrection, Self-Sustenance, Size Changing, Telepathy Resistance, Teleportation, Time Manipulation, Time Travel, Timeframe Control, Water Control, Weapons Master, Wind Control',
-        89);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Zoom', 'Hunter Zolomon',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1384.jpg',
-        'Intangibility, Super Speed, Time Manipulation, Time Travel', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cooler', 'Cooler',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1244.jpg',
-        'Agility, Biokinesis, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Force Fields, Invulnerability, Reflexes, Self-Sustenance, Shapeshifting, Stamina, Super Speed, Super Strength, Telekinesis, Vision - Heat',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Weather Wizard', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10075.jpg',
-        'Agility, Electrokinesis, Element Control, Water Control, Weapon-based Powers', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Swarm', 'Fritz von Meyer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10428.jpg',
-        'Animal Control, Animal Oriented Powers, Durability, Flight, Intangibility, Intelligence, Longevity, Shapeshifting, Size Changing, Super Strength',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Anacondrai Serpent', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16582.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Camouflage, Cold Resistance, Durability, Endurance, Energy Resistance, Enhanced Hearing, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Invisibility, Invulnerability, Longevity, Natural Armor, Reflexes, Regeneration, Self-Sustenance, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Resistance, Wallcrawling',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Surtur (MCU)', 'Surtur',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12718.jpg',
-        'Durability, Fire Control, Invulnerability, Longevity, Resurrection, Self-Sustenance, Super Speed, Super Strength, Weapons Master',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ganon', 'Ganondorf',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16007.jpg',
-        'Absorption, Accelerated Healing, Afterimage Creation, Agility, Astral Projection, Berserk Mode, Chaos Magic, Clairvoyance, Creation, Cryokinesis, Darkforce Manipulation, Death Manipulation, Dimensional Travel, Duplication, Durability, Electrokinesis, Empathy, Endurance, Energy Manipulation, Enhanced Senses, Explosion Manipulation, Fire Control, Flight, Force Fields, Illusions, Immortality, Insanity, Intangibility, Invisibility, Invulnerability, Life Manipulation, Light Control, Longevity, Magic, Marksmanship, Mind Control, Mind Control Resistance, Necromancy, Non-Physical Interaction, Plant Control, Portal Creation, Possession, Power Absorption, Power Bestowal, Power Mimicry, Power Nullifier, Projection, Reflexes, Regeneration, Resurrection, Self-Sustenance, Shapeshifting, Size Changing, Sleep Manipulation, Soul Manipulation, Stamina, Statistics Amplification, Summoning, Super Breath, Super Speed, Super Strength, Technopath/Cyberpath, Telekinesis, Telepathy, Teleportation, Toxin and Disease Control, Toxin and Disease Resistance, Water Control, Weapon Creation, Weapon-based Powers, Weapons Master, Weather Control, Wind Control',
-        125);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mewtwo', 'Mewtwo',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11317.jpg',
-        'Agility, Cryokinesis, Duplication, Electrokinesis, Element Control, Empathy, Energy Beams, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Illusions, Immortality, Intelligence, Invisibility, Invulnerability, Light Control, Matter Manipulation, Mind Control, Mind Control Resistance, Molecular Manipulation, Portal Creation, Power Absorption, Power Augmentation, Power Nullifier, Precognition, Reality Warping, Reflexes, Regeneration, Resurrection, Self-Sustenance, Stamina, Stealth, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Terrakinesis, Time Travel, Umbrakinesis, Vitakinesis, Weather Control, Wind Control',
-        113);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Big Man', 'Frederick Foswell',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1038.jpg', 'Marksmanship', 6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mach-IV', 'Abner Jenkins',
-        'https://www.superherodb.com/pictures2/portraits/10/050/370.jpg',
-        'Durability, Flight, Super Speed, Super Strength, Weapon-based Powers', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Venom II', 'Angelo Fortunato',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1124.jpg',
-        'Agility, Animal Oriented Powers, Camouflage, Durability, Reflexes, Shapeshifting, Super Speed, Super Strength, Wallcrawling',
-        6);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Great Devourer', 'The Great Devourer',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16174.jpg',
-        'Accelerated Healing, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Animation, Camouflage, Cold Resistance, Darkforce Manipulation, Durability, Element Control, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Intelligence, Invulnerability, Longevity, Mind Control, Natural Armor, Natural Weapons, Peak Human Condition, Reflexes, Regeneration, Resurrection, Self-Sustenance, Size Changing, Stamina, Stealth, Super Speed, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance, Vision - Microscopic, Vision - Night',
-        32);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Abra Kadabra (CW)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16421.jpg',
-        'Dimensional Travel, Illusions, Intelligence, Intuitive aptitude, Matter Manipulation, Technopath/Cyberpath, Teleportation',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doctor Sivana', 'Dr. Thaddeus Sivana, Sr.',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11675.jpg',
-        'Dexterity, Duplication, Energy Beams, Energy Resistance, Enhanced Memory, Enhanced Senses, Enhanced Sight, Flight, Force Fields, Hypnokinesis, Intangibility, Intelligence, Intuitive aptitude, Magic, Mind Blast, Mind Control Resistance, Omnilingualism, Phasing, Power Suit, Resurrection, Size Changing, Super Strength, Telepathy Resistance, Teleportation, Time Travel, Vaporising Beams',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Adam', 'Teth-Adam',
-        'https://www.superherodb.com/pictures2/portraits/10/050/643.jpg',
-        'Accelerated Healing, Clairvoyance, Energy Blasts, Enhanced Hearing, Flight, Intelligence, Invulnerability, Longevity, Magic, Self-Sustenance, Stamina, Super Speed, Super Strength, Telekinesis',
-        17);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Protege', 'Protege',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12684.jpg',
-        'Adaptation, Agility, Animal Control, Animation, Astral Projection, Biokinesis, Danger Sense, Darkforce Manipulation, Death Touch, Density Control, Dimensional Awareness, Duplication, Elasticity, Electrokinesis, Empathy, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Fire Control, Flight, Heat Generation, Immortality, Intelligence, Magnetism, Mind Control, Nigh-Omnipotent, Power Absorption, Power Augmentation, Psionic Powers, Reality Warping, Stamina, Stealth, Sub-Mariner, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Weather Control',
-        114);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Stormtrooper', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10539.jpg',
-        'Durability, Weapon-based Powers', 2);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Iron Monger (MCU)', 'Obadiah Stane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13973.jpg',
-        'Durability, Flight, Invulnerability, Jump, Super Strength', 11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Anti-Life Entity', 'Anti-Life',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12395.jpg',
-        'Afterimage Creation, Animated Shadow, Anti-Gravity, Biokinesis, Cold Resistance, Dimensional Travel, Duplication, Durability, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Fire Control, Fire Resistance, Flight, Force Fields, Gravity Control, Grim Reaping, Immortality, Intelligence, Invulnerability, Matter Manipulation, Mind Control, Molecular Combustion, Molecular Dissipation, Non-Corporeal, Non-Physical Interaction, Omnilingualism, Pain Manipulation, Physics Manipulation, Possession, Power Bestowal, Power Nullifier, Probability Manipulation, Psionic Powers, Radiation Immunity, Reality Warping, Regeneration, Resurrection, Seismic Power, Self-Sustenance, Size Changing, Soul Manipulation, Spatial Awareness, Stealth, Summoning, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Terrakinesis, Time Manipulation, Toxin and Disease Resistance, Vitakinesis',
-        106);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Angel Of Death', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1174.jpg',
-        'Accelerated Healing, Agility, Dexterity, Durability, Endurance, Enhanced Senses, Flight, Immortality, Intelligence, Jump, Longevity, Marksmanship, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Weapons Master',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Killer Frost', 'Caitlin Snow',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10508.jpg',
-        'Cold Resistance, Cryokinesis, Durability, Energy Absorption, Natural Weapons, Super Breath', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Giant Stone Warrior', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16464.jpg',
-        'Adaptation, Agility, Cold Resistance, Darkforce Manipulation, Dexterity, Durability, Endurance, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Fire Resistance, Heat Resistance, Immortality, Invulnerability, Jump, Longevity, Mind Control, Mind Control Resistance, Natural Armor, Omnilingualism, Peak Human Condition, Reflexes, Regeneration, Self-Sustenance, Stamina, Summoning, Super Strength, Telepathy, Telepathy Resistance, Toxin and Disease Resistance, Wallcrawling, Weapons Master',
-        30);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Despero', 'Despero',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10514.jpg',
-        'Accelerated Healing, Astral Projection, Durability, Elasticity, Endurance, Energy Beams, Energy Constructs, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Illusions, Levitation, Longevity, Magic, Mind Control, Possession, Reality Warping, Regeneration, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Vision - Heat, Vitakinesis',
-        32);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Black Adam (New 52)', 'Teth-Adam',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14815.jpg',
-        'Accelerated Healing, Clairvoyance, Cold Resistance, Durability, Electrokinesis, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Intelligence, Invulnerability, Longevity, Magic, Self-Sustenance, Stamina, Super Speed, Super Strength, Telekinesis, Toxin and Disease Resistance',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Bane', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/637.jpg',
-        'Agility, Durability, Enhanced Memory, Intelligence, Marksmanship, Reflexes, Regeneration, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Starheart Eclipso', 'Eclipso',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16195.jpg',
-        'Accelerated Healing, Agility, Animation, Astral Travel, Banish, Cold Resistance, Cryokinesis, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Energy Absorption, Energy Blasts, Energy Manipulation, Fire Resistance, Flight, Force Fields, Gravity Control, Heat Resistance, Hypnokinesis, Immortality, Insanity, Invulnerability, Levitation, Magic, Magic Resistance, Mind Control Resistance, Molecular Immobilization, Possession, Power Augmentation, Power Nullifier, Power Sense, Precognition, Psionic Powers, Radiation Immunity, Reality Warping, Reflexes, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Stealth, Summoning, Super Speed, Super Strength, Telepathy Resistance, Teleportation, Toxin and Disease Resistance, Underwater breathing, Weapon-based Powers',
-        73);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Scorpia', 'Elaine Coll',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1123.jpg',
-        'Energy Blasts, Force Fields, Super Speed, Super Strength, Weapon-based Powers', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Godspeed', 'August Hart',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10909.jpg',
-        'Accelerated Healing, Agility, Duplication, Electrokinesis, Energy Blasts, Flight, Force Fields, Intangibility, Marksmanship, Phasing, Super Speed, Time Manipulation, Time Travel, Wind Control',
-        21);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Atlas', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10838.jpg',
-        'Durability, Invulnerability, Stamina, Super Speed, Super Strength', 11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ego', 'Ego',
-        'https://www.superherodb.com/pictures2/portraits/10/050/6.jpg',
-        'Energy Absorption, Super Speed, Super Strength', 12);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cyborg Superman (CW)', 'Hank Henshaw',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15978.jpg',
-        'Agility, Durability, Endurance, Energy Blasts, Intelligence, Invulnerability, Marksmanship, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Technopath/Cyberpath, Vision - Heat, Weapons Master',
-        14);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'King Vegeta', 'Vegeta',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14852.jpg',
-        'Adaptation, Agility, Durability, Energy Armor, Energy Beams, Energy Blasts, Energy Manipulation, Enhanced Senses, Flight, Force Fields, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength',
-        10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lightning Lord', 'Mekt Ranzz',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1179.jpg', 'Electrokinesis, Energy Absorption', 5);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Gellert Grindelwald', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13757.jpg',
-        'Energy Manipulation, Fire Control, Intelligence, Invisibility, Magic, Precognition, Shapeshifting, Telekinesis, Teleportation, Water Control',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Thanos (IG MCOC)', 'Thanos',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15714.jpg',
-        'Agility, Astral Projection, Astral Travel, Banish, Biokinesis, Changing Armor, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Durability, Element Control, Endurance, Energy Absorption, Energy Blasts, Energy Manipulation, Fire Control, Flight, Force Fields, Gravity Control, Grim Reaping, Heat Resistance, Immortality, Insanity, Intelligence, Invulnerability, Levitation, Longevity, Magic, Matter Manipulation, Natural Armor, Nigh-Omnipresent, Omnilingualism, Power Augmentation, Precognition, Reflexes, Resurrection, Shapeshifting, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, Teleportation, Time Manipulation, Time Travel, Timeframe Control, Toxin and Disease Resistance, Vitakinesis',
-        122);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Magus', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1297.jpg',
-        'Elasticity, Electrokinesis, Energy Absorption, Flight, Immortality, Omnilingualism, Shapeshifting, Size Changing, Super Strength, Technopath/Cyberpath',
-        17);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Warrior Bug', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14087.jpg',
-        'Agility, Camouflage, Enhanced Smell, Jump, Natural Armor, Natural Weapons, Radar Sense, Stamina, Stealth, Wallcrawling',
-        2);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Utgard-Loki', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1484.jpg',
-        'Durability, Invulnerability, Longevity, Magic, Stamina, Super Strength', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mangog', 'Mangog',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10387.jpg',
-        'Durability, Super Strength', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'King Ghidorah', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10609.jpg',
-        'Accelerated Healing, Animal Attributes, Cold Resistance, Durability, Endurance, Energy Beams, Enhanced Senses, Fire Resistance, Heat Generation, Heat Resistance, Immortality, Invulnerability, Latent Abilities, Natural Armor, Regeneration, Self-Sustenance, Super Strength, Toxin and Disease Resistance',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doomsday', 'Doomsday',
-        'https://www.superherodb.com/pictures2/portraits/10/050/679.jpg',
-        'Accelerated Healing, Adaptation, Agility, Cold Resistance, Durability, Energy Absorption, Energy Resistance, Heat Resistance, Invulnerability, Jump, Natural Armor, Natural Weapons, Power Absorption, Reflexes, Regeneration, Resurrection, Self-Sustenance, Stamina, Super Speed, Super Strength',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sentinel', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11339.jpg',
-        'Cloaking, Cold Resistance, Durability, Endurance, Energy Beams, Energy Blasts, Fire Resistance, Flight, Power Nullifier, Radiation Immunity, Sonar, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Vision - Heat, Vision - Infrared, Vision - Night, Vision - Telescopic, Vision - Thermal, Vision - X-Ray, Weapon-based Powers',
-        8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Walrus', 'Hubert Carpent',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10058.jpg',
-        'Durability, Natural Armor, Natural Weapons, Super Strength', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Vulture (MCU)', 'Adrian Toomes',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12593.jpg',
-        'Agility, Durability, Endurance, Energy Beams, Energy Blasts, Energy Manipulation, Flight, Peak Human Condition, Power Suit, Super Strength',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'General Grievous', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10460.jpg',
-        'Agility, Dexterity, Durability, Intelligence, Jump, Longevity, Self-Sustenance, Stamina, Weapon-based Powers, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ocean Master', 'Orm Curry Marius',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11175.jpg',
-        'Agility, Animal Control, Durability, Electrokinesis, Energy Blasts, Enhanced Hearing, Enhanced Senses, Enhanced Sight, Enhanced Smell, Magic, Marksmanship, Reality Warping, Reflexes, Sonar, Stamina, Stealth, Sub-Mariner, Underwater breathing, Water Control, Weapon-based Powers, Weapons Master',
-        13);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cyttorak', 'Cyttorak',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12082.jpg',
-        'Death Touch, Dimensional Travel, Durability, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Memory, Enhanced Senses, Fire Control, Fire Resistance, Grim Reaping, Heat Generation, Heat Resistance, Immortality, Invulnerability, Longevity, Magic, Magic Resistance, Molecular Manipulation, Possession, Power Augmentation, Power Nullifier, Reality Warping, Resurrection, Self-Sustenance, Size Changing, Stamina, Super Strength, Teleportation',
-        57);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Titania', 'Mary McPherran',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1453.jpg',
-        'Durability, Endurance, Invulnerability, Stamina, Super Strength', 10);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Lady Loki', 'Loki Laufeysdottir',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12665.jpg',
-        'Agility, Cold Resistance, Cryokinesis, Dimensional Travel, Durability, Flight, Force Fields, Illusions, Immortality, Intelligence, Invulnerability, Magic, Matter Manipulation, Mind Control, Omnilingualism, Reflexes, Regeneration, Stamina, Super Speed, Super Strength, Telepathy Resistance',
-        27);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Sith Emperor Vitiate', 'Tenebrae',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10851.jpg',
-        'Absorption, Agility, Clairvoyance, Darkforce Manipulation, Duplication, Durability, Electrokinesis, Energy Absorption, Energy Manipulation, Enhanced Senses, Force Fields, Illusions, Immortality, Magic, Mind Control, Possession, Power Augmentation, Power Nullifier, Precognition, Psionic Powers, Reflexes, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, The Force',
-        41);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darkseid (Injustice)', 'Uxas',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16054.jpg',
-        'Agility, Astral Travel, Banish, Cold Resistance, Darkforce Manipulation, Element Control, Energy Manipulation, Flight, Force Fields, Immortality, Intelligence, Invulnerability, Levitation, Magic, Matter Absorption, Matter Manipulation, Omega Effect, Omnilingualism, Precognition, Reflexes, Regeneration, Self-Sustenance, Size Changing, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance',
-        48);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Professor Pyg', 'Lazlo Valentin',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11239.jpg',
-        'Animal Attributes, Animal Control, Animal Oriented Powers, Camouflage, Endurance, Insanity, Intelligence, Intuitive aptitude, Marksmanship, Mind Control, Stamina, Weapons Master',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Catwoman (Injustice)', 'Selina Kyle',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15702.jpg',
-        'Agility, Animal Attributes, Dexterity, Empathy, Peak Human Condition, Reflexes, Stealth, Weapon-based Powers, Weapons Master',
-        9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Gorr The God Butcher', 'Gorr',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12194.jpg',
-        'Agility, Darkforce Manipulation, Durability, Energy Constructs, Energy Manipulation, Flight, Invulnerability, Longevity, Power Suit, Regeneration, Shapeshifting, Spatial Awareness, Super Speed, Super Strength, Weapons Master',
-        25);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Stompa', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12483.jpg',
-        'Cold Resistance, Durability, Endurance, Fire Resistance, Heat Resistance, Immortality, Invulnerability, Reflexes, Super Strength, Toxin and Disease Resistance',
-        20);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Cottonmouth', 'Burchell Clemens',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10452.jpg', 'Super Strength', 4);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Kurse', 'Algrim',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10007.jpg',
-        'Cold Resistance, Durability, Endurance, Enhanced Senses, Fire Resistance, Heat Resistance, Invulnerability, Longevity, Power Suit, Regeneration, Self-Sustenance, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Umar', 'Umar',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12316.jpg',
-        'Agility, Astral Projection, Darkforce Manipulation, Dimensional Awareness, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Fire Control, Illusions, Immortality, Intelligence, Levitation, Magic, Matter Absorption, Matter Manipulation, Molecular Manipulation, Possession, Psionic Powers, Reality Warping, Shapeshifting, Size Changing, Stamina, Telekinesis, Telepathy, Teleportation, Time Travel',
-        67);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Super Skrull', 'Kl’rt',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11016.jpg',
-        'Agility, Durability, Elasticity, Flight, Force Fields, Heat Generation, Heat Resistance, Hypnokinesis, Invisibility, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength',
-        11);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Living Brain', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/1037.jpg',
-        'Durability, Flight, Intelligence, Super Strength', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Goku Black', 'Zamasu',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11692.jpg',
-        'Accelerated Healing, Adaptation, Agility, Durability, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Enhanced Senses, Force Fields, Latent Abilities, Matter Manipulation, Portal Creation, Power Augmentation, Power Sense, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Teleportation, Time Travel',
-        25);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Chameleon', 'Dmitri Smerdyakov',
-        'https://www.superherodb.com/pictures2/portraits/10/050/660.jpg',
-        'Camouflage, Intelligence, Longevity, Omnilingualism, Shapeshifting, Stealth, Weapons Master', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hive (MCU)', 'Unknown',
-        'https://www.superherodb.com/pictures2/portraits/10/050/16408.jpg',
-        'Accelerated Healing, Agility, Animation, Death Touch, Durability, Endurance, Enhanced Memory, Enhanced Smell, Longevity, Marksmanship, Matter Absorption, Mind Control, Omnilingualism, Possession, Reflexes, Regeneration, Stamina, Super Strength',
-        16);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Doctor Doom (Venomized)', 'Victor Von Doom',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14676.jpg',
-        'Agility, Astral Travel, Banish, Dimensional Travel, Durability, Electrokinesis, Element Control, Endurance, Energy Blasts, Enhanced Senses, Flight, Force Fields, Hypnokinesis, Intelligence, Magic, Marksmanship, Portal Creation, Power Absorption, Power Nullifier, Psionic Powers, Stamina, Stealth, Summoning, Super Speed, Super Strength, Symbiote Costume, Technopath/Cyberpath, Telekinesis, Teleportation, Time Travel, Weapon-based Powers, Weapons Master',
-        26);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Madara Uchiha', 'Uchiha Madara',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12336.jpg',
-        'Accelerated Healing, Agility, Animal Control, Danger Sense, Duplication, Durability, Element Control, Energy Absorption, Energy Armor, Energy Constructs, Energy Manipulation, Enhanced Senses, Enhanced Sight, Fire Control, Force Fields, Hypnokinesis, Illumination, Intelligence, Jump, Longevity, Marksmanship, Peak Human Condition, Plant Control, Power Suit, Reality Warping, Reflexes, Stamina, Stealth, Summoning, Super Speed, Super Strength, Wallcrawling, Water Control, Weapons Master, Wind Control',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Darth Nox', 'Remowa Alucard',
-        'https://www.superherodb.com/pictures2/portraits/10/050/11821.jpg',
-        'Absorption, Accelerated Healing, Agility, Animal Control, Astral Projection, Astral Trap, Clairvoyance, Darkforce Manipulation, Duplication, Durability, Electrokinesis, Energy Absorption, Energy Blasts, Energy Manipulation, Enhanced Senses, Force Fields, Grim Reaping, Hypnokinesis, Illusions, Immortality, Insanity, Intelligence, Jump, Levitation, Magic, Matter Manipulation, Mind Control, Mind Control Resistance, Molecular Manipulation, Peak Human Condition, Possession, Power Absorption, Power Augmentation, Power Nullifier, Power Sense, Precognition, Reflexes, Stamina, Super Speed, Super Strength, Telekinesis, Telepathy, Telepathy Resistance, The Force',
-        78);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Saint Of Killers', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/772.jpg',
-        'Accelerated Healing, Agility, Dimensional Travel, Durability, Enhanced Sight, Immortality, Invulnerability, Longevity, Marksmanship, Radiation Immunity, Reflexes, Resurrection, Stamina, Super Breath, Super Speed, Super Strength, Weapons Master',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Angel Dust (FOX)', 'Christina',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14335.jpg',
-        'Agility, Durability, Invulnerability, Latent Abilities, Super Strength', 8);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'The Scarecrow (Gotham)', 'Jonathan Crane',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14781.jpg',
-        'Insanity, Intelligence, Psionic Powers, Stealth, Weapon-based Powers', 7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Mad Harriet', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/12469.jpg',
-        'Cold Resistance, Durability, Fire Resistance, Heat Resistance, Immortality, Invulnerability, Reflexes, Super Speed, Super Strength',
-        19);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Omega Of The Thanosi', 'Omega',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13505.jpg',
-        'Agility, Camouflage, Cold Resistance, Darkforce Manipulation, Dimensional Awareness, Dimensional Travel, Element Control, Energy Absorption, Energy Armor, Energy Beams, Energy Blasts, Energy Resistance, Enhanced Senses, Fire Control, Flight, Force Fields, Gravity Control, Heat Resistance, Insanity, Intelligence, Invulnerability, Longevity, Matter Manipulation, Molecular Dissipation, Omnilingualism, Power Absorption, Power Augmentation, Power Cosmic, Power Sense, Reality Warping, Reflexes, Super Speed, Super Strength, Telepathy, Telepathy Resistance, Teleportation, Time Travel, Toxin and Disease Resistance',
-        77);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Hulk (Venomized)', 'Amadeus Cho',
-        'https://www.superherodb.com/pictures2/portraits/10/050/14682.jpg',
-        'Accelerated Healing, Agility, Cold Resistance, Durability, Empathy, Endurance, Enhanced Senses, Heat Resistance, Intelligence, Invulnerability, Jump, Longevity, Marksmanship, Mind Control Resistance, Physical Anomaly, Radiation Absorption, Radiation Control, Radiation Immunity, Reflexes, Regeneration, Self-Sustenance, Shapeshifting, Size Changing, Stamina, Stealth, Super Breath, Super Speed, Super Strength, Symbiote Costume, Telepathy Resistance, Toxin and Disease Control, Toxin and Disease Resistance, Underwater breathing, Weapon-based Powers, Weapons Master',
-        25);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Galactus Venom', 'Galan',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13263.jpg',
-        'Absorption, Dexterity, Duplication, Durability, Empathy, Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Enhanced Hearing, Enhanced Memory, Enhanced Senses, Enhanced Sight, Enhanced Smell, Enhanced Touch, Immortality, Matter Manipulation, Molecular Manipulation, Power Cosmic, Power Nullifier, Precognition, Reality Warping, Regeneration, Shapeshifting, Size Changing, Super Speed, Super Strength, Symbiote Costume, Telekinesis, Telepathy, Teleportation, Time Manipulation, Vision - Thermal, Weather Control, Wishing',
-        105);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Venom (Raimi Trilogy)', 'Edward Brock, Jr.',
-        'https://www.superherodb.com/pictures2/portraits/10/050/15222.jpg',
-        'Accelerated Healing, Agility, Durability, Endurance, Enhanced Senses, Jump, Marksmanship, Reflexes, Shapeshifting, Stamina, Super Speed, Super Strength, Vision - Night, Wallcrawling, Web Creation',
-        7);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Ace', '',
-        'https://www.superherodb.com/pictures2/portraits/10/050/10945.jpg',
-        'Energy Manipulation, Magic, Probability Manipulation', 9);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Swamp Thing', 'Alec Holland',
-        'https://www.superherodb.com/pictures2/portraits/10/050/792.jpg',
-        'Camouflage, Duplication, Flight, Illusions, Immortality, Intelligence, Longevity, Natural Armor, Plant Control, Resurrection, Self-Sustenance, Size Changing, Stealth, Super Strength, The Green',
-        15);
-INSERT INTO villain(id, name, otherName, picture, powers, level)
-VALUES (nextval('villain_seq'), 'Juggernaut (Trion)', 'Cain Marko',
-        'https://www.superherodb.com/pictures2/portraits/10/050/13970.jpg',
-        'Accelerated Healing, Death Touch, Dimensional Travel, Durability, Endurance, Energy Absorption, Energy Beams, Energy Blasts, Energy Manipulation, Energy Resistance, Enhanced Memory, Enhanced Senses, Fire Control, Fire Resistance, Force Fields, Grim Reaping, Heat Generation, Heat Resistance, Immortality, Invulnerability, Longevity, Magic, Magic Resistance, Molecular Manipulation, Possession, Power Augmentation, Power Nullifier, Reality Warping, Resurrection, Self-Sustenance, Size Changing, Stamina, Super Speed, Super Strength, Teleportation, Toxin and Disease Resistance',
-        67);
-
-ALTER SEQUENCE villain_seq RESTART WITH 1000;
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lady', 'Mary', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22689.jpg', 'Acrobatics, Marksmanship, Master Martial Artist, Master Tactician, Stamina, Stealth, Vehicular Mastery, Weapons Master, Corruption Resistance, Dexterity, Endurance, Explosion Manipulation, Heat Resistance, Homing Attack, Longevity, Reflexes, Toxin and Disease Resistance', '64');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jonathan Levinson', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55906.jpg', 'Intelligence, Gadget Usage, Magic, Summoning, Cloaking, Reality Warping, Time Manipulation', '403');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Chancellor Cole', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52738.jpg', 'Chaos Magic, Dark Magic, Flight, Intelligence, Levitation, Magic, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Thievery, Enhanced Touch, Exorcism', '435');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Crossbones', 'Brock Rumlow', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10008.jpg', 'Agility, Durability, Marksmanship, Master Martial Artist, Peak Human Condition, Stamina, Weapons Master, Dexterity, Endurance, Energy Blasts, Explosion Manipulation, Master Tactician, Reflexes, Stealth, Vehicular Mastery, Weapon-based Powers', '72');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bullseye', 'Lester', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/624.jpg', 'Acrobatics, Agility, Bloodlust, Durability, Endurance, Extrasensory Perception, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Reflexes, Stamina, Throwing Proficiency, Weapon-based Powers, Weapons Master, Adaptation, Dexterity, Enhanced Condition, Insanity, Stealth, Vehicular Mastery, Explosion Manipulation, Preparation, Toxin and Disease Control', '103');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jigglypuff', 'Igglybuff', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15968.jpg', 'Audio Control, Hypnokinesis, Sleep Manipulation, Stamina, Super Speed, Cold Resistance, Density Control, Fire Resistance, Ice Manipulation, Love Inducement, Fire Control, Heat Generation', '254');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Draven (Ruined)', 'Draven', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48652.jpg', 'Accelerated Healing, Bloodlust, Dexterity, Endurance, Longevity, Social Influencing, Toxin and Disease Resistance, Damage Boost, Dark Magic, Energy Constructs, Extrasensory Perception, Fear Inducement, Indomitable Will, Magic Resistance, Mind Control Resistance, Non-Physical Interaction, Possession Resistance, Self-Sustenance, Soul Manipulation, Soul Resistance, Statistics Amplification, Summoning, Unholy Manipulation, Energy Embodiment, Fear Manipulation, Immortality, Magic Absorption, Status Effect Inducement, Umbrakinesis, Weapon-based Powers, Weapons Master', '937');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Asami Sato', 'Asami Sato', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12168.jpg', 'Acrobatics, Agility, Master Martial Artist, Master Tactician, Mechanical Aptitude, Reflexes, Robotic Engineering, Vehicular Mastery, Weapons Master, Electrokinesis', '50');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Catwoman', 'Selina Kyle', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23050.jpg', 'Acrobatics, Agility, Peak Human Condition, Stamina, Endurance, Enhanced Thievery, Stealth', '26');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bane', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22980.jpg', 'Durability, Master Martial Artist, Master Tactician, Super Strength, Preparation, Statistics Amplification, Stealth, Supernatural Condition', '76');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mister Freeze', 'Victor Fries', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/21521.jpg', 'Intelligence, Cold Resistance, Element Control, Ice Manipulation, Master Martial Artist, Mind Control Resistance, Weapon-based Powers, Weapons Master', '28');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Electro', 'Francine Frye', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57264.jpg', 'Acrobatics, Agility, Dexterity, Durability, Electrical Transport, Electricity Absorption, Electricity Resistance, Electrokinesis, Flight, Intelligence, Levitation, Marksmanship, Reflexes, Super Speed, Endurance, Energy Beams, Energy Blasts, Gadget Usage, Master Tactician, Preparation, Stamina, Hacking', '206');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tim', 'Timothy Murphy', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54632.jpg', 'Intelligence', '5');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Candra', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45112.jpg', 'Telekinesis, Immortality', '182');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Carnotaurus', 'Carnotaurus', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17636.jpg', 'Animal Attributes, Endurance, Enhanced Smell, Jaw Strength, Jump, Large Size, Natural Armor, Natural Weapons', '13');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Livewire', 'Leslie Willis', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64595.jpg', 'Agility, Durability, Electrical Transport, Electricity Absorption, Electricity Resistance, Electrokinesis, EMP Generation, Flight, Levitation, Shockwaves Generation, Energy Armor, Energy Embodiment, Heat Resistance, Homing Attack, Jump, Reflexes, Stamina, Damage Boost, Damage Reduction, Regeneration', '255');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ella Lopez', 'Ella Lopez', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/19840.jpg', 'Empathy, Hope Inducement, Indomitable Will, Intelligence, Love Inducement, Agility', '12');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Therizinosaurus', 'Therizinosaurus', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/49192.jpg', 'Natural Weapons, Animal Attributes, Endurance, Enhanced Smell, Large Size, Natural Armor', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Yokai', 'Professor Robert Callaghan', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26843.jpg', 'Durability, Intelligence, Nanotechnology, Agility, Electro-Magnetism Manipulation, Endurance, Force Fields, Heat Resistance, Intimidation, Preparation', '70');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shaco', 'Shaco', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/35345.jpg', 'Apathy, Deception, Duplication, Fearless, Inorganic Physiology, Insanity, Longevity, Acrobatics, Agility, Fear Inducement, Invisibility, Weapon Summoning, Weapon-based Powers, Damage Boost, Dark Magic, Magic Resistance, Preparation, Status Effect Inducement, Teleportation, Toxin and Disease Control', '150');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Nightwolf', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15871.jpg', 'Animal Control, Master Martial Artist, Soul Manipulation, Super Speed, Weapon Summoning, Weapons Master, Acrobatics, Aura, Damage Boost, Danger Sense, Dexterity, Electrokinesis, Energy Manipulation, Enhanced Hearing, Enhanced Sight, Fire Control, Fire Resistance, Force Fields, Light Control, Non-Physical Interaction, Soul Resistance', '942');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mister Knife', 'J''son', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10633.jpg', 'Cold Resistance, Dexterity, Marksmanship, Master Martial Artist, Master Tactician, Social Influencing, Stamina, Underwater breathing, Vehicular Mastery, Weapons Master, Acrobatics, Agility, Duplication, Endurance, Fire Resistance, Heat Resistance, Reflexes, Self-Sustenance, Toxin and Disease Resistance, Energy Blasts, Flight', '81');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Clayface', 'Basil Karlo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18447.jpg', 'Duplication, Durability Negation, Element Control, Master Martial Artist, Power Mimicry, Regeneration, Shapeshifting, Size Changing, Supernatural Condition, Terrakinesis', '165');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Grizzly', 'Maxwell Markham', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63499.jpg', 'Durability, Gadget Usage, Power Suit, Super Speed, Super Strength, Agility, Endurance, Large Size, Durability Negation', '43');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Huntress', 'Helena Rosa Bertinelli', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22974.jpg', 'Acrobatics, Agility, Intelligence, Stamina, Stealth, Endurance, Marksmanship, Master Martial Artist, Weapons Master', '49');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lothos', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60218.jpg', 'Accelerated Healing, Durability, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Enhanced Taste, Hypnokinesis, Intelligence, Natural Weapons, Reflexes, Stamina, Super Speed, Super Strength, Vision - Night, Agility, Bloodlust, Danger Sense, Dexterity, Empathy, Endurance, Enhanced Memory, Enhanced Touch, Hunters Instinct, Hypnotic Suggestion, Immortality, Jaw Strength, Jump, Master Tactician, Mind Control, Regeneration, Supernatural Condition, Vision - Telescopic, Master Martial Artist, Paralysis, Preparation', '226');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Toy Master', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/49616.jpg', 'Body Puppetry, Dark Magic, Hive-Mind, Intelligence, Magic, Mind Control, Master Tactician, Possession, Summoning, Accelerated Healing', '211');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Marvin Gerard', 'Marvin Gerard', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45625.jpg', 'Intelligence, Master Tactician', '8');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Killmonger', 'Erik Killmonger', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16698.jpg', 'Acrobatics, Agility, Endurance, Energy Absorption, Hunters Instinct, Intelligence, Master Martial Artist, Peak Human Condition, Preparation, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Vision - Night, Weapons Master, Accelerated Healing, Acid Resistants, Animal Oriented Powers, Attack Reflection, Camouflage, Cold Resistance, Dexterity, Gadget Usage, Jump, Master Tactician, Shockwaves Generation, Swordsmanship, Weapon-based Powers, Adaptation, Animal Attributes, Berserk Mode, Energy Blasts, Enhanced Hearing, Enhanced Sight, Fire Resistance, Heat Resistance, Power Suit', '203');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bonk', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17632.jpg', 'Super Strength, Marksmanship, Toxin and Disease Resistance', '7');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Girder', 'Tony Woodword', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16668.jpg', 'Stamina, Super Speed, Super Strength, Agility, Cold Resistance, Dexterity, Electricity Resistance, Endurance, Enhanced Condition, Enhanced Thievery, Fearless, Heat Resistance, Intimidation, Master Martial Artist, Reflexes, Stealth, Transformation, Damage Reduction, Fear Inducement, Invulnerability, Metal Manipulation, Preparation', '80');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Parademon', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26635.jpg', 'Durability, Endurance, Stamina, Super Speed, Super Strength, Agility, Animal Attributes, Animal Oriented Powers, Energy Blasts, Jump, Longevity, Radiation Immunity, Reflexes, Stealth, Toxin and Disease Resistance, Electricity Resistance, Fire Resistance, Flight, Marksmanship, Weapons Master', '60');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Doctor Octopus', 'Otto Octavius', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13832.jpg', 'Cyborgization, Intelligence, Intuitive aptitude, Preparation, Robotic Engineering, Super Strength, Wallcrawling, Electricity Resistance, Master Tactician, Power Suit, Surface Scaling, Technopath/Cyberpath, Elasticity, Master Martial Artist', '81');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Supreme Mordo (Earth 838)', 'Baron Karl Mordo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48277.jpg', 'Durability, Endurance, Energy Constructs, Intelligence, Peak Human Condition, Stamina, Stealth, Teleportation, Acrobatics, Agility, Marksmanship, Master Martial Artist, Portal Creation, Reflexes, Weapons Master', '442');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Daena Targaryen', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62936.jpg', 'Agility, Archery, Fearless, Indomitable Will, Marksmanship, Dexterity, Endurance, Leadership, Master Martial Artist, Master Tactician, Multilingualism, Stamina, Stealth, Weapons Master, Animal Control, Telepathy', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Aja-Adanna', 'Shuri', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14813.jpg', 'Animal Attributes, Animal Control, Animal Oriented Powers, Enhanced Smell, Enhanced Touch, Intelligence, Master Martial Artist, Necromancy, Peak Human Condition, Transformation, Vision - Night, Weapons Master, Accelerated Healing, Audio Alteration, Cold Resistance, Electrokinesis, Empathy, Energy Absorption, Energy Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Flight, Heat Resistance, Ice Manipulation, Illusion Resistance, Illusions, Master Tactician, Preparation, Purification, Resurrection, Size Changing, Swordsmanship, Terrakinesis, Toxin and Disease Resistance, Vehicular Mastery, Vision - Telescopic, Energy Blasts, Regeneration', '442');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mantis', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48307.jpg', 'Accelerated Healing, Durability, Empathy, Endurance, Master Martial Artist, Enhanced Condition, Telepathy, Telepathy Resistance, Wishing', '344');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Diamondback', 'Rachel Leighton', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10156.jpg', 'Acrobatics, Stamina, Agility, Dexterity, Endurance, Explosion Manipulation, Jump, Longevity, Marksmanship, Master Martial Artist, Reflexes, Vehicular Mastery, Weapons Master', '39');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Amity', 'Amity Blight', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/35315.jpg', 'Intelligence, Magic, Agility, Deconstruction, Energy Beams, Energy Blasts, Energy Constructs, Energy Manipulation, Fire Control, Force Fields, Heat Generation, Molecular Dissipation, Plant Control, Reflexes, Sealing, Summoning, Telekinesis, Projection, Telepathy', '557');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Irina Derevko', 'Irina Derevko', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38258.jpg', 'Intelligence, Peak Human Condition, Stamina, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Bloodlust, Endurance, Indomitable Will, Information Analysis', '42');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Emperor', 'Palpatine', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25416.jpg', 'Acrobatics, Jump, Master Martial Artist, Telekinesis, The Force, Weapons Master, Agility, Attack Reflection, Master Tactician, Social Influencing, Energy Blasts, Weather Control', '407');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Clayface', 'Matthew Hagen', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/28521.jpg', 'Durability, Shapeshifting, Stamina, Super Speed, Super Strength, Duplication, Elasticity, Size Changing, Wallcrawling, Self-Sustenance', '62');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lex Luthor', 'Lex Luthor', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30575.jpg', 'Hacking, Intelligence, Master Tactician, Preparation, Power Suit, Precognition', '15');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Koopa Troopa', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31191.jpg', 'Durability, Natural Armor, Natural Weapons, Self-Sustenance, Super Speed, Technopath/Cyberpath, Vehicular Mastery, Anti-Gravity, Cold Resistance, Flight, Invulnerability, Non-Physical Interaction, Radiation Immunity, Regeneration, Underwater breathing', '93');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dedra Meero', 'Dedra Meero', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/66269.jpg', 'Information Analysis, Intelligence, Master Tactician, Marksmanship, Master Martial Artist', '22');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Xorn', 'Kuan-Yin', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32669.jpg', 'Telekinesis, Telepathy', '158');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Agony (Carnage-Infested)', 'Agony', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31914.jpg', 'Accelerated Healing, Acrobatics, Camouflage, Cloaking, Durability, Elasticity, Stamina, Stealth, Super Speed, Super Strength, Symbiote Costume, Symbiotic Regeneration, Vision - Night, Wallcrawling, Web Creation, Acidic Spit, Agility, Biokinesis, Cold Resistance, Danger Sense, Endurance, Hive-Mind, Insanity, Jump, Longevity, Natural Weapons, Radiation Immunity, Reflexes, Regeneration, Spatial Awareness, Toxin and Disease Resistance, Vitakinesis, Weapon Creation, Animal Attributes, Animal Oriented Powers, Chemokinesis, Mind Control Resistance, Possession, Shapeshifting, Size Changing, Substance Secretion, Telepathy Resistance, Transformation', '878');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Zumbado', 'Zumbado', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20043.jpg', 'Durability, Intelligence, Stamina, Super Speed, Super Strength, Accelerated Healing, Acrobatics, Dimensional Travel, Energy Blasts, Energy Constructs, Jump, Marksmanship, Master Martial Artist, Energy Manipulation, Invulnerability, Master Tactician', '240');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Green Goblin II', 'Harold Osborn', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25.jpg', 'Agility, Dexterity, Endurance, Enhanced Hearing, Enhanced Touch, Explosion Manipulation, Insanity, Intelligence, Master Tactician, Reflexes, Stamina, Super Speed, Super Strength, Vehicular Mastery, Weapons Master, Accelerated Healing, Acrobatics, Berserk Mode, Cold Resistance, Disguise Mastery, Enhanced Memory, Enhanced Sight, Fear Manipulation, Heat Resistance, Longevity, Master Martial Artist, Toxin and Disease Resistance, Flight', '129');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jigsaw', 'Billy Russo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29356.jpg', 'Bloodlust, Dexterity, Insanity, Marksmanship, Master Martial Artist, Master Tactician, Pain Suppression, Social Influencing, Stamina, Weapons Master, Acrobatics, Agility, Disguise Mastery, Endurance, Reflexes, Vehicular Mastery, Explosion Manipulation, Smoke Manipulation', '65');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Storm', 'Ororo Munroe', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64807.jpg', 'Agility, Electrokinesis, EMP Generation, Intelligence, Levitation, Wind Control, Acrobatics, Cold Resistance, Damage Boost, Electricity Absorption, Electricity Resistance, Endurance, Gliding, Homing Attack, Jump, Reflexes, Shockwaves Generation, Stamina, Damage Reduction, Dexterity, Flight, Marksmanship', '340');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Aragog', 'Aragog', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11482.jpg', 'Animal Attributes, Animal Oriented Powers, Durability, Intelligence, Multiple Limbs, Super Strength, Web Creation, Accelerated Healing, Endurance, Jaw Strength, Magic Resistance, Natural Weapons, Agility, Animal Control, Dexterity, Enhanced Hearing, Enhanced Smell, Invulnerability, Natural Armor, Reflexes', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Magneto', 'Erik Lehnsherr', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13424.jpg', 'Electro-Magnetism Manipulation, Endurance, Flight, Force Fields, Intelligence, Magnetism, Metal Manipulation, Organic Manipulation, Stamina, Telepathy Resistance, Agility, Dexterity, Heat Resistance, Master Martial Artist, Master Tactician, Reflexes, Weapons Master', '536');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Andreas Von Strucker', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62190.jpg', 'Molecular Manipulation, Telekinesis, Energy Blasts, Energy Manipulation, Rage Power, Energy Beams, Light Control, Vaporising Beams', '231');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Darth Maul', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25401.jpg', 'Acrobatics, Jump, Reflexes, The Force, Weapons Master, Agility, Attack Reflection, Endurance, Master Martial Artist, Telekinesis', '260');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Doll Man', 'Darrel Dane', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11765.jpg', '', '79');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Elizabeth Jennings', 'Elizabeth Jennings', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20848.jpg', 'Intelligence, Disguise Mastery, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Endurance, Indomitable Will', '34');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bounty Hunter Kha''Zix (Odyssey)', 'Kha''Zix', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57864.jpg', 'Agility, Weapon-based Powers, Animal Attributes, Bloodlust, Cloaking, Danmaku, Endurance, Enhanced Sight, Explosion Manipulation, Hunters Instinct, Jump, Natural Armor, Natural Weapons, Power Suit, Reflexes, Scanning, Stealth, Vision - Infrared, Accelerated Healing, Adaptation, Cold Resistance, Damage Boost, Heat Resistance, Illumination, Illusions, Invisibility, Marksmanship, Preparation, Statistics Amplification, Toxin and Disease Resistance', '129');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Deacon Frost', 'Deacon Frost', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29557.jpg', 'Bloodlust, Longevity, Accelerated Healing, Agility, Dexterity, Endurance, Jump, Master Martial Artist, Reflexes, Regeneration, Stamina, Weapons Master, Immortality', '90');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Boagrius', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/51732.jpg', 'Peak Human Condition, Super Strength, Marksmanship, Swordsmanship, Weapons Master, Fear Inducement, Insanity, Large Size, Master Martial Artist', '39');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ziggs', 'Zigmund', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/47182.jpg', 'Damage Boost, Danmaku, Explosion Manipulation, Gadget Usage, Longevity, Mechanical Aptitude, Weapon-based Powers, Enhanced Hearing, Heat Resistance, Magic, Preparation, Vision - Thermal, Animal Attributes, Endurance, Fire Control, Heat Generation, Illusions, Immortality, Insanity, Jaw Strength, Jump, Magic Resistance, Marksmanship, Status Effect Inducement', '153');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Red Skull', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/61193.jpg', 'Illusions, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Toxin and Disease Resistance, Weapons Master', '66');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Battlecast Kog''maw (Battlecast)', 'Battlecast Unit', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57409.jpg', 'Apathy, Endurance, Enhanced Sight, Explosion Manipulation, Fearless, Heat Resistance, Inorganic Physiology, Marksmanship, Self-Destruction, Toxin and Disease Resistance, Vision - Telescopic, Weapon-based Powers, Acid Manipulation, Cold Resistance, Damage Boost, Danmaku, Electricity Resistance, Energy Resistance, Fire Resistance, Hive-Mind, Jaw Strength, Melting, Radar Sense, Radiation Immunity, Scanning, Self-Sustenance, Substance Secretion, Vision - Thermal, Accelerated Healing, Adaptation, Agility, Animal Attributes, Changing Armor, Fire Control, Heat Generation, Intimidation, Magic Resistance, Nanotechnology, Preparation, Smoke Manipulation, Statistics Amplification, Statistics Reduction, Technopath/Cyberpath', '538');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Raichu', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/41387.jpg', 'Agility, Animal Attributes, Damage Boost, Durability, Electricity Resistance, Electrokinesis, Paralysis, Stamina, Statistics Amplification, Status Effect Inducement, Super Speed, Ability Shift, Accelerated Healing, Acrobatics, Animal Oriented Powers, Damage Reduction, Danmaku, Dig, Electricity Absorption, Endurance, Energy Beams, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Hunters Instinct, Marksmanship, Natural Weapons, Reflexes, Statistics Reduction, Stealth, Dexterity, Durability Negation, Enhanced Thievery, Illusions, Invulnerability, Jump, Love Inducement, Omnilingualism, Plant Control, Surface Scaling, Vision - Night, Water Control', '870');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mr. Kaplan', 'Kathryn Nemec', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38292.jpg', 'Intelligence, Marksmanship, Master Tactician, Weapons Master, Endurance, Indomitable Will, Information Analysis', '10');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Joseph Crackstone', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55535.jpg', 'Bloodlust, Durability, Indomitable Will, Insanity, Super Strength, Attack Reflection, Emotional Power Up, Endurance, Fire Control, Longevity, Reflexes, Stamina, Swordsmanship, Telekinesis, Zombie Physiology, Agility, Corruption, Dexterity, Energy Blasts, Exorcism, Fearless, Gadget Usage, Heat Generation, Intimidation, Leadership, Magic, Master Martial Artist, Peak Human Condition, Rage Power, Shockwaves Generation, Weapons Master', '204');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ashrah', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45067.jpg', 'Durability, Holy Manipulation, Light Control, Master Martial Artist, Projection, Super Speed, Super Strength, Supernatural Condition, Weapons Master, Acrobatics, Body Puppetry, Durability Negation, Electrokinesis, Magic, Possession, Weapon-based Powers', '554');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Sky', 'Sky', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25824.jpg', 'Magic, Magic Resistance', '103');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hush', 'Thomas Elliot', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11315.jpg', 'Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Stamina, Weapon-based Powers, Weapons Master, Agility, Stealth, Danger Sense, Shapeshifting', '67');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gray', 'Gray Mitchell', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54634.jpg', 'Intelligence', '5');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Master Man', 'Max Lohmer', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32779.jpg', 'Durability, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Touch, Marksmanship, Master Martial Artist, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master, Acrobatics, Agility, Dexterity, Reflexes, Accelerated Healing, Cold Resistance, Energy Resistance, Fire Resistance, Heat Resistance, Jump, Longevity, Radiation Immunity, Regeneration, Self-Sustenance, Toxin and Disease Resistance', '164');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bulldozer', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63536.jpg', 'Agility, Cold Resistance, Durability, Endurance, Reflexes, Seismic Power, Stamina, Super Speed, Super Strength, Acrobatics, Electricity Resistance, Fire Resistance, Grappling/Climbing, Heat Resistance, Jump, Longevity, Shockwaves Generation, Throwing Proficiency, Toxin and Disease Resistance, Accelerated Healing, Blessed, Durability Negation, Energy Resistance', '408');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Poison Ivy', 'Pamela Isley', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44380.jpg', 'Intelligence, Plant Control, Toxin and Disease Resistance, Empathy, Hypnokinesis, Mind Control, Toxin and Disease Control, Creation, Life Manipulation', '202');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Orisa', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14710.jpg', 'Durability, Marksmanship, Self-Sustenance, Super Strength, Weapons Master, Damage Reduction, Energy Beams, Energy Blasts, Force Fields, Gravity Control, Information Analysis, Statistics Amplification, Large Size, Projection', '129');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Grim Reaper', 'Eric Williams', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11255.jpg', 'Regeneration, Teleportation, Weapon-based Powers, Weapons Master', '71');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Qiyana', 'Qiyana Yunalai', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/43986.jpg', 'Agility, Camouflage, Plant Control, Terrakinesis, Water Control, Weapons Master, Acrobatics, Apathy, Dexterity, Element Control, Heat Generation, Ice Manipulation, Jump, Magic, Status Effect Inducement, Weapon-based Powers, Damage Boost, Explosion Manipulation, Magic Resistance, Marksmanship, Master Martial Artist, Master Tactician, Seismic Power, Shockwaves Generation, Statistics Amplification, Stealth, Vibration Manipulation, Weather Control', '557');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dreamfyre', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62770.jpg', 'Cold Resistance, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Super Breath, Agility, Jaw Strength, Large Size, Longevity, Magic, Magic Resistance, Natural Weapons, Wing Manifestation, Dexterity', '230');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Batman', 'Thomas Wayne', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/65266.jpg', 'Acrobatics, Agility, Berserk Mode, Bloodlust, Dexterity, Durability, Endurance, Fearless, Gadget Usage, Gliding, Indomitable Will, Intelligence, Intimidation, Intuitive aptitude, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Preparation, Reflexes, Stamina, Stealth, Swordsmanship, Throwing Proficiency, Toxin and Disease Resistance, Vehicular Mastery, Weapons Master, Adaptation, Cold Resistance, Explosion Manipulation, Fear Inducement, Fear Manipulation, Fire Resistance, Hacking, Heat Resistance, Homing Attack, Information Analysis, Jump, Mind Control Resistance, Pressure Points, Sleep Manipulation, Smoke Manipulation, Statistics Amplification, Vision - Infrared, Vision - Night, Wallcrawling, Weapon-based Powers, Durability Negation, Electrokinesis, Magic Resistance, Pain Suppression', '292');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Geralf', 'Geralf Cecani', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55468.jpg', 'Gadget Usage, Insanity, Mechanical Aptitude, Necromancy, Preparation, Dark Magic, Fearless, Summoning, Biokinesis, Enhanced Sight, Master Tactician, Mind Control, Power Bestowal, Power Modification, Stealth, Weapon-based Powers', '86');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Perro', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45536.jpg', 'Intelligence, Super Strength, Gravity Control, Flight', '78');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Livewire', 'Leslie Willis', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22976.jpg', 'Agility, Electrical Transport, Electricity Absorption, Electricity Resistance, Endurance, Energy Resistance, Acrobatics', '164');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Reggie', 'Reggie', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52410.jpg', 'Durability, Insanity, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Agility, Longevity, Peak Human Condition, Reflexes', '18');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Merlyn', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10349.jpg', 'Peak Human Condition, Stamina, Agility, Dexterity, Endurance, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stealth, Swordsmanship, Weapons Master, Acrobatics, Adaptation', '56');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mr Freeze', 'Victor Fries', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/33004.jpg', 'Ice Manipulation, Supernatural Condition, Weapon-based Powers, Weapons Master, Attack Reflection, Cold Resistance, Heat Generation, Heat Resistance, Master Martial Artist', '46');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'X-Tract', 'Cameron Chase', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31842.jpg', 'Intelligence, Interstellar Travel, Marksmanship, Stamina, Stealth, Teleportation, Weapon-based Powers, Enhanced Memory, Information Analysis, Jump, Master Martial Artist, Master Tactician, Weapons Master', '203');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Spider-Man', 'Eugene Thompson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64878.jpg', 'Acrobatics, Agility, Animal Attributes, Animal Oriented Powers, Danger Sense, Dexterity, Durability, Endurance, Enhanced Condition, Enhanced Hearing, Enhanced Sight, Extrasensory Perception, Indomitable Will, Jump, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Radar Sense, Reflexes, Stamina, Super Speed, Super Strength, Surface Scaling, Vision - Night, Wallcrawling, Weapons Master, Web Creation, Accelerated Healing, Acid Resistants, Adaptation, Cold Resistance, Electricity Resistance, Enhanced Smell, Enhanced Touch, Fire Resistance, Heat Resistance, Illusion Resistance, Instinctive Reaction, Mind Control Resistance, Natural Weapons, Toxin and Disease Resistance, Vision - Microscopic, Vision - Telescopic, Afterimage Creation, Bullet Time, Clairvoyance, Invulnerability, Possession Resistance, Precognition, Radiation Immunity, Regeneration, Self-Sustenance, Telepathy Resistance, Willpower Inducement', '858');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Gray Ghost', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17706.jpg', 'Teleportation, Weapons Master, Danger Sense, Grappling/Climbing, Insanity, Marksmanship', '50');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rook Hunt', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/50134.jpg', 'Attack Negation, Attack Reflection, Dark Magic, Homing Attack, Magic, Damage Boost, Damage Reduction, Damage Transferal, Statistics Amplification, Statistics Reduction', '267');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Icicle', 'Joar Mahkent', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22194.jpg', 'Accelerated Healing, Cold Resistance, Durability, Emotional Power Up, Ice Manipulation, Indomitable Will, Insanity, Intelligence, Peak Human Condition, Preparation, Weapon Creation, Acrobatics, Agility, Bullet Time, Element Control, Endurance, Enhanced Sight, Jump, Reflexes, Stealth, Vision - Night, Weather Control', '202');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shadowknight', 'Randall Spector', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31247.jpg', 'Acrobatics, Agility, Blessed, Bloodlust, Camouflage, Dexterity, Endurance, Explosion Manipulation, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Pain Suppression, Peak Human Condition, Pressure Points, Reflexes, Stamina, Stealth, Vehicular Mastery, Weapons Master, Accelerated Healing, Berserk Mode, Cold Resistance, Curse Resistance, Disguise Mastery, Durability Negation, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Heat Resistance, Information Analysis, Jump, Mind Control Resistance, Possession Resistance, Precognition, Regeneration, Self-Destruction, Toxin and Disease Resistance, Vision - Night, Weapon-based Powers, Fire Resistance, Flight, Immortality, Levitation', '387');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Stature', 'Cassie Lang', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14406.jpg', 'Master Martial Artist, Master Tactician, Size Changing, Stamina, Toxin and Disease Resistance, Weapons Master, Acrobatics, Agility, Cold Resistance, Dexterity, Endurance, Energy Armor, Energy Blasts, Energy Resistance, Fire Resistance, Flight, Heat Resistance, Jump, Large Size, Radiation Immunity, Reflexes', '98');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Blackbeard', 'Edward Teach', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/28907.jpg', 'Durability, Master Martial Artist, Master Tactician, Vehicular Mastery, Weapon-based Powers, Weapons Master, Berserk Mode, Bloodlust, Corruption, Deception, Dexterity, Enhanced Hearing, Enhanced Sight, Enhanced Touch, Intimidation, Marksmanship, Paper Manipulation, Resurrection, Necromancy, Stamina', '102');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Grimmel The Grisly', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/56867.jpg', 'Animal Control, Gadget Usage, Hunters Instinct, Intelligence, Leadership, Marksmanship, Master Tactician, Stealth, Weapons Master, Adaptation, Agility, Dexterity, Indomitable Will, Information Analysis, Reflexes, Vehicular Mastery, Jump, Stamina', '50');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Panther', 'T''Chaka', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55308.jpg', 'Acrobatics, Agility, Animal Attributes, Animal Oriented Powers, Jump, Master Martial Artist, Weapons Master, Ability Shift, Accelerated Healing, Acid Resistants, Dexterity, Disguise Mastery, Gadget Usage, Hunters Instinct, Master Tactician', '108');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Der Kindestod', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55871.jpg', 'Energy Absorption, Invisibility, Natural Weapons, Elasticity, Life Manipulation', '110');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Chill Penguin', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52659.jpg', 'Agility, Animal Attributes, Animal Oriented Powers, Cold Resistance', '32');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Starfire', 'Koriand''r', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30551.jpg', 'Agility, Durability, Energy Beams, Energy Blasts, Levitation, Stamina, Super Speed, Super Strength, Endurance, Energy Manipulation, Energy Resistance, Enhanced Sight, Flight, Interstellar Travel, Berserk Mode', '313');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hector', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23505.jpg', 'Necromancy, Stamina, Magic, Resurrection, Soul Manipulation, Summoning, Weapons Master, Force Fields, Life Manipulation', '173');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Batman', 'Bruce Wayne', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64669.jpg', 'Durability, Enhanced Hearing, Enhanced Sight, Gadget Usage, Grappling/Climbing, Indomitable Will, Intelligence, Jump, Master Martial Artist, Master Tactician, Reflexes, Super Speed, Super Strength, Weapons Master, Agility, Bullet Time, Endurance, Fearless, Hacking, Heat Resistance, Leadership, Marksmanship, Pain Suppression, Stamina, Stealth, Swordsmanship, Information Analysis, Rage Power, Vision - Night', '108');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'John Shelby', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/61742.jpg', 'Endurance, Marksmanship, Peak Human Condition, Social Influencing, Dexterity, Fear Inducement, Fearless, Leadership, Master Martial Artist, Master Tactician, Preparation, Reflexes, Stamina, Weapons Master', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Elfo', 'Elfo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25513.jpg', 'Magic', '12');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lockheed', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12107.jpg', '', '161');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Madame Menace', 'Sunset Bain', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/49713.jpg', 'Hacking, Information Analysis, Intelligence, Master Tactician', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Olrox', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60862.jpg', 'Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Thievery, Enhanced Touch, Immortality, Longevity, Natural Weapons, Super Speed, Super Strength, Animal Attributes, Electrokinesis, Intangibility, Shapeshifting, Smoke Manipulation, Super Breath, Supernatural Condition, Transformation', '244');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lashina', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15005.jpg', 'Durability, Heat Resistance, Intelligence, Longevity, Master Martial Artist, Master Tactician, Stamina, Super Speed, Super Strength, Weapons Master, Acrobatics, Agility, Berserk Mode, Cold Resistance, Electricity Resistance, Electrokinesis, Endurance, Energy Resistance, Fire Resistance, Godly Physiology, Immortality, Jump, Radiation Immunity, Reflexes, Stealth, Toxin and Disease Resistance, Weapon-based Powers, Invulnerability', '820');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Neville Townsend', 'Neville Townsend', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38295.jpg', 'Intelligence, Marksmanship, Master Tactician, Weapons Master, Endurance, Indomitable Will, Insanity, Master Martial Artist', '22');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Behemoth', 'Titanus Behemoth', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23082.jpg', 'Durability, Heat Resistance, Radiation Immunity, Stamina, Super Speed, Super Strength, Accelerated Healing, Animal Attributes, Animal Control, Animal Oriented Powers, Cold Resistance, Electricity Resistance, Endurance, Enhanced Hearing, Enhanced Smell, Enhanced Touch, Fire Resistance, Invulnerability, Natural Armor, Natural Weapons, Super Breath, Toxin and Disease Resistance, Weather Control, Energy Resistance, Hellfire Resistance', '462');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Quinn', 'Quinn McKenna', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60357.jpg', 'Marksmanship, Danmaku, Leadership, Stealth, Explosion Manipulation, Fearless, Gadget Usage, Reflexes, Vision - Telescopic, Weapon-based Powers, Weapons Master', '19');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tovolar', 'Tovolar', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55318.jpg', 'Animal Attributes, Bloodlust, Disguise Resistance, Enhanced Smell, Hunters Instinct, Intimidation, Leadership, Rage Inducement, Reflexes, Accelerated Healing, Animal Oriented Powers, Berserk Mode, Camouflage, Endurance, Enhanced Hearing, Extrasensory Perception, Instinctive Reaction, Invulnerability, Jaw Strength, Jump, Magic Resistance, Natural Weapons, Rage Power, Reactive Power Level, Supernatural Condition, Swordsmanship, Toxin and Disease Resistance, Transformation, Vision - Night, Animal Control, Cold Resistance, Damage Reduction, Danger Sense, Dark Magic, Fire Resistance, Heat Resistance, Large Size, Longevity, Master Tactician, Regeneration, Soul Resistance, Statistics Amplification, Weapon-based Powers, Weapons Master', '314');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Blackout', 'Farooq Gibran', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23750.jpg', 'Durability, Electricity Absorption, Electrokinesis, Reflexes, Electricity Resistance, Endurance, Energy Absorption, Energy Manipulation, Energy Resistance, Stamina, Master Martial Artist, Stealth', '225');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bonnie Rockwaller', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57472.jpg', 'Acrobatics, Agility, Dexterity, Endurance, Vehicular Mastery', '6');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Blaise Zabini', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/19402.jpg', 'Fire Control, Force Fields, Intelligence, Magic, Endurance, Energy Blasts, Energy Constructs, Reflexes, Stamina, Telekinesis, Teleportation, Water Control, Accelerated Healing, Chemokinesis, Dark Arts, Dark Magic, Flight, Master Martial Artist, Petrification, Telepathy, Telepathy Resistance', '554');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Poison Ivy (Pre-The Green)', 'Pamela Isley', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64976.jpg', 'Durability, Element Control, Enhanced Condition, Homing Attack, Intelligence, Plant Control, Power Modification, Toxin and Disease Resistance, Accelerated Healing, Agility, Attack Reflection, Damage Boost, Endurance, Enhanced Memory, Enhanced Sight, Enhanced Touch, Grappling/Climbing, Heat Resistance, Information Analysis, Jump, Preparation, Reflexes, Regeneration, Resurrection, Stamina, Power Absorption', '334');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dark Archer', 'Malcolm Merlyn', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/65273.jpg', 'Acrobatics, Agility, Archery, Bloodlust, Deception, Disguise Mastery, Durability, Endurance, Fearless, Gadget Usage, Hunters Instinct, Indomitable Will, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Reflexes, Social Influencing, Stamina, Stealth, Swordsmanship, Weapon-based Powers, Weapons Master, Cyborgization, Dexterity, Information Analysis, Leadership, Vehicular Mastery, Illusions', '113');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Russian', 'Ivan Vassilovitch Dragovsky', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/66242.jpg', 'Endurance, Peak Human Condition, Stamina, Dexterity, Pain Suppression, Heat Resistance', '28');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kollector', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45082.jpg', 'Dimension Storage, Durability, Magic, Super Speed, Super Strength, Weapons Master, Attack Reflection, Chain Manipulation, Damage Boost, Explosion Manipulation, Fire Control, Projection, Sealing, Smoke Manipulation, Telekinesis, Teleportation, Weapon Creation, Weapon Summoning, Weapon-based Powers, Mind Control', '529');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Katarina Rostova', 'Tatiana Petrova', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38264.jpg', 'Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Endurance, Indomitable Will, Information Analysis', '24');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bric', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48873.jpg', '', '14');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Aayla Secura', 'Aayla Secura', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25396.jpg', 'The Force, Weapons Master, Attack Reflection, Jump, Master Martial Artist, Reflexes, Telekinesis', '239');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bane', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13841.jpg', 'Durability, Intelligence, Peak Human Condition, Stamina, Endurance, Master Martial Artist, Master Tactician, Weapons Master, Berserk Mode, Marksmanship, Reflexes', '47');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Widow (Cybernetic Zombie)', 'Natasha Romanoff', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48265.jpg', 'Acrobatics, Agility, Bloodlust, Dexterity, Durability, Endurance, Enhanced Memory, Explosion Manipulation, Hacking, Indomitable Will, Marksmanship, Master Martial Artist, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master, Vehicular Mastery, Accelerated Healing, Cloaking, Pain Suppression', '130');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ronald', 'Ronald Noland', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60141.jpg', 'Camouflage, Cloaking, Deception, Dexterity, Stealth, Energy Blasts, Gadget Usage, Marksmanship, Master Tactician, Vision - Infrared, Vision - Thermal, Weapon-based Powers, Fearless, Insanity', '39');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Emil Hamilton', 'Emil Hamilton', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23054.jpg', 'Intelligence, Empathy, Indomitable Will, Preparation', '13');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Knight', 'Nathan Garrett', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/1524.jpg', 'Intelligence, Acrobatics, Chi Manipulation, Force Fields, Heat Generation, Swordsmanship, Weapon-based Powers, Weapons Master', '14');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Fiora', 'Fiora Laurent', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/46571.jpg', 'Agility, Dexterity, Indomitable Will, Reflexes, Swordsmanship, Disarmament, Information Analysis, Weapon-based Powers, Attack Reflection, Damage Boost, Endurance, Master Martial Artist, Weapons Master', '63');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Chris Redfield', 'Christopher Redfield', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14326.jpg', 'Bloodlust, Indomitable Will, Marksmanship, Master Martial Artist, Master Tactician, Stamina, Stealth, Vehicular Mastery, Weapons Master, Agility, Damage Reduction, Dexterity, Endurance, Longevity, Pain Suppression, Reflexes, Statistics Amplification, Swimming, Cold Resistance, Hacking, Regeneration, Toxin and Disease Resistance', '111');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ajax The Great', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/51731.jpg', 'Durability, Endurance, Stamina, Super Speed, Super Strength, Master Tactician, Reflexes, Swordsmanship, Weapons Master, Enhanced Thievery, Indomitable Will, Master Martial Artist', '40');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Harley Quinn', 'Harleen Quinzel', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16101.jpg', 'Acrobatics, Agility, Bloodlust, Dexterity, Durability, Endurance, Intelligence, Marksmanship, Peak Human Condition, Plot Manipulation Resistance, Reflexes, Stamina, Stealth, Toxin and Disease Resistance, Weapons Master, Explosion Manipulation, Insanity, Longevity, Master Martial Artist, Master Tactician, Plot Manipulation, Swordsmanship, Accelerated Healing, Regeneration', '98');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rhino', 'Alexander O''Hirn', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/36865.jpg', 'Durability, Stamina, Super Speed, Super Strength, Natural Armor, Berserk Mode, Dexterity, Intangibility, Power Suit', '28');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Uninvited', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24575.jpg', 'Abstract Existence, Durability, Durability Negation, Endurance, Immortality, Immortality Negation, Regeneration Negation, Attack Negation, Magic Absorption, Possession Resistance, Soul Manipulation, Teleportation, Exorcism, Matter Absorption', '300');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tyrannosaurus Rex', 'Tyrannosaurus Rex', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17716.jpg', 'Animal Attributes, Animal Oriented Powers, Jaw Strength, Stamina, Super Speed, Super Strength, Agility, Cold Resistance, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Fire Resistance, Heat Resistance, Hunters Instinct, Large Size, Master Martial Artist, Natural Armor, Natural Weapons, Reflexes, Stealth, Toxin and Disease Resistance, Camouflage, Grappling/Climbing, Self-Sustenance, Shockwaves Generation', '94');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Rhino', 'Aleksei Sytsevich', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13836.jpg', 'Cold Resistance, Durability, Explosion Manipulation, Fire Resistance, Heat Resistance, Radiation Immunity, Super Speed, Super Strength, Toxin and Disease Resistance, Agility, Dexterity, Energy Resistance, Heat Generation, Marksmanship, Vehicular Mastery, Weapons Master', '71');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Riddle Rosehearts', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/50099.jpg', 'Element Control, Fire Control, Heat Generation, Non-Physical Interaction, Damage Boost, Damage Reduction, Damage Transferal, Magic, Magic Absorption, Magic Resistance, Statistics Amplification, Statistics Reduction, Status Effect Inducement', '261');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bane', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16508.jpg', 'Accelerated Healing, Durability, Enhanced Memory, Intelligence, Master Martial Artist, Master Tactician, Reflexes, Stamina, Super Speed, Super Strength, Pain Suppression, Statistics Amplification, Supernatural Condition, Weapons Master', '132');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mystique', 'Raven Darkholme', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/817.jpg', 'Intelligence, Shapeshifting, Stamina, Super Strength, Accelerated Healing, Acrobatics, Adaptation, Agility, Elasticity, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stealth, Toxin and Disease Resistance, Weapons Master, Longevity', '286');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mister Sinister', 'Nathaniel Essex', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45987.jpg', 'Intelligence, Longevity', '61');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Solomon Grundy', 'Cyrus Gold', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45036.jpg', 'Accelerated Healing, Durability, Pain Suppression, Stamina, Super Strength, Toxin and Disease Resistance, Zombie Physiology, Berserk Mode, Cold Resistance, Endurance, Immortality, Mind Control Resistance, Regeneration, Telepathy Resistance, Heat Resistance', '180');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Baphomet', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48381.jpg', 'Dark Magic', '451');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Captain Jack Sparrow', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10897.jpg', 'Durability, Enhanced Thievery, Intelligence, Marksmanship, Peak Human Condition, Stamina, Stealth, Swordsmanship, Weapons Master, Danger Sense, Dexterity, Endurance, Indomitable Will, Jump, Reflexes, Weapon-based Powers, Adaptation, Agility, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Luck, Master Tactician', '42');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rhino', 'Aleksei Sytsevich', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15.jpg', 'Berserk Mode, Cold Resistance, Durability, Heat Resistance, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance, Animal Attributes, Animal Oriented Powers, Fire Resistance, Gamma Mutant Physiology, Invulnerability, Jump, Longevity, Natural Armor, Power Suit, Reflexes, Shockwaves Generation, Vibration Manipulation', '247');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ghost Fox Killer', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32086.jpg', 'Acrobatics, Agility, Death Touch, Dexterity, Endurance, Marksmanship, Necromancy, Reflexes, Soul Manipulation, Soul Resistance, Stamina, Death Manipulation, Immortality', '334');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Mask', 'Roman Sionis', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32142.jpg', 'Intelligence, Intimidation, Law Manipulation, Leadership, Social Influencing, Bloodlust, Stealth, Weapons Master, Acrobatics, Fear Inducement, Insanity, Marksmanship, Pressure Points, Reflexes', '54');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Toad', 'Mortimer Toynbee', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/1125.jpg', 'Durability, Stamina, Acrobatics, Agility, Animal Attributes, Animal Oriented Powers, Biokinesis, Danger Sense, Jump, Reflexes', '39');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kayn', 'Shieda Kayn', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/42503.jpg', 'Acrobatics, Agility, Apathy, Camouflage, Dexterity, Intimidation, Master Martial Artist, Shadow Manipulation, Weapons Master, Bloodlust, Endurance, Fearless, Intangibility, Mind Control Resistance, Possession Resistance, Reflexes, Swordsmanship, Blood Manipulation, Cloning, Corruption Resistance, Magic, Multiple Personalities, Natural Armor, Non-Physical Interaction, Possession', '274');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Noir', 'Earving', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/21497.jpg', 'Acrobatics, Agility, Bloodlust, Longevity, Master Martial Artist, Pain Suppression, Reflexes, Social Influencing, Stamina, Stealth, Swordsmanship, Toxin and Disease Resistance, Weapons Master, Accelerated Healing, Acid Resistants, Cold Resistance, Dexterity, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Fire Resistance, Heat Resistance, Jump, Master Tactician, Regeneration, Status Effect Inducement, Vehicular Mastery', '180');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Alan Jonah', 'Alan Jonah', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/28446.jpg', 'Weapons Master, Insanity, Master Tactician, Stealth, Bloodlust, Dexterity, Disguise Mastery, Endurance, Master Martial Artist, Reflexes', '27');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lady Mastermind', 'Regan Wyngarde', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10331.jpg', 'Illusions, Mind Control, Telepathy, Illusion Resistance, Mind Control Resistance, Telepathy Resistance, Agility, Endurance', '165');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Robin', 'Dick Grayson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23495.jpg', 'Acrobatics, Agility, Intelligence, Master Martial Artist, Peak Human Condition, Stamina, Dexterity, Endurance, Hacking, Indomitable Will, Information Analysis, Marksmanship, Master Tactician, Preparation, Reflexes, Stealth, Weapon-based Powers, Weapons Master', '68');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Death Dealer', 'Li Ching-Lin', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29517.jpg', 'Acrobatics, Agility, Dexterity, Disguise Mastery, Endurance, Master Martial Artist, Master Tactician, Reflexes, Stamina, Super Speed, Super Strength, Throwing Proficiency, Weapons Master, Enhanced Hearing, Enhanced Sight, Smoke Manipulation, Explosion Manipulation, Intimidation', '89');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Symmetra', 'Satya Vaswani', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13488.jpg', 'Energy Constructs, Intelligence, Marksmanship, Reactive Power Level, Creation, Energy Beams, Energy Blasts, Energy Manipulation, Force Fields, Light Control, Portal Creation, Preparation, Statistics Reduction', '207');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hawkman', 'Carter Hall', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30496.jpg', 'Animal Attributes, Animal Oriented Powers, Durability, Endurance, Enhanced Sight, Flight, Gliding, Stamina, Super Speed, Super Strength, Weapon-based Powers, Agility, Dexterity, Natural Armor, Natural Weapons, Power Suit, Vision - Telescopic, Weapons Master', '118');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mach Two', 'Nomi Blume', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45738.jpg', 'Magnetism, Electro-Magnetism Manipulation, Levitation', '194');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Cyndaquil', 'Cyndaquil', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23284.jpg', 'Animal Attributes, Cold Resistance, Fire Control, Fire Resistance, Heat Generation, Heat Resistance, Damage Reduction, Homing Attack, Jump, Rage Power, Smoke Manipulation, Statistics Amplification', '24');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lady Beetle', 'Janice Lincoln', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/19393.jpg', '', '103');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bossk', 'Bossk', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25399.jpg', 'Marksmanship, Weapon-based Powers, Weapons Master, Agility, Animal Attributes, Jump, Master Martial Artist, Reflexes, Explosion Manipulation, Master Tactician', '47');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Fizz', 'Fizz', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45299.jpg', 'Acrobatics, Agility, Amphibious Respiration, Longevity, Swimming, Underwater breathing, Water Control, Animal Control, Cold Resistance, Endurance, Enhanced Hearing, Enhanced Smell, Enhanced Thievery, Jump, Magic, Portal Creation, Vision - Infrared, Weapon-based Powers, Damage Boost, Damage Reduction, Immortality, Magic Resistance, Non-Corporeal, Non-Physical Interaction, Status Effect Inducement, Summoning', '321');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mountain Banshee', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54422.jpg', 'Durability, Super Speed, Super Strength, Agility, Endurance, Flight, Hunters Instinct, Large Size, Reflexes, Stamina, Jaw Strength, Stealth', '19');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tala', 'Tala', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18327.jpg', 'Magic, Possession, Shadow Manipulation, Terrakinesis, Weather Control', '14');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Two-Face', 'Harvey Dent', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13881.jpg', 'Intelligence, Insanity', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Carlie Cooper', 'Carlie Cooper', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26529.jpg', '', '7');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Karma', 'Fleet Delmar', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25369.jpg', 'Agility, Master Tactician, Peak Human Condition, Super Speed, Super Strength, Telepathy, Berserk Mode, Bloodlust, Master Martial Artist, Precognition, Preparation, Pressure Points, Reflexes, Electricity Resistance, Electrokinesis, Energy Blasts, Heat Resistance, Mind Control, Shockwaves Generation, Telekinesis, Weapons Master', '120');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Owen Elliot', 'Owen Elliot', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38303.jpg', 'Intelligence, Peak Human Condition, Stamina, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Bloodlust, Endurance', '36');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Green Goblin', 'Norman Osborn', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23961.jpg', 'Acrobatics, Agility, Deception, Disguise Mastery, Durability, Gadget Usage, Gliding, Super Speed, Super Strength, Toxin and Disease Control, Demon Physiology, Fire Resistance, Grappling/Climbing, Heat Resistance, Jump, Large Size, Electricity Resistance', '213');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shay Cormac', 'Shay Patrick Cormac', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22235.jpg', 'Acrobatics, Agility, Endurance, Master Martial Artist, Master Tactician, Reflexes, Stamina, Stealth, Vehicular Mastery, Weapons Master, Clairvoyance, Cold Resistance, Dexterity, Extrasensory Perception, Heat Resistance, Indomitable Will, Information Analysis, Jump, Marksmanship, Precognition, Psychometry, Explosion Manipulation, Illusion Resistance, Mind Control, Smoke Manipulation', '123');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Night-Spider', 'Felicia Hardy', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48101.jpg', 'Acrobatics, Agility, Animal Attributes, Animal Oriented Powers, Danger Sense, Dexterity, Durability, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Preparation, Radar Sense, Reflexes, Stamina, Stealth, Substance Secretion, Super Speed, Super Strength, Vision - Night, Wallcrawling, Web Creation, Accelerated Healing, Adaptation, Cosmic Awareness, Disguise Mastery, Electricity Resistance, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Touch, Extrasensory Perception, Gadget Usage, Gliding, Indomitable Will, Instinctive Reaction, Jump, Natural Weapons, Spatial Awareness, Surface Scaling, Toxin and Disease Resistance, Vision - Infrared, Vision - Microscopic, Vision - Telescopic, Bullet Time, Camouflage, Clairvoyance, Cold Resistance, Enhanced Condition, Enhanced Smell, Fire Resistance, Heat Resistance, Illusion Resistance, Invulnerability, Mind Control Resistance, Possession Resistance, Radiation Immunity, Regeneration, Self-Sustenance, Telepathy Resistance', '702');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ebony Maw', 'Ebony Maw', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24362.jpg', 'Durability, Intelligence, Stamina, Endurance, Flight, Jump, Levitation, Mind Control, Stealth, Technological Possession, Technopath/Cyberpath, Telekinesis, Telepathy', '505');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Chipmunk-Hunk', 'Tomas Lara-Perez', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52538.jpg', 'Acrobatics, Agility, Animal Control, Animated Shadow, Cold Resistance, Durability, Enhanced Memory, Enhanced Sight, Enhanced Smell, Insanity, Intelligence, Jump, Marksmanship, Master Martial Artist, Mind Control Resistance, Radiation Immunity, Reflexes, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance, Weapons Master, Curse Resistance, Dexterity, Empathy, Endurance, Heat Generation, Interstellar Travel, Longevity, Shapeshifting, Size Changing, Apathy, Fire Resistance', '169');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Poison Ivy', 'Pamela Isley', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/33209.jpg', 'Intelligence, Plant Control, Body Puppetry, Empathy, Master Martial Artist, Mind Control, Telepathy', '99');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Man-Wolf', 'John Jamson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/46804.jpg', 'Accelerated Healing, Agility, Animal Attributes, Animal Oriented Powers, Durability, Endurance, Extrasensory Perception, Grappling/Climbing, Longevity, Reflexes, Space Survivability, Stamina, Super Speed, Super Strength, Supernatural Condition, Swordsmanship, Toxin and Disease Resistance, Transformation, Attack Negation, Attack Reflection, Awakened Power, Divine Powers, Durability Negation, Energy Resistance, Fire Resistance, Gadget Usage, Jump, Weapon-based Powers, Age Manipulation', '463');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Deathstroke', 'Slade Wilson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20241.jpg', 'Accelerated Healing, Acrobatics, Agility, Dexterity, Durability, Endurance, Indomitable Will, Information Analysis, Instinctive Reaction, Intelligence, Intuitive aptitude, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Weapon-based Powers, Weapons Master, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Mechanical Aptitude, Photographic Reflexes, Power Suit', '166');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Phage (Klyntar Symbiote)', 'Phage', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32957.jpg', 'Accelerated Healing, Acrobatics, Agility, Camouflage, Cloaking, Durability, Elasticity, Stamina, Stealth, Super Speed, Super Strength, Symbiote Costume, Symbiotic Regeneration, Vision - Night, Wallcrawling, Web Creation, Biokinesis, Cold Resistance, Danger Sense, Endurance, Enhanced Sight, Hive-Mind, Jump, Longevity, Natural Weapons, Radiation Immunity, Reflexes, Regeneration, Spatial Awareness, Toxin and Disease Resistance, Vitakinesis, Weapon Creation, Animal Attributes, Animal Oriented Powers, Mind Control Resistance, Possession, Shapeshifting, Size Changing, Substance Secretion, Telepathy Resistance, Transformation', '835');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Yaz', 'Yasmina Fadoula', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54385.jpg', 'Intelligence', '5');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Swamp Thing', 'Alec Holland', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64983.jpg', 'Durability, Plant Control, Super Strength, The Green, Toxin and Disease Resistance, Accelerated Healing, Adaptation, Enhanced Condition, Regeneration, Stamina, Homing Attack, Stealth', '198');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Professor X (Old)', 'Charles Francis Xavier', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14371.jpg', 'Intelligence, Paralysis, Hypnokinesis, Illusions, Memory Manipulation, Mind Blast, Mind Control, Mind Control Resistance, Possession, Power Sense, Psionic Powers, Telepathy', '448');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Stan Beeman', 'Stan Beeman', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38339.jpg', 'Intelligence, Information Analysis, Marksmanship, Master Tactician, Master Martial Artist, Weapons Master', '24');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jaden', 'Jaden', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38354.jpg', 'Intelligence, Peak Human Condition, Stamina, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Endurance', '36');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shade', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45767.jpg', 'Cloaking, Shadow Manipulation, Stealth, Teleportation, Deception, Element Control, Indomitable Will, Information Analysis, Reflexes, Stamina, Adaptation, Grappling/Climbing', '67');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mr. Negative', 'Martin Li', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63356.jpg', 'Enhanced Touch, Gadget Usage, Illumination, Intelligence, Latent Abilities, Matter Manipulation, Molecular Manipulation, Terrakinesis, Weapon-based Powers, Dimensional Travel, Mechanical Aptitude, Robotic Engineering, Weapon Creation, Weapons Master, Leadership', '363');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Raze', 'Raze Darkhölme', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44970.jpg', 'Agility, Durability, Enhanced Smell, Longevity, Regeneration, Shapeshifting, Stamina, Super Speed, Super Strength, Telepathy Resistance, Toxin and Disease Resistance, Accelerated Healing, Adaptation, Camouflage, Elasticity, Enhanced Hearing, Enhanced Sight, Enhanced Touch, Reflexes', '445');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kog''Maw', 'Kog''Maw', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/43757.jpg', 'Acid Resistants, Acidic Spit, Indestructible Digestion, Jaw Strength, Natural Weapons, Self-Destruction, Substance Secretion, Toxin and Disease Resistance, Acid Manipulation, Animal Attributes, Corruption, Damage Boost, Endurance, Extrasensory Perception, Marksmanship, Natural Armor, Self-Sustenance, Accelerated Healing, Corruption Resistance, Durability Negation, Elasticity, Enhanced Smell, Explosion Manipulation, Magic, Magic Absorption, Magic Resistance, Matter Absorption, Physics Manipulation, Reactive Evolution, Regeneration, Statistics Amplification, Statistics Reduction', '519');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Elektra', 'Elektra Natchios', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15316.jpg', 'Peak Human Condition, Stamina, Acrobatics, Agility, Dexterity, Endurance, Marksmanship, Master Martial Artist, Reflexes, Stealth, Swordsmanship, Weapons Master', '63');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ronan The Accuser', 'Ronan', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44506.jpg', 'Durability, Energy Blasts, Energy Manipulation, Teleportation, Accelerated Healing, Strength Force', '844');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jarvis', 'Edwin Jarvis', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63152.jpg', '', '4');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Xorn (Psychic Construct)', 'Jean Grey', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44974.jpg', 'Telepathy, Telekinesis', '895');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Andreas', 'Andreas', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25810.jpg', 'Intelligence, Magic, Acrobatics, Agility, Leadership, Master Martial Artist, Weapons Master', '173');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hunk', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52567.jpg', 'Bloodlust, Indomitable Will, Marksmanship, Master Martial Artist, Master Tactician, Stamina, Stealth, Vehicular Mastery, Weapons Master, Agility, Damage Reduction, Dexterity, Endurance, Pain Suppression, Reflexes, Swimming, Accelerated Healing, Cold Resistance, Hacking, Heat Resistance, Jump, Regeneration, Statistics Amplification, Toxin and Disease Resistance', '105');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ras Al Ghul', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/36261.jpg', 'Intelligence, Accelerated Healing, Acrobatics, Longevity, Master Martial Artist, Master Tactician, Preparation, Resurrection, Stealth, Weapons Master', '766');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Goro-Goro', 'Goro-Goro', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54825.jpg', 'Summoning, Agility, Animal Control, Electrokinesis, Endurance, Extrasensory Perception, Fearless, Heat Resistance, Indomitable Will, Magic, Natural Armor, Reflexes, Soul Resistance, Swordsmanship, Soul Manipulation, Status Effect Inducement, Weapon-based Powers', '122');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mister Zsasz', 'Victor Zsasz', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32160.jpg', 'Bloodlust, Insanity, Stealth, Electrokinesis, Endurance, Master Tactician, Weapons Master', '15');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Predator (Feral)', 'Yautja', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60146.jpg', 'Bloodlust, Camouflage, Cloaking, Gadget Usage, Grappling/Climbing, Intimidation, Longevity, Marksmanship, Pain Suppression, Reflexes, Stealth, Swordsmanship, Vision - Thermal, Weapon-based Powers, Agility, Dexterity, Enhanced Hearing, Enhanced Sight, Fearless, Heat Resistance, Homing Attack, Hunters Instinct, Indomitable Will, Invisibility, Jump, Scanning, Weapons Master, Berserk Mode, Cold Resistance, Enhanced Smell, Information Analysis, Large Size, Melting, Natural Armor, Natural Weapons, Paralysis, Toxin and Disease Resistance, Vitakinesis', '165');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Captain America (Knullified)', 'Steve Rogers', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24594.jpg', 'Accelerated Healing, Acrobatics, Agility, Durability, Endurance, Intelligence, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Biokinesis, Camouflage, Cloaking, Cold Resistance, Energy Resistance, Fire Resistance, Flight, Heat Resistance, Invulnerability, Jump, Longevity, Marksmanship, Master Martial Artist, Mind Control Resistance, Radiation Immunity, Regeneration, Toxin and Disease Resistance, Vitakinesis, Animation, Master Tactician, Projection, Resurrection, Self-Sustenance', '682');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Connie D''Amico', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63172.jpg', 'Social Influencing', '7');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hector Barbossa', 'Hector Barbossa', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11526.jpg', 'Durability, Enhanced Thievery, Intelligence, Longevity, Stamina, Underwater breathing, Weapons Master, Accelerated Healing, Acrobatics, Agility, Awakened Power, Cold Resistance, Endurance, Enhanced Condition, Enhanced Memory, Immortality, Indomitable Will, Insanity, Invulnerability, Master Martial Artist, Master Tactician, Phasing, Radiation Immunity, Reflexes, Regeneration, Self-Sustenance, Stealth, Toxin and Disease Resistance, Clairvoyance Resistance, Curse Manipulation, Illusion Resistance, Resurrection, Soul Resistance, Telepathy Resistance', '299');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rip Van Winkle', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23386.jpg', 'Agility, Cold Resistance, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Thievery, Heat Resistance, Immortality, Jump, Marksmanship, Master Martial Artist, Master Tactician, Radiation Immunity, Regeneration, Self-Destruction, Stamina, Toxin and Disease Resistance, Weapons Master, Electricity Resistance, Fire Resistance, Insanity, Longevity, Magic, Mind Control Resistance, Telekinesis', '778');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'G''iah', 'G''iah', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57595.jpg', 'Disguise Mastery, Durability, Intelligence, Shapeshifting, Acrobatics, Adaptation, Agility, Dexterity, Endurance, Marksmanship, Master Martial Artist, Stamina, Master Tactician', '241');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Batman', 'Bruce Wayne', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64912.jpg', 'Adaptation, Agility, Durability, Endurance, Fear Inducement, Gadget Usage, Gliding, Grappling/Climbing, Information Analysis, Intelligence, Intimidation, Leadership, Master Martial Artist, Master Tactician, Preparation, Stealth, Vehicular Mastery, Acrobatics, Damage Boost, Deception, Dexterity, Electricity Resistance, Jump, Pain Suppression, Reflexes, Stamina, Weapons Master, Teleportation', '133');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Morty', 'Morty Smith', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52142.jpg', 'Marksmanship, Explosion Manipulation, Fire Control, Portal Creation, Purification, Summoning, Terrakinesis, Vitakinesis, Weapon Summoning, Weapons Master, Time Manipulation', '86');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Queen Of Blood', 'Mary Seward', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30125.jpg', 'Acrobatics, Agility, Bloodlust, Dexterity, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Touch, Longevity, Marksmanship, Radiation Immunity, Reflexes, Regeneration Negation, Self-Sustenance, Shapeshifting, Sleep Manipulation, Social Influencing, Stamina, Stealth, Toxin and Disease Resistance, Accelerated Healing, Animal Attributes, Cloth Manipulation, Cold Resistance, Extrasensory Perception, Flight, Heat Resistance, Immortality, Levitation, Master Martial Artist, Master Tactician, Regeneration, Transformation, Weapon Creation, Weapon Summoning, Weapons Master', '882');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jaehaerys Targaryen', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62784.jpg', 'Agility, Indomitable Will, Intelligence, Intimidation, Leadership, Master Tactician, Multilingualism, Social Influencing, Dexterity, Fearless, Fire Resistance, Heat Resistance, Marksmanship, Master Martial Artist, Reflexes, Weapons Master, Animal Control, Endurance, Telepathy', '47');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Killer Moth', 'Drury Walker', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14434.jpg', 'Durability, Intelligence, Super Speed, Adaptation, Cloth Manipulation, Creation, Endurance, Enhanced Sight, Explosion Manipulation, Extrasensory Perception, Gliding, Illumination, Intuitive aptitude, Light Control, Marksmanship, Master Martial Artist, Natural Weapons, Power Suit, Sonar, Stealth, Vehicular Mastery, Vision - Infrared, Vision - Telescopic, Wallcrawling, Weapon-based Powers, Weapons Master, Web Creation, Wind Control, Agility, Animal Attributes, Animal Oriented Powers, Bullet Time, Camouflage, Flight', '154');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mad Harriet', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12469.jpg', 'Acrobatics, Agility, Durability, Endurance, Energy Resistance, Fire Resistance, Heat Resistance, Insanity, Longevity, Master Martial Artist, Stamina, Super Speed, Super Strength, Weapons Master, Accelerated Healing, Cold Resistance, Electricity Resistance, Godly Physiology, Immortality, Invulnerability, Jump, Pain Suppression, Radiation Immunity, Reflexes, Toxin and Disease Resistance, Weapon-based Powers, Energy Manipulation', '927');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Roddy Diesel', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/50100.jpg', 'Accelerated Healing, Hacking, Intelligence, Master Martial Artist, Regeneration, Cold Resistance, Immortality, Invulnerability, Master Tactician, Technological Possession, Toxin and Disease Resistance, Vehicular Mastery', '158');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Private Vasquez', 'Jenette Vasquez', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/59878.jpg', 'Danmaku, Gadget Usage, Marksmanship, Weapon-based Powers, Endurance, Homing Attack, Illumination, Melting, Vision - Infrared', '15');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'T-1000000', 'T-Meg', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15442.jpg', 'Intelligence, Multiple Limbs, Regeneration, Super Speed, Super Strength, Audio Alteration, Bloodlust, Danger Sense, Disguise Mastery, Echolocation, Electricity Absorption, Electricity Resistance, Electrokinesis, EMP Generation, Energy Absorption, Energy Armor, Energy Manipulation, Energy Resistance, Fire Resistance, Flight, Fusion, Jaw Strength, Jump, Melting, Metal Manipulation, Power Absorption, Power Augmentation, Power Modification, Power Sense, Radar Sense, Radiation Control, Reactive Power Level, Robotic Engineering, Self-Destruction, Self-Sustenance, Separation, Shapeshifting, Shockwaves Generation, Spatial Awareness, Stealth, Surface Scaling, Tentacles, Vaporising Beams, Vision - Infrared, Vision - Night, Vision - Thermal, Wallcrawling, Weapon Creation, Weapon-based Powers, Weapons Master', '943');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Sophie Frost', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/59727.jpg', 'Hive-Mind, Intelligence, Telepathy, Information Analysis, Intuitive aptitude, Mind Control, Pain Manipulation, Social Influencing, Empathy', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kai', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45086.jpg', 'Durability, Fire Control, Master Martial Artist, Super Strength, Acrobatics, Weapons Master', '54');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Grey Ghost', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62830.jpg', 'Agility, Cold Resistance, Flight, Heat Generation, Heat Resistance, Super Breath, Dexterity, Jaw Strength, Large Size, Longevity, Magic, Magic Resistance, Natural Weapons, Wing Manifestation', '162');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bunty', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25512.jpg', '', '7');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Sandman', 'Flint Marko', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57315.jpg', 'Sand Manipulation, Regeneration, Shapeshifting, Size Changing, Transformation', '132');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Mask', 'Roman Sionis', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/645.jpg', 'Disguise Mastery, Intelligence, Master Tactician, Peak Human Condition, Stamina, Weapon-based Powers, Weapons Master, Insanity, Marksmanship, Master Martial Artist, Stealth, Toxin and Disease Control', '38');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Camryn Barnes', 'Apolla DuBaer', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63041.jpg', 'Light Control, Magic, Telekinesis, Clairvoyance, Heat Generation, Illumination, Teleportation', '218');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hakuja', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14007.jpg', 'Amphibious Respiration, Animal Attributes, Dig, Endurance, Fire Resistance, Heat Resistance, Large Size, Multiple Limbs, Natural Armor, Natural Weapons, Agility, Cold Resistance, Electricity Resistance, Energy Resistance, Heat Generation, Invulnerability, Jaw Strength, Jump, Toxin and Disease Resistance, Accelerated Healing, Corruption', '632');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Pre-Vizsla', 'Pre-Vizsla', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16910.jpg', 'Acrobatics, Agility, Durability, Endurance, Fire Control, Gadget Usage, Homing Attack, Intelligence, Interstellar Travel, Marksmanship, Master Martial Artist, Master Tactician, Power Suit, Reflexes, Stamina, Super Speed, Super Strength, Swordsmanship, Vehicular Mastery, Weapon-based Powers, Weapons Master, Cold Resistance, Dexterity, Electricity Resistance, Enhanced Condition, Explosion Manipulation, Fire Resistance, Flight, Grappling/Climbing, Heat Resistance, Information Analysis, Longevity, Radar Sense, Social Influencing, Space Survivability, Spaceflight, Spatial Awareness, Stealth, Energy Blasts, Energy Resistance, Enhanced Touch', '213');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ellen Brandt', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31976.jpg', 'Acrobatics, Agility, Fire Resistance, Regeneration', '58');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Sirenjaw', 'Gigantus Crocodiliad', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/33369.jpg', 'Amphibious Respiration, Camouflage, Jaw Strength, Natural Weapons, Accelerated Healing, Animal Attributes, Heat Resistance, Large Size, Natural Armor, Stealth, Plant Control, Toxin and Disease Resistance', '26');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tiger''s Beautiful Daughter', 'Li Hua', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45858.jpg', 'Acrobatics, Agility, Chi Manipulation, Dexterity, Durability, Endurance, Master Martial Artist, Peak Human Condition, Pressure Points, Reflexes, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance, Vitakinesis, Weapons Master, Accelerated Healing, Cold Resistance, Empathy, Energy Absorption, Energy Blasts, Energy Manipulation, Heat Resistance, Hypnokinesis, Indomitable Will, Marksmanship, Mind Control Resistance, Psionic Powers, Radiation Immunity, Stealth, Dimensional Travel, Power Modification', '647');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jar Jar Binks', 'Jar Jar Binks', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25406.jpg', 'Agility, Jump', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Joker', 'Jeremiah Valeska', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13623.jpg', 'Disguise Mastery, Intelligence, Marksmanship, Peak Human Condition, Supernatural Condition, Swordsmanship, Weapon-based Powers, Weapons Master, Audio Alteration, Element Control, Explosion Manipulation, Master Martial Artist, Master Tactician, Pain Suppression, Preparation, Sleep Manipulation, Stealth, Toxin and Disease Control', '87');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Clay Fermin', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26098.jpg', 'Creation, Hacking, Information Analysis, Insanity, Intelligence, Mechanical Aptitude, Robotic Engineering, Technopath/Cyberpath', '46');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hydra', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45202.jpg', 'Fire Control, Flight, Jaw Strength, Underwater breathing, Water Control', '212');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Senator Burke', 'Ed Burke', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22354.jpg', 'Social Influencing', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bran Stark', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13941.jpg', 'Astral Projection, Clairvoyance, Empathy, Extrasensory Perception, Intelligence, Animal Control, Dream Manipulation, Longevity, Magic, Memory Manipulation, Mind Control, Possession, Precognition, Reflexes, Time Travel, Non-Physical Interaction, Telepathy, Weapons Master', '506');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Yorick', 'Yorick Mori', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44289.jpg', 'Extrasensory Perception, Longevity, Necromancy, Soul Resistance, Cold Resistance, Corruption Resistance, Curse Resistance, Endurance, Heat Resistance, Indomitable Will, Magic, Non-Physical Interaction, Possession Resistance, Self-Sustenance, Soul Manipulation, Summoning, Weapon-based Powers, Zombie Physiology, Damage Boost, Dig, Energy Absorption, Magic Resistance, Master Tactician, Power Bestowal, Statistics Amplification, Statistics Reduction, Unholy Resistance, Water Control, Weapons Master', '635');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lex Luthor', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62218.jpg', 'Durability, Gadget Usage, Gliding, Hacking, Information Analysis, Intelligence, Leadership, Marksmanship, Master Tactician, Power Suit, Vehicular Mastery, Weapon-based Powers, Creation, Disguise Mastery, Endurance, Energy Blasts, Explosion Manipulation, Levitation, Swimming, Weapon Summoning, Weapons Master', '99');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Demagoblin', 'Frances Barrison', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/27698.jpg', 'Agility, Durability, Reflexes, Sonic Scream, Stamina, Super Speed, Super Strength, Empathy, Magic Resistance, Psionic Powers, Telekinesis, Magic', '992');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Whistler', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/56076.jpg', 'Cosmic Awareness, Demon Physiology, Precognition, Super Speed, Super Strength, Danger Sense, Dimensional Awareness, Energy Beams, Energy Blasts, Energy Manipulation, Fire Control, Immortality, Master Martial Artist, Master Tactician, Psionic Powers, Divine Powers, Divinity, Shapeshifting, Weapons Master', '527');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Adam Strange', 'Adam Strange', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23160.jpg', 'Durability, Energy Beams, Flight, Spaceflight, Stamina, Endurance, Energy Blasts, Interstellar Travel, Power Suit', '401');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Moondancer', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62826.jpg', 'Agility, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Super Breath, Dexterity, Jaw Strength, Longevity, Magic, Magic Resistance, Natural Weapons, Wing Manifestation', '97');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Carmilla', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24145.jpg', 'Bloodlust, Cold Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Touch, Intelligence, Longevity, Self-Destruction, Social Influencing, Toxin and Disease Resistance, Accelerated Healing, Acid Resistants, Acrobatics, Agility, Berserk Mode, Bullet Time, Dexterity, Electricity Resistance, Electrokinesis, Endurance, Energy Resistance, Explosion Manipulation, Fire Resistance, Heat Resistance, Immortality, Radiation Immunity, Reflexes, Regeneration, Stamina, Stealth, Swordsmanship, Weapons Master', '291');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Amanda Waller', 'Amanda Blake Waller', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/33322.jpg', 'Master Tactician', '12');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'She-Bat', 'Francine Lee', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20596.jpg', 'Audio Control, Flight, Intelligence, Natural Weapons, Transformation, Accelerated Healing, Animal Attributes, Animal Control, Audio Alteration, Damage Reduction, Echolocation, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Natural Armor, Preparation, Social Influencing, Sonic Scream, Stealth', '79');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Soundwave', 'Soundwave', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18492.jpg', 'Endurance, Hacking, Longevity, Master Martial Artist, Stamina, Stealth, Super Speed, Super Strength, Weapons Master, Audio Alteration, Energy Beams, Energy Blasts, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Touch, Immortality, Master Tactician, Regeneration, Self-Sustenance, Summoning, Transformation, Technopath/Cyberpath', '336');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lady Deathstrike', 'Yuriko Oyama', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/810.jpg', 'Accelerated Healing, Agility, Dexterity, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Master Martial Artist, Natural Weapons, Reflexes, Regeneration, Stamina, Toxin and Disease Resistance, Acrobatics, Cold Resistance, Immortality, Invulnerability, Jump, Marksmanship, Pain Suppression, Pressure Points, Radiation Immunity, Self-Sustenance, Technopath/Cyberpath, Weapons Master, Acid Resistants, Electricity Resistance, Mind Control Resistance, Possession Resistance', '600');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Buck', 'Buck Hughes', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/50515.jpg', 'Bloodlust, Dexterity, Durability, Insanity, Intelligence, Marksmanship, Reflexes, Weapons Master, Empathy, Endurance', '30');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hobgoblin', 'Roderick Kingsley', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/896.jpg', 'Acrobatics, Dexterity, Endurance, Insanity, Intelligence, Marksmanship, Reflexes, Stamina, Weapons Master, Accelerated Healing, Agility, Cold Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Touch, Explosion Manipulation, Fear Manipulation, Fire Resistance, Heat Resistance, Master Martial Artist, Master Tactician, Power Suit, Preparation, Radiation Immunity, Regeneration, Stealth, Toxin and Disease Resistance, Flight', '149');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Killer Moth', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30640.jpg', 'Flight, Large Size, Reflexes, Super Speed, Super Strength, Supernatural Condition, Hunters Instinct, Jump, Invulnerability', '81');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mistral', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52144.jpg', 'Acrobatics, Durability, Master Martial Artist, Multiple Limbs, Self-Sustenance, Summoning, Super Speed, Super Strength, Weapons Master, Agility, Cyborgization, Durability Negation, Enhanced Sight, Explosion Manipulation, Immortality, Inorganic Physiology, Master Tactician, Nanotechnology, Pain Suppression, Quantum Manipulation, Stealth, Vibration Manipulation, Weapon Creation, Weapon Summoning', '510');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Whiplash', 'Ivan Vanko', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13895.jpg', 'Durability, Intelligence, Stamina, Agility, Dexterity, Electrokinesis, Endurance, Reflexes, Stealth, Weapon-based Powers, Weapons Master, Energy Constructs, Master Tactician, Power Sense', '31');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shadow Colonel', 'Xarus', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20489.jpg', 'Durability, Stamina, Super Speed, Super Strength, Accelerated Healing, Agility, Endurance, Hypnokinesis, Jump, Magic, Master Tactician, Reflexes, Regeneration, Shapeshifting, Stealth, Weapons Master, Empathy, Immortality, Weather Control', '185');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Carnage', 'Cletus Kasady', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/41145.jpg', 'Agility, Durability, Stamina, Accelerated Healing, Jump, Reflexes, Regeneration, Symbiote Costume, Toxin and Disease Resistance, Wallcrawling, Web Creation, Longevity', '172');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hugo Strange', 'Hugo Strange', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23115.jpg', 'Intelligence, Preparation, Social Influencing, Pressure Points, Explosion Manipulation, Madness Manipulation, Mind Control, Summoning', '23');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Wonder Woman', 'Diana Prince', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63186.jpg', 'Durability, Flight, Master Martial Artist, Super Speed, Super Strength, Weapons Master, Reflexes', '128');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kyle Tippet', 'Kyle Tippet', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22198.jpg', 'Intelligence, Mind Blast, Mind Control, Mind Control Resistance', '38');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Raiju', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12457.jpg', 'Amphibious Respiration, Animal Attributes, Cold Resistance, Corruption, Fire Resistance, Heat Resistance, Jaw Strength, Large Size, Natural Armor, Natural Weapons, Toxin and Disease Resistance, Underwater breathing, Agility, Dexterity, Elasticity, Endurance, Electricity Resistance, Energy Resistance, Illumination, Invulnerability', '578');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Death Locket', 'Rebecca Ryker', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30225.jpg', 'Intelligence, Acrobatics, Agility, Electrokinesis, Element Control, Information Analysis, Power Suit, Weapon Creation, Weapon-based Powers, Weapons Master', '110');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Fenrir Greyback', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/19289.jpg', 'Accelerated Healing, Animal Attributes, Dark Magic, Energy Blasts, Energy Constructs, Fire Control, Flight, Longevity, Magic, Telekinesis, Telepathy, Teleportation, Telepathy Resistance, Wind Control', '380');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Deathstroke', 'Slade Wilson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63671.jpg', 'Acrobatics, Agility, Bloodlust, Cold Resistance, Deception, Dexterity, Durability, Endurance, Fearless, Gadget Usage, Hacking, Heat Resistance, Hunters Instinct, Indomitable Will, Information Analysis, Intelligence, Intimidation, Marksmanship, Master Martial Artist, Master Tactician, Mechanical Aptitude, Preparation, Pressure Points, Reflexes, Stamina, Status Effect Inducement, Stealth, Super Speed, Super Strength, Swordsmanship, Vehicular Mastery, Weapons Master, Accelerated Healing, Afterimage Creation, Audio Alteration, Bullet Time, Damage Boost, Danger Sense, Disguise Mastery, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Touch, Explosion Manipulation, Fire Resistance, Jump, Longevity, Mind Control Resistance, Pain Suppression, Photographic Deduction, Radiation Immunity, Regeneration, Resurrection, Smoke Manipulation, Social Influencing, Telepathy Resistance, Toxin and Disease Resistance, Adaptation, Electricity Resistance, Electrokinesis, Energy Blasts, Flight, Sleep Manipulation, Underwater breathing, Weapon-based Powers', '600');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Star Lord', 'Peter Quill', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57117.jpg', 'Weapon-based Powers, Weapons Master, Space Survivability, Spaceflight, Technological Possession, Vehicular Mastery', '10');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Firefly', 'Garfield Lynns', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11165.jpg', 'Durability, Fire Control, Intelligence, Mechanical Aptitude, Weapon-based Powers, Weapons Master, Changing Armor, Element Control, Endurance, Explosion Manipulation, Fire Resistance, Flight, Gliding, Heat Generation, Heat Resistance, Insanity, Jump, Marksmanship, Pain Suppression, Toxin and Disease Resistance', '93');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Elizabeth Greene', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/51996.jpg', 'Biokinesis, Body Puppetry, Hive-Mind, Immortality, Instinctive Reaction, Longevity, Matter Absorption, Power Absorption, Power Mimicry, Radiation Absorption, Reactive Evolution, Reactive Power Level, Self-Sustenance, Statistics Amplification, Toxin and Disease Control, Toxin and Disease Resistance, Accelerated Development, Accelerated Healing, Acid Manipulation, Acid Resistants, Acidic Spit, Acrobatics, Adaptation, Cold Resistance, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Thievery, Enhanced Touch, Mind Control, Radiation Control, Radiation Immunity, Regeneration', '856');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dark Robin (Joker Intoxicated)', 'Damian Wayne', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23902.jpg', 'Acrobatics, Agility, Berserk Mode, Bloodlust, Corruption, Durability, Pain Suppression, Peak Human Condition, Reflexes, Stamina, Stealth, Weapons Master, Zombie Physiology, Damage Boost, Endurance, Enhanced Hearing, Enhanced Smell, Hacking, Marksmanship, Master Martial Artist, Mind Control Resistance, Weapon-based Powers', '114');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Red Hood', 'Jason Todd', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/33682.jpg', 'Agility, Disguise Mastery, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Stamina, Stealth, Vehicular Mastery, Weapons Master, Acrobatics, Cold Resistance, Dexterity, Endurance, Hacking, Heat Resistance, Information Analysis, Jump, Pain Suppression, Preparation, Reflexes, Weapon-based Powers, Electrokinesis, Explosion Manipulation', '92');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Amanda', 'Amanda Collins', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38194.jpg', 'Intelligence, Peak Human Condition, Stamina, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Endurance, Indomitable Will, Insanity', '47');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Stature', 'Cassie Lang', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29514.jpg', 'Acrobatics, Agility, Stealth, Weapon-based Powers, Weapons Master', '53');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Udyr', 'Udyr', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44467.jpg', 'Animal Oriented Powers, Hunters Instinct, Reflexes, Ability Shift, Accelerated Healing, Animal Control, Cold Resistance, Damage Boost, Damage Reduction, Electrokinesis, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Enhanced Taste, Extrasensory Perception, Magic, Natural Armor, Natural Weapons, Paralysis, Statistics Amplification, Berserk Mode, Disguise Resistance, Heat Generation, Homing Attack, Ice Manipulation, Invulnerability, Magma Manipulation, Possession Resistance, Soul Manipulation, Soul Resistance, Statistics Reduction, Weather Control, Wind Control', '532');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Draven', 'Draven', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45652.jpg', 'Dexterity, Social Influencing, Bloodlust, Damage Boost, Indomitable Will, Marksmanship, Statistics Amplification, Endurance, Status Effect Inducement, Weapon-based Powers, Weapons Master', '54');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Leonidas I', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23126.jpg', 'Weapons Master, Agility, Dexterity, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Stamina', '40');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Arthur Shelby', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/61741.jpg', 'Fearless, Information Analysis, Intimidation, Marksmanship, Peak Human Condition, Preparation, Social Influencing, Weapons Master, Endurance, Fear Inducement, Hunters Instinct, Leadership, Master Martial Artist, Master Tactician, Reflexes, Stamina, Stealth', '40');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dominic Wilkinson', 'Dominic Rostova', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45627.jpg', 'Intelligence, Marksmanship, Master Tactician, Weapons Master, Endurance, Indomitable Will, Information Analysis, Master Martial Artist', '22');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Catwoman', 'Selina Kyle', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13880.jpg', 'Stamina, Stealth, Acrobatics, Master Martial Artist, Vehicular Mastery, Agility', '29');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Breakdown', 'Breakdown', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17773.jpg', 'Super Speed, Super Strength, Transformation, Weapon-based Powers', '118');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vengeance', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29231.jpg', 'Durability, Intelligence, Intimidation, Multilingualism, Stamina, Super Speed, Super Strength, Accelerated Healing, Acrobatics, Agility, Berserk Mode, Dexterity, Endurance, Enhanced Memory, Explosion Manipulation, Information Analysis, Jump, Leadership, Master Martial Artist, Pressure Points, Rage Power, Reflexes, Stealth, Weapons Master, Enhanced Condition, Heat Resistance, Insanity, Marksmanship, Master Tactician, Pain Suppression, Statistics Amplification, Swordsmanship, Toxin and Disease Resistance', '121');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Madcap', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12001.jpg', 'Accelerated Healing, Immortality, Madness Manipulation, Radiation Immunity, Regeneration, Stamina, Toxin and Disease Resistance, Agility, Cold Resistance, Curse Resistance, Dexterity, Disguise Mastery, Empathy, Endurance, Heat Resistance, Jump, Master Martial Artist, Master Tactician, Reflexes, Telepathy Resistance, Weapons Master, Fire Resistance', '133');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Quicksilver', 'Pietro Maximoff', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12507.jpg', 'Durability, Endurance, Intelligence, Stamina, Stealth, Super Speed, Super Strength, Acrobatics, Afterimage Creation, Agility, Aura, Dexterity, Jump, Reflexes, Accelerated Healing, Regeneration', '492');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bride Of Nine Spiders', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45867.jpg', 'Acrobatics, Agility, Chi Manipulation, Dexterity, Durability, Endurance, Peak Human Condition, Pressure Points, Reflexes, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance, Vitakinesis, Accelerated Healing, Cold Resistance, Danger Sense, Energy Absorption, Energy Blasts, Enhanced Hearing, Enhanced Sight, Heat Resistance, Indomitable Will, Longevity, Marksmanship, Master Martial Artist, Mind Control Resistance, Power Sense, Psionic Powers, Radiation Immunity, Stealth, Weapons Master, Animal Control, Animal Oriented Powers, Dimensional Travel, Mind Control, Power Modification', '632');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hepzibah', 'Hepzibah Summers', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62897.jpg', 'Acrobatics, Agility, Enhanced Condition, Enhanced Smell, Marksmanship, Reflexes, Vehicular Mastery, Weapons Master, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Master Martial Artist, Master Tactician, Perspective Manipulation, Fear Manipulation, Madness Manipulation, Mind Control, Morality Manipulation, Willpower Manipulation', '102');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Detective Espinosa', 'Dan Espinosa', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22844.jpg', 'Stamina, Endurance, Weapon-based Powers, Agility, Master Martial Artist, Stealth', '15');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Toyman', 'Winslow Schott', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22208.jpg', 'Intelligence, Weapon-based Powers, Insanity, Weapons Master', '27');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Aunt May', 'May Parker', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48264.jpg', '', '4');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Aphelios', 'Aphelios', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/47495.jpg', 'Ability Shift, Laser Manipulation, Marksmanship, Weapon-based Powers, Agility, Damage Boost, Danmaku, Dexterity, Energy Beams, Energy Blasts, Fire Control, Gravity Control, Illumination, Magic, Pain Suppression, Reflexes, Stealth, Swordsmanship, Toxin and Disease Resistance, Weapon Summoning, Weapons Master, Accelerated Healing, Clairvoyance, Explosion Manipulation, Force Fields, Gadget Usage, Holy Manipulation, Indomitable Will, Master Martial Artist, Master Tactician, Non-Physical Interaction, Precognition, Soul Manipulation, Soul Resistance, Statistics Amplification, Status Effect Inducement, Summoning, Telepathy, Vision - Night', '407');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mutavore', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/33566.jpg', 'Amphibious Respiration, Animal Attributes, Jaw Strength, Large Size, Multiple Limbs, Natural Armor, Natural Weapons, Toxin and Disease Resistance, Cold Resistance, Corruption, Electricity Resistance, Endurance, Fire Resistance, Heat Resistance, Instinctive Reaction, Energy Resistance, Enhanced Sight, Invulnerability, Radiation Immunity', '247');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Skylynx', 'Skylynx', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17815.jpg', 'Super Strength, Transformation, Fire Control', '152');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lex Luthor', 'Alexander Luthor', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16967.jpg', 'Hacking, Intelligence, Marksmanship, Master Tactician, Robotic Engineering, Master Martial Artist, Portal Creation, Preparation, Technopath/Cyberpath, Weapons Master', '35');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gideon', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32599.jpg', 'Immortality, Power Mimicry, Resurrection, Accelerated Healing', '231');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Proxima Midnight', 'Proxima Midnight', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24363.jpg', 'Acrobatics, Agility, Durability, Intelligence, Master Martial Artist, Peak Human Condition, Reflexes, Stamina, Super Speed, Super Strength, Weapons Master, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Heat Resistance, Invulnerability, Jump, Master Tactician, Weapon-based Powers', '209');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Captain Hydra', 'Steven Rogers', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/58067.jpg', 'Durability, Super Strength, Jaw Strength, Jump, Master Martial Artist, Supernatural Condition, Vehicular Mastery, Weapon-based Powers, Disguise Mastery, Weapons Master', '38');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Idia Shroud', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/49784.jpg', 'Fire Control, Fire Resistance, Hellfire Manipulation, Statistics Amplification, Statistics Reduction, Chaos Magic, Dark Magic, Magic, Magic Absorption', '370');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vel Sartha', 'Vel Sartha', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/66298.jpg', 'Intelligence, Leadership, Marksmanship, Master Tactician, Weapons Master, Information Analysis, Master Martial Artist', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Baela Targaryen', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62787.jpg', 'Agility, Fearless, Dexterity, Fire Resistance, Heat Resistance, Indomitable Will, Leadership, Master Tactician, Multilingualism, Stamina, Swordsmanship, Animal Control, Marksmanship, Master Martial Artist, Telepathy, Weapons Master', '23');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Prince Of Lies', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/56081.jpg', 'Accelerated Healing, Durability, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Touch, Intelligence, Jaw Strength, Master Martial Artist, Master Tactician, Natural Weapons, Reflexes, Stamina, Super Speed, Super Strength, Agility, Danger Sense, Dexterity, Enhanced Memory, Hunters Instinct, Immortality, Intuitive aptitude, Jump, Regeneration, Stealth, Supernatural Condition, Weapons Master, Accelerated Development, Acrobatics, Adaptation, Awakened Power, Intimidation, Psionic Powers', '160');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mister Glass', 'Elijah Price', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16062.jpg', 'Deception, Hacking, Intelligence, Social Influencing, Insanity, Preparation, Explosion Manipulation', '10');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Methuselah', 'Titanus Methuselah', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24167.jpg', 'Large Size, Longevity, Animal Attributes, Animal Oriented Powers, Camouflage, Cold Resistance, Electricity Resistance, Energy Resistance, Fire Resistance, Heat Resistance, Invulnerability, Natural Armor, Natural Weapons, Radiation Immunity, Dig, Plant Control, Radiation Absorption, Stealth, Subterranean, Terrakinesis, Toxin and Disease Resistance', '784');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Parademon', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10806.jpg', 'Pain Suppression, Self-Destruction, Super Strength, Adaptation, Cold Resistance, Endurance, Energy Armor, Energy Blasts, Enhanced Hearing, Explosion Manipulation, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Super Breath, Toxin and Disease Resistance, Transformation, Wing Manifestation', '81');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Darius', 'Darius Bowman', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54390.jpg', 'Intelligence', '6');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Charlie Weiderman', 'Charles Weiderman', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/65882.jpg', 'Berserk Mode, Cold Resistance, Durability, Endurance, Fire Resistance, Heat Resistance, Indomitable Will, Intelligence, Invulnerability, Power Suit, Rage Power, Reflexes, Stamina, Super Speed, Super Strength, Agility, Bloodlust, Electricity Resistance, Energy Resistance, Vibration Manipulation', '171');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Captain America (Cybernetic Zombie)', 'Steve Rogers', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48266.jpg', 'Acrobatics, Bloodlust, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Touch, Indomitable Will, Marksmanship, Master Martial Artist, Pressure Points, Stamina, Super Speed, Super Strength, Weapon-based Powers, Weapons Master, Accelerated Healing, Agility, Gadget Usage, Hacking, Heat Resistance, Intuitive aptitude, Pain Suppression, Reflexes, Stealth, Vehicular Mastery, Adaptation, Cold Resistance, Energy Resistance, Fire Resistance, Jump, Mind Control Resistance, Radiation Immunity, Regeneration, Self-Sustenance, Telepathy Resistance, Toxin and Disease Resistance', '226');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hugo Strange', 'Professor Hugo Strange', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10919.jpg', 'Intelligence, Peak Human Condition, Stamina, Agility, Enhanced Memory, Hypnokinesis, Information Analysis, Insanity, Master Martial Artist, Master Tactician, Memory Manipulation, Mind Control, Perfect Recollection, Reflexes, Stealth, Weapon-based Powers, Weapons Master, Terrakinesis', '74');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Supergiant', 'Supergiant', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24364.jpg', 'Intelligence, Stamina, Empathy, Endurance, Flight, Hypnokinesis, Master Tactician, Mind Control, Stealth, Telekinesis, Telepathy', '478');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Robin', 'Dick Grayson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13707.jpg', 'Acrobatics, Intelligence, Master Martial Artist, Vehicular Mastery, Grappling/Climbing, Magnetism, Marksmanship, Weapon-based Powers, Weapons Master', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Nitara', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45075.jpg', 'Blood Manipulation, Durability, Flight, Intelligence, Master Martial Artist, Stamina, Super Strength, Supernatural Condition, Acrobatics, Agility, Bloodlust, Chi Manipulation, Damage Boost, Endurance, Jump, Portal Creation', '179');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Firefly', 'Bridgit Pyke', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44817.jpg', 'Durability, Fire Control, Fire Resistance, Heat Generation, Heat Resistance, Marksmanship, Pain Suppression, Peak Human Condition, Stamina, Weapon-based Powers, Acrobatics, Agility, Dexterity, Endurance, Fear Inducement, Insanity, Reflexes, Weapons Master, Bloodlust, Gadget Usage, Master Martial Artist, Master Tactician', '106');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'She-Hulk', 'Jennifer Walters', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31520.jpg', 'Agility, Berserk Mode, Cold Resistance, Reflexes, Super Speed, Super Strength, Accelerated Healing, Jump, Fire Resistance, Heat Resistance, Mind Control Resistance, Rage Power, Shockwaves Generation, Telepathy Resistance', '157');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Revolver Ocelot', 'Adamska', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11516.jpg', 'Intelligence, Marksmanship, Master Martial Artist, Stealth, Vehicular Mastery, Accelerated Development, Cyborgization, Force Fields, Memory Manipulation, Mind Control, Nanotechnology, Pain Suppression, Self-Sustenance, Telepathy Resistance, The Fourth Wall', '136');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Death (Horsemen of Apocalypse)', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44611.jpg', 'Death Manipulation, Death Touch, Flight, Levitation', '591');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Toph Beifong', 'Toph Beifong', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12160.jpg', 'Agility, Durability, Element Control, Intelligence, Master Martial Artist, Peak Human Condition, Reflexes, Seismic Power, Stamina, Terrakinesis, Vibration Manipulation, Accelerated Development, Danger Sense, Dexterity, Endurance, Enhanced Hearing, Enhanced Thievery, Extrasensory Perception, Indomitable Will, Levitation, Magnetism, Metal Manipulation, Radar Sense, Stealth, Jump, Luck, Spatial Awareness', '636');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Brixton Lore', 'Brixton Lore', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18000.jpg', 'Durability, Intelligence, Stamina, Super Strength, Acrobatics, Agility, Endurance, Enhanced Sight, Marksmanship, Master Martial Artist, Reflexes, Robotic Engineering, Stealth, Weapons Master, Jump', '58');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Peotr', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63531.jpg', 'Animal Attributes, Animal Oriented Powers, Electro-Magnetism Manipulation, Magnetism, Animal Control, Endurance', '212');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vhagar', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62767.jpg', 'Cold Resistance, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Super Breath, Agility, Dexterity, Jaw Strength, Large Size, Longevity, Magic, Magic Resistance, Natural Weapons, Wing Manifestation', '269');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Bastard', 'Christopher Mattis', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/46870.jpg', 'Biokinesis, Bloodlust, Body Inflation, Body Puppetry, Durability, Explosion Manipulation, Intelligence, Pain Manipulation, Pressure Points, Smoke Manipulation, Super Breath, Super Strength, Supernatural Condition, Bullet Time, Density Control, Dexterity, Hive-Mind, Mind Blast, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Thievery', '525');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bride Of Nine Spiders', 'Alessa Geomi', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45866.jpg', 'Intelligence, Master Martial Artist, Peak Human Condition, Stamina, Acrobatics, Agility, Chi Manipulation, Reflexes, Endurance, Indomitable Will, Master Tactician, Toxin and Disease Resistance', '62');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Sammy DIESEL', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/50103.jpg', 'Regeneration, Immortality, Invulnerability, Master Martial Artist, Toxin and Disease Resistance, Weapons Master', '128');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lizard', 'Curtis Connors', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13834.jpg', 'Intelligence, Preparation, Stamina, Super Speed, Super Strength, Accelerated Healing, Acrobatics, Agility, Animal Attributes, Berserk Mode, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Jaw Strength, Jump, Longevity, Natural Weapons, Reflexes, Regeneration, Stealth, Surface Scaling, Underwater breathing, Wallcrawling, Cold Resistance, Fire Resistance, Heat Resistance', '114');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Daegon', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15874.jpg', 'Immortality, Master Martial Artist, Weapons Master, Acrobatics, Fire Control, Self-Sustenance, Swordsmanship, Teleportation', '610');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'KGBeast', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29355.jpg', 'Durability, Master Martial Artist, Peak Human Condition, Stamina, Agility, Dexterity, Marksmanship, Reflexes, Weapons Master, Cyborgization', '48');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ming Hua', 'Ming Hua', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/37842.jpg', 'Acrobatics, Agility, Cold Resistance, Element Control, Ice Manipulation, Peak Human Condition, Stamina, Tentacles, Water Control, Adaptation, Force Fields, Instinctive Reaction, Master Martial Artist, Master Tactician, Reflexes, Vitakinesis, Weapon Creation, Multiple Limbs, Natural Weapons', '498');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kenshi', 'Kenshi Takahashi', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60753.jpg', 'Cloning, Intelligence, Master Martial Artist, Pain Suppression, Reflexes, Swordsmanship, Telekinesis, Telepathy, Weapons Master, Agility, Avatar Creation, Danger Sense, Extrasensory Perception, Instinctive Reaction, Jump, Magic, Memory Manipulation, Mind Control Resistance, Ninjutsu, Non-Physical Interaction, Radar Sense, Sense Manipulation, Spatial Awareness, Spatial Communication, Telepathy Resistance, Teleportation, Soul Manipulation', '344');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jack Baker', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25325.jpg', 'Bloodlust, Stealth, Toxin and Disease Resistance, Accelerated Healing, Cold Resistance, Dexterity, Endurance, Master Martial Artist, Reflexes, Regeneration, Size Changing, Stamina, Transformation, Underwater breathing, Weapons Master, Immortality', '86');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rosalind', 'Rosalind', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25821.jpg', 'Magic, Mind Control Resistance, Mind Blast, Mind Control, Mind Transfer', '161');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Widow', 'Natasha Romanoff', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64730.jpg', 'Acrobatics, Agility, Dexterity, Durability, Gadget Usage, Hacking, Indomitable Will, Invisibility, Master Martial Artist, Master Tactician, Reflexes, Stamina, Stealth, Endurance, Enhanced Thievery, Grappling/Climbing, Jump, Leadership, Pain Suppression, Photographic Deduction, Photographic Reflexes, Vehicular Mastery, Weapons Master, Pressure Points', '90');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Odessa Drake', 'Odessa Drake', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/28222.jpg', 'Intelligence, Peak Human Condition, Stamina, Acrobatics, Agility, Endurance, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stealth, Weapons Master, Dexterity, Immortality', '63');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rocket', 'Raquel Ervin', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/41911.jpg', 'Agility, Aura, Flight, Force Fields, Gadget Usage, Energy Blasts', '99');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vandal Savage', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18304.jpg', 'Intelligence, Longevity, Master Tactician, Peak Human Condition, Stamina, Swordsmanship, Accelerated Healing, Agility, Dexterity, Endurance, Enhanced Memory, Immortality, Information Analysis, Jump, Marksmanship, Master Martial Artist, Reflexes, Regeneration, Resurrection, Stealth, Weapons Master', '214');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Wart Dog', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64489.jpg', 'Jaw Strength, Natural Weapons, Stamina, Large Size', '66');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jinx', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23562.jpg', 'Acrobatics, Agility, Luck, Probability Manipulation, Stamina, Endurance', '253');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Abel Cuvier', 'Abel Cuvier', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23045.jpg', 'Acrobatics, Agility, Animal Attributes, Durability, Endurance, Enhanced Sight, Enhanced Smell, Intelligence, Stamina, Super Speed, Super Strength, Accelerated Healing, Enhanced Hearing, Enhanced Memory, Fire Resistance, Longevity, Animal Oriented Powers', '203');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Razor Fist', 'Douglas Scott', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29523.jpg', 'Intelligence, Peak Human Condition, Stamina, Endurance, Marksmanship, Stealth, Weapons Master, Agility, Durability Negation, Heat Generation, Master Martial Artist, Robotic Engineering, Weapon-based Powers', '45');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lex Luthor', 'Lex Luthor', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18232.jpg', 'Information Analysis, Intelligence, Master Tactician, Stealth, Master Martial Artist, Vehicular Mastery, Weapons Master', '44');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Iron Monger', 'Obadiah Stane', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/886.jpg', 'Durability, Energy Beams, Intelligence, Master Tactician, Power Suit, Robotic Engineering, Stamina, Super Speed, Super Strength, Agility, Cold Resistance, Energy Absorption, Energy Blasts, Explosion Manipulation, Fire Resistance, Flight, Force Fields, Invulnerability, Levitation, Reflexes, Vision - Night, Vision - X-Ray, Weapon-based Powers', '769');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Isao Shirabi (King of Spades)', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63704.jpg', 'Bloodlust, Dexterity, Durability, Endurance, Hunters Instinct, Intimidation, Marksmanship, Peak Human Condition, Weapons Master, Agility, Apathy, Grappling/Climbing, Master Martial Artist, Master Tactician, Reflexes, Stamina, Throwing Proficiency, Fire Resistance, Insanity, Instinctive Reaction, Stealth, Vehicular Mastery, Weapon Summoning', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mutant Moth', 'Moth', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23564.jpg', 'Animal Attributes, Durability, Intelligence, Stamina, Super Speed, Super Strength, Acrobatics, Agility, Cloning, Endurance, Flight, Gliding, Reflexes, Wallcrawling', '176');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tig Rafelson', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44139.jpg', 'Accelerated Healing, Bloodlust, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Touch, Marksmanship, Regeneration, Shapeshifting, Stealth, Summoning, Transformation, Weapon Creation, Cloth Manipulation, Flight, Holy Manipulation, Immortality, Levitation, Pain Suppression, Power Sense, Regeneration Negation, Self-Sustenance, Sleep Manipulation, Weapon Summoning, Weapons Master', '259');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kelly Peyton', 'Kelly Peyton', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38268.jpg', 'Intelligence, Peak Human Condition, Stamina, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Endurance, Information Analysis', '27');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gyaos (Showa)', 'Gyaos', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15207.jpg', 'Flight, Large Size, Sonic Scream, Substance Secretion, Energy Beams, Enhanced Sight, Hunters Instinct, Regeneration, Smoke Manipulation, Spaceflight, Toxin and Disease Resistance, Wind Control, Cold Resistance, Electricity Resistance, Energy Resistance, Jaw Strength, Marksmanship, Natural Armor, Natural Weapons', '549');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dragan', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44950.jpg', 'Super Strength, Wing Manifestation', '73');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Doctor Octopus', 'Otto Octavius', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64729.jpg', 'Agility, Gadget Usage, Grappling/Climbing, Homing Attack, Intelligence, Jump, Multiple Limbs, Radar Sense, Reflexes, Shockwaves Generation, Stamina, Super Strength, Damage Boost, Disarmament, Endurance, Enhanced Condition, Information Analysis, Leadership, Marksmanship, Master Tactician, Photographic Reflexes, Preparation, Pressure Points, Stealth, Throwing Proficiency, Vehicular Mastery, Weapon-based Powers, Accelerated Healing, Cold Resistance, Dexterity, Heat Resistance, Weapons Master', '95');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Omnibus', 'Burt Horowitz', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26730.jpg', 'Gamma Mutant Physiology, Intelligence', '120');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ap''lek', 'Ap''lek', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24883.jpg', 'Stamina, Super Strength, Acrobatics, Agility, Endurance, Marksmanship, Master Martial Artist, Reflexes, Stealth, Weapons Master', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gambit', 'Remy LeBeau', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13905.jpg', 'Durability, Grappling/Climbing, Marksmanship, Stamina, Super Speed, Super Strength, Wallcrawling, Acrobatics, Agility, Endurance, Energy Blasts, Energy Manipulation, Enhanced Condition, Enhanced Sight, Jump, Master Martial Artist, Power Bestowal, Reflexes, Shockwaves Generation, Deconstruction, Stealth, Weapons Master', '170');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lourdes Chantel', 'Lourdes Chantel', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30946.jpg', 'Force Fields, Teleportation', '101');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Phoebe Cuckoo', 'Phoebe Cuckoo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10193.jpg', 'Durability, Stamina, Super Strength, Astral Projection, Empathy, Energy Blasts, Force Fields, Hypnokinesis, Illusions, Master Tactician, Memory Manipulation, Mind Blast, Mind Control, Mind Control Resistance, Natural Armor, Pain Manipulation, Possession, Psionic Powers, Telekinesis, Telepathy, Telepathy Resistance, Invulnerability', '644');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dr. Swann', 'Virgil Swann', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22190.jpg', 'Intelligence, Omnilingualism', '9');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Retep (Evil Peter)', 'Retep Niffirg', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63799.jpg', 'Durability, Reflexes, Regeneration, Stamina, Super Speed, Super Strength, Supernatural Condition, Agility', '46');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hawkwoman', 'Shayera Thal', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26018.jpg', 'Animal Oriented Powers, Durability, Endurance, Heat Resistance, Intelligence, Reflexes, Resurrection, Stamina, Super Speed, Super Strength, Weapons Master, Acrobatics, Agility, Animal Attributes, Enhanced Hearing, Enhanced Sight, Flight, Gliding, Indomitable Will, Jump, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Natural Weapons, Regeneration, Self-Sustenance, Stealth, Vision - Telescopic, Weapon-based Powers, Cold Resistance, Energy Resistance, Invulnerability', '739');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Stans', 'Walter Stans', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60133.jpg', 'Insanity, Apathy, Deception, Fearless, Weapon-based Powers', '9');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Penguin (2022)', 'Oswald Cobblepot', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/21189.jpg', 'Master Tactician, Stealth, Vehicular Mastery, Weapons Master', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Doctor Octopus', 'Otto Octavius', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/51644.jpg', 'Durability, Intelligence, Master Tactician, Reflexes, Robotic Engineering, Stamina, Super Speed, Super Strength, Technopath/Cyberpath, Adaptation, Agility, Danger Sense, Elasticity, Marksmanship, Mechanical Aptitude, Mind Control Resistance, Power Suit, Preparation, Telepathy, Telepathy Resistance, Wallcrawling, Weapon-based Powers, Weapons Master', '131');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Esme Cuckoo', 'Esme Cuckoo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25832.jpg', 'Durability, Stamina, Super Strength, Astral Projection, Empathy, Energy Blasts, Force Fields, Hypnokinesis, Illusions, Master Tactician, Memory Manipulation, Mind Blast, Mind Control, Mind Control Resistance, Natural Armor, Pain Manipulation, Possession, Psionic Powers, Telekinesis, Telepathy, Telepathy Resistance, Invulnerability', '644');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ra''s Al Ghul', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15421.jpg', 'Intelligence, Longevity, Master Martial Artist, Master Tactician, Peak Human Condition, Preparation, Stealth, Swordsmanship, Weapon-based Powers, Weapons Master, Accelerated Healing, Acrobatics, Resurrection', '95');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Callisto', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24641.jpg', 'Stamina, Acrobatics, Agility, Dexterity, Enhanced Condition, Power Sense, Radar Sense, Reflexes', '71');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Silver Sable', 'Silver Sablinova', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11107.jpg', 'Master Martial Artist, Stamina, Stealth, Vehicular Mastery, Weapons Master, Acrobatics, Agility, Camouflage, Dexterity, Endurance, Hacking, Jump, Longevity, Marksmanship, Reflexes, Smoke Manipulation, Electrokinesis, Explosion Manipulation, Invisibility', '84');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'La Magra', 'Deacon Frost', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/53572.jpg', 'Accelerated Healing, Blood Manipulation, Bloodlust, Dexterity, Endurance, Regeneration, Stamina, Acid Resistants, Acrobatics, Agility, Cold Resistance, Heat Resistance, Immortality, Jump, Master Martial Artist, Natural Weapons, Reflexes, Soul Manipulation, Toxin and Disease Resistance, Weapons Master', '251');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tombstone', 'Lonnie Thompson Lincoln', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11279.jpg', 'Cold Resistance, Durability, Heat Resistance, Marksmanship, Master Martial Artist, Stamina, Toxin and Disease Resistance, Acid Resistants, Agility, Dexterity, Electricity Resistance, Endurance, Fire Resistance, Invulnerability, Longevity, Master Tactician, Reflexes, Stealth, Vehicular Mastery, Weapons Master, Explosion Manipulation, Radiation Immunity', '123');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jason Voorhees', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22962.jpg', 'Berserk Mode, Bloodlust, Cold Resistance, Curse Resistance, Durability, Enhanced Hearing, Fear Manipulation, Fire Resistance, Heat Resistance, Immortality, Insanity, Invulnerability, Radiation Immunity, Reflexes, Regeneration, Stamina, Super Speed, Super Strength, Toxin and Disease Resistance, Zombie Physiology, Accelerated Healing, Agility, Dexterity, Electricity Resistance, Endurance, Fear Inducement, Hypnokinesis, Inorganic Physiology, Instinctive Reaction, Jump, Pain Suppression, Self-Sustenance, Underwater breathing', '327');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Arcanon', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48710.jpg', 'Immortality, Teleportation, Accelerated Healing, Animal Attributes, Animal Control, Animal Oriented Powers, Astral Projection, Dark Arts, Dark Magic, Dimensional Travel, Electrokinesis, Element Control, Elemental Transformation, Fire Control, Fire Resistance, Hellfire Manipulation, Interstellar Travel, Portal Creation, Summoning, Weapon Summoning, Regeneration', '806');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Goomba', 'Kuribo', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17624.jpg', 'Cold Resistance, Elasticity, Flight, Non-Physical Interaction, Super Speed, Super Strength, Toon Force, Radiation Control, Self-Sustenance, Summoning, Teleportation, Toxin and Disease Control, Underwater breathing, Wind Control', '683');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Private Drake', 'Mark Drake', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/59881.jpg', 'Danmaku, Gadget Usage, Marksmanship, Weapon-based Powers, Endurance, Fire Control, Homing Attack, Vision - Infrared', '15');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'President Haltman', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/40490.jpg', 'Gadget Usage, Mechanical Aptitude, Power Suit, Hacking, Multiple Personalities', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kled', 'Kled And Skaarl', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45651.jpg', 'Berserk Mode, Bloodlust, Endurance, Gadget Usage, Insanity, Longevity, Acrobatics, Agility, Enhanced Hearing, Explosion Manipulation, Fearless, Grappling/Climbing, Indomitable Will, Pain Suppression, Rage Power, Social Influencing, Vision - Infrared, Force Fields, Immortality, Intimidation, Jaw Strength, Jump, Magic, Magic Resistance, Marksmanship, Master Tactician, Non-Physical Interaction, Status Effect Inducement, Summoning, Toxin and Disease Resistance, Weapon-based Powers', '134');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Juggernaut', 'Cain Marko', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64765.jpg', 'Agility, Damage Boost, Damage Reduction, Durability, EMP Generation, Endurance, Fire Resistance, Heat Resistance, Indomitable Will, Jump, Pain Suppression, Shockwaves Generation, Stamina, Super Speed, Super Strength, Accelerated Healing, Cold Resistance, Dexterity, Electricity Resistance, Fearless, Grappling/Climbing, Intimidation, Large Size, Physical Anomaly, Reflexes, Regeneration, Throwing Proficiency, Toxin and Disease Resistance, Wallcrawling, Invulnerability', '424');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gorilla Girl', 'Fahnbullah Eddy', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17499.jpg', 'Super Strength, Acrobatics, Agility, Animal Oriented Powers, Jump, Natural Weapons, Transformation, Wallcrawling', '48');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Pyke', 'Pyke', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44291.jpg', 'Agility, Amphibious Respiration, Intimidation, Invisibility, Jump, Reflexes, Shadow Manipulation, Stealth, Supernatural Condition, Swimming, Underwater breathing, Vision - Night, Weapon-based Powers, Bloodlust, Endurance, Extrasensory Perception, Fear Inducement, Fearless, Indomitable Will, Liquid Transmutation, Marksmanship, Possession Resistance, Toxin and Disease Resistance, Weapons Master, Zombie Physiology, Animal Control, Cold Resistance, Durability Negation, Insanity, Magic, Self-Sustenance, Status Effect Inducement', '236');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Joker', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/59824.jpg', 'Disguise Mastery, Durability, Gadget Usage, Indomitable Will, Intelligence, Toxin and Disease Resistance, Weapon-based Powers, Creation, Endurance, Information Analysis, Marksmanship, Stamina, Swimming, Vehicular Mastery, Weapon Summoning, Weapons Master', '45');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jade Leech', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/49630.jpg', 'Magic, Magic Absorption, Non-Physical Interaction, Underwater breathing, Water Control, Accelerated Healing, Agility, Damage Boost, Damage Transferal, Statistics Amplification, Statistics Reduction', '225');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tricia Takanawa', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63187.jpg', 'Acrobatics, Stealth, Weapons Master, Marksmanship, Master Martial Artist', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bidoof', 'Bidoof', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/47934.jpg', 'Accelerated Healing, Electrokinesis, Element Control, Elemental Transformation, Jaw Strength, Regeneration, Sleep Manipulation, Statistics Amplification, Statistics Reduction, Super Speed, Super Strength, Cold Resistance, Dark Arts, Dark Magic, Dark Matter Manipulation, Darkforce Manipulation, Fire Control, Fire Resistance, Heat Resistance, Non-Physical Interaction, Underwater breathing, Water Control, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Thievery, Enhanced Touch, Super Breath, Supernatural Condition', '761');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'The Riddler (2022)', 'Edward Nigma', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/21022.jpg', 'Intelligence, Master Tactician, Stealth, Indomitable Will, Insanity, Weapons Master', '13');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jango Fett', 'Jango Fett', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54917.jpg', 'Agility, Dexterity, Durability, Endurance, Fearless, Gadget Usage, Grappling/Climbing, Homing Attack, Hunters Instinct, Information Analysis, Intelligence, Interstellar Travel, Leadership, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stamina, Stealth, Super Speed, Super Strength, Vehicular Mastery, Weapons Master, Acrobatics, Cold Resistance, Enhanced Condition, Enhanced Memory, Enhanced Sight, Explosion Manipulation, Fire Control, Fire Resistance, Flight, Hacking, Heat Generation, Heat Resistance, Jump, Power Suit, Preparation, Space Survivability, Swordsmanship, Wallcrawling, Deconstruction, Electricity Resistance, Energy Resistance, Fear Inducement, Invulnerability, Mind Control Resistance, Spaceflight, Weapon-based Powers', '290');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Harley Quinn', 'Harleen Quinzel', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/15704.jpg', 'Acrobatics, Agility, Berserk Mode, Insanity, Intelligence, Peak Human Condition, Stamina, Stealth, Weapon-based Powers, Weapons Master, Gadget Usage, Master Martial Artist, Rage Power, Invulnerability, Jump, Smoke Manipulation, Vision - X-Ray', '79');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Queen Maeve', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17764.jpg', 'Agility, Dexterity, Reflexes, Stamina, Accelerated Healing, Acid Resistants, Acrobatics, Bloodlust, Cold Resistance, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Flight, Heat Resistance, Jump, Levitation, Longevity, Love Inducement, Regeneration, Swordsmanship, Toxin and Disease Resistance, Electricity Resistance, Fire Resistance, Immortality, Invulnerability', '199');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'U-Man', 'Meranno', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32761.jpg', 'Amphibious Respiration, Animal Attributes, Animal Oriented Powers, Durability, Intelligence, Stamina, Sub-Mariner, Super Speed, Super Strength, Underwater breathing, Agility, Reflexes, Enhanced Sight, Jump', '127');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Zombie Hawkeye (Marvel Zombies)', 'Clint Barton', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45696.jpg', 'Zombie Physiology, Natural Weapons, Weapons Master', '3');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tia Dalma', 'Tia Dalma', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22047.jpg', 'Aura, Awakened Power, Berserk Mode, Body Puppetry, Clairvoyance, Compassion Inducement, Dark Magic, Enhanced Thievery, Existence Erasure Resistance, Magic, Summoning, Agility, Avatar Creation, Clairvoyance Resistance, Corruption Resistance, Immortality, Longevity, Radiation Immunity, Telepathy Resistance', '299');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Grid', 'Xenomorph', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60361.jpg', 'Acid Resistants, Cold Resistance, Endurance, Grappling/Climbing, Heat Resistance, Intimidation, Natural Weapons, Reflexes, Stealth, Swimming, Wallcrawling, Accelerated Development, Acid Manipulation, Adaptation, Agility, Animal Attributes, Animal Oriented Powers, Danger Sense, Dexterity, Dig, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Fearless, Hive-Mind, Jaw Strength, Jump, Natural Armor, Radiation Immunity, Self-Sustenance, Substance Secretion, Toxin and Disease Resistance, Vision - Night, Vision - Thermal, Acidic Spit, Information Analysis, Instinctive Reaction, Large Size, Leadership, Melting, Multiple Limbs, Pain Suppression', '175');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bowser', 'King Bowser Koopa', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52331.jpg', 'Animal Attributes, Animal Oriented Powers, Cold Resistance, Fire Resistance, Heat Resistance, Immortality, Super Speed, Super Strength, Afterimage Creation, Fire Control, Large Size, Natural Armor, Natural Weapons, Shockwaves Generation, Flight', '148');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mort Goldman', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63183.jpg', 'Durability, Duplication, Separation, Gliding, Time Travel', '49');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Maggie Sawyer', 'Maggie Sawyer', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22322.jpg', 'Intelligence, Agility, Weapon-based Powers', '9');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Penguin', 'Oswald Cobblepot', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32163.jpg', 'Intelligence, Master Tactician, Social Influencing, Weapon-based Powers, Weapons Master, Dexterity, Explosion Manipulation, Ice Manipulation, Insanity, Law Manipulation, Preparation, Stealth, Electricity Resistance, Electrokinesis', '68');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Artemis', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18379.jpg', 'Archery, Durability, Stamina, Acrobatics, Agility, Dexterity, Disguise Mastery, Endurance, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stealth, Weapon-based Powers, Weapons Master, Explosion Manipulation', '59');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Emerald Empress', 'Falyce', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11350.jpg', '', '628');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jericho', 'Joseph Wilson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/1478.jpg', 'Acrobatics, Astral Projection, Intelligence, Master Martial Artist, Master Tactician, Possession, Psionic Powers, Stealth, Telekinesis, Weapons Master, Accelerated Healing, Disguise Mastery, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Illusion Resistance, Illusions, Jump, Mind Control, Mind Control Resistance, Regeneration, Telepathy', '264');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Yondu', 'Yondu', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/13901.jpg', 'Stamina, Marksmanship, Master Tactician, Reflexes, Vehicular Mastery, Weapons Master, Flight', '39');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Luke', 'Luke Skywalker', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25409.jpg', 'Stamina, The Force, Acrobatics, Agility, Attack Reflection, Endurance, Jump, Telekinesis, Weapons Master', '304');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Red Guardian', 'Alexi Shostakov', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/1449.jpg', 'Endurance, Master Martial Artist, Stamina, Stealth, Vehicular Mastery, Weapons Master, Acrobatics, Agility, Cold Resistance, Dexterity, Explosion Manipulation, Extrasensory Perception, Heat Resistance, Jump, Marksmanship, Master Tactician, Pressure Points, Reflexes, Sleep Manipulation, Toxin and Disease Resistance', '79');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lex Luthor', 'Alexander Joseph Luthor', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12706.jpg', 'Intelligence, Master Tactician', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Omega Red', 'Arkady Gregorivich', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/208.jpg', 'Accelerated Healing, Berserk Mode, Bloodlust, Cold Resistance, Dexterity, Durability, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Heat Resistance, Indomitable Will, Invulnerability, Longevity, Radiation Immunity, Rage Power, Reflexes, Regeneration, Stamina, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master, Acid Resistants, Acrobatics, Agility, Durability Negation, Electricity Resistance, Endurance, Energy Absorption, Energy Resistance, Fire Resistance, Immortality, Jump, Marksmanship, Master Martial Artist, Master Tactician, Mind Control Resistance, Power Nullifier, Regeneration Negation, Vehicular Mastery, Resurrection', '590');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Copperhead', 'Nathan Prince', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10910.jpg', 'Acidic Spit, Agility, Intelligence, Jaw Strength, Super Speed, Toxin and Disease Control, Venomous Bite, Wallcrawling, Accelerated Healing, Acid Manipulation, Acrobatics, Adaptation, Afterimage Creation, Animal Control, Animal Oriented Powers, Bloodlust, Body Puppetry, Dexterity, Endurance, Illusions, Jump, Reflexes, Surface Scaling, Toxin and Disease Resistance', '118');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'King Zøg', 'Zøg Grunkwitz', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25516.jpg', 'Social Influencing, Insanity', '19');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'King Shark', 'Nanaue', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/46358.jpg', 'Durability, Stamina, Super Strength, Accelerated Healing, Berserk Mode, Bloodlust, Endurance, Hunters Instinct, Indomitable Will, Longevity, Pain Suppression, Regeneration, Sub-Mariner, Toxin and Disease Resistance', '194');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bushwacker', 'Carl Burbank', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12628.jpg', 'Cyborgization, Natural Weapons, Stamina, Toxin and Disease Resistance, Weapon Creation, Weapons Master, Accelerated Healing, Agility, Audio Alteration, Dexterity, Endurance, Energy Blasts, Energy Manipulation, Extrasensory Perception, Fire Control, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Regeneration, Transformation, Shapeshifting', '238');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Magik', 'Illyana Rasputin', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22922.jpg', 'Accelerated Healing, Agility, Dimensional Awareness, Dimensional Travel, Energy Constructs, Heat Resistance, Portal Creation, Reflexes, Stamina, Swordsmanship, Teleportation, Transformation, Weapon Creation, Weapon Summoning, Weapons Master', '179');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vulture', 'Adrian Toomes', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12593.jpg', 'Intelligence, Stamina, Fire Resistance, Flight, Heat Resistance, Power Suit, Reflexes, Stealth, Cold Resistance, Energy Beams, Vision - Night', '58');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jinx', 'Powder', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/40807.jpg', 'Explosion Manipulation, Gadget Usage, Insanity, Mechanical Aptitude, Preparation, Weapon-based Powers, Danmaku, Dexterity, Electrokinesis, Fearless, Homing Attack, Information Analysis, Marksmanship, Reflexes, Robotic Engineering, Weapons Master, Damage Boost, Endurance, Indomitable Will, Intimidation, Intuitive aptitude, Jump, Master Tactician, Pain Suppression, Statistics Amplification, Statistics Reduction, Stealth, Weapon Creation', '120');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Luis Serra Navarro', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48594.jpg', 'Intelligence, Information Analysis, Marksmanship, Master Martial Artist, Weapons Master', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Silver Banshee', 'Siobhan McDougal', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30636.jpg', 'Flight, Intangibility, Levitation, Possession, Sonic Scream, Telekinesis, Phasing, Possession Resistance, Invulnerability, Self-Sustenance', '168');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Deathstroke', 'Slade Wilson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/19095.jpg', 'Accelerated Healing, Durability, Immortality, Marksmanship, Master Martial Artist, Master Tactician, Regeneration, Stamina, Super Speed, Super Strength, Swordsmanship, Weapon-based Powers, Weapons Master, Endurance', '157');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Luca Blight', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26612.jpg', 'Reflexes, Weapons Master, Agility, Attack Reflection, Fire Control, Magic, Magic Resistance, Master Tactician, Social Influencing', '579');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Abraham Cornelius', 'Abraham Cornelius', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/64162.jpg', 'Intelligence, Bloodlust, Master Tactician, Preparation', '8');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Grey Worm', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18107.jpg', 'Peak Human Condition, Stamina, Dexterity, Marksmanship, Stealth, Swordsmanship, Weapons Master, Acrobatics, Agility, Master Martial Artist, Reflexes', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Fandral', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11749.jpg', 'Durability, Stamina, Super Speed, Super Strength, Accelerated Healing, Agility, Cold Resistance, Dexterity, Endurance, Energy Resistance, Fire Resistance, Heat Resistance, Longevity, Marksmanship, Master Martial Artist, Reflexes, Regeneration, Toxin and Disease Resistance, Weapons Master', '376');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ravonna Renslayer', 'Ravonna Renslayer', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31391.jpg', 'Intelligence, Leadership, Master Martial Artist, Peak Human Condition, Deception, Dexterity, Endurance, Fearless, Gadget Usage, Intimidation, Master Tactician, Multilingualism, Preparation, Reflexes, Social Influencing, Stamina, Weapons Master, Fear Inducement, Immortality, Longevity, Portal Creation, Time Manipulation, Time Manipulation Resistance, Time Travel', '510');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Hayley Smith', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/59740.jpg', 'Acrobatics, Dexterity, Marksmanship, Master Martial Artist, Reflexes, Swordsmanship, Agility, Jump, Master Tactician, Peak Human Condition, Stealth, Weapons Master', '50');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Brawl', 'Brawl', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45064.jpg', 'Berserk Mode, Bloodlust, Durability, Endurance, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Explosion Manipulation, Fire Resistance, Immortality, Inorganic Physiology, Large Size, Longevity, Master Martial Artist, Pain Suppression, Radiation Immunity, Rage Power, Self-Sustenance, Stamina, Super Strength, Transformation, Weapons Master, Adaptation, Homing Attack, Cold Resistance, Fear Inducement, Regeneration, Vehicular Mastery', '487');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Nikolai Zinoviev', 'Nicholai Ginovaef', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52601.jpg', 'Acrobatics, Agility, Intelligence, Marksmanship, Peak Human Condition, Reflexes, Stamina, Master Martial Artist, Master Tactician, Stealth, Weapons Master, Hacking', '37');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Colonel (Avatar)', 'Miles Quaritch', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54415.jpg', 'Durability, Intelligence, Leadership, Reflexes, Stamina, Super Speed, Super Strength, Vehicular Mastery, Agility, Camouflage, Dexterity, Grappling/Climbing, Hunters Instinct, Information Analysis, Instinctive Reaction, Large Size, Marksmanship, Master Martial Artist, Master Tactician, Stealth, Weapons Master, Acrobatics, Animal Control, Endurance, Jump, Swordsmanship', '63');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Abyss', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/42793.jpg', 'Acrobatics, Agility, Bloodlust, Camouflage, Dexterity, Endurance, Gadget Usage, Indomitable Will, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Preparation, Pressure Points, Stamina, Stealth, Umbrakinesis, Weapon-based Powers, Weapons Master, Cold Resistance, Disguise Resistance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Fear Inducement, Gliding, Grappling/Climbing, Hacking, Heat Resistance, Jump, Longevity, Pain Manipulation, Pain Suppression, Reflexes, Toxin and Disease Resistance, Vehicular Mastery, Vision - Microscopic, Vision - Night, Vision - Telescopic, Vision - Thermal, Vision - X-Ray, Accelerated Healing, Acid Manipulation, Acid Resistants, Fear Manipulation, Fire Resistance, Illusion Resistance, Mind Control Resistance, Regeneration', '247');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Trespasser', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12438.jpg', 'Amphibious Respiration, Animal Attributes, Endurance, Large Size, Natural Weapons, Cold Resistance, Electricity Resistance, Fire Resistance, Heat Resistance, Jaw Strength, Multiple Limbs, Natural Armor, Toxin and Disease Resistance, Corruption, Illumination', '219');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Icemaster', 'Bradley Kroon', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60647.jpg', 'Cold Resistance, Durability, Ice Manipulation, Super Speed, Super Strength, Fire Resistance, Heat Resistance, Accelerated Healing, Endurance, Invulnerability, Longevity, Reflexes, Regeneration, Stamina', '157');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Angel Dust', 'Christina', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14335.jpg', 'Durability, Stamina, Accelerated Healing, Acrobatics, Agility, Berserk Mode, Dexterity, Endurance, Enhanced Condition, Jump, Reflexes, Invulnerability', '69');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Luz', 'Luz Noceda', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/35323.jpg', 'Element Control, Fire Control, Ice Manipulation, Invisibility, Light Control, Magic, Magic Resistance, Plant Control, Preparation, Agility, Jump, Toon Force, Weapons Master', '346');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lex Luthor', 'Lex Luthor', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/65239.jpg', 'Intelligence, Weapons Master', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Red Volcano', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/41910.jpg', 'Durability, Heat Generation, Stamina, Super Strength, Terrakinesis, Element Control, Endurance, Fire Resistance, Heat Resistance, Jump, Magma Manipulation, Self-Sustenance', '384');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'American Panther', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52771.jpg', 'Durability, Agility, Endurance, Marksmanship, Master Martial Artist, Stamina, Weapons Master, Acrobatics, Grappling/Climbing, Power Suit, Wallcrawling', '45');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Homelander', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18032.jpg', 'Agility, Bloodlust, Durability, Energy Beams, Enhanced Condition, Enhanced Hearing, Enhanced Sight, Flight, Heat Generation, Intelligence, Intimidation, Longevity, Reflexes, Sonic Scream, Stamina, Super Speed, Super Strength, Vision - Heat, Vision - X-Ray, Accelerated Healing, Cold Resistance, Danger Sense, Dexterity, Electricity Resistance, Endurance, Energy Resistance, Enhanced Memory, Extrasensory Perception, Fire Resistance, Heat Resistance, Indomitable Will, Insanity, Invulnerability, Jump, Levitation, Master Martial Artist, Master Tactician, Radiation Immunity, Regeneration, Social Influencing, Stealth, Super Breath, Supernatural Condition, Toxin and Disease Resistance, Vision - Microscopic, Vision - Telescopic', '395');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lady Shiva', 'Sandra Wu-San', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/726.jpg', 'Acrobatics, Agility, Bloodlust, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Pressure Points, Reflexes, Stamina, Stealth, Swimming, Swordsmanship, Throwing Proficiency, Weapons Master, Adaptation, Dexterity, Gadget Usage, Indomitable Will, Instinctive Reaction, Pain Suppression, Preparation, Cold Resistance, Information Analysis, Mind Control Resistance, Social Influencing', '100');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Zari Tomaz', 'Zari Tomaz', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/16503.jpg', 'Dimensional Awareness, Flight, Hacking, Possession, Stealth, Vortex Creation, Wind Control, Accelerated Healing, Dimensional Travel, Energy Beams, Energy Blasts, Force Fields, Levitation, Master Martial Artist, Master Tactician, Multilingualism, Possession Resistance, Robotic Engineering, Shockwaves Generation, Singing, Weapon Summoning, Weapons Master, Pocket Dimensions, Power Bestowal, Rage Power, Weather Control', '581');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Alexander Anderson', 'Alexander Anderson', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11520.jpg', 'Accelerated Healing, Acrobatics, Agility, Berserk Mode, Blessed, Bloodlust, Bullet Time, Dexterity, Durability, Endurance, Enhanced Touch, Exorcism, Holy Manipulation, Holy Resistance, Immortality, Insanity, Intelligence, Master Tactician, Peak Human Condition, Power Nullifier, Preparation, Radiation Immunity, Reflexes, Regeneration, Sealing, Stamina, Super Speed, Super Strength, Swordsmanship, Toxin and Disease Resistance, Unholy Resistance, Weapons Master, Accelerated Development, Cold Resistance, Damage Reduction, Damage Transferal, Empathy, Enhanced Hearing, Enhanced Sight, Fear Manipulation, Fire Resistance, Force Fields, Indomitable Will, Invisibility, Invulnerability, Jump, Master Martial Artist, Teleportation, Vision - Night', '871');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Adam Hunter', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/27661.jpg', 'Stamina, Fire Control, Master Martial Artist, Resurrection, Summoning, Weapons Master', '52');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Beast Boy', 'Garfield Logan', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30581.jpg', 'Agility, Animal Attributes, Animal Oriented Powers, Durability, Shapeshifting, Super Speed, Super Strength, Dexterity, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Flight, Gliding, Jump, Reflexes, Stealth, Wallcrawling', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Poison Ivy', 'Pamela Isley', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/757.jpg', 'Empathy, Intelligence, Plant Control, The Green, Toxin and Disease Control, Toxin and Disease Resistance, Accelerated Healing, Adaptation, Agility, Dexterity, Endurance, Illusions, Immortality, Longevity, Mind Control, Reflexes, Regeneration, Stamina, Stealth, Summoning, Telepathy, Death Touch', '802');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mad Hatter', 'Jervis Tetch', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32158.jpg', 'Intelligence, Audio Alteration, Audio Control, Element Control, Hypnokinesis, Illusions, Insanity, Mind Control, Pain Suppression, Sleep Manipulation, Stealth', '60');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Agony (Klyntar Symbiote)', 'Agony', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32952.jpg', 'Accelerated Healing, Acrobatics, Camouflage, Cloaking, Durability, Elasticity, Stamina, Stealth, Super Speed, Super Strength, Symbiote Costume, Symbiotic Regeneration, Vision - Night, Wallcrawling, Web Creation, Acidic Spit, Agility, Biokinesis, Cold Resistance, Danger Sense, Endurance, Hive-Mind, Jump, Longevity, Natural Weapons, Radiation Immunity, Reflexes, Regeneration, Spatial Awareness, Toxin and Disease Resistance, Vitakinesis, Weapon Creation, Animal Attributes, Animal Oriented Powers, Chemokinesis, Mind Control Resistance, Possession, Shapeshifting, Size Changing, Substance Secretion, Telepathy Resistance, Transformation', '866');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Stone Talus (Rare)', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/39609.jpg', 'Accelerated Healing, Heat Generation, Heat Resistance, Immortality, Terrakinesis', '245');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mikhail', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/53792.jpg', 'Natural Weapons, Weapons Master, Accelerated Development, Accelerated Healing, Berserk Mode, Biokinesis, Blood Manipulation, Bloodlust, Endurance, Enhanced Condition, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Thievery, Enhanced Touch, Flight, Immortality, Longevity, Weapon-based Powers', '181');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Killer Frost', 'Caitlin Snow', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10508.jpg', 'Durability, Intelligence, Stamina, Adaptation, Fire Resistance, Ice Manipulation, Natural Armor, Reflexes', '114');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Goblin By Night', 'Norman Russell', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/19011.jpg', 'Adaptation, Agility, Endurance, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stamina, Weapons Master, Accelerated Healing, Bloodlust, Cold Resistance, Dexterity, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Explosion Manipulation, Fire Resistance, Heat Generation, Heat Resistance, Indomitable Will, Insanity, Jump, Regeneration, Smoke Manipulation, Social Influencing, Status Effect Inducement, Stealth, Surface Scaling, Toxin and Disease Resistance, Vehicular Mastery, Weapon Creation, Flight, Power Sense, Radiation Immunity, Reactive Evolution', '217');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Arvin Sloane', 'Arvin Sloane', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/38203.jpg', 'Durability, Immortality, Stamina, Endurance, Indomitable Will, Intangibility, Master Tactician, Weapons Master, Bloodlust, Marksmanship', '263');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Camille', 'Camille Ferros', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/47496.jpg', 'Acrobatics, Enhanced Sight, Grappling/Climbing, Intimidation, Social Influencing, Agility, Apathy, Bionics, Cyborgization, Force Fields, Information Analysis, Longevity, Microfilament Wires, Reflexes, Scanning, Accelerated Healing, Adaptation, Damage Boost, Durability Negation, Endurance, Energy Constructs, Fearless, Jump, Master Martial Artist, Master Tactician, Natural Weapons, Surface Scaling, Toxin and Disease Resistance', '104');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Copycat', 'Vanessa Carlysle', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10423.jpg', 'Power Mimicry, Reflexes, Shapeshifting, Stamina, Weapons Master, Acrobatics, Agility, Dexterity, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Jump, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Natural Weapons, Toxin and Disease Resistance, Vehicular Mastery', '229');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Daemon Targaryen', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/50731.jpg', 'Intelligence, Master Tactician, Swordsmanship, Weapons Master, Agility, Dexterity, Fearless, Fire Resistance, Heat Resistance, Insanity, Intimidation, Leadership, Master Martial Artist, Reflexes, Animal Control', '40');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Morgan Edge', 'Morgan Edge', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/22320.jpg', 'Intelligence, Social Influencing, Weapon-based Powers, Marksmanship, Master Tactician', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Cannibal', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62833.jpg', 'Bloodlust, Cold Resistance, Fearless, Fire Control, Fire Resistance, Heat Generation, Heat Resistance, Insanity, Super Breath, Agility, Dexterity, Flight, Jaw Strength, Large Size, Longevity, Magic, Magic Resistance, Natural Weapons, Wing Manifestation', '290');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bulbasaur', 'Bulbasaur', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/21566.jpg', 'Durability, Intelligence, Plant Control, Stamina, Super Speed, Super Strength, Toxin and Disease Control, Toxin and Disease Resistance, Accelerated Healing, Adaptation, Agility, Animal Attributes, Danger Sense, Dexterity, Electricity Resistance, Endurance, Energy Absorption, Energy Blasts, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Invulnerability, Jump, Longevity, Magic Resistance, Master Martial Artist, Reflexes, Statistics Amplification, Status Effect Inducement, Stealth, Vision - Night', '371');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Johnny Cage', 'Jonathan Carlton', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/37559.jpg', 'Acrobatics, Agility, Dexterity, Durability, Endurance, Intelligence, Reflexes, Vehicular Mastery, Bullet Time, Empathy, Energy Manipulation, Energy Resistance, Enhanced Condition, Fearless, Force Fields, Holy Manipulation, Indomitable Will, Jump, Master Martial Artist, Preparation, Pressure Points, Social Influencing, Stamina, Weapons Master, Soul Resistance', '153');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lizard', 'Curtis Connors', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11.jpg', 'Accelerated Healing, Acrobatics, Animal Attributes, Animal Oriented Powers, Berserk Mode, Durability, Endurance, Enhanced Condition, Enhanced Hearing, Enhanced Smell, Intelligence, Jump, Master Tactician, Reflexes, Regeneration, Stamina, Stealth, Super Speed, Super Strength, Surface Scaling, Wallcrawling, Agility, Animal Control, Dexterity, Enhanced Memory, Enhanced Sight, Extrasensory Perception, Heat Resistance, Natural Armor, Natural Weapons, Social Influencing, Telepathy, Toxin and Disease Resistance, Transformation, Cold Resistance, Mind Control Resistance, Toxin and Disease Control', '263');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Indominus Rex', 'Indominus Rex', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11521.jpg', 'Camouflage, Jaw Strength, Natural Weapons, Animal Attributes, Bloodlust, Dexterity, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Hunters Instinct, Large Size, Natural Armor, Reflexes, Vision - Infrared, Accelerated Healing, Cloaking, Grappling/Climbing, Preparation, Sonic Scream, Stealth', '40');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kingpin', 'Wilson Fisk', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45040.jpg', 'Ability Shift, Accelerated Healing, Bloodlust, Intelligence, Intimidation, Master Tactician, Peak Human Condition, Stealth, Super Strength, Agility, Berserk Mode, Dexterity, Endurance, Heat Resistance, Master Martial Artist, Reflexes, Weapons Master, Jaw Strength, Rage Power, Stamina', '126');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Joker', 'John Doe', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/34792.jpg', 'Acrobatics, Intelligence, Marksmanship, Master Tactician, Vehicular Mastery, Weapon-based Powers, Weapons Master, Berserk Mode, Element Control, Explosion Manipulation, Insanity, Latent Abilities, Master Martial Artist, Rage Power, Smoke Manipulation, Stealth, Toxin and Disease Control', '33');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Love Quinn', 'Love Quinn-Goldberg', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/41150.jpg', 'Deception, Intelligence, Social Influencing, Stealth, Dexterity, Endurance, Insanity, Master Tactician, Preparation, Stamina, Weapons Master, Marksmanship, Paralysis, Reflexes, Toxin and Disease Control', '15');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Sejuani', 'Sejuani', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/43989.jpg', 'Cold Resistance, Endurance, Ice Manipulation, Indomitable Will, Weapon-based Powers, Agility, Bloodlust, Damage Reduction, Fearless, Intimidation, Jump, Leadership, Master Tactician, Natural Weapons, Pain Suppression, Reflexes, Weapons Master, Accelerated Healing, Animal Control, Animal Oriented Powers, Aura, Durability Negation, Explosion Manipulation, Gadget Usage, Large Size, Magic, Preparation, Rage Inducement, Rage Power, Weather Control', '205');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'War', 'Decimus Furius', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44687.jpg', 'Durability, Super Strength, Hive-Mind, Mind Control Resistance, Regeneration', '96');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Princess Azula', 'Azula', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20802.jpg', 'Acrobatics, Agility, Durability, Electrokinesis, Element Control, Fire Control, Fire Resistance, Heat Generation, Heat Resistance, Intelligence, Peak Human Condition, Reflexes, Stamina, Super Speed, Super Strength, Adaptation, Attack Reflection, Danger Sense, Dexterity, Electrical Transport, Electricity Absorption, Electricity Resistance, Energy Beams, Energy Blasts, Energy Resistance, Enhanced Thievery, Fear Inducement, Insanity, Jump, Marksmanship, Master Martial Artist, Master Tactician, Stealth, Flight', '601');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Beast Boy', 'Garfield Logan', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23493.jpg', 'Durability, Stamina, Accelerated Healing, Agility, Animal Attributes, Animal Oriented Powers, Empathy, Endurance, Enhanced Sight, Enhanced Smell, Enhanced Touch, Flight, Jump, Shapeshifting, Size Changing', '117');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Robin', 'Tim Drake', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18303.jpg', 'Peak Human Condition, Stealth, Weapon-based Powers, Weapons Master, Acrobatics', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Frank The Plant', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/65096.jpg', 'Enhanced Taste, Flight, Levitation, Regeneration, Resurrection, The Fourth Wall, Necromancy', '40');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Canary', 'Dinah Laurel Lance', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23048.jpg', 'Acrobatics, Agility, Intelligence, Master Martial Artist, Peak Human Condition, Sonic Scream, Stamina, Endurance, Stealth', '86');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Night King', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/14654.jpg', 'Cold Resistance, Fire Resistance, Heat Resistance, Ice Manipulation, Toxin and Disease Resistance, Weather Control, Animal Control, Aura, Deconstruction, Dream Manipulation, Extrasensory Perception, Fear Inducement, Fear Manipulation, Immortality, Invulnerability, Magic, Necromancy, Power Bestowal, Power Nullifier, Resurrection, Self-Sustenance, Weapons Master, Wind Control, Terrakinesis', '985');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gragas', 'Gragas', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44466.jpg', 'Substance Secretion, Accelerated Healing, Cold Resistance, Explosion Manipulation, Gadget Usage, Indestructible Digestion, Pain Suppression, Rage Power, Toxin and Disease Resistance, Weapon-based Powers, Damage Boost, Damage Reduction, Indomitable Will, Large Size, Magic, Rage Inducement, Status Effect Inducement', '102');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bronze Tiger', 'Ben Turner', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10370.jpg', 'Acrobatics, Agility, Durability, Endurance, Marksmanship, Master Martial Artist, Peak Human Condition, Reflexes, Stamina, Stealth, Weapon-based Powers, Weapons Master, Dexterity, Indomitable Will', '84');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Viper', 'Ophelia Sarkissian', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10400.jpg', 'Acrobatics, Agility, Energy Manipulation, Grappling/Climbing, Marksmanship, Master Martial Artist, Master Tactician, Stealth, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master, Element Control, Toxin and Disease Control', '103');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kano', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29757.jpg', 'Berserk Mode, Reflexes, Vision - Heat, Agility, Endurance, Rage Power', '48');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Alice', 'Beth Kane', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18716.jpg', 'Insanity, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Weapons Master, Swordsmanship', '43');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Nagga The Sea Dragon', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62807.jpg', 'Agility, Cold Resistance, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Stamina, Super Breath, Swimming, Berserk Mode, Dexterity, Endurance, Jaw Strength, Large Size, Longevity, Magic, Magic Resistance, Natural Weapons, Underwater breathing, Wing Manifestation, Self-Sustenance, Water Control', '385');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shang Tsung', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/29750.jpg', 'Intelligence, Longevity, Master Martial Artist, Reflexes, Agility, Berserk Mode, Cold Resistance, Fire Resistance, Heat Resistance, Immortality, Master Tactician, Soul Manipulation, Summoning, Toxin and Disease Resistance, Weapons Master, Electricity Resistance, Fire Control, Heat Generation, Hellfire Resistance, Power Bestowal, Power Nullifier, Preparation, Resurrection, Soul Resistance', '220');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Queen Wasp (Akumatized Queen Bee)', 'Chloé Bourgeois', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/39587.jpg', 'Agility, Body Puppetry, Durability, Godly Physiology, Jump, Mind Control, Paralysis, Supernatural Condition, Animal Attributes, Animal Control, Apathy, Berserk Mode, Bloodlust, Bullet Time, Energy Manipulation, Fear Inducement, Grappling/Climbing, Hive-Mind, Holy Resistance, Insanity, Instinctive Reaction, Master Martial Artist, Surface Scaling, Weapon Summoning, Weapons Master', '825');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Suspiria', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55384.jpg', 'Durability, Intelligence, Marksmanship, Master Martial Artist, Master Tactician, Weapons Master, Dexterity, Information Analysis, Peak Human Condition, Acrobatics, Agility, Endurance, Indomitable Will, Pain Suppression, Reflexes, Stamina, Stealth', '55');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'White Sword', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30243.jpg', 'Immortality, Resurrection', '295');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Klaw', 'Ulysses Klaue', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44029.jpg', 'Audio Alteration, Echolocation, Large Size, Master Tactician, Aura, Flight, Invisibility, Size Changing', '439');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Abel', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44951.jpg', 'Durability, Super Strength, Wing Manifestation', '101');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Shego', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20648.jpg', 'Acrobatics, Agility, Durability, Energy Blasts, Enhanced Condition, Fire Control, Heat Generation, Intelligence, Master Martial Artist, Master Tactician, Peak Human Condition, Plasma Manipulation, Reflexes, Stealth, Super Speed, Super Strength, Dexterity, Endurance, Energy Beams, Explosion Manipulation, Jump, Marksmanship, Stamina, Weapons Master, Danger Sense, Energy Manipulation, Enhanced Touch, Flight, Preparation, Sleep Manipulation, Social Influencing, Vehicular Mastery', '172');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Eve (Liaison to the Senior Partners)', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62630.jpg', 'Immortality, Intelligence, Longevity, Psionic Powers, Divine Powers, Divinity, Magic, Power Augmentation, Power Primordial, Telepathy', '84');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bayek of Siwa', 'Bayek', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/12264.jpg', 'Durability, Peak Human Condition, Stamina, Agility, Animal Control, Danger Sense, Enhanced Sight, Marksmanship, Master Martial Artist, Master Tactician, Reflexes, Stealth, Vision - X-Ray, Wallcrawling, Weapons Master', '58');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kenji', 'Kenji Kon', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/54388.jpg', 'Intelligence', '5');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'T-Infinity', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48374.jpg', '', '944');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Replikon', 'Xum', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/26181.jpg', 'Energy Absorption, Energy Beams, Energy Blasts, Energy Constructs, Power Absorption, Power Absorption Immunity, Super Speed, Super Strength, Ability Shift, Energy Manipulation, Flight, Fusion, Size Changing', '323');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Aegon Targaryen', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63074.jpg', 'Fearless, Leadership, Social Influencing, Agility, Dexterity, Fire Resistance, Heat Resistance, Indomitable Will, Insanity, Marksmanship, Master Tactician, Stamina, Swordsmanship, Animal Control, Telepathy', '27');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jillian', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/63179.jpg', 'Projection', '9');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vex', 'Vex', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44784.jpg', 'Animated Shadow, Dark Magic, Fear Inducement, Longevity, Energy Blasts, Enhanced Hearing, Extrasensory Perception, Force Fields, Non-Physical Interaction, Power Augmentation, Shadow Manipulation, Shockwaves Generation, Vision - Infrared, Animal Attributes, Cold Resistance, Damage Boost, Dimensional Travel, Immortality, Magic Resistance, Multiple Personalities, Soul Manipulation, Soul Resistance, Statistics Amplification, Statistics Reduction, Status Effect Inducement, Stealth, Umbrakinesis', '563');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rampage', 'Karen Lou Faulkner', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18378.jpg', 'Durability, Energy Absorption, Stamina, Super Strength, Transformation', '4');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kit Fisto', 'Kit Fisto', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25408.jpg', 'The Force, Weapons Master, Attack Reflection, Jump, Master Martial Artist, Telekinesis, Underwater breathing', '239');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Mastermind', 'Jason Wyngarde', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/11741.jpg', 'Illusions, Duplication, Invisibility, Memory Manipulation, Mind Control, Psionic Powers, Reflexes', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Solomon Grundy', 'Cyrus Gold', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23004.jpg', 'Durability, Stamina, Accelerated Healing, Agility, Berserk Mode, Cold Resistance, Fire Resistance, Heat Resistance, Longevity, Regeneration, Immortality, Invulnerability', '92');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Ghost', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/46456.jpg', 'Durability, Explosion Manipulation, Flight, Hacking, Intangibility, Intelligence, Invisibility, Levitation, Marksmanship, Phasing, Robotic Engineering, Stealth, Super Speed, Super Strength, Wallcrawling, Acrobatics, Durability Negation, Endurance, Master Martial Artist, Master Tactician, Quantum Manipulation', '130');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Super Predator (Berserker)', 'Yautja', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/60149.jpg', 'Camouflage, Cloaking, Endurance, Energy Blasts, Fearless, Hunters Instinct, Intimidation, Longevity, Reflexes, Scanning, Stamina, Stealth, Vision - Infrared, Vision - Thermal, Weapon-based Powers, Acid Resistants, Agility, Bloodlust, Dexterity, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Fire Resistance, Gadget Usage, Grappling/Climbing, Heat Resistance, Indomitable Will, Information Analysis, Invisibility, Jump, Leadership, Marksmanship, Master Tactician, Multilingualism, Preparation, Self-Destruction, Swordsmanship, Weapons Master, Accelerated Healing, Apathy, Audio Control, Berserk Mode, Cold Resistance, Danmaku, Illumination, Large Size, Natural Armor, Natural Weapons, Pain Manipulation, Radar Sense, Radiation Immunity, Self-Sustenance, Toxin and Disease Resistance, Vehicular Mastery', '290');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Neff', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/48842.jpg', 'Acrobatics, Agility, Animal Attributes, Animal Control, Animal Oriented Powers, Immortality, Magic, Dark Magic, Shapeshifting, Transformation', '173');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Frost', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/17098.jpg', 'Cyborgization, Durability, Ice Manipulation, Master Martial Artist, Peak Human Condition, Soul Resistance, Super Strength, Weapons Master, Bloodlust, Damage Boost, Explosion Manipulation, Flight, Force Fields, Homing Attack, Immortality, Information Analysis, Natural Weapons, Projection, Self-Destruction, Self-Sustenance, Statistics Amplification, Stealth, Summoning, Telepathy, Teleportation, Weapon Creation, Weapon-based Powers, Wind Control, Data Manipulation, Regeneration', '607');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Dracula', 'Count Dracula', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/24088.jpg', 'Accelerated Healing, Animal Attributes, Animal Control, Animal Oriented Powers, Bloodlust, Cold Resistance, Corruption, Dexterity, Durability, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Touch, Immortality, Intelligence, Radiation Immunity, Reflexes, Regeneration, Stamina, Surface Scaling, Toxin and Disease Resistance, Transformation, Vision - Night, Vision - Telescopic, Wallcrawling, Agility, Blood Manipulation, Corruption Resistance, Dream Manipulation, Fear Inducement, Fear Manipulation, Fire Resistance, Heat Resistance, Indomitable Will, Invulnerability, Jump, Levitation, Master Martial Artist, Natural Weapons, Resurrection, Social Influencing, Stealth, Weapons Master, Weather Control', '604');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Harley Quinn', 'Harleen Quinzel', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20368.jpg', 'Acrobatics, Agility, Dexterity, Durability, Indomitable Will, Intelligence, Intuitive aptitude, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Reflexes, Stamina, Stealth, Toxin and Disease Resistance, Weapon-based Powers, Weapons Master, Endurance, Gadget Usage, Information Analysis, Insanity, Intimidation, Leadership, Swordsmanship, The Fourth Wall', '103');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Quetzalcoatlus', 'Quetzalcoatlus', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/45317.jpg', 'Animal Attributes, Animal Oriented Powers, Endurance, Enhanced Sight, Enhanced Smell, Flight, Gliding, Hunters Instinct, Large Size, Natural Weapons', '17');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Black Widow', 'Yelena Belova', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/618.jpg', 'Agility, Bloodlust, Dexterity, Disguise Mastery, Endurance, Hacking, Indomitable Will, Longevity, Marksmanship, Master Martial Artist, Master Tactician, Peak Human Condition, Reflexes, Stamina, Stealth, Vehicular Mastery, Weapon-based Powers, Weapons Master, Cold Resistance, Explosion Manipulation, Heat Resistance, Jump, Power Mimicry, Toxin and Disease Resistance, Accelerated Healing', '154');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Rathian', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44984.jpg', 'Explosion Manipulation, Fire Control, Rage Power, Statistics Amplification, Fire Resistance, Flight, Toxin and Disease Resistance', '138');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Catwoman', 'Selina Kyle', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/659.jpg', 'Acrobatics, Intelligence, Stamina, Stealth, Agility, Dexterity, Gliding, Hacking, Marksmanship, Master Martial Artist, Peak Human Condition, Reflexes, Vehicular Mastery, Wallcrawling, Weapon-based Powers, Weapons Master, Jump', '52');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Doctor Psycho', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23570.jpg', 'Telekinesis, Telepathy, Force Fields, Insanity, Mind Control, Stamina, Levitation', '112');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lois Lane', 'Lois Lane', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18726.jpg', 'Intelligence, Agility, Marksmanship, Master Tactician, Weapons Master', '11');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Agent Bob', 'Bob', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/10255.jpg', 'Acrobatics, Agility, Dexterity, Reflexes, Stamina, Stealth, Endurance, Master Martial Artist, Master Tactician', '14');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Psi', 'Gayle Marsh', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18391.jpg', 'Empathy, Flight, Levitation, Telekinesis, Telepathy, Dream Manipulation, Fear Inducement, Telepathy Resistance, Fear Manipulation, Mind Control', '696');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Joe Goldberg', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/41053.jpg', 'Deception, Intelligence, Social Influencing, Stealth, Dexterity, Disguise Mastery, Endurance, Fear Inducement, Master Martial Artist, Master Tactician, Peak Human Condition, Preparation, Reflexes, Stamina, Weapons Master, Information Analysis, Insanity, Marksmanship, Multiple Personalities, Sleep Manipulation', '29');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gentleman', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55485.jpg', 'Durability, Audio Alteration, Audio Control, Levitation', '30');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tyler Galpin', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52994.jpg', 'Bloodlust, Deception, Durability, Insanity, Intelligence, Stealth, Super Strength, Transformation, Agility, Berserk Mode, Endurance, Enhanced Condition, Size Changing, Stamina, Empathy, Fearless, Grappling/Climbing, Instinctive Reaction, Large Size, Natural Weapons, Reflexes', '57');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jared Nomak', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/40606.jpg', 'Accelerated Healing, Agility, Bloodlust, Dexterity, Longevity, Regeneration, Stamina, Toxin and Disease Resistance, Acid Resistants, Acrobatics, Cold Resistance, Corruption, Endurance, Enhanced Hearing, Enhanced Memory, Enhanced Sight, Enhanced Smell, Enhanced Taste, Heat Resistance, Immortality, Jump, Master Martial Artist, Natural Weapons, Paralysis, Radiation Immunity, Reflexes, Surface Scaling, Wallcrawling, Berserk Mode, Invulnerability, Stealth', '219');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Judge', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55492.jpg', 'Super Strength, Vaporising Beams, Danger Sense, Explosion Manipulation, Fire Control, Immortality, Electrokinesis, Empathy, Power Absorption, Regeneration', '132');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Lois Lane', 'Lois Lane', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/30685.jpg', 'Intelligence, Indomitable Will, Information Analysis', '7');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Macabre', 'Maggie Langella', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/32839.jpg', 'Death Touch, Grim Reaping, Energy Absorption', '255');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gordon Godfrey', 'Gordon Godfrey', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23191.jpg', 'Social Influencing', '23');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Bladewolf', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/52124.jpg', 'Acrobatics, Agility, Cyborgization, Durability, Endurance, Intelligence, Natural Weapons, Self-Sustenance, Stealth, Super Speed, Super Strength, Vision - Infrared, Vision - Night, Animal Attributes, Bionics, Durability Negation, Electro-Magnetism Manipulation, Electrokinesis, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Heat Generation, Immortality, Inorganic Physiology, Invisibility, Quantum Manipulation, Radar Sense, Smoke Manipulation, Vibration Manipulation, Vitakinesis, Weapons Master', '891');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gray Fox', 'Frank Jaeger', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/44812.jpg', 'Acrobatics, Agility, Bloodlust, Cyborgization, Dexterity, Endurance, Force Fields, Intelligence, Jump, Marksmanship, Master Martial Artist, Master Tactician, Nanotechnology, Reflexes, Shockwaves Generation, Stamina, Stealth, Swordsmanship, Vehicular Mastery, Weapons Master, Camouflage, Cold Resistance, Durability Negation, Energy Blasts, Energy Manipulation, Enhanced Hearing, Enhanced Sight, Enhanced Touch, Explosion Manipulation, Hacking, Heat Generation, Heat Resistance, Information Analysis, Invisibility, Precognition, Quantum Manipulation, Radar Sense, Toxin and Disease Resistance, Vibration Manipulation, Electricity Resistance, Electrokinesis, Energy Resistance, Smoke Manipulation', '768');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Warmonga', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57956.jpg', 'Agility, Endurance, Master Martial Artist, Super Strength, Stamina, Weapons Master', '62');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Joker', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/18537.jpg', 'Berserk Mode, Latent Abilities, Master Tactician, Peak Human Condition, Rage Power, Element Control, Explosion Manipulation, Master Martial Artist, Social Influencing, Weapon-based Powers, Weapons Master, Fire Control', '77');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Vamp', 'Denise Baranger', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/28632.jpg', 'Master Martial Artist, Mind Blast, Power Sense, Telepathy, Transformation, Weapons Master', '234');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Penn', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55880.jpg', 'Accelerated Healing, Durability, Endurance, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Enhanced Taste, Enhanced Touch, Intelligence, Jaw Strength, Master Martial Artist, Master Tactician, Natural Weapons, Reflexes, Stamina, Super Speed, Super Strength, Agility, Danger Sense, Dexterity, Enhanced Memory, Hunters Instinct, Immortality, Intuitive aptitude, Jump, Regeneration, Stealth, Supernatural Condition, Weapons Master, Accelerated Development, Acrobatics, Adaptation, Awakened Power, Intimidation, Psionic Powers', '160');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Melisandre', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/20465.jpg', 'Clairvoyance, Heat Resistance, Illusions, Intelligence, Magic, Precognition, Stamina, Toxin and Disease Resistance, Blood Manipulation, Cold Resistance, Creation, Dexterity, Endurance, Fire Control, Fire Resistance, Illusion Resistance, Longevity, Resurrection, Self-Sustenance', '230');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Poison Ivy', 'Pamela Isley', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/23308.jpg', 'Hypnokinesis, Intelligence, Master Martial Artist, Plant Control, Toxin and Disease Resistance, Duplication, Element Control, Empathy, Mind Control, Supernatural Condition, Toxin and Disease Control, Weapons Master, Creation, Life Manipulation', '270');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Terrax', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/62844.jpg', 'Cold Resistance, Fire Control, Fire Resistance, Flight, Heat Generation, Heat Resistance, Super Breath, Agility, Dexterity, Jaw Strength, Large Size, Longevity, Magic, Magic Resistance, Natural Weapons, Wing Manifestation', '213');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Benjamin Wilkinson', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55866.jpg', 'Intelligence, Multiple Personalities, Transformation', '12');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Jack Krauser', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25290.jpg', 'Agility, Bloodlust, Durability, Marksmanship, Master Martial Artist, Reflexes, Stealth, Acrobatics, Cold Resistance, Damage Reduction, Dexterity, Endurance, Gadget Usage, Heat Resistance, Jump, Longevity, Master Tactician, Preparation, Purification, Stamina, Statistics Amplification, Toxin and Disease Resistance, Vehicular Mastery, Weapon-based Powers, Weapons Master, Accelerated Healing, Explosion Manipulation, Fire Resistance, Immortality, Invulnerability, Light Control, Natural Armor, Natural Weapons, Regeneration, Transformation', '209');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'M3GAN', '', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/55393.jpg', 'Bionics, Durability, Intelligence, Super Speed, Super Strength, Technological Possession, Technopath/Cyberpath, Acrobatics, Agility, Information Analysis, Reflexes, Stealth', '56');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Zam Wesell', 'Zam Wesell', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/25420.jpg', 'Weapons Master, Shapeshifting, Stealth, Weapon-based Powers, Interstellar Travel, Mechanical Aptitude', '41');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Tek Knight', 'Robert Vernon', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/65346.jpg', 'Enhanced Condition, Enhanced Hearing, Enhanced Sight, Enhanced Smell, Information Analysis, Intelligence, Photographic Deduction, Social Influencing, Insanity, Power Suit, Madness Manipulation, Scanning', '43');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Kraven The Hunter', 'Sergei Kravinoff', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/31081.jpg', 'Dexterity, Durability, Endurance, Intelligence, Reflexes, Stamina, Super Speed, Super Strength, Acrobatics, Adaptation, Animal Attributes, Animal Oriented Powers, Danger Sense, Marksmanship, Master Martial Artist, Master Tactician, Stealth, Swordsmanship, Weapons Master, Cloaking, Hacking', '77');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Resistance Singed (Battlecast)', 'Singed', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/57396.jpg', 'Acid Manipulation, Acid Resistants, Apathy, Endurance, Fearless, Insanity, Mechanical Aptitude, Statistics Amplification, Berserk Mode, Gadget Usage, Information Analysis, Inorganic Physiology, Intimidation, Pain Suppression, Preparation, Substance Secretion, Toxin and Disease Resistance, Weapon-based Powers, Accelerated Healing, Agility, Cloaking, Cold Resistance, Damage Reduction, Explosion Manipulation, Heat Resistance, Regeneration Negation, Robotic Engineering, Scanning, Status Effect Inducement, Stealth', '118');
+INSERT INTO villain(id, name, otherName, picture, powers, level)
+VALUES (nextval('villain_seq'), 'Gargantos', 'Gargantos', 'https://raw.githubusercontent.com/cescoffier/quarkus-super-heroes-pictures/main/pictures/43834.jpg', 'Accelerated Healing, Durability, Large Size, Regeneration, Endurance, Invisibility, Natural Weapons, Stamina, Surface Scaling, Wallcrawling', '131');
