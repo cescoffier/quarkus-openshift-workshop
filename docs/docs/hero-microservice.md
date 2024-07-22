@@ -33,47 +33,8 @@ Using RH developer hub UI create a quarkus application with default extensions.
 
 Once you bootstrap the project, you get the following directory structure with a few Java classes and other artifacts :
 
-```plantuml
+![hero-directory-structure](../../target/hero-directory-structure.svg)
 
-@startsalt
-{
-{
-T
-super-heroes
-+  rest-hero
-++  src
-+++  main
-++++  docker
-+++++  Dockerfile.jvm
-+++++  Dockerfile.native
-++++  java
-+++++  io
-++++++  quarkus
-+++++++  workshop
-++++++++  superheroes
-+++++++++  hero
-++++++++++  HeroResource.java
-++++  resources
-+++++  META-INF
-++++++  resources
-+++++++  index.html
-+++++  application.properties
-+++  test
-++++  java
-+++++  io
-++++++  quarkus
-+++++++  workshop
-++++++++  superheroes
-+++++++++  hero
-++++++++++  HeroResourceTest.java
-++++++++++  NativeHeroResourceIT.java
-++  mvnw
-++  mvnw.cmd
-++  pom.xml
-}
-}
-@endsalt
-```
 It generates the following in the hero-service folder:
 
 * the Maven structure with a `pom.xml`
