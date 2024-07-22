@@ -41,7 +41,7 @@ class VillainControllerTest {
     private static final int DEFAULT_LEVEL = 42;
     private static final int UPDATED_LEVEL = 43;
 
-    private static final int NB_VILLAINS = 570;
+    private static final int NB_VILLAINS = 500;
     private static String villainId;
 
 

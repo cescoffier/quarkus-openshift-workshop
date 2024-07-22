@@ -43,7 +43,7 @@ class HeroResourceTest {
     private static final int DEFAULT_LEVEL = 42;
     private static final int UPDATED_LEVEL = 43;
 
-    private static final int NB_HEROES = 941;
+    private static final int NB_HEROES = 500;
     private static String heroId;
 
 
