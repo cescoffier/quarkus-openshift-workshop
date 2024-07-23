@@ -93,12 +93,17 @@ def define_env(env):
     loadAttributes(env)
 
     @env.macro
-    def insert(file, tag = None):
+    def insert(file, tag = None, exceptTag = None):
         root = env.conf['docs_dir']
         if 'snippet_dir' in env.variables:
            root = env.variables['snippet_dir']
 
         f = open(root + "/" + file)
+
+        if tag is None:
+            text = f.read()
+            f.close()
+            return textwrap.dedent(text)
 
         if tag is None:
             text = f.read()
@@ -113,6 +118,10 @@ def define_env(env):
                     inRecordingMode = True
             elif "</" + tag + ">" in line:
                 inRecordingMode = False
+            elif exceptTag is not None and "<" + exceptTag + ">" in line:
+                inRecordingMode = False
+            elif exceptTag is not None and "</" + exceptTag + ">" in line:
+                inRecordingMode = True
             else:
                 c += line
 

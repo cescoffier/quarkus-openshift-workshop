@@ -60,6 +60,7 @@ theme:
     - navigation.tracking
     - navigation.tabs.sticky
     - content.code.select
+    - content.code.copy
 
 extra_css:
   - extra.css
@@ -108,10 +109,6 @@ plugins:
       output_folder: "target"
       input_folder: "diagrams"
       input_extensions: "puml"
-#      theme_enabled: true
-#      theme_folder: "include/themes"
-#      theme_light: "light.puml"
-#      theme_dark: "dark.puml"
   - macros:
       verbose: true
       module_name: mkdocs-customizations/macros/docissimo
@@ -119,8 +116,7 @@ plugins:
 
 
 extra:
-#  snippet_dir: snippets
-  snippet_dir: ../hero-service/
+  snippet_dir: ../
   manifest: manifest.webmanifest
   version:
     provider: mike
