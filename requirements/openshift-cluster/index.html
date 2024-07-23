@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../dev-spaces/">
       
       
-      <link rel="icon" href="/images/logo.png">
+        <link rel="next" href="../../preparation/code-scaffolding/">
+      
+      
+      <link rel="icon" href="../../images/logo.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Quarkus OpenShift Workshop</title>
+        <title>OpenShift Cluster - Quarkus OpenShift Workshop</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="/extra.css">
+      <link rel="stylesheet" href="../../extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#openshift-container-platform" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -80,7 +89,7 @@
             <div class="md-banner__inner md-grid md-typeset">
               
 You are not viewing the latest version.
-<a href="..//">
+<a href="../../..">
     <strong>Click here to go to latest.</strong>
 </a>
 
@@ -97,9 +106,9 @@ You are not viewing the latest version.
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Quarkus OpenShift Workshop" class="md-header__button md-logo" aria-label="Quarkus OpenShift Workshop" data-md-component="logo">
+    <a href="../.." title="Quarkus OpenShift Workshop" class="md-header__button md-logo" aria-label="Quarkus OpenShift Workshop" data-md-component="logo">
       
-  <img src="/images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +125,7 @@ You are not viewing the latest version.
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              OpenShift Cluster
             
           </span>
         </div>
@@ -229,9 +238,9 @@ You are not viewing the latest version.
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Quarkus OpenShift Workshop" class="md-nav__button md-logo" aria-label="Quarkus OpenShift Workshop" data-md-component="logo">
+    <a href="../.." title="Quarkus OpenShift Workshop" class="md-nav__button md-logo" aria-label="Quarkus OpenShift Workshop" data-md-component="logo">
       
-  <img src="/images/logo.png" alt="logo">
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     Quarkus OpenShift Workshop
@@ -255,8 +264,10 @@ You are not viewing the latest version.
       
   
   
+    
   
   
+  
     
     
       
@@ -274,11 +285,11 @@ You are not viewing the latest version.
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
@@ -292,7 +303,7 @@ You are not viewing the latest version.
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Welcome
@@ -306,7 +317,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -324,8 +335,10 @@ You are not viewing the latest version.
                 
   
   
+    
   
   
+  
     
     
       
@@ -338,11 +351,11 @@ You are not viewing the latest version.
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
@@ -356,7 +369,7 @@ You are not viewing the latest version.
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Software requirements
@@ -370,7 +383,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/requirements/dev-spaces/" class="md-nav__link">
+      <a href="../dev-spaces/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -388,10 +401,30 @@ You are not viewing the latest version.
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/requirements/openshift-cluster/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OpenShift Cluster
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -400,6 +433,53 @@ You are not viewing the latest version.
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openshift-namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenShift Namespaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -467,7 +547,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/preparation/code-scaffolding/" class="md-nav__link">
+      <a href="../../preparation/code-scaffolding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +568,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/preparation/databases/" class="md-nav__link">
+      <a href="../../preparation/databases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,7 +589,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/preparation/warming-up/" class="md-nav__link">
+      <a href="../../preparation/warming-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -530,7 +610,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/preparation/ready/" class="md-nav__link">
+      <a href="../../preparation/ready/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +698,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/hero-microservice/" class="md-nav__link">
+      <a href="../../hero-microservice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +719,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/transactions-orm/" class="md-nav__link">
+      <a href="../../transactions-orm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +740,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/containers-cloud/" class="md-nav__link">
+      <a href="../../containers-cloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +761,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/trusted-apps/" class="md-nav__link">
+      <a href="../../trusted-apps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +782,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/open-api/" class="md-nav__link">
+      <a href="../../open-api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +856,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/villain-microservice/" class="md-nav__link">
+      <a href="../../villain-microservice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,7 +877,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/fight-microservice/" class="md-nav__link">
+      <a href="../../fight-microservice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -825,7 +905,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/web-application/" class="md-nav__link">
+      <a href="../../web-application/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -845,7 +925,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="/conclusion-references/" class="md-nav__link">
+      <a href="../../conclusion-references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,6 +955,43 @@ You are not viewing the latest version.
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openshift-namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenShift Namespaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -886,8 +1003,51 @@ You are not viewing the latest version.
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="openshift-container-platform">OpenShift Container Platform<a class="headerlink" href="#openshift-container-platform" title="Permanent link"></a></h1>
+<p>Your lab environment includes Red Hat’s OpenShift Container Platform (OCP).</p>
+<p>Access to your OCP resources can be gained via both the <code>oc</code> CLI utility and the OCP web console.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h2>
+<p>The project we are going to develop will contain 3 microservices accessing to a PostgreSQL database. 
+We will make the databases to run in a OpenShift dedicated namespace.</p>
+<h2 id="openshift-namespaces">OpenShift Namespaces<a class="headerlink" href="#openshift-namespaces" title="Permanent link"></a></h2>
+<ol>
+<li>In the terminal of your Red Hat OpenShift Dev Spaces , authenticate into OpenShift as a non
+    cluster admin user (USERNAME) using the <code>oc</code> utility.</li>
+</ol>
+<p>You can get the command for authenticating from the OpenShift Web
+Console.</p>
+<div class="highlight"><pre><span></span><code>$ oc login
+</code></pre></div>
+<p>There are 2 namespaces (OpenShift projects) in your OpenShift cluster:
+The namespace for hosting your Red Hat OpenShift Dev Spaces environment is USERNAME-devspaces
+where <code>USERNAME</code> correspond to your specific username. The namespace for
+hosting databases and microservices is USERNAME-heroes.</p>
+<p>change the USERNAME with your own.</p>
+<h2 id="operators">Operators<a class="headerlink" href="#operators" title="Permanent link"></a></h2>
+<p>Your lab environment comes pre-installed with an OpenShift operator.</p>
+<p><strong>PostgreSQL operator</strong></p>
+<p>The PostgreSQL operator allows to package, install, configure and manage
+a PostgreSQL database within an OpenShift cluster.</p>
+<p>Congratulations! Your lab environment is now ready to use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -928,7 +1088,7 @@ You are not viewing the latest version.
 <!-- Copyright and theme information, adapter to have the Red Hat footer -->
 <div class="md-copyright">
     <div class="md-copyright__highlight">
-        Sponsored by <a href="https://www.redhat.com"><img style="vertical-align: middle; height: 2.5em;" alt="Red Hat" src="//images/redhat_reversed.svg"/></a> <br/>
+        Sponsored by <a href="https://www.redhat.com"><img style="vertical-align: middle; height: 2.5em;" alt="Red Hat" src="../../images/redhat_reversed.svg"/></a> <br/>
         <a href="https://creativecommons.org/licenses/by/3.0/">CC by 3.0</a> |
         <a href="https://www.redhat.com/en/about/privacy-policy">Privacy Policy</a>
     </div>
@@ -953,10 +1113,10 @@ You are not viewing the latest version.
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.sections", "content.tabs.link", "content.code.annotate", "navigation.instant", "navigation.indexes", "navigation.tracking", "navigation.tabs.sticky", "content.code.select"], "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "content.tabs.link", "content.code.annotate", "navigation.instant", "navigation.indexes", "navigation.tracking", "navigation.tabs.sticky", "content.code.select"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
