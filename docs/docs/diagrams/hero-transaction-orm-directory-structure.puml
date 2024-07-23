@@ -1,0 +1,21 @@
+@startsalt
+{
+{
+T
+super-heroes
++  rest-hero
+++  src
++++  main
+++++  java
++++++  io
+++++++  quarkus
++++++++  workshop
+++++++++  superheroes
++++++++++  hero
+++++++++++  Hero.java
+++++++++++  HeroResource.java
+++++++++++  HeroService.java
+++  pom.xml
+}
+}
+@endsalt

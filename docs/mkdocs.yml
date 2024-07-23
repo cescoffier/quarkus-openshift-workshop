@@ -3,9 +3,28 @@ repo_url: https://github.com/cescoffier/quarkus-openshift-workshop
 edit_uri: edit/main/docs/
 docs_dir: docs
 
-
 nav:
-  - Overview: 'index.md'
+  - Welcome:
+    - Presenting the Workshop: 'overview.md'
+    - Software requirements:
+        - DevSpaces: 'requirements/dev-spaces.md'
+        - OpenShift Cluster: 'requirements/openshift-cluster.md'
+    - Preparing for the Workshop:
+        - Code scaffolding: 'preparation/code-scaffolding.md'
+        - Databases: 'preparation/databases.md'
+        - Warming up: 'preparation/warming-up.md'
+        - Ready?: 'preparation/ready.md'
+  - Creating a REST/HTTP microservices:
+    - Hero Microservice: 'hero-microservice.md'
+    - Transactions and ORM: 'transactions-orm.md'
+    - From Git to OpenShift: 'containers-cloud.md'
+    - Red Hat Trusted Application Pipelines: 'trusted-apps.md'
+    - Open API: 'open-api.md'
+  - One microservice is not microservices:
+    - Villain microservice: 'villain-microservice.md'
+    - Intelligent Fight microservice: 'fight-microservice.md'
+  - User Interface: 'web-application.md'
+  - Conclusion: 'conclusion-references.md'
 
 theme:
   name: material
@@ -40,6 +59,7 @@ theme:
     - navigation.indexes
     - navigation.tracking
     - navigation.tabs.sticky
+    - content.code.select
 
 extra_css:
   - extra.css
@@ -50,7 +70,7 @@ extra_javascript:
 
 markdown_extensions:
   - toc:
-      permalink: '#'
+      permalink: 
   - admonition
   - smarty
   - attr_list
@@ -69,6 +89,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.smartsymbols
   - pymdownx.betterem
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.arithmatex:
@@ -79,14 +100,14 @@ markdown_extensions:
 
 plugins:
   - search
-#  - build_plantuml:
-#      render: "server"
-#      server: "https://www.plantuml.com/plantuml"
-#      output_format: "svg"
-#      diagram_root: "docs"
-#      output_folder: "target"
-#      input_folder: "diagrams"
-#      input_extensions: "puml"
+  - build_plantuml:
+      render: "server"
+      server: "https://www.plantuml.com/plantuml"
+      output_format: "svg"
+      diagram_root: "docs"
+      output_folder: "target"
+      input_folder: "diagrams"
+      input_extensions: "puml"
 #      theme_enabled: true
 #      theme_folder: "include/themes"
 #      theme_light: "light.puml"
@@ -98,7 +119,8 @@ plugins:
 
 
 extra:
-  snippet_dir: snippets
+#  snippet_dir: snippets
+  snippet_dir: ../hero-service/
   manifest: manifest.webmanifest
   version:
     provider: mike
