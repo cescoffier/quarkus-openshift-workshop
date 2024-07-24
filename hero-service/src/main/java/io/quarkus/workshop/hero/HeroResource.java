@@ -1,3 +1,4 @@
+//<docHeroResource>
 package io.quarkus.workshop.hero;
 
 import io.quarkus.logging.Log;
@@ -90,4 +91,5 @@ public class HeroResource {
         return "Hello Hero Service";
     }
 }
+//<docHeroResource>
 

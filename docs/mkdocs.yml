@@ -4,16 +4,9 @@ edit_uri: edit/main/docs/
 docs_dir: docs
 
 nav:
-  - Welcome:
-    - Presenting the Workshop: 'overview.md'
-    - Software requirements:
-        - DevSpaces: 'requirements/dev-spaces.md'
-        - OpenShift Cluster: 'requirements/openshift-cluster.md'
-    - Preparing for the Workshop:
-        - Code scaffolding: 'preparation/code-scaffolding.md'
-        - Databases: 'preparation/databases.md'
-        - Warming up: 'preparation/warming-up.md'
-        - Ready?: 'preparation/ready.md'
+  - Presenting the Workshop: 'overview.md'
+  - Software requirements: 'requirements.md'
+  - Preparing for the Workshop: 'preparation.md'
   - Creating a REST/HTTP microservices:
     - Hero Microservice: 'hero-microservice.md'
     - Transactions and ORM: 'transactions-orm.md'
@@ -60,6 +53,7 @@ theme:
     - navigation.tracking
     - navigation.tabs.sticky
     - content.code.select
+    - content.code.copy
 
 extra_css:
   - extra.css
@@ -108,10 +102,6 @@ plugins:
       output_folder: "target"
       input_folder: "diagrams"
       input_extensions: "puml"
-#      theme_enabled: true
-#      theme_folder: "include/themes"
-#      theme_light: "light.puml"
-#      theme_dark: "dark.puml"
   - macros:
       verbose: true
       module_name: mkdocs-customizations/macros/docissimo
@@ -119,8 +109,7 @@ plugins:
 
 
 extra:
-#  snippet_dir: snippets
-  snippet_dir: ../hero-service/
+  snippet_dir: ../
   manifest: manifest.webmanifest
   version:
     provider: mike

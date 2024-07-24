@@ -1,3 +1,4 @@
+//<docEntityHero>
 package io.quarkus.workshop.hero;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
@@ -27,12 +28,27 @@ public class Hero extends PanacheEntity {
     @Column(columnDefinition = "TEXT")
     public String powers;
 
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", otherName='" + otherName + '\'' +
+                ", level=" + level +
+                ", picture='" + picture + '\'' +
+                ", powers='" + powers + '\'' +
+                '}';
+    }
+
+    //<docFindRandomHero>
     public static Hero findRandom() {
         Random random = new Random();
         var count = count();
         var index = random.nextInt((int) count);
         return findAll().page(index, 1).firstResult();
     }
+    //</docFindRandomHero>
 
 
 }
+//</docEntityHero>
