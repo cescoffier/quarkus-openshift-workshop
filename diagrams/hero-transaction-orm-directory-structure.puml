@@ -14,7 +14,6 @@ super-heroes
 +++++++++  hero
 ++++++++++  Hero.java
 ++++++++++  HeroResource.java
-++++++++++  HeroService.java
 ++  pom.xml
 }
 }
