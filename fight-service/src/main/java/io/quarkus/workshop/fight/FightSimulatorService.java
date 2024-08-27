@@ -47,7 +47,6 @@ public interface FightSimulatorService {
             
             <|assistant|>
             Output:
-            {response}
             """)
     @Retry(maxRetries = 2)
     @Timeout(value = 1, unit = ChronoUnit.MINUTES)
