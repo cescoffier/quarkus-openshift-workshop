@@ -99,7 +99,7 @@ plugins:
       server: "https://www.plantuml.com/plantuml"
       output_format: "svg"
       diagram_root: "docs"
-      output_folder: "target"
+      output_folder: "../site/diagrams"
       input_folder: "diagrams"
       input_extensions: "puml"
   - macros:
