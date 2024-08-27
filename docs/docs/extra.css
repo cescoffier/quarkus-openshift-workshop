@@ -8,3 +8,9 @@ img {
     max-width: 80% !important;
 }
 
+body[data-md-color-scheme="slate"] img {
+    border-radius: 1rem;
+    padding: 1rem;
+    background: rgba(226, 228, 233, 0.82);
+}
+

@@ -8,7 +8,7 @@ In this module we will create a Hero entity and persist/update/delete/retrieve i
 In this module we will add extra classes to the Hero API project.
 You will end-up with the following directory structure:
 
-![hero-transaction-orm-directory-structure](../../target/hero-transaction-orm-directory-structure.svg)
+![hero-transaction-orm-directory-structure](diagrams/hero-transaction-orm-directory-structure.svg)
 
 ## Installing Database dependencies
 
