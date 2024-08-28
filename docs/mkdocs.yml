@@ -6,7 +6,6 @@ docs_dir: docs
 nav:
   - Presenting the Workshop: 'overview.md'
   - Software requirements: 'requirements.md'
-  - Preparing for the Workshop: 'preparation.md'
   - Creating a REST/HTTP microservices:
     - Hero Microservice: 'hero-microservice.md'
     - Transactions and ORM: 'transactions-orm.md'

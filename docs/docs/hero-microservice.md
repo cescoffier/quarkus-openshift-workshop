@@ -1,4 +1,23 @@
-# Creating a REST/HTTP Microservice
+# Creating the Hero Microservice
+
+## Bootstrapping the Hero Rest Endpoint
+
+### Red Hat Developer Hub Software templates and Dev Spaces workspace.  
+
+To create a Dev Spaces (DS) workspace, you'll first need to create a Software Component using a Red Hat Developer Hub (RHDH) Software Template:
+
+1. Navigate to the Create Option: In the left-hand menu of the RHDH, click on the "Create" option.
+1. Select the Template: You'll see a list of available templates. Choose the quarkus-postgresql template from the list.
+1. Configure the Workspace: After selecting the template, you'll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.
+1. Proceed with the Setup: Once you've reviewed the configurations, proceed to create your DS workspace.
+
+Once created, the component is available in the Catalog. You can access to have an overview.
+
+![microservice-home-page](images/microservice-home-page.png)
+
+Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).
+
+## The Hero Service
 
 At the heart of the Super Hero application comes Heroes.
 We need to expose a REST API allowing CRUD operations on Super Heroes.
@@ -6,7 +25,7 @@ This microservice is, let’s say, a *classical* microservice.
 It uses HTTP to expose a REST API and internally store data into a database.
 This service will be used by the *fight* microservice.
 
-![rest-physical-architecture](diagrams/rest-physical-architecture.svg)
+![hero-architecture](images/hero-architecture.png)
 
 
 In the following sections, you learn:
@@ -20,14 +39,6 @@ In the following sections, you learn:
 But first, let’s describe our service. The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
 The REST API allows adding, removing, listing, and picking a random hero from the stored set.
 Nothing outstanding but a good first step to discover Quarkus.
-
-## Bootstrapping the Hero REST Endpoint
-
-First thing first, we need a project.
-That's what your are going to see in this section.
-
-Using RH developer hub UI create a quarkus application with default extensions.
-
 
 ## Directory Structure
 
@@ -76,35 +87,72 @@ It's a very simple REST endpoint, returning "hello" to requests on `/api/heroes`
 
 ## Running the Application
 
-Now we are ready to run our application.Use: `./mvnw quarkus:dev`:
+Now we are ready to run our application.
+You can use the `quarkus` or `maven` cli in a Terminal.
+Open a Terminal by clicking on the hamburger menu (three horizontal lines) located in the upper-left corner of the screen.
+Navigate to Terminal and select New Terminal from the dropdown menu.
+
+Then, run one of the following commands: 
+
+`./mvnw quarkus:dev`
+or 
+
+`quarkus dev`
 
 ```shell
-$ ./mvnw quarkus:dev
+$  quarkus dev
 [INFO] Scanning for projects...
-[INFO]
-[INFO] -------------< io.quarkus.workshop.super-heroes:rest-hero >-------------
-[INFO] Building rest-hero 1.0-SNAPSHOT
+[INFO] 
+[INFO] ------------------< com.redhat.workshop:hero-service >------------------
+[INFO] Building hero-service 1.0-SNAPSHOT
+[INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
-[INFO]
-[INFO] --- quarkus-maven-plugin:1.9.2.Final:dev (default-cli) @ rest-hero ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 2 resources
-[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- quarkus:3.13.2:dev (default-cli) @ hero-service ---
+[INFO] Invoking resources:3.3.1:resources (default-resources) @ hero-service
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Invoking quarkus:3.13.2:generate-code (default) @ hero-service
+[INFO] Invoking compiler:3.13.0:compile (default-compile) @ hero-service
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] Invoking resources:3.3.1:testResources (default-testResources) @ hero-service
+[INFO] skip non existing resourceDirectory /projects/hero/src/test/resources
+[INFO] Invoking quarkus:3.13.2:generate-code-tests (default) @ hero-service
+[INFO] Invoking compiler:3.13.0:testCompile (default-testCompile) @ hero-service
+[INFO] Nothing to compile - all classes are up to date.
+
+----------------------------
+--- Help improve Quarkus ---
+----------------------------
+* Learn more: https://quarkus.io/usage/
+* Do you agree to contribute anonymous build time data to the Quarkus community? (y/n and enter) 
+[info] [Quarkus build analytics] Didn't receive the user's answer after 10 seconds. The question will be asked again next time.
+
 Listening for transport dt_socket at address: 5005
-__  ____  __  _____   ___  __ ____  ______
---/ __ \/ / / / _ | / _ \/ //_/ / / / __/
--/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \
---\___\_\____/_/ |_/_/|_/_/|_|\____/___/
-2020-11-16 10:01:51,331 INFO  [io.quarkus] (Quarkus Main Thread) rest-hero 1.0-SNAPSHOT on JVM (powered by Quarkus 1.9.2.Final) started in 3.797s. Listening on: http://0.0.0.0:8080
-2020-11-16 10:01:51,343 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
-2020-11-16 10:01:51,343 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, resteasy]
+2024-08-28 11:39:46,023 INFO  [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] (build-21) Dev Services for default datasource (postgresql) started - container ID is b64fe935733f
+2024-08-28 11:39:46,026 INFO  [io.qua.hib.orm.dep.dev.HibernateOrmDevServicesProcessor] (build-34) Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2024-08-28 11:39:46,603 WARN  [io.qua.config] (Quarkus Main Thread) Unrecognized configuration key "quarkus.smallrye-openapi.store-schema-directory" was provided; it will be ignored; verify that the dependency extension for this configuration is set or that you did not make a typo
+2024-08-28 11:39:48,103 WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) SQL Warning Code: 0, SQLState: 00000
+2024-08-28 11:39:48,105 WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) table "myentity" does not exist, skipping
+2024-08-28 11:39:48,106 WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) SQL Warning Code: 0, SQLState: 00000
+2024-08-28 11:39:48,106 WARN  [org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) sequence "myentity_seq" does not exist, skipping
+2024-08-28 11:39:48,316 INFO  [io.quarkus] (Quarkus Main Thread) hero-service 1.0-SNAPSHOT on JVM (powered by Quarkus 3.13.2) started in 7.445s. Listening on: http://0.0.0.0:8080
+2024-08-28 11:39:48,317 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2024-08-28 11:39:48,317 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, hibernate-validator, jdbc-postgresql, micrometer, narayana-jta, rest, rest-jackson, smallrye-context-propagation, smallrye-health, vertx]
+
+--
+Tests paused
+Press [e] to edit command line args (currently ''), [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
 Then check that the endpoint returns `hello` as expected:
 
 ```shell
 $ curl $URL/api/heroes
-hello
+Hello from Quarkus REST
 ```
 
 Alternatively, you can open $URL/api/heroes in your browser.
@@ -134,15 +182,36 @@ All right, so far so good, but wouldn't it be better with a few tests, just in c
 
 In the generated `pom.xml` file, you can see 2 test dependencies:
 
-[//]: # (To do: insert the testing dep)
+```xml
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-junit5</artifactId>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <scope>test</scope>
+</dependency>
+
+```
 
 Quarkus supports Junit 4 and Junit 5 tests.
 In the generated project, we use Junit 5.
-Because of this, the version of the Surefire Maven Plugin must be set, as the default version does not support Junit 5:
-
-[//]: # (To do: insert the testing dep)
-
 We also set the `java.util.logging` system property to make sure tests will use the correct log manager.
+
+```xml
+<plugin>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>${surefire-plugin.version}</version>
+    <configuration>
+        <systemPropertyVariables>
+            <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+            <maven.home>${maven.home}</maven.home>
+        </systemPropertyVariables>
+    </configuration>
+</plugin>
+```
 
 The generated project contains a simple test in `HeroResourceTest.java`.
 
@@ -158,7 +227,7 @@ public class HeroResourceTest {
           .when().get("/api/heroes")
           .then()
              .statusCode(200)
-             .body(is("hello"));
+             .body(is("Hello from Quarkus REST"));
     }
 }
 ```
@@ -169,20 +238,29 @@ Notice that these tests use RestAssured, but feel free to use your favorite libr
 
 
 Execute it with `./mvnw test` or from your IDE.
-It fails! It's expected, you changed the output of `HeroResource.hello()` earlier.
-Adjust the test body condition accordingly.
+
+### Continuous testing
+
+Quarkus supports continuous testing, where tests run immediately after code changes have been saved. 
+This allows you to get instant feedback on your code changes. 
+Quarkus detects which tests cover which code, and uses this information to only run the relevant tests when code is changed.
+When you start Quarkus in dev mode, down the bottom of the screen you should see the following:
+
+```shell
+Tests paused, press [r] to resume, [h] for more options>
+```
+Press r and the tests will start running. You should see the status change down the bottom of the screen as they are running, and it should finish with:
+
+```shell
+All 1 test is passing (0 skipped), 1 test was run in 8053ms. Tests completed at 12:11:25.
+Press [e] to edit command line args (currently ''), [r] to re-run, [o] Toggle test output, [:] for the terminal, [h] for more options>
+```
 
 ## Packaging and Running the Application
 
-The application is packaged using `./mvnw package`.
+The application is packaged using `./mvnw package` .
 It produces 2 jar files in `/target`:
 
 * `rest-hero-1.0-SNAPSHOT.jar` : containing just the classes and resources of the projects, it's the regular artifact produced by the Maven build;
-* `rest-hero-1.0-SNAPSHOT-runner.jar` : being an executable jar.
-  Be aware that it's not an über-jar as the dependencies are copied into the `target/lib` directory.
-
-You can run the application using: `java -jar target/rest-hero-1.0-SNAPSHOT-runner.jar`.
-
-**NOTE**
-Before running the application, don't forget to stop the hot reload mode (hit CTRL+C), or you will have a port conflict.
-
+* `quarkus-app/quarkus-run.jar` : being an executable jar.
+  Be aware that it's not an über-jar as the dependencies are copied into the `target/quarkus-app/lib` directory.
