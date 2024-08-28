@@ -66,7 +66,7 @@ spec:
                 secretKeyRef:
                   name: llm-config
                   key: LLM_ENDPOINT
-            - name: LLM_MODEL_TYPE
+            - name: LLM_MODEL
               valueFrom:
                 secretKeyRef:
                   name: llm-config
