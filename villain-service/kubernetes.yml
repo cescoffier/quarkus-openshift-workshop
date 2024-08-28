@@ -32,7 +32,7 @@ metadata:
     prometheus.io/path: /q/metrics
     prometheus.io/port: "8080"
     prometheus.io/scheme: http
-    app.openshift.io/connects-to: villain-database
+    app.openshift.io/connects-to: '[{"apiVersion":"apps/v1","kind":"Deployment","name":"villain-database"}]'
   labels:
     app.kubernetes.io/name: villain-service
     app.kubernetes.io/version: 1.0.0-SNAPSHOT

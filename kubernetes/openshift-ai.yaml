@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    app: llm
+  name: llm-config
+data:
+  LLM_ENDPOINT: aHR0cHM6Ly9ncmFuaXRlLTdiLWluc3RydWN0LWxsbS5hcHBzLmFpLnNhbmRib3gyMDA3Lm9wZW50bGMuY29tL3Yx
+  MODEL_NAME: Z3Jhbml0ZS03Yi1pbnN0cnVjdA==
+  OPENAI_API_KEY: bm9uZQ==
+type: Opaque

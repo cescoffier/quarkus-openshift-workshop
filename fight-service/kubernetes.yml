@@ -61,6 +61,16 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: metadata.namespace
+            - name: LLM_API_ENDPOINT
+              valueFrom:
+                secretKeyRef:
+                  name: llm-config
+                  key: LLM_ENDPOINT
+            - name: LLM_MODEL
+              valueFrom:
+                secretKeyRef:
+                  name: llm-config
+                  key: MODEL_NAME
           image: ghcr.io/cescoffier/quarkus-openshift-workshop-fight-service:main
           imagePullPolicy: Always
           livenessProbe:
