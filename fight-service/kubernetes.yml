@@ -71,6 +71,11 @@ spec:
                 secretKeyRef:
                   name: llm-config
                   key: MODEL_NAME
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: llm-config
+                  key: OPENAI_API_KEY
           image: ghcr.io/cescoffier/quarkus-openshift-workshop-fight-service:main
           imagePullPolicy: Always
           livenessProbe:
