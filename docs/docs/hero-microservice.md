@@ -4,14 +4,15 @@
 
 ### Red Hat Developer Hub Software templates and Dev Spaces workspace.  
 
-To create a Dev Spaces (DS) workspace, you'll first need to create a Software Component using a Red Hat Developer Hub (RHDH) Software Template:
+To create a Dev Spaces (DS) workspace, you'll first need to create a _Software Component_ using a _Red Hat Developer Hub (RHDH) Software Template_:
 
-1. Navigate to the Create Option: In the left-hand menu of the RHDH, click on the "Create" option.
-1. Select the Template: You'll see a list of available templates. Choose the quarkus-postgresql template from the list.
-1. Configure the Workspace: After selecting the template, you'll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.
-1. Proceed with the Setup: Once you've reviewed the configurations, proceed to create your DS workspace.
+1. Navigate to the _Create Option_: in the left-hand menu of the RHDH, click on the "Create" option.
+1. Select the template: you'll see a list of available templates. Choose the `quarkus-postgresql` template from the list.
+1. Configure the workspace: after selecting the template, you'll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.
+1. Proceed with the setup: Once you've reviewed the configurations, proceed to create your DS workspace.
 
-Once created, the component is available in the Catalog. You can access to have an overview.
+Once created, the component is available in the _catalog_.
+You can access it to have an overview:
 
 ![microservice-home-page](images/microservice-home-page.png)
 
@@ -19,34 +20,37 @@ Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Cod
 
 ## The Hero Service
 
-At the heart of the Super Hero application comes Heroes.
-We need to expose a REST API allowing CRUD operations on Super Heroes.
+At the heart of the Super Hero application come _heroes_.
+
+We need to expose a REST API allowing CRUD operations on _super heroes_.
 This microservice is, let’s say, a *classical* microservice.
-It uses HTTP to expose a REST API and internally store data into a database.
+It uses HTTP to expose a REST API, and it internally stores data into a database.
+
 This service will be used by the *fight* microservice.
 
 ![hero-architecture](target/rest-physical-architecture.svg)
 
+In the following sections, you will learn:
 
-In the following sections, you learn:
--   how to create a new Quarkus application using Red Hat DeveloperHub.
--   how to implement REST API using JAX-RS.
--   how to compose your application using CDI beans.
--   how to access your database using Hibernate with Panache.
--   how to use transactions.
--   how to enable OpenAPI and Swagger-UI.
+* how to create a new _Quarkus_ application using _Red Hat Developer Hub_, and
+* how to implement REST API using JAX-RS, and
+* how to compose your application using CDI beans, and
+* how to access your database using Hibernate with Panache, and
+* how to use transactions, and
+* how to enable OpenAPI and Swagger-UI.
 
-But first, let’s describe our service. The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
+First, let’s describe our service. The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
 The REST API allows adding, removing, listing, and picking a random hero from the stored set.
+
 Nothing outstanding but a good first step to discover Quarkus.
 
 ## Directory Structure
 
-Once you bootstrap the project, you get the following directory structure with a few Java classes and other artifacts :
+Once you bootstrap the project, you get the following directory structure with a few Java classes and other artifacts:
 
 ![hero-directory-structure](target/hero-directory-structure.svg)
 
-It generates the following in the hero-service folder:
+It generates the following in the `hero-service` folder:
 
 * the Maven structure with a `pom.xml`
 * an `io.quarkus.workshop.superheroes.hero.HeroResource` resource exposed on `/api/heroes`
@@ -56,8 +60,8 @@ It generates the following in the hero-service folder:
 * the `application.properties` configuration file
 
 Once generated, look at the `pom.xml`.
-You will find the import of the Quarkus BOM, allowing you to omit the version on the different Quarkus dependencies.
-In addition, you can see the `quarkus-maven-plugin` responsible of the packaging of the application and also providing the development mode.
+You will find the here import of the Quarkus BOM (_bill of materials_), allowing you to omit the version on the different Quarkus dependencies.
+In addition, you can see the `quarkus-maven-plugin`, responsible for the packaging of the application and also providing the development mode support.
 
 [//]: # (To do: insert pom relevant fragments here )
 
@@ -83,18 +87,20 @@ public class HeroResource {
 }
 ```
 
-It's a very simple REST endpoint, returning "hello" to requests on `/api/heroes`.
+It's a very simple REST endpoint, returning "hello" to HTTP GET requests to `/api/heroes`.
 
 ## Running the Application
 
-Now we are ready to run our application.
-You can use the `quarkus` or `maven` cli in a Terminal.
+We are now ready to run our application.
+
+You can use either the Quarkus or Apache Maven command-line interface in a Terminal.
 Open a Terminal by clicking on the hamburger menu (three horizontal lines) located in the upper-left corner of the screen.
 Navigate to Terminal and select New Terminal from the dropdown menu.
 
 Then, run one of the following commands: 
 
 `./mvnw quarkus:dev`
+
 or 
 
 `quarkus dev`
@@ -155,13 +161,16 @@ $ curl $URL/api/heroes
 Hello from Quarkus REST
 ```
 
-Alternatively, you can open $URL/api/heroes in your browser.
+where `$URL` is the running service endpoint (host + port number).
+
+Alternatively, you can open `$URL/api/heroes` in your browser.
 
 ## Development Mode
 
 `quarkus:dev` runs Quarkus in development mode.
 This enables hot deployment with background compilation, which means that when you modify your Java files and/or your resource files and invoke a REST endpoint (i.e. cUrl command or refresh your browser), these changes will automatically take effect.
-This works too for resource files like the configuration property and HTML files.
+
+This works as well for resource files like the configuration property and HTML files.
 Refreshing the browser triggers a scan of the workspace, and if any changes are detected, the Java files are recompiled and the application is redeployed;
 your request is then serviced by the redeployed application.
 If there are any issues with compilation or deployment an error page will let you know.
@@ -175,10 +184,9 @@ Open your favorite IDE and import the project.
 To check that the hot reload is working, update the method `HeroResource.hello()` by returning the String "hello hero".
 Now, execute the cUrl command again, the output has changed without you to having to stop and restart Quarkus:
 
-
 ## Testing the Application
 
-All right, so far so good, but wouldn't it be better with a few tests, just in case.
+So far so good, but wouldn't it be better with a few tests, just in case?
 
 In the generated `pom.xml` file, you can see 2 test dependencies:
 
@@ -196,8 +204,9 @@ In the generated `pom.xml` file, you can see 2 test dependencies:
 
 ```
 
-Quarkus supports Junit 4 and Junit 5 tests.
-In the generated project, we use Junit 5.
+Quarkus supports JUnit 4 and JUnit 5 tests.
+In the generated project, we use JUnit 5.
+
 We also set the `java.util.logging` system property to make sure tests will use the correct log manager.
 
 ```xml
@@ -234,8 +243,8 @@ public class HeroResourceTest {
 
 By using the `QuarkusTest` runner, the `HeroResourceTest` class instructs JUnit to start the application before the tests.
 Then, the `testHelloEndpoint` method checks the HTTP response status code and content.
-Notice that these tests use RestAssured, but feel free to use your favorite library.
 
+Notice that these tests use RestAssured, but feel free to use your favorite library.
 
 Execute it with `./mvnw test` or from your IDE.
 
@@ -243,6 +252,7 @@ Execute it with `./mvnw test` or from your IDE.
 
 Quarkus supports continuous testing, where tests run immediately after code changes have been saved. 
 This allows you to get instant feedback on your code changes. 
+
 Quarkus detects which tests cover which code, and uses this information to only run the relevant tests when code is changed.
 When you start Quarkus in dev mode, down the bottom of the screen you should see the following:
 
@@ -261,6 +271,6 @@ Press [e] to edit command line args (currently ''), [r] to re-run, [o] Toggle te
 The application is packaged using `./mvnw package` .
 It produces 2 jar files in `/target`:
 
-* `rest-hero-1.0-SNAPSHOT.jar` : containing just the classes and resources of the projects, it's the regular artifact produced by the Maven build;
-* `quarkus-app/quarkus-run.jar` : being an executable jar.
+* `rest-hero-1.0-SNAPSHOT.jar`: containing just the classes and resources of the projects, it's the regular artifact produced by the Maven build;
+* `quarkus-app/quarkus-run.jar`: being an executable jar.
   Be aware that it's not an über-jar as the dependencies are copied into the `target/quarkus-app/lib` directory.
