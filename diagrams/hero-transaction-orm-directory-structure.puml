@@ -2,19 +2,39 @@
 {
 {
 T
-super-heroes
-+  rest-hero
+hero
 ++  src
 +++  main
+++++  docker
++++++  Dockerfile.jvm
++++++  Dockerfile.legacy-jar
++++++  Dockerfile.native
++++++  Dockerfile.native-micro
 ++++  java
 +++++  io
 ++++++  quarkus
 +++++++  workshop
-++++++++  superheroes
-+++++++++  hero
-++++++++++  Hero.java
-++++++++++  HeroResource.java
-++  pom.xml
+++++++++  hero
++++++++++  HeroResource.java
++++++++++  Hero.java
+++++  resources
++++++  application.properties
++++++  import.sql
++++  test
+++++  java
++++++  io
+++++++  quarkus
++++++++  workshop
+++++++++  hero
++++++++++  HeroResourceIT.java
++++++++++  HeroResourceTest.java
+++ Dockerfile
+++ README.md
+++ catalog-info.yaml
+++ mvnw
+++ mvnw.cmd
+++ openapi.yaml
+++ pom.xml
 }
 }
 @endsalt
