@@ -892,37 +892,40 @@ You are not viewing the latest version.
 <h1 id="creating-the-hero-microservice">Creating the Hero Microservice<a class="headerlink" href="#creating-the-hero-microservice" title="Permanent link"></a></h1>
 <h2 id="bootstrapping-the-hero-rest-endpoint">Bootstrapping the Hero Rest Endpoint<a class="headerlink" href="#bootstrapping-the-hero-rest-endpoint" title="Permanent link"></a></h2>
 <h3 id="red-hat-developer-hub-software-templates-and-dev-spaces-workspace">Red Hat Developer Hub Software templates and Dev Spaces workspace.<a class="headerlink" href="#red-hat-developer-hub-software-templates-and-dev-spaces-workspace" title="Permanent link"></a></h3>
-<p>To create a Dev Spaces (DS) workspace, you&rsquo;ll first need to create a Software Component using a Red Hat Developer Hub (RHDH) Software Template:</p>
+<p>To create a Dev Spaces (DS) workspace, you&rsquo;ll first need to create a <em>Software Component</em> using a <em>Red Hat Developer Hub (RHDH) Software Template</em>:</p>
 <ol>
-<li>Navigate to the Create Option: In the left-hand menu of the RHDH, click on the &ldquo;Create&rdquo; option.</li>
-<li>Select the Template: You&rsquo;ll see a list of available templates. Choose the quarkus-postgresql template from the list.</li>
-<li>Configure the Workspace: After selecting the template, you&rsquo;ll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.</li>
-<li>Proceed with the Setup: Once you&rsquo;ve reviewed the configurations, proceed to create your DS workspace.</li>
+<li>Navigate to the <em>Create Option</em>: in the left-hand menu of the RHDH, click on the &ldquo;Create&rdquo; option.</li>
+<li>Select the template: you&rsquo;ll see a list of available templates. Choose the <code>quarkus-postgresql</code> template from the list.</li>
+<li>Configure the workspace: after selecting the template, you&rsquo;ll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.</li>
+<li>Proceed with the setup: Once you&rsquo;ve reviewed the configurations, proceed to create your DS workspace.</li>
 </ol>
-<p>Once created, the component is available in the Catalog. You can access to have an overview.</p>
+<p>Once created, the component is available in the <em>catalog</em>.
+You can access it to have an overview:</p>
 <p><img alt="microservice-home-page" src="../images/microservice-home-page.png" /></p>
 <p>Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).</p>
 <h2 id="the-hero-service">The Hero Service<a class="headerlink" href="#the-hero-service" title="Permanent link"></a></h2>
-<p>At the heart of the Super Hero application comes Heroes.
-We need to expose a REST API allowing CRUD operations on Super Heroes.
+<p>At the heart of the Super Hero application come <em>heroes</em>.</p>
+<p>We need to expose a REST API allowing CRUD operations on <em>super heroes</em>.
 This microservice is, let’s say, a <em>classical</em> microservice.
-It uses HTTP to expose a REST API and internally store data into a database.
-This service will be used by the <em>fight</em> microservice.</p>
+It uses HTTP to expose a REST API, and it internally stores data into a database.</p>
+<p>This service will be used by the <em>fight</em> microservice.</p>
 <p><img alt="hero-architecture" src="../target/rest-physical-architecture.svg" /></p>
-<p>In the following sections, you learn:
--   how to create a new Quarkus application using Red Hat DeveloperHub.
--   how to implement REST API using JAX-RS.
--   how to compose your application using CDI beans.
--   how to access your database using Hibernate with Panache.
--   how to use transactions.
--   how to enable OpenAPI and Swagger-UI.</p>
-<p>But first, let’s describe our service. The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
-The REST API allows adding, removing, listing, and picking a random hero from the stored set.
-Nothing outstanding but a good first step to discover Quarkus.</p>
+<p>In the following sections, you will learn:</p>
+<ul>
+<li>how to create a new <em>Quarkus</em> application using <em>Red Hat Developer Hub</em>, and</li>
+<li>how to implement REST API using JAX-RS, and</li>
+<li>how to compose your application using CDI beans, and</li>
+<li>how to access your database using Hibernate with Panache, and</li>
+<li>how to use transactions, and</li>
+<li>how to enable OpenAPI and Swagger-UI.</li>
+</ul>
+<p>First, let’s describe our service. The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
+The REST API allows adding, removing, listing, and picking a random hero from the stored set.</p>
+<p>Nothing outstanding but a good first step to discover Quarkus.</p>
 <h2 id="directory-structure">Directory Structure<a class="headerlink" href="#directory-structure" title="Permanent link"></a></h2>
-<p>Once you bootstrap the project, you get the following directory structure with a few Java classes and other artifacts :</p>
+<p>Once you bootstrap the project, you get the following directory structure with a few Java classes and other artifacts:</p>
 <p><img alt="hero-directory-structure" src="../target/hero-directory-structure.svg" /></p>
-<p>It generates the following in the hero-service folder:</p>
+<p>It generates the following in the <code>hero-service</code> folder:</p>
 <ul>
 <li>the Maven structure with a <code>pom.xml</code></li>
 <li>an <code>io.quarkus.workshop.superheroes.hero.HeroResource</code> resource exposed on <code>/api/heroes</code></li>
@@ -932,8 +935,8 @@ Nothing outstanding but a good first step to discover Quarkus.</p>
 <li>the <code>application.properties</code> configuration file</li>
 </ul>
 <p>Once generated, look at the <code>pom.xml</code>.
-You will find the import of the Quarkus BOM, allowing you to omit the version on the different Quarkus dependencies.
-In addition, you can see the <code>quarkus-maven-plugin</code> responsible of the packaging of the application and also providing the development mode.</p>
+You will find the here import of the Quarkus BOM (<em>bill of materials</em>), allowing you to omit the version on the different Quarkus dependencies.
+In addition, you can see the <code>quarkus-maven-plugin</code>, responsible for the packaging of the application and also providing the development mode support.</p>
 <p>If we focus on the dependencies section, you can see the extension allowing the development of REST applications:</p>
 <h2 id="the-jax-rs-resource">The JAX-RS Resource<a class="headerlink" href="#the-jax-rs-resource" title="Permanent link"></a></h2>
 <p>During the project creation, the <code>HeroResource.java</code> file has been created with the following content:</p>
@@ -949,15 +952,15 @@ In addition, you can see the <code>quarkus-maven-plugin</code> responsible of th
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
 </code></pre></div>
-<p>It&rsquo;s a very simple REST endpoint, returning &ldquo;hello&rdquo; to requests on <code>/api/heroes</code>.</p>
+<p>It&rsquo;s a very simple REST endpoint, returning &ldquo;hello&rdquo; to HTTP GET requests to <code>/api/heroes</code>.</p>
 <h2 id="running-the-application">Running the Application<a class="headerlink" href="#running-the-application" title="Permanent link"></a></h2>
-<p>Now we are ready to run our application.
-You can use the <code>quarkus</code> or <code>maven</code> cli in a Terminal.
+<p>We are now ready to run our application.</p>
+<p>You can use either the Quarkus or Apache Maven command-line interface in a Terminal.
 Open a Terminal by clicking on the hamburger menu (three horizontal lines) located in the upper-left corner of the screen.
 Navigate to Terminal and select New Terminal from the dropdown menu.</p>
 <p>Then, run one of the following commands: </p>
-<p><code>./mvnw quarkus:dev</code>
-or </p>
+<p><code>./mvnw quarkus:dev</code></p>
+<p>or </p>
 <p><code>quarkus dev</code></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w">  </span>quarkus<span class="w"> </span>dev
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Scanning<span class="w"> </span><span class="k">for</span><span class="w"> </span>projects...
@@ -1010,11 +1013,12 @@ or </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>curl<span class="w"> </span><span class="nv">$URL</span>/api/heroes
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Hello<span class="w"> </span>from<span class="w"> </span>Quarkus<span class="w"> </span>REST
 </code></pre></div>
-<p>Alternatively, you can open $URL/api/heroes in your browser.</p>
+<p>where <code>$URL</code> is the running service endpoint (host + port number).</p>
+<p>Alternatively, you can open <code>$URL/api/heroes</code> in your browser.</p>
 <h2 id="development-mode">Development Mode<a class="headerlink" href="#development-mode" title="Permanent link"></a></h2>
 <p><code>quarkus:dev</code> runs Quarkus in development mode.
-This enables hot deployment with background compilation, which means that when you modify your Java files and/or your resource files and invoke a REST endpoint (i.e. cUrl command or refresh your browser), these changes will automatically take effect.
-This works too for resource files like the configuration property and HTML files.
+This enables hot deployment with background compilation, which means that when you modify your Java files and/or your resource files and invoke a REST endpoint (i.e. cUrl command or refresh your browser), these changes will automatically take effect.</p>
+<p>This works as well for resource files like the configuration property and HTML files.
 Refreshing the browser triggers a scan of the workspace, and if any changes are detected, the Java files are recompiled and the application is redeployed;
 your request is then serviced by the redeployed application.
 If there are any issues with compilation or deployment an error page will let you know.</p>
@@ -1026,7 +1030,7 @@ Open your favorite IDE and import the project.
 To check that the hot reload is working, update the method <code>HeroResource.hello()</code> by returning the String &ldquo;hello hero&rdquo;.
 Now, execute the cUrl command again, the output has changed without you to having to stop and restart Quarkus:</p>
 <h2 id="testing-the-application">Testing the Application<a class="headerlink" href="#testing-the-application" title="Permanent link"></a></h2>
-<p>All right, so far so good, but wouldn&rsquo;t it be better with a few tests, just in case.</p>
+<p>So far so good, but wouldn&rsquo;t it be better with a few tests, just in case?</p>
 <p>In the generated <code>pom.xml</code> file, you can see 2 test dependencies:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">&lt;dependency&gt;</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&lt;groupId&gt;</span>io.quarkus<span class="nt">&lt;/groupId&gt;</span>
@@ -1039,9 +1043,9 @@ Now, execute the cUrl command again, the output has changed without you to havin
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div>
-<p>Quarkus supports Junit 4 and Junit 5 tests.
-In the generated project, we use Junit 5.
-We also set the <code>java.util.logging</code> system property to make sure tests will use the correct log manager.</p>
+<p>Quarkus supports JUnit 4 and JUnit 5 tests.
+In the generated project, we use JUnit 5.</p>
+<p>We also set the <code>java.util.logging</code> system property to make sure tests will use the correct log manager.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&lt;plugin&gt;</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">&lt;artifactId&gt;</span>maven-surefire-plugin<span class="nt">&lt;/artifactId&gt;</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&lt;version&gt;</span>${surefire-plugin.version}<span class="nt">&lt;/version&gt;</span>
@@ -1070,13 +1074,13 @@ We also set the <code>java.util.logging</code> system property to make sure test
 <a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="p">}</span>
 </code></pre></div>
 <p>By using the <code>QuarkusTest</code> runner, the <code>HeroResourceTest</code> class instructs JUnit to start the application before the tests.
-Then, the <code>testHelloEndpoint</code> method checks the HTTP response status code and content.
-Notice that these tests use RestAssured, but feel free to use your favorite library.</p>
+Then, the <code>testHelloEndpoint</code> method checks the HTTP response status code and content.</p>
+<p>Notice that these tests use RestAssured, but feel free to use your favorite library.</p>
 <p>Execute it with <code>./mvnw test</code> or from your IDE.</p>
 <h3 id="continuous-testing">Continuous testing<a class="headerlink" href="#continuous-testing" title="Permanent link"></a></h3>
 <p>Quarkus supports continuous testing, where tests run immediately after code changes have been saved. 
-This allows you to get instant feedback on your code changes. 
-Quarkus detects which tests cover which code, and uses this information to only run the relevant tests when code is changed.
+This allows you to get instant feedback on your code changes. </p>
+<p>Quarkus detects which tests cover which code, and uses this information to only run the relevant tests when code is changed.
 When you start Quarkus in dev mode, down the bottom of the screen you should see the following:</p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Tests<span class="w"> </span>paused,<span class="w"> </span>press<span class="w"> </span><span class="o">[</span>r<span class="o">]</span><span class="w"> </span>to<span class="w"> </span>resume,<span class="w"> </span><span class="o">[</span>h<span class="o">]</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>more<span class="w"> </span>options&gt;
 </code></pre></div>
@@ -1088,8 +1092,8 @@ Press r and the tests will start running. You should see the status change down 
 <p>The application is packaged using <code>./mvnw package</code> .
 It produces 2 jar files in <code>/target</code>:</p>
 <ul>
-<li><code>rest-hero-1.0-SNAPSHOT.jar</code> : containing just the classes and resources of the projects, it&rsquo;s the regular artifact produced by the Maven build;</li>
-<li><code>quarkus-app/quarkus-run.jar</code> : being an executable jar.
+<li><code>rest-hero-1.0-SNAPSHOT.jar</code>: containing just the classes and resources of the projects, it&rsquo;s the regular artifact produced by the Maven build;</li>
+<li><code>quarkus-app/quarkus-run.jar</code>: being an executable jar.
   Be aware that it&rsquo;s not an über-jar as the dependencies are copied into the <code>target/quarkus-app/lib</code> directory.</li>
 </ul>
 

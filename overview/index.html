@@ -646,31 +646,33 @@ You are not viewing the latest version.
 <h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h1>
 <p>This workshop illustrates how to build intelligent applications using:</p>
 <ul>
-<li><a href="https://www.openshift.com/">OpenShift</a></li>
-<li><a href="https://www.openshift.com/ai-ml">OpenShift AI/ML Services</a></li>
+<li><a href="https://www.openshift.com/">Red Hat OpenShift</a></li>
+<li><a href="https://www.openshift.com/ai-ml">Red Hat OpenShift AI/ML Services</a></li>
 <li><a href="https://quarkus.io/">Quarkus</a></li>
 <li><a href="https://developers.redhat.com/rhdh/overview">Red Hat Developer Hub</a></li>
 <li><a href="https://www.redhat.com/en/products/trusted-application-pipelines">Red Hat Trusted Application Pipelines</a></li>
 </ul>
-<p>This workshop covers both the development of such applications and well as its deployment on OpenShift and integration with OpenShift AI/ML Services.
-It proposes a <em>platform engineering</em> approach to the development of intelligent applications.
+<p>This workshop covers both the development and deployment of such applications on OpenShift as well as the integration with OpenShift AI/ML Services.</p>
+<p>It proposes a <em>platform engineering</em> approach to the development of intelligent applications.
 Thus, the code is developed in <em>CodeSpaces</em> and the deployment is done using <em>Trusted Application Pipelines</em>.
 The different application components run in OpenShift.</p>
 <h1 id="the-application">The application<a class="headerlink" href="#the-application" title="Permanent link"></a></h1>
-<p>In this workshop you will develop an application that allows super-heroes to fight against villains. 
-Being a workshop about microservices, you will be developing several microservices communicating either synchronously via REST :</p>
+<p>In this workshop you will develop an application that allows super-heroes to fight against villains. </p>
+<p><img alt="The fight user interface, showing a sample fight" src="../images/fight-ui.png" /></p>
+<p>Being a workshop about microservices, you will be developing several microservices communicating synchronously via REST API endpoints:</p>
 <ul>
 <li><code>frontend</code>: a web application that allows users to pick up a random super-hero, a random villain and makes them fight. The Super Hero UI invokes the Hero, Villain and Fight REST endpoints.</li>
 <li><code>hero-service</code>: a Quarkus microservice that provides CRUD operations on Heroes which are stored in a PostgresSQL database.</li>
 <li><code>villain-service</code>: the counterpart of the hero service, for villains.</li>
-<li><code>fight-service</code>: a microservice that simulates a fight between a hero and a villain. The simulation is done using a <em>Large Language Model</em> (LLM) that is deployed on OpenShift AI/ML Services.</li>
+<li><code>fight-service</code>: a microservice that simulates a fight between a hero and a villain. The simulation is done using a <em>Large Language Model</em> (LLM) that is deployed on OpenShift AI/ML Services. The result also includes a short narration of the fight:</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Hero and Villain services</p>
-<p>The <code>hero-service</code> and <code>villain-service</code> are very similar, but both use different <em>development model</em>. While both are Quarkus applications, the hero service uses the idiomatic Quarkus development model, while the villain service uses the Spring compatibility support from Quarkus.</p>
-</div>
+<p><img alt="The fight user interface, showing a sample fight result" src="../images/fight-result.png" /></p>
 <h1 id="the-architecture">The architecture<a class="headerlink" href="#the-architecture" title="Permanent link"></a></h1>
 <p><img alt="the architecture" src="../images/architecture.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Hero and Villain services</p>
+<p>The <code>hero-service</code> and <code>villain-service</code> are very similar, yet they use different <em>development models</em>. While both are Quarkus applications, the hero service uses the idiomatic Quarkus development model, while the villain service uses the Spring compatibility support from Quarkus.</p>
+</div>
 
 
 
