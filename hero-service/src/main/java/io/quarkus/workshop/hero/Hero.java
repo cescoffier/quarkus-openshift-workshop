@@ -48,7 +48,6 @@ public class Hero extends PanacheEntity {
         return findAll().page(index, 1).firstResult();
     }
     //</docFindRandomHero>
-
-
 }
+
 //</docEntityHero>

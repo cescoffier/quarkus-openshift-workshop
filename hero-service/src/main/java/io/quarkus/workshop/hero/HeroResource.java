@@ -23,6 +23,13 @@ import java.util.List;
 public class HeroResource {
 
     @GET
+    @Path("/hello")
+    public String hello() {
+        return "Hello from Quarkus REST";
+    }
+
+    //<docHeroCrudContent>
+    @GET
     @Path("/random")
     public RestResponse<Hero> getRandomHero() {
         var hero = Hero.findRandom();
@@ -83,12 +90,7 @@ public class HeroResource {
         }
         return RestResponse.noContent();
     }
-
-    @GET
-    @Path("/hello")
-    public String hello() {
-        return "Hello Hero Service";
-    }
+    //</docHeroCrudContent>
 }
 //</docHeroResource>
 

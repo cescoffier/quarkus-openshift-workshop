@@ -1,3 +1,4 @@
+//<docHeroResourceTest>
 package io.quarkus.workshop.hero;
 
 import io.quarkus.test.junit.QuarkusTest;
@@ -30,6 +31,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class HeroResourceTest {
 
+    @Test
+    public void testHelloEndpoint() {
+        given()
+                .when()
+                .get("/api/heroes/hello")
+                .then()
+                .statusCode(200)
+                .body(is("Hello from Quarkus REST"));
+    }
+
+    //<docCrudTests>
     private static final String JSON = "application/json;charset=UTF-8";
 
     private static final String DEFAULT_NAME = "Super Baguette";
@@ -46,16 +58,6 @@ class HeroResourceTest {
     private static final int NB_HEROES = 500;
     private static String heroId;
 
-
-    @Test
-    public void testHelloEndpoint() {
-        given()
-                .when()
-                .get("/api/heroes/hello")
-                .then()
-                .statusCode(200)
-                .body(is("Hello Hero Service"));
-    }
 
     @Test
     void shouldNotGetUnknownHero() {
@@ -216,4 +218,6 @@ class HeroResourceTest {
         };
     }
 
+    //</docCrudTests>
 }
+//</docHeroResourceTest>
