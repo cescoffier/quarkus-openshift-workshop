@@ -8,11 +8,9 @@ In this module we will create a Hero entity and persist/update/delete/retrieve i
 In this module we will add extra classes to the Hero API project.
 You will end-up with the following directory structure:
 
-![hero-transaction-orm-directory-structure](diagrams/hero-transaction-orm-directory-structure.svg)
+![hero-transaction-orm-directory-structure](target/hero-transaction-orm-directory-structure.svg)
 
-## Installing Database dependencies
-
-[//]: # (Review this part depending on the backstage Quarkus plugin: )
+## Database dependencies
 
 This microservice:
 
@@ -27,16 +25,17 @@ It makes complex mappings possible, but it does not make simple and common mappi
 
 Because JPA and Bean Validation work well together, we will use Bean Validation to constrain our business model.
 
-To add the required dependencies, just run the following command:
-
-```shell
-
-$ ./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache,hibernate-validator,resteasy-jsonb"
-```
-This will add the following dependencies in the `pom.xml` file:
+All the needed dependencies to access the database are already in the pom.xml file. Check that you have the following:
 
 ```java linenums="1"
 {{ insert('hero-service/pom.xml', 'docDbDependency') }}
+```
+
+If you need to add them, just run the following command:
+
+```shell
+
+$ ./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache,hibernate-validator,rest-jackson"
 ```
 
 From now on, you can choose to either edit your pom directly or use the `quarkus:add-extension` command.
@@ -44,7 +43,7 @@ From now on, you can choose to either edit your pom directly or use the `quarkus
 ## Hero Entity
 
 To define a Panache entity, simply extend `PanacheEntity`, annotate it with `@Entity` and add your columns as public fields (no need to have getters and setters).
-The `Hero` entity should look like this:
+Create a new java class under `src/main/java/io/quarkus/workshop/hero` and copy the following content:
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docEntityHero', 'docFindRandomHero') }}
@@ -90,6 +89,9 @@ You would need to add the following import statement if not done automatically b
 
 ## Configuring Hibernate
 
+As Quarkus supports the automatic provisioning of unconfigured services in development and test mode, we don't need at the moment to configure anything regarding the database access. 
+Quarkus will automatically start a Postgresql service and wire up your application to use this service. 
+
 Quarkus development mode is really useful for applications that mix front end or services and database access.
 We use `quarkus.hibernate-orm.database.generation=drop-and-create` in conjunction with `import.sql` so every change to your app and in particular to your entities, the database schema will be properly recreated and your data (stored in `import.sql`) will be used to repopulate it from scratch.
 This is best to perfectly control your environment and works magic with Quarkus live reload mode:
@@ -100,6 +102,12 @@ For that, make sure to have the following configuration in your `application.pro
 ```properties linenums="1" 
 {{ insert('hero-service/src/main/resources/application.properties', 'dropAndCreateProp') }}
 ```
+
+### Adding Data
+
+Then, note that the file import.sql under src/main/resources contains SQL statements terminated by a semicolon.
+This is useful to have a data set ready for the tests or demos.
+Now, you have around 500 heroes that will be loaded in the database.
 
 ## HeroResource Endpoint
 
@@ -124,34 +132,19 @@ Notice that both methods that persist and update a hero, pass a `Hero` object as
 Thanks to the Bean Validation's `@Valid` annotation, the `Hero` object will be checked to see if it's valid or not.
 It it's not, the transaction will be rollback-ed.
 
-Our project now requires a connection to a PostgreSQL database.
-
-The main way of obtaining connections to a database is to use a datasource.
-
-Quarkus, running in dev mode, can provide you with a zero-config database out of the box, a feature we refer to as [Dev Services](https://quarkus.io/guides/dev-services). 
-So, we don't need at the moment to configure anything regarding the database access. 
-Quarkus will automatically start a Postgresql service and wire up your application to use this service. 
-
-However, this database is empty.
-
-### Adding Data
-
-To load some SQL statements when Hibernate ORM starts, add the following `import.sql` in the root of the `resources` directory.
-It contains SQL statements terminated by a semicolon.
-This is useful to have a data set ready for the tests or demos.
-
-```java linenums="1"
-{{ insert('hero-service/src/main/resources/import.sql') }}
-```
-
-Now, you have around 500 heroes that will be loaded in the database.
-
 If you didn't yet, start the application in dev mode:
 
 ```shell
 $./mvnw quarkus:dev
 
 ```
+or
+
+```shell
+$ quarkus dev
+
+```
+
 Then, open your browser to $URL/api/heroes.
 You should see lots of heroes...
 

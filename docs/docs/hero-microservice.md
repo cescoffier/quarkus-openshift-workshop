@@ -25,7 +25,7 @@ This microservice is, let’s say, a *classical* microservice.
 It uses HTTP to expose a REST API and internally store data into a database.
 This service will be used by the *fight* microservice.
 
-![hero-architecture](images/hero-architecture.png)
+![hero-architecture](target/rest-physical-architecture.svg)
 
 
 In the following sections, you learn:
@@ -44,7 +44,7 @@ Nothing outstanding but a good first step to discover Quarkus.
 
 Once you bootstrap the project, you get the following directory structure with a few Java classes and other artifacts :
 
-![hero-directory-structure](diagrams/hero-directory-structure.svg)
+![hero-directory-structure](target/hero-directory-structure.svg)
 
 It generates the following in the hero-service folder:
 
