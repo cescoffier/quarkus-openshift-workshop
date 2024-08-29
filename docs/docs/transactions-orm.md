@@ -105,9 +105,17 @@ For that, make sure to have the following configuration in your `application.pro
 
 ### Adding Data
 
-Then, note that the file import.sql under src/main/resources contains SQL statements terminated by a semicolon.
+To load some data when Hibernate ORM starts, add the following SQL statements in the `import.sql` in the root of the `resources` directory.
 This is useful to have a data set ready for the tests or demos.
+
+```sql linenums="1" 
+{{ insert('hero-service/src/main/resources/import.sql', 'docDataSql') }}
+```
+
+Ok, but that's just a few entries.
+Download the SQL file [import.sql](https://raw.githubusercontent.com/cescoffier/quarkus-openshift-workshop/03d5a943c0948bc53c598b6ee78a71e50ef77cee/hero-service/src/main/resources/import.sql) and copy it under `src/main/resources`.
 Now, you have around 500 heroes that will be loaded in the database.
+
 
 ## HeroResource Endpoint
 

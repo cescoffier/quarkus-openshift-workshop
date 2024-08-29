@@ -63,28 +63,14 @@ Once generated, look at the `pom.xml`.
 You will find the here import of the Quarkus BOM (_bill of materials_), allowing you to omit the version on the different Quarkus dependencies.
 In addition, you can see the `quarkus-maven-plugin`, responsible for the packaging of the application and also providing the development mode support.
 
-[//]: # (To do: insert pom relevant fragments here )
-
 If we focus on the dependencies section, you can see the extension allowing the development of REST applications:
-
-[//]: # (To do: insert the extensions fragment )
 
 ## The JAX-RS Resource
 
 During the project creation, the `HeroResource.java` file has been created with the following content:
 
-```java
-package io.quarkus.workshop.superheroes.hero;
-
-@Path("/api/heroes")
-public class HeroResource {
-
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "hello";
-    }
-}
+```java linenums="1"
+{{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java', 'docHeroResource', 'docHeroCrudContent') }}
 ```
 
 It's a very simple REST endpoint, returning "hello" to HTTP GET requests to `/api/heroes`.
@@ -224,21 +210,8 @@ We also set the `java.util.logging` system property to make sure tests will use 
 
 The generated project contains a simple test in `HeroResourceTest.java`.
 
-```java
-package io.quarkus.workshop.superheroes.hero;
-
-@QuarkusTest
-public class HeroResourceTest {
-
-    @Test
-    public void testHelloEndpoint() {
-        given()
-          .when().get("/api/heroes")
-          .then()
-             .statusCode(200)
-             .body(is("Hello from Quarkus REST"));
-    }
-}
+```java linenums="1"
+{{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java', 'docHeroResourceTest', 'docCrudTests') }}
 ```
 
 By using the `QuarkusTest` runner, the `HeroResourceTest` class instructs JUnit to start the application before the tests.
@@ -268,9 +241,11 @@ Press [e] to edit command line args (currently ''), [r] to re-run, [o] Toggle te
 
 ## Packaging and Running the Application
 
-The application is packaged using `./mvnw package` .
+The application is packaged using `./mvnw package` or `quarkus build`.
 It produces 2 jar files in `/target`:
 
 * `rest-hero-1.0-SNAPSHOT.jar`: containing just the classes and resources of the projects, it's the regular artifact produced by the Maven build;
 * `quarkus-app/quarkus-run.jar`: being an executable jar.
   Be aware that it's not an über-jar as the dependencies are copied into the `target/quarkus-app/lib` directory.
+
+The application is now runnable from a terminal by running `java -jar target/quarkus-app/quarkus-run.jar`. 
