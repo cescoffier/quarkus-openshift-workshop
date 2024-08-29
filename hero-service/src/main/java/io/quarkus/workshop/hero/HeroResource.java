@@ -22,7 +22,6 @@ import java.util.List;
 @RunOnVirtualThread
 public class HeroResource {
 
-
     @GET
     @Path("/random")
     public RestResponse<Hero> getRandomHero() {
@@ -91,5 +90,5 @@ public class HeroResource {
         return "Hello Hero Service";
     }
 }
-//<docHeroResource>
+//</docHeroResource>
 
