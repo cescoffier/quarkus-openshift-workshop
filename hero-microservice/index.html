@@ -890,12 +890,20 @@ You are not viewing the latest version.
 
 
 <h1 id="creating-the-hero-microservice">Creating the Hero Microservice<a class="headerlink" href="#creating-the-hero-microservice" title="Permanent link"></a></h1>
+<p>In the following sections, you will learn:</p>
+<ul>
+<li>how to create a new <em>Quarkus</em> application using <em>Red Hat Developer Hub</em>, and</li>
+<li>how to implement REST API using JAX-RS, and</li>
+<li>how to compose your application using CDI beans, and</li>
+<li>how to access your database using Hibernate with Panache, and</li>
+<li>how to use transactions, and</li>
+</ul>
 <h2 id="bootstrapping-the-hero-rest-endpoint">Bootstrapping the Hero Rest Endpoint<a class="headerlink" href="#bootstrapping-the-hero-rest-endpoint" title="Permanent link"></a></h2>
 <h3 id="red-hat-developer-hub-software-templates-and-dev-spaces-workspace">Red Hat Developer Hub Software templates and Dev Spaces workspace.<a class="headerlink" href="#red-hat-developer-hub-software-templates-and-dev-spaces-workspace" title="Permanent link"></a></h3>
 <p>To create a Dev Spaces (DS) workspace, you&rsquo;ll first need to create a <em>Software Component</em> using a <em>Red Hat Developer Hub (RHDH) Software Template</em>:</p>
 <ol>
 <li>Navigate to the <em>Create Option</em>: in the left-hand menu of the RHDH, click on the &ldquo;Create&rdquo; option.</li>
-<li>Select the template: you&rsquo;ll see a list of available templates. Choose the <code>quarkus-postgresql</code> template from the list.</li>
+<li>Select the template: you&rsquo;ll see a list of available templates. Choose the <code>OpenCodeQuest - Quarkus with Postgresql</code> template from the list.</li>
 <li>Configure the workspace: after selecting the template, you&rsquo;ll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.</li>
 <li>Proceed with the setup: Once you&rsquo;ve reviewed the configurations, proceed to create your DS workspace.</li>
 </ol>
@@ -910,15 +918,6 @@ This microservice is, let’s say, a <em>classical</em> microservice.
 It uses HTTP to expose a REST API, and it internally stores data into a database.</p>
 <p>This service will be used by the <em>fight</em> microservice.</p>
 <p><img alt="hero-architecture" src="../target/rest-physical-architecture.svg" /></p>
-<p>In the following sections, you will learn:</p>
-<ul>
-<li>how to create a new <em>Quarkus</em> application using <em>Red Hat Developer Hub</em>, and</li>
-<li>how to implement REST API using JAX-RS, and</li>
-<li>how to compose your application using CDI beans, and</li>
-<li>how to access your database using Hibernate with Panache, and</li>
-<li>how to use transactions, and</li>
-<li>how to enable OpenAPI and Swagger-UI.</li>
-</ul>
 <p>First, let’s describe our service. The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
 The REST API allows adding, removing, listing, and picking a random hero from the stored set.</p>
 <p>Nothing outstanding but a good first step to discover Quarkus.</p>
@@ -928,7 +927,7 @@ The REST API allows adding, removing, listing, and picking a random hero from th
 <p>It generates the following in the <code>hero-service</code> folder:</p>
 <ul>
 <li>the Maven structure with a <code>pom.xml</code></li>
-<li>an <code>io.quarkus.workshop.superheroes.hero.HeroResource</code> resource exposed on <code>/api/heroes</code></li>
+<li>an <code>io.quarkus.workshop.hero.HeroResource</code> resource exposed on <code>/api/heroes</code></li>
 <li>an associated unit test <code>HeroResourceTest</code></li>
 <li>the landing page <code>index.html</code> that is accessible after starting the application</li>
 <li>example <code>Dockerfile</code> files for both native and jvm modes in <code>src/main/docker</code></li>
