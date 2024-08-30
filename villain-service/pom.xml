@@ -42,6 +42,7 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-rest-jackson</artifactId>
         </dependency>
+<!--        <springDependencies>-->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-spring-web</artifactId>
@@ -50,6 +51,7 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-spring-data-jpa</artifactId>
         </dependency>
+<!--        </springDependencies>-->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-hibernate-orm-panache</artifactId>
