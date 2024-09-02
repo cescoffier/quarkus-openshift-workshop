@@ -50,6 +50,7 @@ theme:
     - navigation.instant
     - navigation.indexes
     - navigation.tracking
+    - navigation.footer
     - navigation.tabs.sticky
     - content.code.select
     - content.code.copy
