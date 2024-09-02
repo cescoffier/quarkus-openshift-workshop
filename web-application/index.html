@@ -616,6 +616,24 @@ You are not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#bootstrapping-the-web-application-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootstrapping the Web Application Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up environment variables
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -677,6 +695,24 @@ You are not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#bootstrapping-the-web-application-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bootstrapping the Web Application Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up environment variables
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -698,6 +734,20 @@ You are not viewing the latest version.
   <h1>User Interface</h1>
 
 <h2 id="the-web-application">The Web Application<a class="headerlink" href="#the-web-application" title="Permanent link"></a></h2>
+<p>This application exposes the user interface to make the fight.</p>
+<p>The user interface is written in <em>JavaScript</em> using <em>React</em>, and the compiled assets are exposed from a <em>Quarkus</em> microservice.</p>
+<p>The application also performs some service composition logic, as it makes HTTP client requests to the <em>heroes</em>, <em>villains</em> and <em>fight</em> services:</p>
+<p><img alt="the architecture" src="../images/architecture.png" /></p>
+<h2 id="bootstrapping-the-web-application-endpoint">Bootstrapping the Web Application Endpoint<a class="headerlink" href="#bootstrapping-the-web-application-endpoint" title="Permanent link"></a></h2>
+<p>The code is now fully available and you will not have to write any of this microservice.</p>
+<p>To set up the project, simply create it from the specified template, which will automatically pull the complete code from the GitHub repository.</p>
+<h2 id="setting-up-environment-variables">Setting up environment variables<a class="headerlink" href="#setting-up-environment-variables" title="Permanent link"></a></h2>
+<p>The service needs the following 3 environment variables to point to the heroes, villains and fight services:</p>
+<ul>
+<li><code>ENDPOINTS_HEROES</code> (e.g., <code>http://user2-hero-dev:8080/api/heroes/random</code>)</li>
+<li><code>ENDPOINTS_VILLAINS</code> (e.g., <code>http://user2-villain-dev:8080/api/villains/random</code>)</li>
+<li><code>ENDPOINTS_FIGHT</code> (e.g., <code>http://user2-fight-dev:8080/api/fights</code>)</li>
+</ul>
 
 
 
