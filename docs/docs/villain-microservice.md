@@ -141,3 +141,6 @@ Note that the tests have been successful run.
 
 Alternatively, you can open `$URL/api/villains` in your browser and you should get lots of villains.
 
+## Deploy the Villain microservice
+
+To deploy the Villain service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
