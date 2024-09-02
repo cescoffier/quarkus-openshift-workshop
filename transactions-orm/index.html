@@ -12,7 +12,7 @@
         <link rel="prev" href="../hero-microservice/">
       
       
-        <link rel="next" href="../containers-cloud/">
+        <link rel="next" href="../from-git-to-openshif/">
       
       
       <link rel="icon" href="../images/logo.png">
@@ -551,7 +551,7 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
-      <a href="../containers-cloud/" class="md-nav__link">
+      <a href="../from-git-to-openshif/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,7 +1085,7 @@ We use <code>quarkus.hibernate-orm.database.generation=drop-and-create</code> in
 This is best to perfectly control your environment and works magic with Quarkus live reload mode:
 your entity changes or any change to your <code>import.sql</code> is immediately picked up and the schema updated without restarting the application!</p>
 <p>For that, make sure to have the following configuration in your <code>application.properties</code> (located in <code>src/main/resources</code>):</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="na">quarkus.hibernate-orm.database.generation</span><span class="o">=</span><span class="s">drop-and-create</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="na">%dev.quarkus.hibernate-orm.database.generation</span><span class="o">=</span><span class="s">drop-and-create</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="adding-data">Adding Data<a class="headerlink" href="#adding-data" title="Permanent link"></a></h3>
 <p>To load some data when Hibernate ORM starts, add the following SQL statements in the <code>import.sql</code> in the root of the <code>resources</code> directory.
