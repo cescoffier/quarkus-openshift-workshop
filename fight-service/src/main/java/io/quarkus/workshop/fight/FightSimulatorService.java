@@ -48,8 +48,10 @@ public interface FightSimulatorService {
             <|assistant|>
             Output:
             """)
+    //<faultToleranceAnnotation>
     @Retry(maxRetries = 2)
     @Timeout(value = 1, unit = ChronoUnit.MINUTES)
+    //</faultToleranceAnnotation>
     FightResult fight(Hero hero, Villain villain);
 
 }

@@ -58,14 +58,8 @@ Note that you have the in the `pom.xml` file of your Fight service:
 Configuring OpenAI models mandates an API key or API url among others. 
 Copy the following configuration in your `application.properties` file:
 
-```properties
-quarkus.langchain4j.openai.base-url=${LLM_API_ENDPOINT:https://api.openai.com/v1/}
-quarkus.langchain4j.openai.chat-model.model-name=${LLM_MODEL:gpt-4o-mini}
-quarkus.langchain4j.openai.api-key=${OPENAI_API_KEY:none}
-quarkus.langchain4j.openai.chat-model.temperature=1
-quarkus.langchain4j.log-requests=true
-quarkus.langchain4j.log-responses=true
-quarkus.langchain4j.openai.timeout=60s
+```properties linenums="1" 
+{{ insert('fight-service/src/main/resources/application.properties', 'aiProps') }}
 ```
 
 They are self explanatory but you can check the documentation for more information.
@@ -120,7 +114,29 @@ Once created, copy the following content:
 ```java linenums="1"
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightResult.java') }}
 ```
+
 Quarkus automatically creates an instance of FightResult from the LLM’s JSON response.
+
+#### Fault Tolerance
+
+The distributed nature of microservices makes external communication unreliable, increasing the need for application resiliency. 
+Quarkus addresses this by offering SmallRye Fault Tolerance, based on the MicroProfile Fault Tolerance specification.
+
+In the pom, you can see the corresponding smallrye dependencies: 
+
+```java linenums="1"
+{{ insert('fight-service/pom.xml', 'faultDep') }}
+```
+
+Then, in the code, in the `FightSimulatorService` we have a couple of annotations:
+
+
+```java linenums="1"
+{{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightSimulatorService.java', 'faultToleranceAnnotation') }}
+```
+
+If the AI fails, the `@Retry` annotation ensures that the call will be retried up to two more times before finally giving up.
+If a the AI query is taking too long, the `@Timeout` annotation can stop it after 1 minute, preventing it from hanging indefinitely.
 
 ### The Fight Resource
 
@@ -180,3 +196,7 @@ Create a java class `FightMetricPublisher.java` under `src/main/java/io/quarkus/
 We can see two counters there. Counters measure values that only increase. The counter is created directly on the MeterRegistry.
 
 `fights` is the counter name and `won-by` is a tag with two possible values: `hero`or `villain`.
+
+## Deploy the Fight microservice
+
+To deploy the Fight service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
