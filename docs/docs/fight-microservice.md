@@ -77,7 +77,7 @@ Once we have the extension, it’s time to tell the LLM what we want to do.
 The Quarkus LangChain4J extension provides a declarative way to describe LLM interactions. 
 We model the interaction using an interface annotated with `@RegisterAiService`.
 
-Create a new java interface under `src/main/java/io/quarkus/workshop/fight` and copy the following content:
+Create a new java interface `FightSimulatorService.java` under `src/main/java/io/quarkus/workshop/fight` and copy the following content:
 
 ```java linenums="1"
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightSimulatorService.java') }}
@@ -140,7 +140,16 @@ Then, create a new java class `Fight.java` under `src/main/java/io/quarkus/works
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/Fight.java') }}
 ```
 
-This is a straightforward record that encapsulates the hero and villain inputs for a fight.
+This is a straightforward record that encapsulates the hero and villain inputs for a fight. 
+You need then the correspoding `Hero.java` and `Villain.java`:
+
+```java linenums="1"
+{{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/Hero.java') }}
+```
+
+```java linenums="1"
+{{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/Villain.java') }}
+```
 
 ## Observability 
 
