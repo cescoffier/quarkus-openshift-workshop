@@ -162,6 +162,15 @@ Open the `HeroResource.java` and add the following code to the `getRandomHero` m
 @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, required = true)))
 ```
 
+You need to add the corresponding import statements:
+
+```java
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.Operation;
+```
+
 If you curl again the /q/openapi endpoint you will see the following contract for getting random hero operation:
 
 ```shell
