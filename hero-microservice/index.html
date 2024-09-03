@@ -473,6 +473,21 @@ You are not viewing the latest version.
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Development Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dev-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev UI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -836,6 +851,21 @@ You are not viewing the latest version.
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Development Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dev-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev UI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1075,19 +1105,28 @@ Navigate to Terminal and select New Terminal from the dropdown menu.</p>
 <p>where <code>$URL</code> is the running service endpoint (host + port number).</p>
 <p>Alternatively, you can open <code>$URL/api/heroes</code> in your browser.</p>
 <h2 id="development-mode">Development Mode<a class="headerlink" href="#development-mode" title="Permanent link"></a></h2>
-<p><code>quarkus:dev</code> runs Quarkus in development mode.
+<p><code>mvn quarkus:dev</code> runs Quarkus in development mode.
 This enables hot deployment with background compilation, which means that when you modify your Java files and/or your resource files and invoke a REST endpoint (i.e. cUrl command or refresh your browser), these changes will automatically take effect.</p>
 <p>This works as well for resource files like the configuration property and HTML files.
 Refreshing the browser triggers a scan of the workspace, and if any changes are detected, the Java files are recompiled and the application is redeployed;
 your request is then serviced by the redeployed application.
 If there are any issues with compilation or deployment an error page will let you know.</p>
-<p>The development mode also allows debugging and listens for a debugger on port 5005.
-If you want to wait for the debugger to attach before running you can pass <code>-Dsuspend=true</code> on the command line.
-If you don&rsquo;t want the debugger at all you can use <code>-Ddebug=false</code>.</p>
-<p>Alright, time to change some code.
-Open your favorite IDE and import the project.
-To check that the hot reload is working, update the method <code>HeroResource.hello()</code> by returning the String &ldquo;hello hero&rdquo;.
-Now, execute the cUrl command again, the output has changed without you to having to stop and restart Quarkus:</p>
+<p>The development mode also allows debugging and listens for a debugger on port 5005.</p>
+<h3 id="dev-ui">Dev UI<a class="headerlink" href="#dev-ui" title="Permanent link"></a></h3>
+<p>Quarkus ships with a Developer UI, which is available in dev mode at /q/dev-ui by default.
+It will show you something like this:</p>
+<p><img alt="dev-ui" src="../images/dev-ui.png" /></p>
+<p>It allows you to:</p>
+<ul>
+<li>quickly visualize all the extensions currently loaded</li>
+<li>view extension statuses and go directly to extension documentation</li>
+<li>view and change Configuration</li>
+<li>manage and visualize Continuous Testing</li>
+<li>view Dev Services information</li>
+<li>view the Build information</li>
+<li>view and stream various logs</li>
+</ul>
+<p>Each extension used in the application will be listed</p>
 <h2 id="testing-the-application">Testing the Application<a class="headerlink" href="#testing-the-application" title="Permanent link"></a></h2>
 <p>So far so good, but wouldn&rsquo;t it be better with a few tests, just in case?</p>
 <p>In the generated <code>pom.xml</code> file, you can see 2 test dependencies:</p>
