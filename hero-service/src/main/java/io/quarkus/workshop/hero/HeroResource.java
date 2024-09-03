@@ -13,10 +13,18 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.UriBuilder;
 import jakarta.ws.rs.core.UriInfo;
+import org.eclipse.microprofile.openapi.annotations.media.Content;
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.jboss.resteasy.reactive.RestResponse;
+
+import org.eclipse.microprofile.openapi.annotations.Operation;
+
 
 import java.net.URI;
 import java.util.List;
+
+import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Path("/api/heroes")
 @RunOnVirtualThread
@@ -29,6 +37,8 @@ public class HeroResource {
     }
 
     //<docHeroCrudContent>
+    @Operation(summary = "Returns a random hero")
+    @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, required = true)))
     @GET
     @Path("/random")
     public RestResponse<Hero> getRandomHero() {
