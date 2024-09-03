@@ -25,7 +25,7 @@ Like the Hero microservice creation, to create a Dev Spaces (DS) workspace, you'
 Once created, the component is available in the _catalog_.
 You can access it to have an overview:
 
-![microservice-home-page](images/microservice-home-page.png)
+![microservice-home-page](images/hero-rhdh-home-page.png)
 
 Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).
 
@@ -139,7 +139,7 @@ or
 
 Note that the tests have been successful run. 
 
-Alternatively, you can open `$URL/api/villains` in your browser and you should get lots of villains.
+Alternatively, you can open `/api/villains` in your browser and you should get lots of villains.
 
 ## Deploy the Villain microservice
 

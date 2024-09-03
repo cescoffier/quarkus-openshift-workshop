@@ -20,7 +20,7 @@ Like the previous microservices creation, to create a Dev Spaces (DS) workspace,
 Once created, the component is available in the _catalog_.
 You can access it to have an overview:
 
-![microservice-home-page](images/microservice-home-page.png)
+![microservice-home-page](images/hero-rhdh-home-page.png)
 
 Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).
 
@@ -108,7 +108,7 @@ AI methods can take parameters referenced in system and user messages using the 
 
 The fight method returns a `FightResult`. The JSON response will be mapped to that object directly. So, let's create it. 
 
-Create a new java record `FightResult` under `src/main/java/io/quarkus/workshop/fight`. Java records provide a concise way to define immutable data classes with less boilerplate code.
+Create a new java record `FightResult.java` under `src/main/java/io/quarkus/workshop/fight`. Java records provide a concise way to define immutable data classes with less boilerplate code.
 Once created, copy the following content:
 
 ```java linenums="1"

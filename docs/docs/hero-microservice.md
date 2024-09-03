@@ -22,7 +22,7 @@ To create a Dev Spaces (DS) workspace, you'll first need to create a _Software C
 Once created, the component is available in the _catalog_.
 You can access it to have an overview:
 
-![microservice-home-page](images/microservice-home-page.png)
+![microservice-home-page](images/hero-rhdh-home-page.png)
 
 Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).
 
@@ -70,6 +70,7 @@ During the project creation, the `HeroResource.java` file has been created with 
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java', 'docHeroResource', 'docHeroCrudContent') }}
+}
 ```
 
 It's a very simple REST endpoint, returning "hello" to HTTP GET requests to `/api/heroes`.
@@ -143,17 +144,14 @@ Press [e] to edit command line args (currently ''), [r] to resume testing, [o] T
 Then check that the endpoint returns `hello` as expected:
 
 ```shell
-$ curl $URL/api/heroes
-Hello from Quarkus REST
+curl http://localhost:8080/api/heroes/hello
 ```
 
-where `$URL` is the running service endpoint (host + port number).
-
-Alternatively, you can open `$URL/api/heroes` in your browser.
+You should see the message:  Hello from Quarkus REST
 
 ## Development Mode
 
-`mvn quarkus:dev` runs Quarkus in development mode.
+`mvn quarkus:dev` or `quarkus dev`runs Quarkus in development mode.
 This enables hot deployment with background compilation, which means that when you modify your Java files and/or your resource files and invoke a REST endpoint (i.e. cUrl command or refresh your browser), these changes will automatically take effect.
 
 This works as well for resource files like the configuration property and HTML files.
@@ -225,6 +223,7 @@ The generated project contains a simple test in `HeroResourceTest.java`.
 
 ```java linenums="1"
 {{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java', 'docHeroResourceTest', 'docCrudTests') }}
+}
 ```
 
 By using the `QuarkusTest` runner, the `HeroResourceTest` class instructs JUnit to start the application before the tests.
@@ -262,3 +261,4 @@ It produces 2 jar files in `/target`:
   Be aware that it's not an über-jar as the dependencies are copied into the `target/quarkus-app/lib` directory.
 
 The application is now runnable from a terminal by running `java -jar target/quarkus-app/quarkus-run.jar`. 
+Remember to stop the hero-service launched in dev mode otherwise you will get a conflict port error.

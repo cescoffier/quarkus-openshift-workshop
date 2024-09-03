@@ -43,7 +43,7 @@ From now on, you can choose to either edit your pom directly or use the `quarkus
 ## Hero Entity
 
 To define a Panache entity, simply extend `PanacheEntity`, annotate it with `@Entity` and add your columns as public fields (no need to have getters and setters).
-Create a new java class under `src/main/java/io/quarkus/workshop/hero` and copy the following content:
+Create a new file called `Hero.java` under `src/main/java/io/quarkus/workshop/hero` and copy the following content:
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docEntityHero', ['docFindRandomHero']) }}
@@ -53,7 +53,8 @@ Notice that you can put all your JPA column annotations and Bean Validation cons
 
 ### Adding Operations
 
-Thanks to Panache, once you have written the `Hero` entity, here are the most common operations you will be able to do:
+Thanks to Panache, once you have written the `Hero` entity.
+For information only, bellow the most common operations you could be able to do:
 
 ```java
 // creating a hero
@@ -74,14 +75,12 @@ hero = Hero.findById(id);
 long countAll = Hero.count();
 ```
 
-But we are missing a business method:
-we need to return a random hero.
+For our workshop we need returning a random hero.
 For that it's just a matter to add the following method to our `Hero.java` entity:
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docFindRandomHero') }}
 ```
-
 
 **NOTE**
 
