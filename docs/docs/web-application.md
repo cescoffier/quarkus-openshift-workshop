@@ -12,7 +12,7 @@ The application also performs some service composition logic, as it makes HTTP c
 
 The code is now fully available and you will not have to write any of this microservice.
 
-To set up the project, simply create it from the specified template, which will automatically pull the complete code from the GitHub repository.
+To set up the project, simply create it from the `OpenCodeQuest - Fight-UI service` template, which will automatically pull the complete code from the GitHub repository.
 
 ## Setting up environment variables
 

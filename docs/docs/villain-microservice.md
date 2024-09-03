@@ -18,7 +18,7 @@ To set up the project, simply create it from the specified template, which will 
 Like the Hero microservice creation, to create a Dev Spaces (DS) workspace, you'll first need to create a _Software Component_ using a _Red Hat Developer Hub (RHDH) Software Template_:
 
 1. Navigate to the _Create Option_: in the left-hand menu of the RHDH, click on the "Create" option.
-1. Select the template: you'll see a list of available templates. Choose the `OpenCodeQuest - Quarkus using Spring Extension with Postgresq` template from the list.
+1. Select the template: you'll see a list of available templates. Choose the `OpenCodeQuest - Quarkus microservice with Spring MVC and Spring Data` template from the list.
 1. Configure the workspace: after selecting the template, you'll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.
 1. Proceed with the setup: Once you've reviewed the configurations, proceed to create your DS workspace.
 
