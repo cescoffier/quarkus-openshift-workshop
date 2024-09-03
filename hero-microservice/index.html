@@ -966,7 +966,15 @@ In addition, you can see the <code>quarkus-maven-plugin</code>, responsible for 
 <span class="normal"><a href="#__codelineno-0-25">25</a></span>
 <span class="normal"><a href="#__codelineno-0-26">26</a></span>
 <span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">io.quarkus.workshop.hero</span><span class="p">;</span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nn">io.quarkus.workshop.hero</span><span class="p">;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">io.quarkus.logging.Log</span><span class="p">;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">io.smallrye.common.annotation.RunOnVirtualThread</span><span class="p">;</span>
@@ -980,20 +988,28 @@ In addition, you can see the <code>quarkus-maven-plugin</code>, responsible for 
 <a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="kn">import</span><span class="w"> </span><span class="nn">jakarta.ws.rs.core.Context</span><span class="p">;</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="kn">import</span><span class="w"> </span><span class="nn">jakarta.ws.rs.core.UriBuilder</span><span class="p">;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="kn">import</span><span class="w"> </span><span class="nn">jakarta.ws.rs.core.UriInfo</span><span class="p">;</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.jboss.resteasy.reactive.RestResponse</span><span class="p">;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.net.URI</span><span class="p">;</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.eclipse.microprofile.openapi.annotations.media.Content</span><span class="p">;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.eclipse.microprofile.openapi.annotations.media.Schema</span><span class="p">;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.eclipse.microprofile.openapi.annotations.responses.APIResponse</span><span class="p">;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.jboss.resteasy.reactive.RestResponse</span><span class="p">;</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="nd">@Path</span><span class="p">(</span><span class="s">&quot;/api/heroes&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="nd">@RunOnVirtualThread</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HeroResource</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">    </span><span class="nd">@GET</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">    </span><span class="nd">@Path</span><span class="p">(</span><span class="s">&quot;/hello&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">hello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Hello from Quarkus REST&quot;</span><span class="p">;</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.eclipse.microprofile.openapi.annotations.Operation</span><span class="p">;</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.net.URI</span><span class="p">;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="kn">import static</span><span class="w"> </span><span class="nn">jakarta.ws.rs.core.MediaType.APPLICATION_JSON</span><span class="p">;</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="nd">@Path</span><span class="p">(</span><span class="s">&quot;/api/heroes&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="nd">@RunOnVirtualThread</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HeroResource</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">    </span><span class="nd">@GET</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">    </span><span class="nd">@Path</span><span class="p">(</span><span class="s">&quot;/hello&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">hello</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Hello from Quarkus REST&quot;</span><span class="p">;</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>It&rsquo;s a very simple REST endpoint, returning &ldquo;hello&rdquo; to HTTP GET requests to <code>/api/heroes</code>.</p>
 <h2 id="running-the-application">Running the Application<a class="headerlink" href="#running-the-application" title="Permanent link"></a></h2>
