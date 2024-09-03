@@ -153,7 +153,7 @@ Alternatively, you can open `$URL/api/heroes` in your browser.
 
 ## Development Mode
 
-`quarkus:dev` runs Quarkus in development mode.
+`mvn quarkus:dev` runs Quarkus in development mode.
 This enables hot deployment with background compilation, which means that when you modify your Java files and/or your resource files and invoke a REST endpoint (i.e. cUrl command or refresh your browser), these changes will automatically take effect.
 
 This works as well for resource files like the configuration property and HTML files.
@@ -162,13 +162,24 @@ your request is then serviced by the redeployed application.
 If there are any issues with compilation or deployment an error page will let you know.
 
 The development mode also allows debugging and listens for a debugger on port 5005.
-If you want to wait for the debugger to attach before running you can pass `-Dsuspend=true` on the command line.
-If you don't want the debugger at all you can use `-Ddebug=false`.
 
-Alright, time to change some code.
-Open your favorite IDE and import the project.
-To check that the hot reload is working, update the method `HeroResource.hello()` by returning the String "hello hero".
-Now, execute the cUrl command again, the output has changed without you to having to stop and restart Quarkus:
+Quarkus ships with a Developer UI, which is available in dev mode at /q/dev-ui by default.
+It will show you something like this:
+
+![dev-ui](images/dev-ui.png)
+
+It allows you to:
+
+* quickly visualize all the extensions currently loaded
+* view extension statuses and go directly to extension documentation
+* view and change Configuration
+* manage and visualize Continuous Testing
+* view Dev Services information
+* view the Build information
+* view and stream various logs
+
+Each extension used in the application will be listed
+
 
 ## Testing the Application
 
