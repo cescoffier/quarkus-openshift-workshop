@@ -1,13 +1,5 @@
 # Creating the Hero Microservice
 
-In the following sections, you will learn:
-
-* how to create a new _Quarkus_ application using _Red Hat Developer Hub_, and
-* how to implement REST API using JAX-RS, and
-* how to compose your application using CDI beans, and
-* how to access your database using Hibernate with Panache, and
-* how to use transactions, and
-
 ## Bootstrapping the Hero Rest Endpoint
 
 ### Red Hat Developer Hub Software templates and Dev Spaces workspace.  
@@ -15,7 +7,13 @@ In the following sections, you will learn:
 To create a Dev Spaces (DS) workspace, you'll first need to create a _Software Component_ using a _Red Hat Developer Hub (RHDH) Software Template_:
 
 1. Navigate to the _Create Option_: in the left-hand menu of the RHDH, click on the "Create" option.
+
+![create-service-rhdh.png](images%2Fcreate-service-rhdh.png)
+
 1. Select the template: you'll see a list of available templates. Choose the `OpenCodeQuest - Quarkus CRUD microservice` template from the list.
+
+![hero-crud-template-rhdh.png](images%2Fhero-crud-template-rhdh.png)
+
 1. Configure the workspace: after selecting the template, you'll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.
 1. Proceed with the setup: Once you've reviewed the configurations, proceed to create your DS workspace.
 
