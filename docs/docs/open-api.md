@@ -162,7 +162,7 @@ Open the `HeroResource.java` and add the following code to the `getRandomHero` m
 @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, required = true)))
 ```
 
-You need to add the corresponding import statements:
+You may need to add the corresponding import statements:
 
 ```java
 import org.eclipse.microprofile.openapi.annotations.media.Content;
