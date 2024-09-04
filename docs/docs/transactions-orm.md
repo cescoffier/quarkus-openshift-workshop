@@ -46,7 +46,7 @@ To define a Panache entity, simply extend `PanacheEntity`, annotate it with `@En
 Create a new java class under `src/main/java/io/quarkus/workshop/hero` and copy the following content:
 
 ```java linenums="1"
-{{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docEntityHero', 'docFindRandomHero') }}
+{{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docEntityHero', ['docFindRandomHero']) }}
 ```
 
 Notice that you can put all your JPA column annotations and Bean Validation constraint annotations on the public fields.
@@ -133,7 +133,7 @@ Marking a CDI bean method `@Transactional` will do that for you and make that me
 Here are the new methods to add to the `HeroResource` class:
 
 ```java linenums="1"
-{{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java', 'docHeroResource') }}
+{{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java', 'docHeroResource', [], ['docHeroCrudContent']) }}
 ```
 
 Notice that both methods that persist and update a hero, pass a `Hero` object as a parameter.

@@ -66,6 +66,15 @@ Then, insert your snippet using:
 ```java linenums="1"
 {{ insert('test/Foo.java', 'example') }}
 ```
+
+When inserting you can:
+- Pass a set of tags to skip - the content between the start and end tag will be excluded
+- Hide a set of tags - //<tag> and //</tag> will be removed from the output
+
+```java linenums="1"
+{{ insert('test/Foo.java', 'example', [skip1, skip2], [hide1]) }}
+```
+
 """
 
 import math
@@ -88,12 +97,30 @@ def loadAttributes(env):
     else:
         print("Unable to import attributes - " + path  + " does not exists")
 
+def areTagsInLine(line, tags):
+    for tag in tags:
+        if "<" + tag + ">" in line or "</" + tag + ">" in line:
+            return True
+    return False
+
+def hasStartTagInLine(line, tags):
+    for tag in tags:
+        if "<" + tag + ">" in line:
+            return True
+    return False
+
+def hasEndTagInLine(line, tags):
+    for tag in tags:
+        if "</" + tag + ">" in line:
+            return True
+    return False
+
 def define_env(env):
 
     loadAttributes(env)
 
     @env.macro
-    def insert(file, tag = None, exceptTag = None):
+    def insert(file, tag = None, skipTags = [], hideTags = []):
         root = env.conf['docs_dir']
         if 'snippet_dir' in env.variables:
            root = env.variables['snippet_dir']
@@ -110,20 +137,28 @@ def define_env(env):
             f.close()
             return textwrap.dedent(text)
 
-        inRecordingMode = False
+        trace = False
+        if "Hero.java" in file:
+            trace = True
+        
+        if trace : print(f"Inserting {tag} from {file}")
+        
+        inRecordingMode = False        
+        inExclusionMode = False
         c = ""
         for line in f:
-            if not inRecordingMode:
+            if not inRecordingMode and not inExclusionMode:
                 if "<" + tag + ">" in line:
                     inRecordingMode = True
-            elif "</" + tag + ">" in line:
+            elif not inExclusionMode and "</" + tag + ">" in line:
                 inRecordingMode = False
-            elif exceptTag is not None and "<" + exceptTag + ">" in line:
-                inRecordingMode = False
-            elif exceptTag is not None and "</" + exceptTag + ">" in line:
-                inRecordingMode = True
-            else:
-                c += line
+            elif inRecordingMode  and hasStartTagInLine(line, skipTags):
+                inExclusionMode = True
+            elif inExclusionMode  and hasEndTagInLine(line, skipTags):
+                inExclusionMode = False
+            elif inRecordingMode and not inExclusionMode:
+                if not areTagsInLine(line, hideTags):
+                       c += line            
 
         f.close()
         if not c:
