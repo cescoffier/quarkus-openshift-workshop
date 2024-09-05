@@ -49,5 +49,4 @@ public class Hero extends PanacheEntity {
     }
     //</docFindRandomHero>
 }
-//
 //</docEntityHero>

@@ -20,7 +20,7 @@ Like the previous microservices creation, to create a Dev Spaces (DS) workspace,
 Once created, the component is available in the _catalog_.
 You can access it to have an overview:
 
-![microservice-home-page](images/hero-rhdh-home-page.png)
+![microservice-home-page](images/hero-home-page-rhdh.png)
 
 Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).
 
