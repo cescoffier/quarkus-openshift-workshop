@@ -52,7 +52,7 @@ Then, open your browser and navigate to `http://localhost:8080` to see the appli
 1. In a terminal, run the following commands:
 
 ```bash
-kubectl apply -f  k apply -f frontend-route.yaml -f hero-database.yaml -f villain-database.yaml
+kubectl apply -f kubernetes/frontend-route.yaml -f kubernetes/hero-database.yaml -f kubernetes/villain-database.yaml
 ```
 
 2. You need to choose between OpenAI or OpenShift AI variant:
@@ -93,7 +93,7 @@ kubectl apply -f  k apply -f frontend-route.yaml -f hero-database.yaml -f villai
 3. Deploy the application:
 
 ```bash
-k apply -f fight-ui/kubernetes.yml -f hero-service/kubernetes.yml -f villain-service/kubernetes.yml -f fight-service/kubernetes.yml
+kubectl apply -f fight-ui/kubernetes.yml -f hero-service/kubernetes.yml -f villain-service/kubernetes.yml -f fight-service/kubernetes.yml
 ```
 
 4. Retrieve the URL of the frontend:
