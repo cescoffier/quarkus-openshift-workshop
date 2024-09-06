@@ -137,15 +137,36 @@ Tests paused
 Press [e] to edit command line args (currently ''), [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
-You can now check that the endpoint returns `hello` as expected.
+At some point, a pop up asking for opening the Quarkus dev will be shown:
+
+![open-quarkus-dev-in-new-tab.png](images%2Fopen-quarkus-dev-in-new-tab.png)
+
+Click on the `Open in New Tab` button.
+
+<div class="grid cards" markdown>
+-   :warning:{ .lg .middle }:warning:{ .lg .middle } __Fixing the `Dev UI: Only localhost is allowed` error__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+
+    ---
+
+    If you got the following error log in the console
+
+    ![error-dev-hosts-startup.png](images%2Ferror-dev-hosts-startup.png)
+
+    Please, copy the url shown in the browser.
+    Go and edit the `application.properties file and paste this value in the `%dev.quarkus.dev-ui.hosts` properties.
+
+    ``
+    %dev.quarkus.dev-ui.hosts=storm-hero-service-k39c-quarkus-dev.apps.cluster-v9s95.v9s95.sandbox823.opentlc.com
+    ``
+</div>
+
+You can now check that the endpoint returns `Hello from Quarkus REST` as expected.
 
 ==Open a new Terminal and run the following command==
 
 ```shell
 curl http://localhost:8080/api/heroes/hello
 ```
-
-==You should see the message==:  `Hello from Quarkus REST`
 
 ## Development Mode
 
@@ -195,18 +216,14 @@ In the generated `pom.xml` file, you can see 2 test dependencies:
 </dependency>
 
 ```
-We also set the `java.util.logging` system property to make sure tests will use the correct log manager.
-
 The generated project contains a simple test in `HeroResourceTest.java`.
 
 ```java linenums="1"
-{{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java', 'docHeroResourceTest', ['docCrudTests']) }}
+{{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java', 'docHeroResourceTest', ['docCrudTests','docHelloPath']) }}
 ```
 
 By using the `QuarkusTest` runner, the `HeroResourceTest` class instructs JUnit to start the application before the tests.
 Then, the `testHelloEndpoint` method checks the HTTP response status code and content.
-
-Notice that these tests use RestAssured, but feel free to use your favorite library.
 
 You can running the tests with `./mvnw test` in a new Terminal.
 
@@ -220,7 +237,7 @@ This allows you to get instant feedback on your code changes.
 ```shell
 Tests paused, press [r] to resume, [h] for more options>
 ```
-==Press r and the tests will start running.==
+==Press `r and the tests will start running.==
 ==You should see the status change down the bottom of the screen as they are running, and it should finish with:==
 
 ```shell
@@ -237,5 +254,12 @@ It produces 2 jar files in `/target`:
 * `quarkus-app/quarkus-run.jar`: being an executable jar.
   Be aware that it's not an über-jar as the dependencies are copied into the `target/quarkus-app/lib` directory.
 
-The application is now runnable from a terminal by running `java -jar target/quarkus-app/quarkus-run.jar`. 
-==Remember to stop the hero-service launched in dev mode otherwise you will get a conflict port error.==
+The application is now runnable from a terminal by running `java -jar target/quarkus-app/quarkus-run.jar`.
+
+<div class="grid cards" markdown>
+-   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+
+    ---
+
+    Remember to stop the hero-service launched in dev mode otherwise you will get a conflict port error.
+</div>

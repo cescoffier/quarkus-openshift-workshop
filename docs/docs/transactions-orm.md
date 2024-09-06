@@ -3,13 +3,6 @@
 The Hero API's role is to allow CRUD operations on Super Heroes.
 In this module we will create a Hero entity and persist/update/delete/retrieve it from a Postgres database in a transactional way.
 
-## Directory Structure
-
-In this module we will add extra classes to the Hero API project.
-You will end-up with the following directory structure:
-
-![hero-transaction-orm-directory-structure](target/hero-transaction-orm-directory-structure.svg)
-
 ## Database dependencies
 
 This microservice:
@@ -25,25 +18,22 @@ It makes complex mappings possible, but it does not make simple and common mappi
 
 Because JPA and Bean Validation work well together, we will use Bean Validation to constrain our business model.
 
-All the needed dependencies to access the database are already in the pom.xml file. Check that you have the following:
+All the needed dependencies to access the database are already in the `pom.xml` file. 
+
+==Check that you have the following:==
 
 ```java linenums="1"
 {{ insert('hero-service/pom.xml', 'docDbDependency') }}
 ```
 
-If you need to add them, just run the following command:
-
-```shell
-
-$ ./mvnw quarkus:add-extension -Dextensions="jdbc-postgresql,hibernate-orm-panache,hibernate-validator,rest-jackson"
-```
-
-From now on, you can choose to either edit your pom directly or use the `quarkus:add-extension` command.
-
 ## Hero Entity
 
+At this point we need an Entity class.
+There is already a `Hero.java` file under `src/main/java/io/quarkus/workshop/hero` so you don't need to create it.
+However this file is empty.
 To define a Panache entity, simply extend `PanacheEntity`, annotate it with `@Entity` and add your columns as public fields (no need to have getters and setters).
-Create a new file called `Hero.java` under `src/main/java/io/quarkus/workshop/hero` and copy the following content:
+
+==Edit the `Hero.java` file under `src/main/java/io/quarkus/workshop/hero` and copy the following content:==
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docEntityHero', ['docFindRandomHero']) }}
@@ -53,50 +43,30 @@ Notice that you can put all your JPA column annotations and Bean Validation cons
 
 ### Adding Operations
 
-Thanks to Panache, once you have written the `Hero` entity.
-For information only, bellow the most common operations you could be able to do:
-
-```java
-// creating a hero
-Hero hero = new Hero();
-hero.name = "Superman";
-hero.level = 9;
-
-// persist it
-hero.persist();
-
-// getting a list of all Hero entities
-List<Hero> heroes = Hero.listAll();
-
-// finding a specific hero by ID
-hero = Hero.findById(id);
-
-// counting all heroes
-long countAll = Hero.count();
-```
-
 For our workshop we need returning a random hero.
-For that it's just a matter to add the following method to our `Hero.java` entity:
+==For that it's just a matter to add the following method to our `Hero.java` entity:==
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/Hero.java', 'docFindRandomHero') }}
 ```
 
-**NOTE**
+<div class="grid cards" markdown>
+-   :information:{ .lg .middle } __Import__ 
 
-You would need to add the following import statement if not done automatically by your IDE `import java.util.Random;`
+    ---
+
+    ==You would need to add the following import statement if not done automatically by your IDE `import java.util.Random;`==
+</div>
+
 
 ## Configuring Hibernate
 
 As Quarkus supports the automatic provisioning of unconfigured services in development and test mode, we don't need at the moment to configure anything regarding the database access. 
 Quarkus will automatically start a Postgresql service and wire up your application to use this service. 
 
-Quarkus development mode is really useful for applications that mix front end or services and database access.
-We use `quarkus.hibernate-orm.database.generation=drop-and-create` in conjunction with `import.sql` so every change to your app and in particular to your entities, the database schema will be properly recreated and your data (stored in `import.sql`) will be used to repopulate it from scratch.
-This is best to perfectly control your environment and works magic with Quarkus live reload mode:
-your entity changes or any change to your `import.sql` is immediately picked up and the schema updated without restarting the application!
+Quarkus development mode is great for apps that combine front-end, services, and database access. By using quarkus.hibernate-orm.database.generation=drop-and-create with import.sql, any changes to your entities automatically recreate the database schema and repopulate data. This setup works perfectly with Quarkus live reload, instantly applying changes without restarting the app.
 
-For that, make sure to have the following configuration in your `application.properties` (located in `src/main/resources`):
+==For that, make sure to have the following configuration in your `application.properties` (located in `src/main/resources`):==
 
 ```properties linenums="1" 
 {{ insert('hero-service/src/main/resources/application.properties', 'dropAndCreateProp') }}
@@ -104,15 +74,13 @@ For that, make sure to have the following configuration in your `application.pro
 
 ### Adding Data
 
-To load some data when Hibernate ORM starts, add the following SQL statements in the `import.sql` in the root of the `resources` directory.
-This is useful to have a data set ready for the tests or demos.
+==To load some data when Hibernate ORM starts, run the following command on a Terminal:==
 
-```sql linenums="1" 
-{{ insert('hero-service/src/main/resources/import.sql', 'docDataSql') }}
+```shell
+curl https://raw.githubusercontent.com/cescoffier/quarkus-openshift-workshop/03d5a943c0948bc53c598b6ee78a71e50ef77cee/hero-service/src/main/resources/import.sql -fL -o src/main/resources/import.sql
 ```
 
-Ok, but that's just a few entries.
-Download the SQL file [import.sql](https://raw.githubusercontent.com/cescoffier/quarkus-openshift-workshop/03d5a943c0948bc53c598b6ee78a71e50ef77cee/hero-service/src/main/resources/import.sql) and copy it under `src/main/resources`.
+It will download the specified file and copy the content in your `/src/resources/import.sql` file.
 Now, you have around 500 heroes that will be loaded in the database.
 
 
@@ -125,11 +93,9 @@ We need to add extra methods that will allow CRUD operations on heroes.
 
 To manipulate the `Hero` entity we need make `HeroResource` transactional.
 The idea is to wrap methods modifying the database (e.g. `entity.persist()`) within a transaction.
-Marking a CDI bean method `@Transactional` will do that for you and make that method a transaction boundary.
+Marking a CDI bean method `@Transactional` will do it and make that method a transaction boundary.
 
-`@Transactional` can be used to control transaction boundaries on any CDI bean at the method level or at the class level to ensure every method is transactional.
-
-Here are the new methods to add to the `HeroResource` class:
+==Replace the content of the `HeroResource.java` by the following one. It contains the new methods for accessing data:==
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java', 'docHeroResource', [], ['docHeroCrudContent']) }}
@@ -139,10 +105,10 @@ Notice that both methods that persist and update a hero, pass a `Hero` object as
 Thanks to the Bean Validation's `@Valid` annotation, the `Hero` object will be checked to see if it's valid or not.
 It it's not, the transaction will be rollback-ed.
 
-If you didn't yet, start the application in dev mode:
+If you didn't yet, open a Terminal and start the application in dev mode:
 
 ```shell
-$./mvnw quarkus:dev
+./mvnw quarkus:dev
 
 ```
 or
@@ -152,7 +118,7 @@ $ quarkus dev
 
 ```
 
-Then, open your browser to $URL/api/heroes.
+==Then, open your browser to $HERO_URL/api/heroes.==
 You should see lots of heroes...
 
 ## Configuring the Datasource for Production
@@ -161,7 +127,7 @@ Production databases need to be configured as normal.
 So if you want to include a production database config in your `application.properties` and continue to use Dev Services,
 we recommend that you use the `%prod` profile to define your database settings.
 
-Just add the following datasource configuration in the `src/main/resources/application.properties` file:
+==Just add the following datasource configuration in the `src/main/resources/application.properties` file:==
 
 ```properties linenums="1" 
 {{ insert('hero-service/src/main/resources/application.properties', 'docDataSourceConfig') }}
@@ -169,15 +135,9 @@ Just add the following datasource configuration in the `src/main/resources/appli
 
 ## CRUD Tests in HeroResourceTest
 
-To test the `HeroResource` endpoint, we will be using a `@QuarkusTest` that will fire a Postgres database and then test CRUD operations.
+We added a few methods to the HeroResource, we should test them!
 
-In the generated build file, you can see 2 test dependencies:
-
-```xml linenums="1"
-{{ insert('hero-service/pom.xml', 'docTestingDeps') }}
-```
-
-Also, the generated project contains a simple test. Edit the HeroResourceTest.java to match the following content:
+==For testing the new methods added to the HeroResource, replace the content of the `HeroResourceTest.java` by the following:==
 
 ```java linenums="1"
 {{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java') }}
@@ -193,12 +153,6 @@ The following test methods have been added to the `HeroResourceTest` class:
 * `shouldUpdateAnItem`: checks that the `HeroResource` endpoint updates a newly created `Hero`
 * `shouldRemoveAnItem`: checks that the `HeroResource` endpoint deletes a hero from the database
 
-Let’s have a look to the 2 annotations used on the HeroResourceTest class. 
-`@QuarkusTest` indicates that this test class is checking the behavior of a Quarkus application. 
-The test framework starts the application before the test class and stops it once all the tests have been executed. 
-In our case, we just execute HTTP requests to check the result.
-
-With this code written, execute the test using `./mvnw test`.
-The test should pass.
+==Press `r` in the terminal you have Quarkus dev running. Tests will start running and they should pass.==
 
 
