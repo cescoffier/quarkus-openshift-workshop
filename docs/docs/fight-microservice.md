@@ -135,8 +135,7 @@ Then, in the code, in the `FightSimulatorService` we have a couple of annotation
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightSimulatorService.java', 'faultToleranceAnnotation') }}
 ```
 
-If the AI fails, the `@Retry` annotation ensures that the call will be retried up to two more times before finally giving up.
-If a the AI query is taking too long, the `@Timeout` annotation can stop it after 1 minute, preventing it from hanging indefinitely.
+If the LLM invocation is taking too long, the `@Timeout` annotation can stop it after 1 minute, preventing it from hanging indefinitely.
 
 ### The Fight Resource
 

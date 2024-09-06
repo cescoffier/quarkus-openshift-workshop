@@ -2,7 +2,6 @@ package io.quarkus.workshop.fight;
 
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
-import org.eclipse.microprofile.faulttolerance.Retry;
 import org.eclipse.microprofile.faulttolerance.Timeout;
 
 import java.time.temporal.ChronoUnit;
@@ -49,7 +48,6 @@ public interface FightSimulatorService {
             Output:
             """)
     //<faultToleranceAnnotation>
-    @Retry(maxRetries = 2)
     @Timeout(value = 1, unit = ChronoUnit.MINUTES)
     //</faultToleranceAnnotation>
     FightResult fight(Hero hero, Villain villain);
