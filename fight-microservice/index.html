@@ -1019,7 +1019,7 @@ Let’s call it the Fight API.</p>
 </ol>
 <p>Once created, the component is available in the <em>catalog</em>.
 You can access it to have an overview:</p>
-<p><img alt="microservice-home-page" src="../images/microservice-home-page.png" /></p>
+<p><img alt="microservice-home-page" src="../images/hero-home-page-rhdh.png" /></p>
 <p>Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).</p>
 <h2 id="the-fight-service">The Fight Service<a class="headerlink" href="#the-fight-service" title="Permanent link"></a></h2>
 <p>The Fight service is a Quarkus intelligent service. Instead of randomly selecting a winner in the battle between heroes and villains, 
@@ -1198,7 +1198,7 @@ As you can note, we are using a prompt template with following format. This form
 <p>AI methods can take parameters referenced in system and user messages using the {parameter} syntax. Note the <code>{hero}</code> and <code>{villain}</code> references.</p>
 <h4 id="ai-method-return-type">AI Method Return Type<a class="headerlink" href="#ai-method-return-type" title="Permanent link"></a></h4>
 <p>The fight method returns a <code>FightResult</code>. The JSON response will be mapped to that object directly. So, let&rsquo;s create it. </p>
-<p>Create a new java record <code>FightResult</code> under <code>src/main/java/io/quarkus/workshop/fight</code>. Java records provide a concise way to define immutable data classes with less boilerplate code.
+<p>Create a new java record <code>FightResult.java</code> under <code>src/main/java/io/quarkus/workshop/fight</code>. Java records provide a concise way to define immutable data classes with less boilerplate code.
 Once created, copy the following content:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
