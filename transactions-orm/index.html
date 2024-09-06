@@ -1286,11 +1286,13 @@ we recommend that you use the <code>%prod</code> profile to define your database
 <span class="normal"><a href="#__codelineno-8-2">2</a></span>
 <span class="normal"><a href="#__codelineno-8-3">3</a></span>
 <span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="na">%prod.quarkus.datasource.db-kind</span><span class="o">=</span><span class="s">postgresql</span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="na">%prod.quarkus.datasource.db-kind</span><span class="o">=</span><span class="s">postgresql</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="na">%prod.quarkus.datasource.username</span><span class="o">=</span><span class="s">${POSTGRESQL_USERNAME}</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="na">%prod.quarkus.datasource.password</span><span class="o">=</span><span class="s">${POSTGRESQL_USERNAME}</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="na">%prod.quarkus.datasource.jdbc.url</span><span class="o">=</span><span class="s">jdbc:postgresql://hero-database:5432/${POSTGRESQL_DATABASE}</span>
 <a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="na">%prod.quarkus.hibernate-orm.sql-load-script</span><span class="o">=</span><span class="s">import.sql</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="na">%prod.quarkus.hibernate-orm.database.generation</span><span class="o">=</span><span class="s">drop-and-create</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="crud-tests-in-heroresourcetest">CRUD Tests in HeroResourceTest<a class="headerlink" href="#crud-tests-in-heroresourcetest" title="Permanent link"></a></h2>
 <p>We added a few methods to the HeroResource, we should test them!</p>
