@@ -3,31 +3,42 @@
 New microservice, new project! 
 In this section we will see the counterpart of the Hero microservice: the Villain microservice.
 The Villain REST Endpoint is really similar to the Hero Endpoint but has been developed using the Spring compatibility layer provided by Quarkus.
-The Quarkus Spring compatibility extensions map Spring APIs to APIs in existing extensions that have already been optimized for fast startup, reduced memory utilization and native compilation, like RestEasy and CDI.
 While users are encouraged to use Quarkus extensions, this compatibility layer is provided to make developing new applications with Quarkus a natural getting started experience.
-Be aware that Quarkus Spring compatibility extensions do not utilize the Spring application context. 
-For this reason, attempting to utilize additional Spring libraries will likely not work.
+
 
 ## Bootstrapping the Villain Rest Endpoint
 
-The code is now fully available and you will not have to write any of this microservice.
-To set up the project, simply create it from the specified template, which will automatically pull the complete code from the GitHub repository.
+==The code is now fully available and you will not have to write any of this microservice.==
+Like we did for hero-service, we will create the villain-service from a Red Hat Developer Hub template, which will automatically pull the complete code from the GitHub repository.
 
-### Red Hat Developer Hub Software templates and Dev Spaces workspace.
+==So, please proceed with following steps==
 
-Like the Hero microservice creation, to create a Dev Spaces (DS) workspace, you'll first need to create a _Software Component_ using a _Red Hat Developer Hub (RHDH) Software Template_:
+* ==Navigate to the _Create Option_: in the left-hand menu of the RHDH, click on the "Create" option==.
 
-1. Navigate to the _Create Option_: in the left-hand menu of the RHDH, click on the "Create" option.
-1. Select the template: you'll see a list of available templates. Choose the `OpenCodeQuest - Quarkus microservice with Spring MVC and Spring Data` template from the list.
-1. Configure the workspace: after selecting the template, you'll need to provide the necessary values for clusters and other configurations. Most of these fields will be pre-filled by default, so you may only need to make minor adjustments if necessary.
-1. Proceed with the setup: Once you've reviewed the configurations, proceed to create your DS workspace.
+![create-service-rhdh.png](images%2Fcreate-service-rhdh.png)
 
-Once created, the component is available in the _catalog_.
-You can access it to have an overview:
+* ==Select the template: you'll see a list of available templates. Choose the `OpenCodeQuest - Quarkus microservice with Spring MVC and Spring Data` template from the list==.
 
-![microservice-home-page](images/microservice-home-page.png)
+![villain-template-rhdh.png](images%2Fvillain-template-rhdh.png)
 
-Launch the Dev Spaces creation by clicking the link OpenShift Dev Spaces (VS Code).
+* ==Select your cluster name, check the reference in the current url. The rest the fields will be pre-filled by default==.
+
+[//]: # (![hero-params-template-rhdh.png]&#40;images%2Fhero-params-template-rhdh.png&#41;)
+
+* ==Click Next button until a summary is shown==
+
+![villain-summary-rhdh.png](images%2Fvillain-summary-rhdh.png)
+
+* ==Review the configuration. Then, click on `Create`==.
+
+* ==If everything went well, you should see the following successful page. Click on the `Open Component in Catalog`==:
+
+![villain-success-rhdh.png](images%2Fvillain-success-rhdh.png)
+
+* ==Once in the villain-service component home page, you can launch the Dev Spaces opening by clicking the link OpenShift Dev Spaces (VS Code)==
+
+![villain-home-page-rhdh.png](images%2Fvillain-home-page-rhdh.png)
+
 
 ## The Villain Service
 
@@ -39,12 +50,7 @@ It uses HTTP to expose a REST API, and it internally stores data into a database
 
 This service will be used by the *fight* microservice.
 
-In the following sections, you will learn:
-
-* how to implement REST API using Quarkus Spring web extension, and
-* how to compose your application using CDI beans injected with Quarkus Spring CDI, and
-* how to access your database using Quarkus Spring Data JPA, and
-* how to use transactions, and
+==The code is fully provided. You will not have to write any of this microservice.==
 
 ## Directory Structure
 
@@ -52,7 +58,7 @@ Once you bootstrap the project, you get the following directory structure with a
 
 ![villain-directory-structure](target/villain-directory-structure.svg)
 
-It generates the following in the `villain-service` folder:
+You get the following in the `villain-service` folder:
 
 * the Maven structure with a `pom.xml`
 * an `io.quarkus.workshop.villain.VillainController` controller exposed on `/api/heroes`
@@ -60,21 +66,22 @@ It generates the following in the `villain-service` folder:
 * example `Dockerfile` files for both native and jvm modes in `src/main/docker`
 * the `application.properties` configuration file
 
-Once generated, look at the `pom.xml`.
-You will find the here import of the Quarkus BOM (_bill of materials_), allowing you to omit the version on the different Quarkus dependencies.
-In addition, you can see the `quarkus-maven-plugin`, responsible for the packaging of the application and also providing the development mode support.
+==Look at the `pom.xml`.==
 
-If we focus on the dependencies section, you can see basically the same dependencies than the hero-service plus the `quarkus-spring-web` and `quarkus-spring-data`
+The `pom.xml` is basically the same than for heroes apart that it contains a few more dependencies: `quarkus-spring-web` and `quarkus-spring-data`.
+
+The Quarkus Spring compatibility extensions map Spring APIs to APIs in existing extensions that have already been optimized for fast startup, reduced memory utilization and native compilation, like RestEasy and CDI.
+
+==Be aware that Quarkus Spring compatibility extensions do not utilize the Spring application context.==
+For this reason, attempting to utilize additional Spring libraries will likely not work.
 
 ## The Controller
 
-During the project creation, the `VillainController.java` file has been created with the following content:
+We get a rest controller, the `VillainController.java` with the following content:
 
 ```java linenums="1"
 {{ insert('villain-service/src/main/java/io/quarkus/workshop/villain/VillainController.java') }}
 ```
-
-It's a very simple REST endpoint, returning "hello" to HTTP GET requests to `/api/heroes`.
 
 This controller exposes CRUD operations to "villains" and leverages Spring Web and Spring Data JPA annotations for handling HTTP requests and transactions:
 
@@ -139,7 +146,7 @@ or
 
 Note that the tests have been successful run. 
 
-Alternatively, you can open `$URL/api/villains` in your browser and you should get lots of villains.
+Alternatively, you can open `/api/villains` in your browser and you should get lots of villains.
 
 ## Deploy the Villain microservice
 

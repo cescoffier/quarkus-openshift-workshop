@@ -5,7 +5,7 @@ Quarkus also lets you test it via a user-friendly UI named Swagger UI.
 
 Quarkus proposes a smallrye-openapi extension compliant with the Eclipse MicroProfile OpenAPI specification in order to generate your API OpenAPI specification.
 
-To install the OpenAPI dependency, add the following to the `pom.xml` of the hero-service
+The OpenAPI dependency is already present in the `pom.xml` of the hero-service
 
 ```java linenums="1"
 {{ insert('hero-service/pom.xml', 'docOpenApiDependency') }}

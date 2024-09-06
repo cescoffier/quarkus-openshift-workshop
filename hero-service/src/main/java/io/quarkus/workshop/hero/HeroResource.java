@@ -37,8 +37,6 @@ public class HeroResource {
     }
 
     //<docHeroCrudContent>
-    @Operation(summary = "Returns a random hero")
-    @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = Hero.class, required = true)))
     @GET
     @Path("/random")
     public RestResponse<Hero> getRandomHero() {

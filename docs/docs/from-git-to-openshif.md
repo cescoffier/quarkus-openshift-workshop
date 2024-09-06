@@ -5,6 +5,9 @@ With ArgoCD, deploying to the OpenShift cluster is as simple as committing and p
 To do this, follow these steps:
 
 1. In Dev Spaces, go to the source control view and enter your commit message.
+
+![ds-source-control-view.png](images/ds-source-control-view.png)
+
 2. Click the Commit button.
 3. After committing, click the Sync button to push your changes.
 

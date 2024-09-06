@@ -84,6 +84,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.betterem
   - pymdownx.superfences
+  - pymdownx.mark
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.arithmatex:
