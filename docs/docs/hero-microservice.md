@@ -12,7 +12,7 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 
 ![hero-template-rhdh.png](images%2Fhero-template-rhdh.png)
 
-* ==Select your cluster name, check the reference in the current url. The rest the fields will be pre-filled by default==.
+* ==Select your cluster name, check the reference in the current url. The rest of the fields will be pre-filled by default==.
 
 ![hero-params-template-rhdh.png](images%2Fhero-params-template-rhdh.png)
 
@@ -29,6 +29,10 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 * ==Once in the hero-service component home page, you can launch the Dev Spaces opening by clicking the link OpenShift Dev Spaces (VS Code)==
 
 ![hero-home-page-rhdh](images/hero-home-page-rhdh.png)
+
+You should see the following page while the Dev Spaces is starting up:
+
+![dev-spaces-starting-up.png](images%2Fdev-spaces-starting-up.png)
 
 ## The Hero Service
 
@@ -141,7 +145,7 @@ At some point, a pop up asking for opening the Quarkus dev will be shown:
 
 ![open-quarkus-dev-in-new-tab.png](images%2Fopen-quarkus-dev-in-new-tab.png)
 
-Click on the `Open in New Tab` button.
+==Click on the `Open in New Tab` button.==
 
 <div class="grid cards" markdown>
 -   :warning:{ .lg .middle }:warning:{ .lg .middle } __Fixing the `Dev UI: Only localhost is allowed` error__ :warning:{ .lg .middle }:warning:{ .lg .middle }

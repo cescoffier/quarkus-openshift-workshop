@@ -21,9 +21,8 @@ Like we did for hero-service, we will create the villain-service from a Red Hat 
 
 ![villain-template-rhdh.png](images%2Fvillain-template-rhdh.png)
 
-* ==Select your cluster name, check the reference in the current url. The rest the fields will be pre-filled by default==.
+* ==Select your cluster name, check the reference in the current url. The rest of the fields will be pre-filled by default==.
 
-[//]: # (![hero-params-template-rhdh.png]&#40;images%2Fhero-params-template-rhdh.png&#41;)
 
 * ==Click Next button until a summary is shown==
 
@@ -151,3 +150,11 @@ Alternatively, you can open `/api/villains` in your browser and you should get l
 ## Deploy the Villain microservice
 
 To deploy the Villain service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
+
+<div class="grid cards" markdown>
+-   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+
+    ---
+
+    Remember to stop the villain-service launched in dev mode.
+</div>

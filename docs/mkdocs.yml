@@ -6,6 +6,7 @@ docs_dir: docs
 nav:
   - Presenting the Workshop: 'overview.md'
   - Software requirements: 'requirements.md'
+  - User Interface: 'web-application.md'
   - Creating a REST/HTTP microservices:
     - Hero Microservice: 'hero-microservice.md'
     - Transactions and ORM: 'transactions-orm.md'
@@ -15,7 +16,6 @@ nav:
   - One microservice is not microservices:
     - Villain microservice: 'villain-microservice.md'
     - Intelligent Fight microservice: 'fight-microservice.md'
-  - User Interface: 'web-application.md'
   - Conclusion: 'conclusion-references.md'
 
 theme:
