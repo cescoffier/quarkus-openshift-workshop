@@ -47,9 +47,7 @@ public interface FightSimulatorService {
             <|assistant|>
             Output:
             """)
-    //<faultToleranceAnnotation>
     @Timeout(value = 1, unit = ChronoUnit.MINUTES)
-    //</faultToleranceAnnotation>
     FightResult fight(Hero hero, Villain villain);
 
 }

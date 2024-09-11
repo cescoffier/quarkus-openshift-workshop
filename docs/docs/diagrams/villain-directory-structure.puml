@@ -5,11 +5,6 @@ T
 villain-service
 ++  src
 +++  main
-++++  docker
-+++++  Dockerfile.jvm
-+++++  Dockerfile.legacy-jar
-+++++  Dockerfile.native
-+++++  Dockerfile.native-micro
 ++++  java
 +++++  io
 ++++++  quarkus
