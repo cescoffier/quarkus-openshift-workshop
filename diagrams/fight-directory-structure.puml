@@ -1,0 +1,27 @@
+@startsalt
+{
+{
+T
+fight-service
+++  src
++++  main
+++++  java
++++++  io
+++++++  quarkus
++++++++  workshop
+++++++++  fight
++++++++++  Fight.java
++++++++++  FightMetricPublisher.java
++++++++++  FightResource.java
++++++++++  FightResult.java
++++++++++  Hero.java
++++++++++  Villain.java
+++++  resources
++++++  application.properties
+++ Dockerfile
+++ mvnw
+++ mvnw.cmd
+++ pom.xml
+}
+}
+@endsalt
