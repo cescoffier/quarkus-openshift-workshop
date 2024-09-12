@@ -11,6 +11,7 @@ hero-service
 +++++++  workshop
 ++++++++  hero
 +++++++++  HeroResource.java
++++++++++  Hero.java
 ++++  resources
 +++++  application.properties
 +++++  import.sql

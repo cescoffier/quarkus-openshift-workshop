@@ -118,20 +118,11 @@ $ quarkus dev
 
 ```
 
-==Then, open your browser to $HERO_URL/api/heroes.==
-You should see lots of heroes...
-
-## Configuring the Datasource for Production
-
-Production databases need to be configured as normal. 
-So if you want to include a production database config in your `application.properties` and continue to use Dev Services,
-we recommend that you use the `%prod` profile to define your database settings.
-
-==Just add the following datasource configuration in the `src/main/resources/application.properties` file:==
-
-```properties linenums="1" 
-{{ insert('hero-service/src/main/resources/application.properties', 'docDataSourceConfig') }}
+==Then, in a terminal:==
+```shell
+curl http://localhost:8080/api/heroes
 ```
+You should see lots of heroes...
 
 ## CRUD Tests in HeroResourceTest
 
@@ -154,5 +145,19 @@ The following test methods have been added to the `HeroResourceTest` class:
 * `shouldRemoveAnItem`: checks that the `HeroResource` endpoint deletes a hero from the database
 
 ==Press `r` in the terminal you have Quarkus dev running. Tests will start running and they should pass.==
+
+## Configuring the Datasource for Production
+
+Production databases need to be configured as normal. 
+So if you want to include a production database config in your `application.properties` and continue to use Dev Services,
+we recommend that you use the `%prod` profile to define your database settings.
+
+==Just add the following datasource configuration in the `src/main/resources/application.properties` file:==
+
+```properties linenums="1" 
+{{ insert('hero-service/src/main/resources/application.properties', 'docDataSourceConfig') }}
+```
+
+
 
 

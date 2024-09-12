@@ -5,12 +5,20 @@ Quarkus also lets you test it via a user-friendly UI named Swagger UI.
 
 Quarkus proposes a smallrye-openapi extension compliant with the Eclipse MicroProfile OpenAPI specification in order to generate your API OpenAPI specification.
 
-The OpenAPI dependency is already present in the `pom.xml` of the hero-service
+==The OpenAPI dependency __is already present__ in the `pom.xml` of the hero-service. Check it out:==
 
 ```java linenums="1"
 {{ insert('hero-service/pom.xml', 'docOpenApiDependency') }}
 ```
-Now, you can open a browser and navigate to the hero endpoint to the default $URL/q/openapi endpoint:
+Now, you can curl the openapi endpoint and get the API description of the HeroResource.
+
+==In a Terminal, run the following command==
+
+```shell
+curl http://localhost:8080/q/openapi
+```
+
+You should have something like:
 
 ```shell
 ---
@@ -150,8 +158,20 @@ When building APIs, developers want to test them quickly.
 Swagger UI is a great tool permitting to visualize and interact with your APIs.
 The UI is automatically generated from your OpenAPI specification. 
 The Quarkus smallrye-openapi extension comes with a swagger-ui extension embedding a properly configured Swagger UI page. 
-By default, Swagger UI is accessible at /q/swagger-ui.
-So, once your application is started, you can go to $URL/swagger-ui and play with your API.
+
+
+==The Swagger UI is accessible from the Red Hat Developer Hub, in the hero component dashboard, just click on the `Api` tab:==
+
+![hero-swagger-ui-rhdh.png](images%2Fhero-swagger-ui-rhdh.png)
+
+==Then, select the `$USER-hero` provided API==
+
+==And, finally, click in the `Definition` tab== 
+
+![hero-swagger-ui-rhdh-2.png](images%2Fhero-swagger-ui-rhdh-2.png)
+
+By default, Swagger UI is accessible at /q/swagger-ui. 
+So, once your application is started in dev mode, you can navigate with a browser to $URL/swagger-ui and play with your API.
 
 ![swagger-ui](images/swagger-ui.png)
 
