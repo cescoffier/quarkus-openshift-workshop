@@ -10,9 +10,9 @@ nav:
   - Creating a REST/HTTP microservices:
     - Hero Microservice: 'hero-microservice.md'
     - Transactions and ORM: 'transactions-orm.md'
+    - Open API: 'open-api.md'
     - From Git to OpenShift: 'from-git-to-openshif.md'
     - Red Hat Trusted Application Pipelines: 'trusted-apps.md'
-    - Open API: 'open-api.md'
   - One microservice is not microservices:
     - Villain microservice: 'villain-microservice.md'
     - Intelligent Fight microservice: 'fight-microservice.md'

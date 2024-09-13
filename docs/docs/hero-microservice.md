@@ -147,23 +147,6 @@ At some point, a pop up asking for opening the Quarkus dev will be shown:
 
 ==Click on the `Open in New Tab` button.==
 
-<div class="grid cards" markdown>
--   :warning:{ .lg .middle }:warning:{ .lg .middle } __Fixing the `Dev UI: Only localhost is allowed` error__ :warning:{ .lg .middle }:warning:{ .lg .middle }
-
-    ---
-
-    If you got the following error log in the console
-
-    ![error-dev-hosts-startup.png](images%2Ferror-dev-hosts-startup.png)
-
-    Please, copy the url shown in the browser.
-    Go and edit the `application.properties file and paste this value in the `%dev.quarkus.dev-ui.hosts` properties.
-
-    ``
-    %dev.quarkus.dev-ui.hosts=storm-hero-service-k39c-quarkus-dev.apps.cluster-v9s95.v9s95.sandbox823.opentlc.com
-    ``
-</div>
-
 You can now check that the endpoint returns `Hello from Quarkus REST` as expected.
 
 ==Open a new Terminal and run the following command==
