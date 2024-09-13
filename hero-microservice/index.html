@@ -565,6 +565,27 @@ You are not viewing the latest version.
   
   
     <li class="md-nav__item">
+      <a href="../open-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../from-git-to-openshif/" class="md-nav__link">
         
   
@@ -591,27 +612,6 @@ You are not viewing the latest version.
   
   <span class="md-ellipsis">
     Red Hat Trusted Application Pipelines
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../open-api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Open API
   </span>
   
 
@@ -1083,19 +1083,6 @@ In addition, you can see the <code>quarkus-maven-plugin</code>, responsible for 
 <p>At some point, a pop up asking for opening the Quarkus dev will be shown:</p>
 <p><img alt="open-quarkus-dev-in-new-tab.png" src="../images/open-quarkus-dev-in-new-tab.png" /></p>
 <p><mark>Click on the <code>Open in New Tab</code> button.</mark></p>
-<div class="grid cards">
-<ul>
-<li>
-<p><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> <strong>Fixing the <code>Dev UI: Only localhost is allowed</code> error</strong> <img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-<hr />
-<p>If you got the following error log in the console</p>
-<p><img alt="error-dev-hosts-startup.png" src="../images/error-dev-hosts-startup.png" /></p>
-<p>Please, copy the url shown in the browser.
-Go and edit the <code>application.properties file and paste this value in the</code>%dev.quarkus.dev-ui.hosts` properties.</p>
-<p><code>%dev.quarkus.dev-ui.hosts=storm-hero-service-k39c-quarkus-dev.apps.cluster-v9s95.v9s95.sandbox823.opentlc.com</code></p>
-</li>
-</ul>
-</div>
 <p>You can now check that the endpoint returns <code>Hello from Quarkus REST</code> as expected.</p>
 <p><mark>Open a new Terminal and run the following command</mark></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>http://localhost:8080/api/heroes/hello

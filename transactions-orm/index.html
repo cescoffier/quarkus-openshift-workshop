@@ -12,7 +12,7 @@
         <link rel="prev" href="../hero-microservice/">
       
       
-        <link rel="next" href="../from-git-to-openshif/">
+        <link rel="next" href="../open-api/">
       
       
       <link rel="icon" href="../images/logo.png">
@@ -529,18 +529,18 @@ You are not viewing the latest version.
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-datasource-for-production" class="md-nav__link">
+  <a href="#crud-tests-in-heroresourcetest" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring the Datasource for Production
+      CRUD Tests in HeroResourceTest
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#crud-tests-in-heroresourcetest" class="md-nav__link">
+  <a href="#configuring-the-datasource-for-production" class="md-nav__link">
     <span class="md-ellipsis">
-      CRUD Tests in HeroResourceTest
+      Configuring the Datasource for Production
     </span>
   </a>
   
@@ -550,6 +550,27 @@ You are not viewing the latest version.
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open API
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -588,27 +609,6 @@ You are not viewing the latest version.
   
   <span class="md-ellipsis">
     Red Hat Trusted Application Pipelines
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../open-api/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Open API
   </span>
   
 
@@ -848,18 +848,18 @@ You are not viewing the latest version.
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-the-datasource-for-production" class="md-nav__link">
+  <a href="#crud-tests-in-heroresourcetest" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuring the Datasource for Production
+      CRUD Tests in HeroResourceTest
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#crud-tests-in-heroresourcetest" class="md-nav__link">
+  <a href="#configuring-the-datasource-for-production" class="md-nav__link">
     <span class="md-ellipsis">
-      CRUD Tests in HeroResourceTest
+      Configuring the Datasource for Production
     </span>
   </a>
   
@@ -1275,25 +1275,10 @@ It it&rsquo;s not, the transaction will be rollback-ed.</p>
 or</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>quarkus<span class="w"> </span>dev
 </code></pre></div>
-<p><mark>Then, open your browser to $HERO_URL/api/heroes.</mark>
+<p><mark>Then, in a terminal:</mark>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>curl<span class="w"> </span>http://localhost:8080/api/heroes
+</code></pre></div>
 You should see lots of heroes&hellip;</p>
-<h2 id="configuring-the-datasource-for-production">Configuring the Datasource for Production<a class="headerlink" href="#configuring-the-datasource-for-production" title="Permanent link"></a></h2>
-<p>Production databases need to be configured as normal. 
-So if you want to include a production database config in your <code>application.properties</code> and continue to use Dev Services,
-we recommend that you use the <code>%prod</code> profile to define your database settings.</p>
-<p><mark>Just add the following datasource configuration in the <code>src/main/resources/application.properties</code> file:</mark></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span>
-<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="na">%prod.quarkus.datasource.db-kind</span><span class="o">=</span><span class="s">postgresql</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="na">%prod.quarkus.datasource.username</span><span class="o">=</span><span class="s">${POSTGRESQL_USERNAME}</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="na">%prod.quarkus.datasource.password</span><span class="o">=</span><span class="s">${POSTGRESQL_USERNAME}</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="na">%prod.quarkus.datasource.jdbc.url</span><span class="o">=</span><span class="s">jdbc:postgresql://hero-database:5432/${POSTGRESQL_DATABASE}</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="na">%prod.quarkus.hibernate-orm.sql-load-script</span><span class="o">=</span><span class="s">import.sql</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="na">%prod.quarkus.hibernate-orm.database.generation</span><span class="o">=</span><span class="s">drop-and-create</span>
-</code></pre></div></td></tr></table></div>
 <h2 id="crud-tests-in-heroresourcetest">CRUD Tests in HeroResourceTest<a class="headerlink" href="#crud-tests-in-heroresourcetest" title="Permanent link"></a></h2>
 <p>We added a few methods to the HeroResource, we should test them!</p>
 <p><mark>For testing the new methods added to the HeroResource, replace the content of the <code>HeroResourceTest.java</code> by the following:</mark></p>
@@ -1754,6 +1739,23 @@ we recommend that you use the <code>%prod</code> profile to define your database
 <li><code>shouldRemoveAnItem</code>: checks that the <code>HeroResource</code> endpoint deletes a hero from the database</li>
 </ul>
 <p><mark>Press <code>r</code> in the terminal you have Quarkus dev running. Tests will start running and they should pass.</mark></p>
+<h2 id="configuring-the-datasource-for-production">Configuring the Datasource for Production<a class="headerlink" href="#configuring-the-datasource-for-production" title="Permanent link"></a></h2>
+<p>Production databases need to be configured as normal. 
+So if you want to include a production database config in your <code>application.properties</code> and continue to use Dev Services,
+we recommend that you use the <code>%prod</code> profile to define your database settings.</p>
+<p><mark>Just add the following datasource configuration in the <code>src/main/resources/application.properties</code> file:</mark></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="na">%prod.quarkus.datasource.db-kind</span><span class="o">=</span><span class="s">postgresql</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="na">%prod.quarkus.datasource.username</span><span class="o">=</span><span class="s">${POSTGRESQL_USERNAME}</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="na">%prod.quarkus.datasource.password</span><span class="o">=</span><span class="s">${POSTGRESQL_USERNAME}</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="na">%prod.quarkus.datasource.jdbc.url</span><span class="o">=</span><span class="s">jdbc:postgresql://hero-database:5432/${POSTGRESQL_DATABASE}</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="na">%prod.quarkus.hibernate-orm.sql-load-script</span><span class="o">=</span><span class="s">import.sql</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="na">%prod.quarkus.hibernate-orm.database.generation</span><span class="o">=</span><span class="s">drop-and-create</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -1802,13 +1804,13 @@ we recommend that you use the <code>%prod</code> profile to define your database
         
         
           
-          <a href="../from-git-to-openshif/" class="md-footer__link md-footer__link--next" aria-label="Next: From Git to OpenShift">
+          <a href="../open-api/" class="md-footer__link md-footer__link--next" aria-label="Next: Open API">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                From Git to OpenShift
+                Open API
               </div>
             </div>
             <div class="md-footer__button md-icon">
