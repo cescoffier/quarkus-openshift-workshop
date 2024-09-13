@@ -139,17 +139,17 @@ or
 
 `quarkus dev`
 
-```shell
-
-```
-
 Note that the tests have been successful run. 
 
-Alternatively, you can open `/api/villains` in your browser and you should get lots of villains.
+==Also, you can curl the villains endopoint and you should get lots of villains==
+
+```shell
+curl http://localhost:8080/api/villains
+```
 
 ## Deploy the Villain microservice
 
-To deploy the Villain service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
+Before deploying the Villain service: 
 
 <div class="grid cards" markdown>
 -   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
@@ -158,3 +158,5 @@ To deploy the Villain service, remember to perform a commit&push of the code. Yo
 
     Remember to stop the villain-service launched in dev mode.
 </div>
+
+To deploy the Villain service, ==remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)==

@@ -105,7 +105,7 @@ Notice that both methods that persist and update a hero, pass a `Hero` object as
 Thanks to the Bean Validation's `@Valid` annotation, the `Hero` object will be checked to see if it's valid or not.
 It it's not, the transaction will be rollback-ed.
 
-If you didn't yet, open a Terminal and start the application in dev mode:
+==If you didn't yet, open a Terminal and start the application in dev mode:==
 
 ```shell
 ./mvnw quarkus:dev
@@ -118,7 +118,7 @@ $ quarkus dev
 
 ```
 
-==Then, in a terminal:==
+==Then, in a __new__ terminal:==
 ```shell
 curl http://localhost:8080/api/heroes
 ```
