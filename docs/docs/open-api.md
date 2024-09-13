@@ -166,12 +166,16 @@ The Quarkus smallrye-openapi extension comes with a swagger-ui extension embeddi
 
 ==Then, select the `$USER-hero` provided API==
 
+![openapi-provided-rhdh.png](images%2Fopenapi-provided-rhdh.png)
+
 ==And, finally, click in the `Definition` tab== 
 
 ![hero-swagger-ui-rhdh-2.png](images%2Fhero-swagger-ui-rhdh-2.png)
 
-By default, Swagger UI is accessible at /q/swagger-ui. 
-So, once your application is started in dev mode, you can navigate with a browser to $URL/swagger-ui and play with your API.
+Here you can see the Swagger UI for Heroes API.
+
+By default, Swagger UI is also accessible at $URL/q/swagger-ui endpoint. 
+So, once your application is started in dev mode, you can navigate with a browser to $URL/q/swagger-ui and play with your API.
 
 ![swagger-ui](images/swagger-ui.png)
 
