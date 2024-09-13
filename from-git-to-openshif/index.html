@@ -494,6 +494,39 @@ You are not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exploring-the-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploring the pipeline
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploring the pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-sign-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      build-sign-image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev Deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -679,6 +712,39 @@ You are not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exploring-the-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exploring the pipeline
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exploring the pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-sign-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      build-sign-image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev Deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -703,18 +769,45 @@ You are not viewing the latest version.
 <p>This approach will be followed for all the microservices.
 With ArgoCD, deploying to the OpenShift cluster is as simple as committing and pushing your changes to the GitLab repository. 
 To do this, follow these steps:</p>
-<ol>
+<ul>
 <li>In Dev Spaces, go to the source control view.</li>
 <li>Enter your commit message</li>
 <li>Click the Commit button.</li>
-</ol>
+</ul>
 <p><img alt="ds-source-control-view.png" src="../images/ds-source-control-view.png" /></p>
-<ol>
-<li>After committing, click the Sync button to push your changes.</li>
-</ol>
-<p>This will trigger a pipeline, which you can monitor in the CI tab of the RHDH.
+<ul>
+<li>After committing, click the Sync Changes button to push your changes.</li>
+</ul>
+<p><img alt="git-push-button.png" src="../images/git-push-button.png" /></p>
+<p>This action will trigger a pipeline, which you can monitor in the CI tab of the RHDH.
 Once the pipeline completes successfully, you will see the corresponding pod in the Topology tab. 
-From there, you can access your deployment by clicking on the pod.</p>
+From there, you can access your hero microservice by clicking on the pod.</p>
+<h2 id="exploring-the-pipeline">Exploring the pipeline<a class="headerlink" href="#exploring-the-pipeline" title="Permanent link"></a></h2>
+<p>Let&rsquo;s switch to the Developer Hub console, in your hero component.</p>
+<p><mark>Click the CI tab</mark></p>
+<p>Once you commited your code, an OpenShift pipeline has been automaticaly triggered.
+This pipeline was created automaticaly for your project when you instanciated the template.</p>
+<p><img alt="CI of the hero-service" src="../images/rhdh-cicd.png" /></p>
+<p>As you can see, a lot of steps are now running so let&rsquo;s explore a little.</p>
+<p>The first step in the pipeline is a simple git clone. The next step is basically a mvn package and then running of Sonarqube scan-source for static analysis. All pretty standard for CI pipelines. Get the code, compile/build the code, run some scans.</p>
+<h3 id="build-sign-image">build-sign-image<a class="headerlink" href="#build-sign-image" title="Permanent link"></a></h3>
+<p>It is the build-sign-image where things get super interesting.</p>
+<p><img alt="build-sign-image" src="../images/rhdh-build-sign-image.png" /></p>
+<p>The template is leveraging Tekton Chains, a Kubernetes Custom Resource Definition (CRD) controller, that nicely augments the supply chain security within OpenShift Pipelines. This tool’s capacity to automatically sign task runs, and its adoption of advanced attestation formats like in-toto and SLA provenance, bring a higher degree of trust and verification to our processes. Tekton Chains works like an independent observer within the cluster, it signs, attests and stores additional artifacts as OCI images alongside with your container image.</p>
+<p>Also, you can see we are using this step to automatically create a SBOM (Software Bill Of Materials) which is a kind of ingredients list for your software.</p>
+<h3 id="dev-deployment">Dev Deployment<a class="headerlink" href="#dev-deployment" title="Permanent link"></a></h3>
+<p>As a developer, I want to see my handy work, did my application really deploy to the dev environment ?</p>
+<p>You can check that your newly built application has been automatically sync using OpenShift GitOps (ArgoCD) if you switch to the Overview Tab.</p>
+<p><img alt="rhdh-overview-dev-ready" src="../images/rhdp-overview-dev-ready.png" /></p>
+<p><mark>Click on Topology</mark></p>
+<p>This should look familiar to you if you regularly use the topology view from OpenShift.
+<img alt="rhdh-topology-dev" src="../images/rhdh-topology-dev.png" /></p>
+<p>Note: pre-prod and prod have NOT yet deployed</p>
+<p><mark>Click the arrow</mark></p>
+<p>This will open a new tab on your browser showing your deployed hero-service !</p>
+<p><mark>You can add <code>/api/heroes/hello</code> , <code>/api/heroes/random</code> or <code>/api/heroes</code> to the URL in you browser to check your work</mark></p>
+<p>Note that during the deployment with OpenShift GitOps, we also deployed automatically the Database containing all the superheroes using the EDB Cluster CRD that automaticaly manage our database.</p>
+<p><mark>Verify that the fight-ui dev environment is now able to retrieve your hero</mark></p>
 
 
 

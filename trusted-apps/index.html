@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exploring-the-pipeline" class="md-skip">
+        <a href="#advanced-cluster-security-acs" class="md-skip">
           Skip to content
         </a>
       
@@ -507,53 +507,20 @@ You are not viewing the latest version.
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exploring-the-pipeline" class="md-nav__link">
+  <a href="#advanced-cluster-security-acs" class="md-nav__link">
     <span class="md-ellipsis">
-      Exploring the pipeline
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exploring the pipeline">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#build-sign-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      build-sign-image
+      Advanced Cluster Security (ACS)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#acs" class="md-nav__link">
-    <span class="md-ellipsis">
-      ACS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#scan-export-sbom" class="md-nav__link">
     <span class="md-ellipsis">
       scan-export-sbom
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dev-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -713,53 +680,20 @@ You are not viewing the latest version.
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exploring-the-pipeline" class="md-nav__link">
+  <a href="#advanced-cluster-security-acs" class="md-nav__link">
     <span class="md-ellipsis">
-      Exploring the pipeline
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exploring the pipeline">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#build-sign-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      build-sign-image
+      Advanced Cluster Security (ACS)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#acs" class="md-nav__link">
-    <span class="md-ellipsis">
-      ACS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#scan-export-sbom" class="md-nav__link">
     <span class="md-ellipsis">
       scan-export-sbom
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dev-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -784,20 +718,7 @@ You are not viewing the latest version.
   <h1>Red Hat Trusted Application Pipelines</h1>
 
 <p>Red Hat Trusted Application Pipelines is a set of Red Hat products able to build secured pipelines by signing and verify your build artifacts.</p>
-<h2 id="exploring-the-pipeline">Exploring the pipeline<a class="headerlink" href="#exploring-the-pipeline" title="Permanent link"></a></h2>
-<p>Let&rsquo;s switch to the Developer Hub console, in your hero component.</p>
-<p><mark>Click the CI tab</mark></p>
-<p>Once you commited your code, an OpenShift pipeline has been automaticaly triggered.
-This pipeline was created automaticaly for your project when you instanciated the template.</p>
-<p><img alt="CI of the hero-service" src="../images/rhdh-cicd.png" /></p>
-<p>As you can see, a lot of steps are now running so let&rsquo;s explore a little.</p>
-<p>The first step in the pipeline is a simple git clone. The next step is basically a mvn package and then running of Sonarqube scan-source for static analysis. All pretty standard for CI pipelines. Get the code, compile/build the code, run some scans.</p>
-<h3 id="build-sign-image">build-sign-image<a class="headerlink" href="#build-sign-image" title="Permanent link"></a></h3>
-<p>It is the build-sign-image where things get super interesting.</p>
-<p><img alt="build-sign-image" src="../images/rhdh-build-sign-image.png" /></p>
-<p>The template is leveraging Tekton Chains, a Kubernetes Custom Resource Definition (CRD) controller, that nicely augments the supply chain security within OpenShift Pipelines. This tool’s capacity to automatically sign task runs, and its adoption of advanced attestation formats like in-toto and SLA provenance, bring a higher degree of trust and verification to our processes. Tekton Chains works like an independent observer within the cluster, it signs, attests and stores additional artifacts as OCI images alongside with your container image.</p>
-<p>Also, you can see we are using this step to automatically create a SBOM (Software Bill Of Materials) which is a kind of ingredients list for your software.</p>
-<h3 id="acs">ACS<a class="headerlink" href="#acs" title="Permanent link"></a></h3>
+<h3 id="advanced-cluster-security-acs">Advanced Cluster Security (ACS)<a class="headerlink" href="#advanced-cluster-security-acs" title="Permanent link"></a></h3>
 <p>Back to the pipeline itself and let’s look at the 3 Advanced Cluster Security tasks leveraging roxctl</p>
 <p>The bottom-most task is performing CVE scanning via roxctl image scan.</p>
 <p>The middle task is performing a policy check via roxctl image check. These policies might be things like &lsquo;No log4j allowed&rsquo; or perhaps no curl, wget nor a package manager in a production image.</p>
@@ -811,19 +732,6 @@ This pipeline was created automaticaly for your project when you instanciated th
 <p>Pushes the SBOM to a CycloneDX repository. Currently, the SBOM is stored in Quay and is not in an easily accessible or readable format. Pushing the SBOM to an additional repository allows us to access the raw JSON/XML file for further use outside of the CI process.</p>
 <p>The SBOM is an artifact that deserves special mention. Think of the Software Bill of Materials as the ingredient list. I am sure you have gone to the grocery store and picked up an item and reviewed its packaging. On the back of the product there will be a list of ingredients. You can find out that something you might wish to eat includes gluten, perhaps too much sugar, or shellfish (my sister is allergic to shellfish) or perhaps nuts. Well, if you are allergic to nuts you might also be allergic to struts :-) You might remember that infamous Struts 2 vulnerability that allowed 143 million American’s private data to end up on the dark web Struts 2 hack.</p>
 <p>The SBOM is either a JSON or XML file and is stored in the container registry as the ingredient list associated with the container image.</p>
-<h3 id="dev-deployment">Dev Deployment<a class="headerlink" href="#dev-deployment" title="Permanent link"></a></h3>
-<p>As a developer, I want to see my handy work, did my application really deploy to the dev environment ?</p>
-<p>You can check that your newly built application has been automatically sync using OpenShift GitOps (ArgoCD) if you switch to the Overview Tab.</p>
-<p><img alt="rhdh-overview-dev-ready" src="../images/rhdp-overview-dev-ready.png" /></p>
-<p><mark>Click on Topology</mark></p>
-<p>This should look familiar to you if you regularly use the topology view from OpenShift.
-<img alt="rhdh-topology-dev" src="../images/rhdh-topology-dev.png" /></p>
-<p>Note: pre-prod and prod have NOT yet deployed</p>
-<p><mark>Click the arrow</mark></p>
-<p>This will open a new tab on your browser showing your deployed hero-service ! </p>
-<p><mark>You can add <code>/api/heroes/hello</code> , <code>/api/heroes/random</code> or <code>/api/heroes</code> to the URL in you browser to check your work</mark></p>
-<p>Note that during the deployment with OpenShift GitOps, we also deployed automatically the Database containing all the superheroes using the EDB Cluster CRD that automaticaly manage our database.</p>
-<p><mark>Verify that the fight-ui dev environment is now able to retrieve your hero</mark></p>
 
 
 

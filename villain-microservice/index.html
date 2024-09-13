@@ -1333,12 +1333,12 @@ A test class is provided and contains the basic tests to ensure that the villain
 <p><code>./mvnw quarkus:dev</code></p>
 <p>or</p>
 <p><code>quarkus dev</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>
-</code></pre></div>
 <p>Note that the tests have been successful run. </p>
-<p>Alternatively, you can open <code>/api/villains</code> in your browser and you should get lots of villains.</p>
+<p><mark>Also, you can curl the villains endopoint and you should get lots of villains</mark></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>http://localhost:8080/api/villains
+</code></pre></div>
 <h2 id="deploy-the-villain-microservice">Deploy the Villain microservice<a class="headerlink" href="#deploy-the-villain-microservice" title="Permanent link"></a></h2>
-<p>To deploy the Villain service, remember to perform a commit&amp;push of the code. You can get some help <a href="../from-git-to-openshif/">here</a></p>
+<p>Before deploying the Villain service: </p>
 <div class="grid cards">
 <ul>
 <li>
@@ -1348,6 +1348,7 @@ A test class is provided and contains the basic tests to ensure that the villain
 </li>
 </ul>
 </div>
+<p>To deploy the Villain service, <mark>remember to perform a commit&amp;push of the code. You can get some help <a href="../from-git-to-openshif/">here</a></mark></p>
 
 
 

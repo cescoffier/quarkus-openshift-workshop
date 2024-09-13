@@ -1269,13 +1269,13 @@ Marking a CDI bean method <code>@Transactional</code> will do it and make that m
 <p>Notice that both methods that persist and update a hero, pass a <code>Hero</code> object as a parameter.
 Thanks to the Bean Validation&rsquo;s <code>@Valid</code> annotation, the <code>Hero</code> object will be checked to see if it&rsquo;s valid or not.
 It it&rsquo;s not, the transaction will be rollback-ed.</p>
-<p>If you didn&rsquo;t yet, open a Terminal and start the application in dev mode:</p>
+<p><mark>If you didn&rsquo;t yet, open a Terminal and start the application in dev mode:</mark></p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>./mvnw<span class="w"> </span>quarkus:dev
 </code></pre></div>
 or</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>quarkus<span class="w"> </span>dev
 </code></pre></div>
-<p><mark>Then, in a terminal:</mark>
+<p><mark>Then, in a <strong>new</strong> terminal:</mark>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>curl<span class="w"> </span>http://localhost:8080/api/heroes
 </code></pre></div>
 You should see lots of heroes&hellip;</p>
