@@ -231,22 +231,3 @@ Tests paused, press [r] to resume, [h] for more options>
 All 1 test is passing (0 skipped), 1 test was run in 8053ms. Tests completed at 12:11:25.
 Press [e] to edit command line args (currently ''), [r] to re-run, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
-
-## Packaging and Running the Application
-
-The application is packaged using `./mvnw package` or `quarkus build` in a Terminal.
-It produces 2 jar files in `/target`:
-
-* `rest-hero-1.0-SNAPSHOT.jar`: containing just the classes and resources of the projects, it's the regular artifact produced by the Maven build;
-* `quarkus-app/quarkus-run.jar`: being an executable jar.
-  Be aware that it's not an über-jar as the dependencies are copied into the `target/quarkus-app/lib` directory.
-
-The application is now runnable from a terminal by running `java -jar target/quarkus-app/quarkus-run.jar`.
-
-<div class="grid cards" markdown>
--   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
-
-    ---
-
-    Remember to stop the hero-service launched in dev mode otherwise you will get a conflict port error.
-</div>
