@@ -131,7 +131,7 @@ We added a few methods to the HeroResource, we should test them!
 ==For testing the new methods added to the HeroResource, replace the content of the `HeroResourceTest.java` by the following:==
 
 ```java linenums="1"
-{{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java') }}
+{{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java', 'docHeroResourceTest', ['docHelloPath'],['docCrudTests','docHelloPath']) }}
 ```
 
 The following test methods have been added to the `HeroResourceTest` class:

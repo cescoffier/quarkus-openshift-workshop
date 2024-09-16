@@ -11,6 +11,7 @@ nav:
     - Hero Microservice: 'hero-microservice.md'
     - Transactions and ORM: 'transactions-orm.md'
     - Open API: 'open-api.md'
+    - Packaging and running (Optional): 'packaging-app.md'
     - From Git to OpenShift: 'from-git-to-openshif.md'
     - Red Hat Trusted Application Pipelines: 'trusted-apps.md'
   - One microservice is not microservices:

@@ -1,7 +1,7 @@
 By default, a Quarkus application exposes its API description through an OpenAPI specification.
 Quarkus also lets you test it via a user-friendly UI named Swagger UI.
 
-### Installing the Open API Dependency
+### Open API Dependency
 
 Quarkus proposes a smallrye-openapi extension compliant with the Eclipse MicroProfile OpenAPI specification in order to generate your API OpenAPI specification.
 
@@ -179,3 +179,13 @@ So, once your application is started in dev mode, you can navigate with a browse
 
 ![swagger-ui](images/swagger-ui.png)
 
+
+Ok, now, before continuing with the workshop...
+
+<div class="grid cards" markdown>
+-   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+
+    ---
+
+    Please stop the hero-service launched in dev mode otherwise you will get a conflict port error.
+</div>
