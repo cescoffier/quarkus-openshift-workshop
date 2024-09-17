@@ -66,5 +66,5 @@ This will open a new tab on your browser showing your deployed hero-service !
 
 Note that during the deployment with OpenShift GitOps, we also deployed automatically the Database containing all the superheroes using the EDB Cluster CRD that automaticaly manage our database.
 
-==Verify that the fight-ui dev environment is now able to retrieve your hero==
+==Verify that the fight-ui dev environment is now able to retrieve the characters==
 

@@ -85,13 +85,14 @@ They are self-explanatory, but you can check the documentation for more informat
 
 ![fight-directory-structure](target/fight-directory-structure.svg)
 
-It generates the following in the `hero-service` folder:
+It generates the following in the `fight-service` folder:
 
 * the Maven structure with a `pom.xml`
 * an `io.quarkus.workshop.fight.FightResource.java` resource exposed on `/api/fights`.
 * a straightforward java Record `Fight.java` that encapsulates the hero and villain inputs for a fight.
 * the corresponding `Hero.java` and `Villain.java`.
 * a java Record `FightResult.java`. Quarkus automatically creates an instance of `FightResult` from the LLM’s JSON response.
+* an intelligent service `FightSimulatorService.java`. This is where we will define the interaction with the LLM.
 * the `application.properties` configuration file.
 
 ### Defining LLM interactions
@@ -100,7 +101,7 @@ It’s time to tell the LLM what we want to do.
 The Quarkus LangChain4J extension provides a declarative way to describe LLM interactions. 
 We model the interaction using an interface annotated with `@RegisterAiService`.
 
-Create a new java interface `FightSimulatorService.java` under `src/main/java/io/quarkus/workshop/fight` and copy the following content:
+==Edit the java interface `FightSimulatorService.java` under `src/main/java/io/quarkus/workshop/fight` and copy the following content:==
 
 ```java linenums="1"
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightSimulatorService.java') }}
@@ -161,6 +162,51 @@ Now, ==let's take a look to the `FightResource.java`.==
 ==This is a JAX-RS resource just like the Hero endpoint where the FightSimulatorService is injected.== 
 ==Then the intelligent `fight` method is called from the exposed `fight` method.== 
 
+### Start the Fight service in dev mode
+
+We are now ready to run our application.
+
+==Open a Terminal and run one of the following commands==:
+
+`./mvnw quarkus:dev`
+
+==or==
+
+`quarkus dev`
+
+### Verify the Fight service using the Swagger UI
+
+==Go to the Red Hat Developer Hub, in the fight component dashboard, just click on the `Api` tab:==
+
+![fight-swagger-ui-rhdh.png](images%2Ffight-swagger-ui-rhdh.png)
+
+==Then, select the `$USER-fight` provided API==
+
+![fight-openapi-provided-rhdh.png](images%2Ffight-openapi-provided-rhdh.png)
+
+==And, finally, click in the `Definition` tab==
+
+![fight-swagger-ui-rhdh-2.png](images%2Ffight-swagger-ui-rhdh-2.png)
+
+Here you can see the Swagger UI for Fight API.
+
+## Deploy the Fight microservice
+
+To deploy the Fight service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
+
+<div class="grid cards" markdown>
+-   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+
+    ---
+
+    Remember to stop the fight-service launched in dev mode.
+</div>
+
+==Verify that everything works by navigating to the fight-ui dev url and launch a few fights between heroes and villains!==
+
+![fights.png](images%2Ffights.png)
+
+
 ## Observability 
 
 Observability is built into services created via `@RegisterAiService` and metrics collection is enabled when quarkus-micrometer is part of the application.
@@ -170,7 +216,7 @@ Micrometer defines an API for basic meter types, like counters, gauges, timers, 
 
 ### Metrics
 
-Each AI method is automatically timed and the timer data is available using the langchain4j.aiservices.$interface_name.$method_name template for the name.
+Each AI method is automatically timed and the timer data is available using the `langchain4j.aiservices.$interface_name.$method_name` template for the name.
 
 ### Create your own metrics
 
@@ -189,16 +235,19 @@ The java class `FightMetricPublisher.java` under `src/main/java/io/quarkus/works
 
 Finally, ==check how the `FightMetricPublisher` is injected in the `FightResource` and called each time that a fight happen.==
 
+### Verify metrics
 
-## Deploy the Fight microservice
+The Micrometer Prometheus MeterRegistry extension creates an endpoint we can use to observe collected metrics, this endpoint is exposed in $fight-service/q/metrics path. 
 
-To deploy the Fight service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
+Let’s take a look at the metrics that have been collected:
 
+* ==Click on Topology tab of the fight service in Red Hat Developer Hub==
 
-<div class="grid cards" markdown>
--   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+![fight-topology-rhdh.png](images%2Ffight-topology-rhdh.png)
 
-    ---
+* ==Click the arrow==
+* ==A new tab should open.==
+* ==Add the `/q/metrics` path to the url opened in previous step. You should see the metrics. Besides some automatically generated metrics like the `http_server_requests_seconds_count` or `http_server_requests_seconds_sum`, you should also see the custom metrics counting the fights calls and how many times won the heroes and the villains:==
 
-    Remember to stop the fight-service launched in dev mode.
-</div>
+![fight-custom-metrics.png](images%2Ffight-custom-metrics.png)
+
