@@ -26,7 +26,7 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 
 ![ui-params-template-rhdh.png](images%2Fui-params-template-rhdh.png)
 
-* ==Click Next button until a summary is shown==
+* ==Click Next/Review button until a summary is shown==
 
 ![ui-summary-template-rhdh.png](images%2Fui-summary-template-rhdh.png)
 
@@ -35,8 +35,6 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 * ==If everything went well, you should see the following successful page. Click on the `Open Component in Catalog`==:
 
 ![ui-success-rhdh.png](images%2Fui-success-rhdh.png)
-
-* ==Once in the ui-fight component home page, you can launch the Dev Spaces opening by clicking the link OpenShift Dev Spaces (VS Code)==
 
 ![ui-home-page-rhdh](images/ui-home-page-rhdh.png)
 

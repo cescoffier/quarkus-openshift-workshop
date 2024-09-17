@@ -16,7 +16,7 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 
 ![hero-params-template-rhdh.png](images%2Fhero-params-template-rhdh.png)
 
-* ==Click Next button until a summary is shown==
+* ==Click Next/Review button until a summary is shown==
 
 ![hero-summary-template-rhdh.png](images%2Fhero-summary-template-rhdh.png)
 
