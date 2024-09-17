@@ -339,8 +339,6 @@ You are not viewing the latest version.
       
         
       
-        
-      
     
     
       
@@ -428,27 +426,6 @@ You are not viewing the latest version.
   
   <span class="md-ellipsis">
     Open API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../packaging-app/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Packaging and running (Optional)
   </span>
   
 
@@ -740,8 +717,35 @@ You are not viewing the latest version.
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#start-the-fight-service-in-dev-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the Fight service in dev mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-fight-service-using-the-swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify the Fight service using the Swagger UI
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-fight-microservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy the Fight microservice
+    </span>
+  </a>
   
 </li>
       
@@ -773,17 +777,17 @@ You are not viewing the latest version.
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploy-the-fight-microservice" class="md-nav__link">
+          <li class="md-nav__item">
+  <a href="#verify-metrics" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploy the Fight microservice
+      Verify metrics
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -961,8 +965,35 @@ You are not viewing the latest version.
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#start-the-fight-service-in-dev-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the Fight service in dev mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-the-fight-service-using-the-swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify the Fight service using the Swagger UI
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-fight-microservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy the Fight microservice
+    </span>
+  </a>
   
 </li>
       
@@ -994,17 +1025,17 @@ You are not viewing the latest version.
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploy-the-fight-microservice" class="md-nav__link">
+          <li class="md-nav__item">
+  <a href="#verify-metrics" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploy the Fight microservice
+      Verify metrics
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1103,20 +1134,21 @@ The LangChain4j project is a Java re-implementation of the famous langchain libr
 <h2 id="directory-structure">Directory Structure<a class="headerlink" href="#directory-structure" title="Permanent link"></a></h2>
 <p><mark>Notice that by bootstrapping the project with the specific <code>OpenCodeQuest - AI-Infused application with Quarkus</code> template, you get the following directory structure with a few Java classes already created and other artifacts:</mark></p>
 <p><img alt="fight-directory-structure" src="../target/fight-directory-structure.svg" /></p>
-<p>It generates the following in the <code>hero-service</code> folder:</p>
+<p>It generates the following in the <code>fight-service</code> folder:</p>
 <ul>
 <li>the Maven structure with a <code>pom.xml</code></li>
 <li>an <code>io.quarkus.workshop.fight.FightResource.java</code> resource exposed on <code>/api/fights</code>.</li>
 <li>a straightforward java Record <code>Fight.java</code> that encapsulates the hero and villain inputs for a fight.</li>
 <li>the corresponding <code>Hero.java</code> and <code>Villain.java</code>.</li>
 <li>a java Record <code>FightResult.java</code>. Quarkus automatically creates an instance of <code>FightResult</code> from the LLM’s JSON response.</li>
+<li>an intelligent service <code>FightSimulatorService.java</code>. This is where we will define the interaction with the LLM.</li>
 <li>the <code>application.properties</code> configuration file.</li>
 </ul>
 <h3 id="defining-llm-interactions">Defining LLM interactions<a class="headerlink" href="#defining-llm-interactions" title="Permanent link"></a></h3>
 <p>It’s time to tell the LLM what we want to do. 
 The Quarkus LangChain4J extension provides a declarative way to describe LLM interactions. 
 We model the interaction using an interface annotated with <code>@RegisterAiService</code>.</p>
-<p>Create a new java interface <code>FightSimulatorService.java</code> under <code>src/main/java/io/quarkus/workshop/fight</code> and copy the following content:</p>
+<p><mark>Edit the java interface <code>FightSimulatorService.java</code> under <code>src/main/java/io/quarkus/workshop/fight</code> and copy the following content:</mark></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -1264,12 +1296,39 @@ Quarkus addresses this by offering SmallRye Fault Tolerance, based on the MicroP
 <p>Now, <mark>let&rsquo;s take a look to the <code>FightResource.java</code>.</mark>
 <mark>This is a JAX-RS resource just like the Hero endpoint where the FightSimulatorService is injected.</mark> 
 <mark>Then the intelligent <code>fight</code> method is called from the exposed <code>fight</code> method.</mark> </p>
+<h3 id="start-the-fight-service-in-dev-mode">Start the Fight service in dev mode<a class="headerlink" href="#start-the-fight-service-in-dev-mode" title="Permanent link"></a></h3>
+<p>We are now ready to run our application.</p>
+<p><mark>Open a Terminal and run one of the following commands</mark>:</p>
+<p><code>./mvnw quarkus:dev</code></p>
+<p><mark>or</mark></p>
+<p><code>quarkus dev</code></p>
+<h3 id="verify-the-fight-service-using-the-swagger-ui">Verify the Fight service using the Swagger UI<a class="headerlink" href="#verify-the-fight-service-using-the-swagger-ui" title="Permanent link"></a></h3>
+<p><mark>Go to the Red Hat Developer Hub, in the fight component dashboard, just click on the <code>Api</code> tab:</mark></p>
+<p><img alt="fight-swagger-ui-rhdh.png" src="../images/fight-swagger-ui-rhdh.png" /></p>
+<p><mark>Then, select the <code>$USER-fight</code> provided API</mark></p>
+<p><img alt="fight-openapi-provided-rhdh.png" src="../images/fight-openapi-provided-rhdh.png" /></p>
+<p><mark>And, finally, click in the <code>Definition</code> tab</mark></p>
+<p><img alt="fight-swagger-ui-rhdh-2.png" src="../images/fight-swagger-ui-rhdh-2.png" /></p>
+<p>Here you can see the Swagger UI for Fight API.</p>
+<h2 id="deploy-the-fight-microservice">Deploy the Fight microservice<a class="headerlink" href="#deploy-the-fight-microservice" title="Permanent link"></a></h2>
+<p>To deploy the Fight service, remember to perform a commit&amp;push of the code. You can get some help <a href="../from-git-to-openshif/">here</a></p>
+<div class="grid cards">
+<ul>
+<li>
+<p><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> <strong>Stop the dev mode</strong> <img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
+<hr />
+<p>Remember to stop the fight-service launched in dev mode.</p>
+</li>
+</ul>
+</div>
+<p><mark>Verify that everything works by navigating to the fight-ui dev url and launch a few fights between heroes and villains!</mark></p>
+<p><img alt="fights.png" src="../images/fights.png" /></p>
 <h2 id="observability">Observability<a class="headerlink" href="#observability" title="Permanent link"></a></h2>
 <p>Observability is built into services created via <code>@RegisterAiService</code> and metrics collection is enabled when quarkus-micrometer is part of the application.
 Micrometer defines an API for basic meter types, like counters, gauges, timers, and distribution summaries, along with a MeterRegistry API that generalizes metrics collection and propagation for different backend monitoring systems.</p>
 <p><mark>Be aware that the <code>micrometer-registry-prometheus</code> extension is already present in your <code>pom.xml</code> file.</mark></p>
 <h3 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link"></a></h3>
-<p>Each AI method is automatically timed and the timer data is available using the langchain4j.aiservices.<span class="arithmatex">\(interface_name.\)</span>method_name template for the name.</p>
+<p>Each AI method is automatically timed and the timer data is available using the <code>langchain4j.aiservices.$interface_name.$method_name</code> template for the name.</p>
 <h3 id="create-your-own-metrics">Create your own metrics<a class="headerlink" href="#create-your-own-metrics" title="Permanent link"></a></h3>
 <p>Metrics data is used in the aggregate to observe how data changes over time. 
 <mark>Metrics are already in place.</mark>
@@ -1328,17 +1387,19 @@ The java class <code>FightMetricPublisher.java</code> under <code>src/main/java/
 <p><mark><code>fights</code> is the counter name and <code>won-by</code> is a tag with two possible values: <code>hero</code>or <code>villain</code>.</mark>
 <mark>This counters will tell us who is winning more times, if heroes or villains.</mark> </p>
 <p>Finally, <mark>check how the <code>FightMetricPublisher</code> is injected in the <code>FightResource</code> and called each time that a fight happen.</mark></p>
-<h2 id="deploy-the-fight-microservice">Deploy the Fight microservice<a class="headerlink" href="#deploy-the-fight-microservice" title="Permanent link"></a></h2>
-<p>To deploy the Fight service, remember to perform a commit&amp;push of the code. You can get some help <a href="../from-git-to-openshif/">here</a></p>
-<div class="grid cards">
+<h3 id="verify-metrics">Verify metrics<a class="headerlink" href="#verify-metrics" title="Permanent link"></a></h3>
+<p>The Micrometer Prometheus MeterRegistry extension creates an endpoint we can use to observe collected metrics, this endpoint is exposed in $fight-service/q/metrics path. </p>
+<p>Let’s take a look at the metrics that have been collected:</p>
 <ul>
-<li>
-<p><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> <strong>Stop the dev mode</strong> <img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-<hr />
-<p>Remember to stop the fight-service launched in dev mode.</p>
-</li>
+<li><mark>Click on Topology tab of the fight service in Red Hat Developer Hub</mark></li>
 </ul>
-</div>
+<p><img alt="fight-topology-rhdh.png" src="../images/fight-topology-rhdh.png" /></p>
+<ul>
+<li><mark>Click the arrow</mark></li>
+<li><mark>A new tab should open.</mark></li>
+<li><mark>Add the <code>/q/metrics</code> path to the url opened in previous step. You should see the metrics. Besides some automatically generated metrics like the <code>http_server_requests_seconds_count</code> or <code>http_server_requests_seconds_sum</code>, you should also see the custom metrics counting the fights calls and how many times won the heroes and the villains:</mark></li>
+</ul>
+<p><img alt="fight-custom-metrics.png" src="../images/fight-custom-metrics.png" /></p>
 
 
 

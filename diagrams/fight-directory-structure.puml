@@ -12,6 +12,7 @@ fight-service
 ++++++++  fight
 +++++++++  Fight.java
 +++++++++  FightMetricPublisher.java
++++++++++  FightSimulatorService.java
 +++++++++  FightResource.java
 +++++++++  FightResult.java
 +++++++++  Hero.java
