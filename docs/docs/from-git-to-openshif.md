@@ -125,3 +125,6 @@ Another release pipeline will be triggered and if the Enterprise Contract passes
 ![promote10](images/promote10.png)
 
 ![promote11](images/promote11.png)
+
+
+==Promotion to preprod and prod should be done for every services (villains/fight)==
