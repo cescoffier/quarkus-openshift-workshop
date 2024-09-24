@@ -128,3 +128,15 @@ Another release pipeline will be triggered and if the Enterprise Contract passes
 
 
 ==Promotion to preprod and prod should be done for every services (villains/fight)==
+
+
+### Stop your DevSpaces Workspace
+As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let's just stop it to preserve resources.
+
+==Click the grey button **"><"** on the bottom left of DevSpaces IDE==
+
+![devspaces-stop1](images/devspaces-stop1.png)
+
+==Then Click "Dev Spaces : Stop Workspace==
+
+![devspaces-stop2](images/devspaces-stop2.png)
