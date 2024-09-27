@@ -149,14 +149,41 @@ curl http://localhost:8080/api/villains
 
 ## Deploy the Villain microservice
 
-Before deploying the Villain service: 
+To deploy the Villain service, ==remember to perform a commit&push of the code== (there is already a change on `application.properties` waiting to be pushed). 
 
-<div class="grid cards" markdown>
--   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
+==You can get some help [here](from-git-to-openshif.md)==
 
-    ---
+## Houston, we've got a problem
 
-    Remember to stop the villain-service launched in dev mode.
-</div>
+At this stage, you should observe an issue during the CI pipeline. The step **acs-image-check** (responsible of verifying that we are not violating any policies in our cluster) is now failing.
 
-To deploy the Villain service, ==remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)==
+![acs-check](images/acs-check.png)
+
+==Click the task to get the logs and understand what policy has been violated==
+
+![acs-image-check-error](images/acs-image-check-error.png)
+
+As you can see, it looks like a **SuperVillain**  has introduced a bad dependency in our code ! 
+
+==Open the `pom.xml` file in DevSpaces IDE==
+
+![devspaces-CVE](images/devspaces-CVE.png)
+
+Thanks to the [Red Hat Dependency Analytics](https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics) IDE extension, you can even see that the dependency is automatically underlined suggesting there's an issue with it.
+
+==Remove the dependency as it's not needed in our code==
+
+## Deploy the Villain microservice after fixing the issue
+Once you have corrected the dependency issue and comited your code, ==you can tag and release== your code in GitLab to promote in preprod and prod.
+
+
+## Stop your DevSpaces Workspace
+As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let's just stop it to preserve resources.
+
+==Click the grey button **"><"** on the bottom left of DevSpaces IDE==
+
+![devspaces-stop1](images/devspaces-stop1.png)
+
+==Then Click "Dev Spaces : Stop Workspace==
+
+![devspaces-stop2](images/devspaces-stop2.png)

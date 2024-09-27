@@ -42,6 +42,8 @@ The template is leveraging Tekton Chains, a Kubernetes Custom Resource Definitio
 
 Also, you can see we are using this step to automatically create a SBOM (Software Bill Of Materials) which is a kind of ingredients list for your software.
 
+More information regarding the pipeline can be seen in next section [Trusted Application Pipeline](./trusted-apps.md)
+
 
 ### Dev Deployment
 As a developer, I want to see my handy work, did my application really deploy to the dev environment ?
@@ -68,3 +70,73 @@ Note that during the deployment with OpenShift GitOps, we also deployed automati
 
 ==Verify that the fight-ui dev environment is now able to retrieve the characters==
 
+
+### Promote to Pre-Prod
+First access the GitLab UI, there is a convenient link on ==the Overview tab==
+
+![promote1](images/promote1.png)
+
+==Click on Tags==
+
+![promote2](images/promote2.png)
+
+==New Tag==
+
+![promote3](images/promote3.png)
+
+Give the tag a name like ==v1.0==
+
+and click ==Create tag==
+
+![promote4](images/promote4.png)
+
+Back to the portal and the ==CI tab== to see the promotion pipeline in action
+
+![promote5](images/promote5.png)
+
+This pipeline has a special task called verify-enterprise-contract
+
+Enterprise Contract (EC) is a special CLI that compliments Sigstore’s cosign. If you remember the build-sign-image task that produced and stored the .sig and .att artifacts into the container registry, EC evaluates that signature and attestation. EC is based on the rego policy language from Open Policy Agent and allows you to create custom rules to review cosign attest attestations. By default, EC works with the SLSA provence attestation coming out of Tekton Chains.
+
+![promote6](images/promote6.png)
+
+Enterprise Contract, as part of this promotion pipeline, is verifing that the container image did in fact come from the corporate standard/approved build system. In other words, this container image was not built on some random person’s laptop, it was built in the secure build system. The .att, .sbom and .sig are stored alongside the container image and a tool like skopeo can be used to move all items together.
+
+[https://enterprisecontract.dev/](https://enterprisecontract.dev/)
+
+[The Hitchhiker’s Guide](https://enterprisecontract.dev/docs/user-guide/main/hitchhikers-guide.html) is particularly good way to get started understanding EC.
+
+Once the release pipeline has completed, you can see your application has been promoted to pre-prod and is available via the Topology plug-in.
+
+![promote7](images/promote7.png)
+
+
+### Promote to Prod
+To promote to Production use the ==Create Release feature of the GitLab UI==.
+
+![promote8](images/promote8.png)
+
+Give the release a title and click the ==Create release== button
+
+![promote9](images/promote9.png)
+
+Another release pipeline will be triggered and if the Enterprise Contract passes then the container image will be promoted production.
+
+![promote10](images/promote10.png)
+
+![promote11](images/promote11.png)
+
+
+==Promotion to preprod and prod should be done for every services (villains/fight)==
+
+
+### Stop your DevSpaces Workspace
+As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let's just stop it to preserve resources.
+
+==Click the grey button **"><"** on the bottom left of DevSpaces IDE==
+
+![devspaces-stop1](images/devspaces-stop1.png)
+
+==Then Click "Dev Spaces : Stop Workspace==
+
+![devspaces-stop2](images/devspaces-stop2.png)

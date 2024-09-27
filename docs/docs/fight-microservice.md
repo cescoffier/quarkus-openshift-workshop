@@ -194,13 +194,7 @@ Here you can see the Swagger UI for Fight API.
 
 To deploy the Fight service, remember to perform a commit&push of the code. You can get some help [here](from-git-to-openshif.md)
 
-<div class="grid cards" markdown>
--   :warning:{ .lg .middle }:warning:{ .lg .middle } __Stop the dev mode__ :warning:{ .lg .middle }:warning:{ .lg .middle }
-
-    ---
-
-    Remember to stop the fight-service launched in dev mode.
-</div>
+Then, ==you can tag and release== your code in GitLab to promote in preprod and prod.
 
 ==Verify that everything works by navigating to the fight-ui dev url and launch a few fights between heroes and villains!==
 
@@ -251,3 +245,13 @@ Let’s take a look at the metrics that have been collected:
 
 ![fight-custom-metrics.png](images%2Ffight-custom-metrics.png)
 
+## Stop your DevSpaces Workspace
+As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let's just stop it to preserve resources.
+
+==Click the grey button **"><"** on the bottom left of DevSpaces IDE==
+
+![devspaces-stop1](images/devspaces-stop1.png)
+
+==Then Click "Dev Spaces : Stop Workspace==
+
+![devspaces-stop2](images/devspaces-stop2.png)
