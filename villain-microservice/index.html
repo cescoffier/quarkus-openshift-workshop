@@ -671,6 +671,33 @@ You are not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#houston-weve-got-a-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Houston, we&rsquo;ve got a problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-villain-microservice-after-fixing-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy the Villain microservice after fixing the issue
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-your-devspaces-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop your DevSpaces Workspace
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -836,6 +863,33 @@ You are not viewing the latest version.
   <a href="#deploy-the-villain-microservice" class="md-nav__link">
     <span class="md-ellipsis">
       Deploy the Villain microservice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#houston-weve-got-a-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Houston, we&rsquo;ve got a problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-the-villain-microservice-after-fixing-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploy the Villain microservice after fixing the issue
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-your-devspaces-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop your DevSpaces Workspace
     </span>
   </a>
   
@@ -1338,17 +1392,26 @@ A test class is provided and contains the basic tests to ensure that the villain
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>curl<span class="w"> </span>http://localhost:8080/api/villains
 </code></pre></div>
 <h2 id="deploy-the-villain-microservice">Deploy the Villain microservice<a class="headerlink" href="#deploy-the-villain-microservice" title="Permanent link"></a></h2>
-<p>Before deploying the Villain service: </p>
-<div class="grid cards">
-<ul>
-<li>
-<p><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> <strong>Stop the dev mode</strong> <img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-<hr />
-<p>Remember to stop the villain-service launched in dev mode.</p>
-</li>
-</ul>
-</div>
-<p>To deploy the Villain service, <mark>remember to perform a commit&amp;push of the code. You can get some help <a href="../from-git-to-openshif/">here</a></mark></p>
+<p>To deploy the Villain service, <mark>remember to perform a commit&amp;push of the code</mark> (there is already a change on <code>application.properties</code> waiting to be pushed). </p>
+<p><mark>You can get some help <a href="../from-git-to-openshif/">here</a></mark></p>
+<h2 id="houston-weve-got-a-problem">Houston, we&rsquo;ve got a problem<a class="headerlink" href="#houston-weve-got-a-problem" title="Permanent link"></a></h2>
+<p>At this stage, you should observe an issue during the CI pipeline. The step <strong>acs-image-check</strong> (responsible of verifying that we are not violating any policies in our cluster) is now failing.</p>
+<p><img alt="acs-check" src="../images/acs-check.png" /></p>
+<p><mark>Click the task to get the logs and understand what policy has been violated</mark></p>
+<p><img alt="acs-image-check-error" src="../images/acs-image-check-error.png" /></p>
+<p>As you can see, it looks like a <strong>SuperVillain</strong>  has introduced a bad dependency in our code ! </p>
+<p><mark>Open the <code>pom.xml</code> file in DevSpaces IDE</mark></p>
+<p><img alt="devspaces-CVE" src="../images/devspaces-CVE.png" /></p>
+<p>Thanks to the <a href="https://marketplace.visualstudio.com/items?itemName=redhat.fabric8-analytics">Red Hat Dependency Analytics</a> IDE extension, you can even see that the dependency is automatically underlined suggesting there&rsquo;s an issue with it.</p>
+<p><mark>Remove the dependency as it&rsquo;s not needed in our code</mark></p>
+<h2 id="deploy-the-villain-microservice-after-fixing-the-issue">Deploy the Villain microservice after fixing the issue<a class="headerlink" href="#deploy-the-villain-microservice-after-fixing-the-issue" title="Permanent link"></a></h2>
+<p>Once you have corrected the dependency issue and comited your code, <mark>you can tag and release</mark> your code in GitLab to promote in preprod and prod.</p>
+<h2 id="stop-your-devspaces-workspace">Stop your DevSpaces Workspace<a class="headerlink" href="#stop-your-devspaces-workspace" title="Permanent link"></a></h2>
+<p>As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let&rsquo;s just stop it to preserve resources.</p>
+<p><mark>Click the grey button <strong>&rdquo;&gt;&lt;&rdquo;</strong> on the bottom left of DevSpaces IDE</mark></p>
+<p><img alt="devspaces-stop1" src="../images/devspaces-stop1.png" /></p>
+<p><mark>Then Click &ldquo;Dev Spaces : Stop Workspace</mark></p>
+<p><img alt="devspaces-stop2" src="../images/devspaces-stop2.png" /></p>
 
 
 

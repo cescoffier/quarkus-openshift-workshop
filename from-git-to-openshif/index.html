@@ -522,6 +522,33 @@ You are not viewing the latest version.
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#promote-to-pre-prod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promote to Pre-Prod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promote-to-prod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promote to Prod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-your-devspaces-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop your DevSpaces Workspace
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -740,6 +767,33 @@ You are not viewing the latest version.
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#promote-to-pre-prod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promote to Pre-Prod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promote-to-prod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Promote to Prod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stop-your-devspaces-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop your DevSpaces Workspace
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -795,6 +849,7 @@ This pipeline was created automaticaly for your project when you instanciated th
 <p><img alt="build-sign-image" src="../images/rhdh-build-sign-image.png" /></p>
 <p>The template is leveraging Tekton Chains, a Kubernetes Custom Resource Definition (CRD) controller, that nicely augments the supply chain security within OpenShift Pipelines. This tool’s capacity to automatically sign task runs, and its adoption of advanced attestation formats like in-toto and SLA provenance, bring a higher degree of trust and verification to our processes. Tekton Chains works like an independent observer within the cluster, it signs, attests and stores additional artifacts as OCI images alongside with your container image.</p>
 <p>Also, you can see we are using this step to automatically create a SBOM (Software Bill Of Materials) which is a kind of ingredients list for your software.</p>
+<p>More information regarding the pipeline can be seen in next section <a href="../trusted-apps/">Trusted Application Pipeline</a></p>
 <h3 id="dev-deployment">Dev Deployment<a class="headerlink" href="#dev-deployment" title="Permanent link"></a></h3>
 <p>As a developer, I want to see my handy work, did my application really deploy to the dev environment ?</p>
 <p>You can check that your newly built application has been automatically sync using OpenShift GitOps (ArgoCD) if you switch to the Overview Tab.</p>
@@ -808,6 +863,41 @@ This pipeline was created automaticaly for your project when you instanciated th
 <p><mark>You can add <code>/api/heroes/hello</code> , <code>/api/heroes/random</code> or <code>/api/heroes</code> to the URL in you browser to check your work</mark></p>
 <p>Note that during the deployment with OpenShift GitOps, we also deployed automatically the Database containing all the superheroes using the EDB Cluster CRD that automaticaly manage our database.</p>
 <p><mark>Verify that the fight-ui dev environment is now able to retrieve the characters</mark></p>
+<h3 id="promote-to-pre-prod">Promote to Pre-Prod<a class="headerlink" href="#promote-to-pre-prod" title="Permanent link"></a></h3>
+<p>First access the GitLab UI, there is a convenient link on <mark>the Overview tab</mark></p>
+<p><img alt="promote1" src="../images/promote1.png" /></p>
+<p><mark>Click on Tags</mark></p>
+<p><img alt="promote2" src="../images/promote2.png" /></p>
+<p><mark>New Tag</mark></p>
+<p><img alt="promote3" src="../images/promote3.png" /></p>
+<p>Give the tag a name like <mark>v1.0</mark></p>
+<p>and click <mark>Create tag</mark></p>
+<p><img alt="promote4" src="../images/promote4.png" /></p>
+<p>Back to the portal and the <mark>CI tab</mark> to see the promotion pipeline in action</p>
+<p><img alt="promote5" src="../images/promote5.png" /></p>
+<p>This pipeline has a special task called verify-enterprise-contract</p>
+<p>Enterprise Contract (EC) is a special CLI that compliments Sigstore’s cosign. If you remember the build-sign-image task that produced and stored the .sig and .att artifacts into the container registry, EC evaluates that signature and attestation. EC is based on the rego policy language from Open Policy Agent and allows you to create custom rules to review cosign attest attestations. By default, EC works with the SLSA provence attestation coming out of Tekton Chains.</p>
+<p><img alt="promote6" src="../images/promote6.png" /></p>
+<p>Enterprise Contract, as part of this promotion pipeline, is verifing that the container image did in fact come from the corporate standard/approved build system. In other words, this container image was not built on some random person’s laptop, it was built in the secure build system. The .att, .sbom and .sig are stored alongside the container image and a tool like skopeo can be used to move all items together.</p>
+<p><a href="https://enterprisecontract.dev/">https://enterprisecontract.dev/</a></p>
+<p><a href="https://enterprisecontract.dev/docs/user-guide/main/hitchhikers-guide.html">The Hitchhiker’s Guide</a> is particularly good way to get started understanding EC.</p>
+<p>Once the release pipeline has completed, you can see your application has been promoted to pre-prod and is available via the Topology plug-in.</p>
+<p><img alt="promote7" src="../images/promote7.png" /></p>
+<h3 id="promote-to-prod">Promote to Prod<a class="headerlink" href="#promote-to-prod" title="Permanent link"></a></h3>
+<p>To promote to Production use the <mark>Create Release feature of the GitLab UI</mark>.</p>
+<p><img alt="promote8" src="../images/promote8.png" /></p>
+<p>Give the release a title and click the <mark>Create release</mark> button</p>
+<p><img alt="promote9" src="../images/promote9.png" /></p>
+<p>Another release pipeline will be triggered and if the Enterprise Contract passes then the container image will be promoted production.</p>
+<p><img alt="promote10" src="../images/promote10.png" /></p>
+<p><img alt="promote11" src="../images/promote11.png" /></p>
+<p><mark>Promotion to preprod and prod should be done for every services (villains/fight)</mark></p>
+<h3 id="stop-your-devspaces-workspace">Stop your DevSpaces Workspace<a class="headerlink" href="#stop-your-devspaces-workspace" title="Permanent link"></a></h3>
+<p>As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let&rsquo;s just stop it to preserve resources.</p>
+<p><mark>Click the grey button <strong>&rdquo;&gt;&lt;&rdquo;</strong> on the bottom left of DevSpaces IDE</mark></p>
+<p><img alt="devspaces-stop1" src="../images/devspaces-stop1.png" /></p>
+<p><mark>Then Click &ldquo;Dev Spaces : Stop Workspace</mark></p>
+<p><img alt="devspaces-stop2" src="../images/devspaces-stop2.png" /></p>
 
 
 

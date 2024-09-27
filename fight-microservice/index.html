@@ -791,6 +791,15 @@ You are not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#stop-your-devspaces-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop your DevSpaces Workspace
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1036,6 +1045,15 @@ You are not viewing the latest version.
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stop-your-devspaces-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stop your DevSpaces Workspace
+    </span>
+  </a>
   
 </li>
       
@@ -1312,15 +1330,7 @@ Quarkus addresses this by offering SmallRye Fault Tolerance, based on the MicroP
 <p>Here you can see the Swagger UI for Fight API.</p>
 <h2 id="deploy-the-fight-microservice">Deploy the Fight microservice<a class="headerlink" href="#deploy-the-fight-microservice" title="Permanent link"></a></h2>
 <p>To deploy the Fight service, remember to perform a commit&amp;push of the code. You can get some help <a href="../from-git-to-openshif/">here</a></p>
-<div class="grid cards">
-<ul>
-<li>
-<p><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /> <strong>Stop the dev mode</strong> <img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /><img alt="⚠" class="twemoji lg middle" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/26a0.svg" title=":warning:" /></p>
-<hr />
-<p>Remember to stop the fight-service launched in dev mode.</p>
-</li>
-</ul>
-</div>
+<p>Then, <mark>you can tag and release</mark> your code in GitLab to promote in preprod and prod.</p>
 <p><mark>Verify that everything works by navigating to the fight-ui dev url and launch a few fights between heroes and villains!</mark></p>
 <p><img alt="fights.png" src="../images/fights.png" /></p>
 <h2 id="observability">Observability<a class="headerlink" href="#observability" title="Permanent link"></a></h2>
@@ -1400,6 +1410,12 @@ The java class <code>FightMetricPublisher.java</code> under <code>src/main/java/
 <li><mark>Add the <code>/q/metrics</code> path to the url opened in previous step. You should see the metrics. Besides some automatically generated metrics like the <code>http_server_requests_seconds_count</code> or <code>http_server_requests_seconds_sum</code>, you should also see the custom metrics counting the fights calls and how many times won the heroes and the villains:</mark></li>
 </ul>
 <p><img alt="fight-custom-metrics.png" src="../images/fight-custom-metrics.png" /></p>
+<h2 id="stop-your-devspaces-workspace">Stop your DevSpaces Workspace<a class="headerlink" href="#stop-your-devspaces-workspace" title="Permanent link"></a></h2>
+<p>As you now have fully deployed your microservice, you do not need anymore the DevSpaces workspace so let&rsquo;s just stop it to preserve resources.</p>
+<p><mark>Click the grey button <strong>&rdquo;&gt;&lt;&rdquo;</strong> on the bottom left of DevSpaces IDE</mark></p>
+<p><img alt="devspaces-stop1" src="../images/devspaces-stop1.png" /></p>
+<p><mark>Then Click &ldquo;Dev Spaces : Stop Workspace</mark></p>
+<p><img alt="devspaces-stop2" src="../images/devspaces-stop2.png" /></p>
 
 
 
