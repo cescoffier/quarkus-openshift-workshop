@@ -7,6 +7,7 @@ This workshop illustrates how to build intelligent applications using:
 - [Quarkus](https://quarkus.io/)
 - [Red Hat Developer Hub](https://developers.redhat.com/rhdh/overview)
 - [Red Hat Trusted Application Pipelines](https://www.redhat.com/en/products/trusted-application-pipelines)
+- [Red Hat OpenShift Dev Spaces](https://access.redhat.com/products/red-hat-openshift-dev-spaces)
 
 This workshop covers both the development and deployment of such applications on OpenShift as well as the integration with OpenShift AI/ML Services.
 

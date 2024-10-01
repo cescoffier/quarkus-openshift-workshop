@@ -4,6 +4,7 @@ Welcome to the Quarkus OpenShift Workshop! This workshop is designed to help you
 You are going to learn about:
 
 - **Red Hat Developer Hub** - the developer portal to initiate and maintain application development
+- **Red Hat OpenShift Dev Spaces** - a container-based, in-browser development environment that facilitates development directly within the OpenShift ecosystem
 - **Quarkus** - the Kubernetes Native Java stack tailored for Kubernetes and OpenShift
 - **Red Hat OpenShift** - the Kubernetes platform for enterprise applications
 - **Red Hat Trusted Application Pipelines** - the CI/CD pipeline enhancing security with automatic, integrated checks that catch vulnerabilities early in the software supply chain.
