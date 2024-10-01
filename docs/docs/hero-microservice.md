@@ -30,6 +30,7 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 
 ![hero-home-page-rhdh](images/hero-home-page-rhdh.png)
 
+You may be asked to authenticate again. Please, proceed. 
 You should see the following page while the Dev Spaces is starting up:
 
 ![dev-spaces-starting-up.png](images%2Fdev-spaces-starting-up.png)
@@ -67,7 +68,7 @@ Regarding the dependencies section, you can see the extension allowing the devel
 
 ## The JAX-RS Resource
 
-During the project creation, the `HeroResource.java` file has been created with the following content:
+During the project creation, the `hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java` file has been created with the following content:
 
 ```java linenums="1"
 {{ insert('hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java', 'docHeroResource', ['docHeroCrudContent']) }}
@@ -165,7 +166,7 @@ The development mode also allows debugging and listens for a debugger on port 50
 
 ### Dev UI
 
-Quarkus ships with a Developer UI, which is available in dev mode at /q/dev-ui by default.
+Quarkus ships with a Developer UI, which is available in dev mode at /q/dev-ui path by default.
 It will show you something like this:
 
 ![dev-ui](images/dev-ui.png)
@@ -203,7 +204,7 @@ In the generated `pom.xml` file, you can see 2 test dependencies:
 </dependency>
 
 ```
-The generated project contains a simple test in `HeroResourceTest.java`.
+The generated project contains a simple test in `hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java`.
 
 ```java linenums="1"
 {{ insert('hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java', 'docHeroResourceTest', ['docCrudTests','docHelloPath']) }}

@@ -187,5 +187,5 @@ Ok, now, before continuing with the workshop...
 
     ---
 
-    Please stop the hero-service launched in dev mode otherwise you will get a conflict port error.
+    Please stop the hero-service launched in dev mode clicking `Ctrl + C` otherwise you will get a conflict port error.
 </div>
