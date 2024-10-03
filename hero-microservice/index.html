@@ -903,7 +903,8 @@ You are not viewing the latest version.
 <li><mark>Once in the hero-service component home page, you can launch the Dev Spaces opening by clicking the link OpenShift Dev Spaces (VS Code)</mark></li>
 </ul>
 <p><img alt="hero-home-page-rhdh" src="../images/hero-home-page-rhdh.png" /></p>
-<p>You should see the following page while the Dev Spaces is starting up:</p>
+<p>You may be asked to authenticate again. Please, proceed. 
+You should see the following page while the Dev Spaces is starting up:</p>
 <p><img alt="dev-spaces-starting-up.png" src="../images/dev-spaces-starting-up.png" /></p>
 <h2 id="the-hero-service">The Hero Service<a class="headerlink" href="#the-hero-service" title="Permanent link"></a></h2>
 <p>The Super Heroes microservice stores super-heroes, with their names, powers, and so on.
@@ -928,7 +929,7 @@ You will find here the import of the Quarkus BOM (<em>bill of materials</em>), a
 In addition, you can see the <code>quarkus-maven-plugin</code>, responsible for the packaging of the application and also providing the development mode support.</p>
 <p>Regarding the dependencies section, you can see the extension allowing the development of REST applications.</p>
 <h2 id="the-jax-rs-resource">The JAX-RS Resource<a class="headerlink" href="#the-jax-rs-resource" title="Permanent link"></a></h2>
-<p>During the project creation, the <code>HeroResource.java</code> file has been created with the following content:</p>
+<p>During the project creation, the <code>hero-service/src/main/java/io/quarkus/workshop/hero/HeroResource.java</code> file has been created with the following content:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1075,7 +1076,7 @@ This enables hot deployment with background compilation, which means that when y
 If there are any issues with compilation an error page will let you know.</p>
 <p>The development mode also allows debugging and listens for a debugger on port 5005.</p>
 <h3 id="dev-ui">Dev UI<a class="headerlink" href="#dev-ui" title="Permanent link"></a></h3>
-<p>Quarkus ships with a Developer UI, which is available in dev mode at /q/dev-ui by default.
+<p>Quarkus ships with a Developer UI, which is available in dev mode at /q/dev-ui path by default.
 It will show you something like this:</p>
 <p><img alt="dev-ui" src="../images/dev-ui.png" /></p>
 <p>It allows you to:</p>
@@ -1104,7 +1105,7 @@ It will show you something like this:</p>
 <a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
 <a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div>
-The generated project contains a simple test in <code>HeroResourceTest.java</code>.</p>
+The generated project contains a simple test in <code>hero-service/src/test/java/io/quarkus/workshop/hero/HeroResourceTest.java</code>.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
