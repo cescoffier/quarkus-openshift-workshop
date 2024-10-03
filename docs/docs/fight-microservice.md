@@ -71,7 +71,7 @@ The LangChain4j project is a Java re-implementation of the famous langchain libr
 
 Configuring OpenAI models mandates an API key or API url among others.
 
-==Copy the following configuration in your `application.properties` file:==
+==Copy the following configuration in your `fight-service/src/main/resources/application.properties` file:==
 
 ```properties linenums="1" 
 {{ insert('fight-service/src/main/resources/application.properties', 'aiProps') }}
@@ -101,7 +101,7 @@ It’s time to tell the LLM what we want to do.
 The Quarkus LangChain4J extension provides a declarative way to describe LLM interactions. 
 We model the interaction using an interface annotated with `@RegisterAiService`.
 
-==Edit the java interface `FightSimulatorService.java` under `src/main/java/io/quarkus/workshop/fight` and copy the following content:==
+==Edit the java interface `src/main/java/io/quarkus/workshop/fight/FightSimulatorService.java` and copy the following content:==
 
 ```java linenums="1"
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightSimulatorService.java') }}
@@ -158,7 +158,7 @@ If the LLM invocation is taking too long, the `@Timeout` annotation can stop it 
 
 ### The Fight Resource
 
-Now, ==let's take a look to the `FightResource.java`.==
+Now, ==let's take a look to the `fight-service/src/main/java/io/quarkus/workshop/fight/FightResource.java`.==
 ==This is a JAX-RS resource just like the Hero endpoint where the FightSimulatorService is injected.== 
 ==Then the intelligent `fight` method is called from the exposed `fight` method.== 
 
@@ -174,21 +174,13 @@ We are now ready to run our application.
 
 `quarkus dev`
 
-### Verify the Fight service using the Swagger UI
+### Verify the Fight service
 
-==Go to the Red Hat Developer Hub, in the fight component dashboard, just click on the `Api` tab:==
+==For verifying the Fight service is up and running, open the Developer Console by navigating to the $FIGHT_URL/q/dev-ui==
 
-![fight-swagger-ui-rhdh.png](images%2Ffight-swagger-ui-rhdh.png)
+==Ou by clicking the `Open in New Tab` button when a pop up will be shown:==
 
-==Then, select the `$USER-fight` provided API==
-
-![fight-openapi-provided-rhdh.png](images%2Ffight-openapi-provided-rhdh.png)
-
-==And, finally, click in the `Definition` tab==
-
-![fight-swagger-ui-rhdh-2.png](images%2Ffight-swagger-ui-rhdh-2.png)
-
-Here you can see the Swagger UI for Fight API.
+![open-quarkus-dev-in-new-tab.png](images%2Fopen-quarkus-dev-in-new-tab.png)
 
 ## Deploy the Fight microservice
 
@@ -216,7 +208,7 @@ Each AI method is automatically timed and the timer data is available using the 
 
 Metrics data is used in the aggregate to observe how data changes over time. 
 ==Metrics are already in place.==
-The java class `FightMetricPublisher.java` under `src/main/java/io/quarkus/workshop/fight` contains a CDI bean as follows:
+The java class `fight-service/src/main/java/io/quarkus/workshop/fight/FightMetricPublisher.java` contains a CDI bean as follows:
 
 ```java linenums="1"
 {{ insert('fight-service/src/main/java/io/quarkus/workshop/fight/FightMetricPublisher.java') }}

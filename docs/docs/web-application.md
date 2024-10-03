@@ -36,7 +36,7 @@ Once logged in the Red Hat Developer Hub, please proceed with following steps:
 
 ![ui-success-rhdh.png](images%2Fui-success-rhdh.png)
 
-* ==Once in the ui-fight component home page, you can launch the Dev Spaces opening by clicking the link OpenShift Dev Spaces (VS Code)==
+* == The ui-fight component home page is shown==
 
 ![ui-home-page-rhdh](images/ui-home-page-rhdh.png)
 

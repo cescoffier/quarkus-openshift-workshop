@@ -60,11 +60,13 @@ This should look familiar to you if you regularly use the topology view from Ope
 
 Note: pre-prod and prod have NOT yet deployed
 
-==Click the arrow==
+==Click the arrow.== This will open a new tab on your browser showing your deployed hero-service !
 
-This will open a new tab on your browser showing your deployed hero-service !
+Oops!! A `Resource Not Found` may be shown. 
 
-==You can add `/api/heroes/hello` , `/api/heroes/random` or `/api/heroes` to the URL in you browser to check your work==
+![resource-not-found.png](images%2Fresource-not-found.png)
+
+==You can add `/api/heroes/hello` , `/api/heroes/random` or `/api/heroes` to the URL in you browser to attack the good endpoints and check your work==
 
 Note that during the deployment with OpenShift GitOps, we also deployed automatically the Database containing all the superheroes using the EDB Cluster CRD that automaticaly manage our database.
 
