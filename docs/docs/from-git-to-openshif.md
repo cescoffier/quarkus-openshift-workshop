@@ -106,7 +106,7 @@ Enterprise Contract, as part of this promotion pipeline, is verifing that the co
 
 [https://enterprisecontract.dev/](https://enterprisecontract.dev/)
 
-[The Hitchhiker’s Guide](https://enterprisecontract.dev/docs/user-guide/main/hitchhikers-guide.html) is particularly good way to get started understanding EC.
+[The Hitchhiker’s Guide](https://enterprisecontract.dev/docs/user-guide/hitchhikers-guide.html) is particularly good way to get started understanding EC.
 
 Once the release pipeline has completed, you can see your application has been promoted to pre-prod and is available via the Topology plug-in.
 
