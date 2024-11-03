@@ -28,6 +28,7 @@ jobs:
       packages: write
       id-token: write
       attestations: write
+      pages: write
 
     strategy:
       fail-fast: false
