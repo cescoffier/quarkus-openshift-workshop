@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@picocss/pico": "^2.0.6",
-    "preact": "^10.25.0"
+    "preact": "^10.25.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.2",
