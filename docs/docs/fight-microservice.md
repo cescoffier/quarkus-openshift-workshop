@@ -77,6 +77,8 @@ Configuring OpenAI models mandates an API key or API url among others.
 {{ insert('fight-service/src/main/resources/application.properties', 'aiProps') }}
 ```
 
+**Update the values with the ones given by your teachers.**
+
 They are self-explanatory, but you can check the documentation for more information.
 
 ## Directory Structure
