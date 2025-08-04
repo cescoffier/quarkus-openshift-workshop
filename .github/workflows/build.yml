@@ -64,7 +64,7 @@ jobs:
 
       - name: Extract metadata (tags, labels) for the container
         id: meta
-        uses: docker/metadata-action@v5.7.0
+        uses: docker/metadata-action@v5.8.0
         if: github.ref == 'refs/heads/main'
         with:
           images: ghcr.io/cescoffier/quarkus-openshift-workshop-${{ matrix.app }}
