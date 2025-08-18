@@ -55,7 +55,7 @@ jobs:
         run: ./mvnw -B clean verify -Dquarkus.http.host=0.0.0.0 -DskipITs=false
 
       - name: Log in to the Container registry
-        uses: docker/login-action@v3.4.0
+        uses: docker/login-action@v3.5.0
         if: github.ref == 'refs/heads/main'
         with:
           registry: ghcr.io
