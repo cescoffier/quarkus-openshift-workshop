@@ -44,7 +44,7 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: ${{ env.JVM_VERSION }}
           distribution: temurin
@@ -100,7 +100,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         name: Set up Java 21
         with:
           java-version: 21
