@@ -71,7 +71,7 @@ jobs:
 
       - name: Build and push image for ${{ matrix.app }}
         id: push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         if: github.ref == 'refs/heads/main'
         with:
           context: ${{ matrix.app }}
