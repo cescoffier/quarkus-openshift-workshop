@@ -60,7 +60,7 @@ Once you bootstrap the project, you get the following directory structure with a
 You get the following in the `villain-service` folder:
 
 * the Maven structure with a `pom.xml`
-* an `io.quarkus.workshop.villain.VillainController` controller exposed on `/api/heroes`
+* an `io.quarkus.workshop.villain.VillainController` controller exposed on `/api/villains`
 * an associated unit test `VillainControllerTest`
 * example `Dockerfile` files for both native and jvm modes in `src/main/docker`
 * the `application.properties` configuration file
